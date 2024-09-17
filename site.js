@@ -16,7 +16,7 @@ self.addEventListener('install', (event) => {
         'sphericalCap.jpg',
         'coneAndSphere.jpeg',
         'sphereAndCone.jpeg',
-        'eighthSphereQuarterCone.jpeg',
+        'octantSphereQuarterCone.jpeg',
         'coneAndSphere.png',
         'coneMarkup.jpeg',
         'frustumConeMarkup.png',

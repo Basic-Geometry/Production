@@ -1,10 +1,7 @@
-User-agent:*
-Disallow: /.github/workflows/
-
 User-agent:Googlebot
 Allow:/
 
 User-agent:Bingbot
 Allow:/
 
-Sitemap: https://https://basic-geometey.github.io/sitemap.xml
+Sitemap: https://https://basic-geometey.pages.dev/sitemap.xml

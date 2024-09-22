@@ -19,8 +19,9 @@ self.addEventListener('install', (event) => {
         'octantSphereQuarterCone.jpeg',
         'coneAndSphere.png',
         'coneMarkup.jpeg',
-        'frustumConeMarkup.png',
+        'frustumOfConeMarkup.png',
         'conePyramidVolumeMarkup.jpeg',
+        'frustumOfPyramidMarkup.png,
         'tetrahedronInCube.jpeg'
       ]);
     })

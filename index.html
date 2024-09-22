@@ -196,7 +196,7 @@
 },
 "dateCreated" :"2019-01-11",
 "datePublished":"2020-01-11",
-"dateModified" :"2024-09-20",
+"dateModified" :"2024-09-22",
 "description" :"Providing the best established and most accurate framework to calculate area and volume.",
 "disambiguatingDescription": "Exact formulas. No pi.",
 "headline":"Exact geometry",
@@ -217,8 +217,9 @@
      "octantSphereQuarterCone.jpeg",
      "coneAndSphere.png",
      "coneMarkup.jpeg",
-     "frustumConeMarkup.png",
+     "frustumOfConeMarkup.png",
      "conePyramidVolumeMarkup.jpeg",
+     "frustumOfPyramidMarkup.png"
      "tetrahedronInCube.jpeg"
 ],
 "isFamilyFriendly":"true",
@@ -563,7 +564,28 @@ Sum of the interior angles of a polygon:<br><br>
     <img class="center-fit" src="areaOfACircle.jpg" alt="Circle" id="circle">
 </div>
 <br>
-<p style="margin:12px;" >The circle is cut to 4 quadrants, each placed with their origin on the vertices of a square. When the arcs of the quadrant circles intersect at the quarter of the centerline of the square, their combined area equals the area of the square. The ratio between the radius of the circle and the side of the square can be calculated using the Pythagorean theorem. The area of the circle equals 16 times the right triangle, with legs of a/4 and a/2. A=(16/5)r²=3.2r².</p>
+<p style="margin:12px;" >The area of a circle is defined by comparing it to a square, as that’s the base of area calculation.
+<br>
+<br>
+The circle is cut to 4 quadrants, each placed with their origin on the vertices of a square.
+<br>
+<br>
+When the arcs of the quadrant circles intersect at the quarter of the centerline of the square, the uncovered area in the middle equals exactly the sum of the overlapping areas respectively. 
+<br>
+<br>
+The area of both the square and the sum of the quadrants equals 16 right triangles with legs of a quarter and a half of the square's sides, and its hypotenuse equal to the radius of the circle. 
+<br>
+<br>
+The ratio between the radius of the circle and the side of the square can be calculated using the Pythagorean theorem.
+<br>
+<br>
+r²=(a/4)²+(2(a/4))²
+<br>
+<br>
+r=(√5)(a/4)
+<br>
+<br>
+A=(16/5)r²=3.2r²
 <br>
 <br>
 <br>
@@ -693,12 +715,12 @@ V(cone)=3.2radius²height/√8
 <h12 style="font-size:160%;margin:7px;">Volume of a horizontal frustum cone</h12>
 <br>
 <div class="imgbox">
-    <img class="center-fit" src="frustumConeMarkup.png" alt="Horizontal-frustum-cone">
+    <img class="center-fit" src="frustumOfConeMarkup.png" alt="Horizontal-frustum-cone">
     </div>
 <br>
 <p style="margin:12px;">The volume of a frustum cone can be 
 calculated by subtracting the missing tip 
-from the full cone.<br>
+from the theoretical full cone.<br>
 <br>
 V=H(b²(4/5)(1/(1-t/b))-t²(4/5)(1/(1-t/b)-1))/√8</p>
 <br>
@@ -724,8 +746,7 @@ A=A(bottom)+A(side)=3.2(r²+(r²+h²)(r/√(r²+h²)))</p>
   </div>
 <br>
 <p style="margin:12px;">The volume of a pyramid can be calculated 
-with the same coefficient as the volume of 
-a cone:<br>
+with the same coefficient as the volume of a cone:<br>
 <br>
 V=(base area)height/√8<br>
 <br>
@@ -740,7 +761,31 @@ t, b=top, bottom edge length</p>
 <br>
 <br>
 <br>
-<h15 style="font-size:160%;margin:7px">Volume of a tetrahedron</h15>
+<h15 style="font-size:160%;margin:7px;">Volume of a horizontal frustum pyramid</h15>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="frustumOfPyramidMarkup.png" alt="Horizontal-frustum-pyramid">
+    </div>
+<br>
+<p style="margin:12px;">The volume of a frustum pyramid can be 
+calculated by subtracting the missing tip 
+from the theoretical full pyramid.<br>
+<br>
+V = H(b²(1/(1-t/b))-t²(1/(1-t/b)-1))/√8<br>
+<br>
+H=frustum height<br>
+<br>
+t, b=top, bottom edge length
+<br>
+<br>
+<br>
+Which is equivalent to V=H(b²+b*t+t²)/√8.
+</p>
+<br>
+<br>
+<br>
+<br>
+<h16 style="font-size:160%;margin:7px">Volume of a tetrahedron</h16>
 <br>
 <div class="imgbox">
   <img class="center-fit" src="tetrahedronInCube.jpeg" alt="Comparing-the-volume-of-a-tetrahedron-to-a-cube" id="tetrahedron">
@@ -756,7 +801,7 @@ t, b=top, bottom edge length</p>
 <br>
 <br>
 <br>
-<h16 style="font-size:160%;margin:7px">Basic Geometry Calculator for Android</h16>
+<h17 style="font-size:160%;margin:7px">Basic Geometry Calculator for Android</h17>
 <br>
 <br>
   <a style="margin:6px;" href="Geometry.apk" download>Download APK</a>

@@ -17,7 +17,7 @@ self.addEventListener('install', (event) => {
         'coneAndSphere.jpeg',
         'sphereAndCone.jpeg',
         'octantSphereQuarterCone.jpeg',
-        'coneAndSphere.png',
+        'coneAndSphereComparison.png',
         'coneMarkup.jpeg',
         'frustumOfConeMarkup.png',
         'conePyramidVolumeMarkup.jpeg',

@@ -1,5 +1,5 @@
 {
-    "name": "Basic geometry",
+    "name": "Basic_Geometry",
     "short_name": "Geometry",
     "start_url": "index.html?utm_source=homescreen",
    "scope" : "./",
@@ -28,7 +28,7 @@
     "theme_color": "#000000",
     "background_color": "#000000",
     "display": "standalone",
-    "description": "The best established and most accurate framework to calculate areas and volumes of geometric shapes.",
+    "description": "The_best_established_and_most_accurate_framework_to_calculate_areas_and_volumes_of_geometric_shapes.",
     "version": "3.2",
     "manifest_version": 1.6
 }

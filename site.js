@@ -23,7 +23,7 @@ self.addEventListener('install', (event) => {
         'conePyramidVolumeMarkup.jpeg',
         'tetraFrame.jpeg',
         'frustumOfPyramidMarkup.png',
-        'tetrahedronInCube.jpeg'
+        'tetrahedronMarkup.jpeg'
       ]);
     })
   );

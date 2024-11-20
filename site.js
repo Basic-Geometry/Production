@@ -14,7 +14,7 @@ self.addEventListener('install', (event) => {
         'circumference.jpg',
         'sphereAndCubeMarkup.jpeg',
         'sphericalCap.jpg',
-        'coneAndSphere.jpeg',
+        'coneAndSphereMarkup.jpeg',
         'sphereAndCone.jpeg',
         'octantSphereQuarterCone.jpeg',
         'coneAndSphereComparison.png',

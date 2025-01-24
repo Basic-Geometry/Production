@@ -682,7 +682,8 @@ Check Out The Geometry Calculator App!"
                 }
     ];
 
-        function showSuggestions() {
+        
+            function showSuggestions() {
             const input = document.getElementById('search').value.toLowerCase();
             const suggestions = document.getElementById('suggestions');
             suggestions.innerHTML = '';
@@ -739,17 +740,18 @@ Check Out The Geometry Calculator App!"
                 }
             });
 
-            // Evaluate the expression
-            let result = topic["mathExpression-output"];
+            // Replace variables in the expression with their values
+            let expression = topic["mathExpression-output"];
             Object.keys(values).forEach(key => {
-                result = result.replace(new RegExp(key, 'g'), values[key]);
+                expression = expression.replace(new RegExp(key, 'g'), values[key]);
             });
 
-            // Use eval to calculate the result
-            const finalResult = eval(result);
+            // Use math.js to evaluate the expression
+            const finalResult = math.evaluate(expression);
 
             document.getElementById('result').innerText = `Result: ${finalResult}`;
         }
+       </script>
 <br>
 <br>
 </div>

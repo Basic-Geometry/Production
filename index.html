@@ -523,7 +523,8 @@ Check Out The Geometry Calculator App!"
         <button id="calculate" onclick="calculate()" style="display: none;">Calculate</button>
         <p id="result"></p>
 </div>
-         <script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.min.js"></script>
+    <script>
         const mathSolver = [
                     "@type": "SolveMathAction",
      "target": "/",
@@ -682,9 +683,10 @@ Check Out The Geometry Calculator App!"
                 }
     ];
 
-        
-            function showSuggestions() {
+
+        function showSuggestions() {
             const input = document.getElementById('search').value.toLowerCase();
+            console.log('User input:', input); // Debugging log
             const suggestions = document.getElementById('suggestions');
             suggestions.innerHTML = '';
             if (input) {
@@ -695,6 +697,7 @@ Check Out The Geometry Calculator App!"
                         suggestionItem.textContent = topic.name;
                         suggestionItem.onclick = () => selectTopic(index);
                         suggestions.appendChild(suggestionItem);
+                        console.log('Suggestion added:', topic.name); // Debugging log
                     }
                 });
             }
@@ -708,14 +711,18 @@ Check Out The Geometry Calculator App!"
             document.getElementById('suggestions').innerHTML = '';
 
             // Split the input string to generate input fields
-            const inputs = topic["mathExpression-input"].split(' ');
-            inputs.forEach(input => {
-                const parts = input.split('=');
-                if (parts[0] === 'required' || parts[0] === 'name') {
-                    const name = parts[1];
-                    const defaultValue = parts.length > 2 ? parts[2].split('default=')[1] : '';
-                    inputsDiv.innerHTML += `<input type="number" id="${name}" placeholder="${name}" value="${defaultValue}" />`;
-                }
+            const inputs = topic["mathExpression-input"].split(' name=');
+            inputs.forEach((input, i) => {
+                if (i === 0) return; // Skip the first element
+                const parts = input.split(' ');
+                const namePart = parts.find(part => part.startsWith('name='));
+                const defaultPart = parts.find(part => part.startsWith('default='));
+                const name = namePart.split('=')[1];
+                const defaultValue = defaultPart ? defaultPart.split('=')[1] : '';
+                inputsDiv.innerHTML += `
+                    <label for="${name}">${name}:</label>
+                    <input type="number" id="${name}" placeholder="${name}" value="${defaultValue}" />
+                `;
             });
 
             // Display the related image
@@ -728,30 +735,35 @@ Check Out The Geometry Calculator App!"
         function calculate() {
             const topicName = document.getElementById('search').value;
             const topic = mathSolver.find(t => t.name === topicName);
+            console.log('Selected topic:', topic); // Debugging log
 
             // Extract input values
-            const inputs = topic["mathExpression-input"].split(' ');
+            const inputs = topic["mathExpression-input"].split(' name=');
             const values = {};
-            inputs.forEach(input => {
-                const parts = input.split('=');
-                if (parts[0] === 'required' || parts[0] === 'name') {
-                    const name = parts[1];
-                    values[name] = parseFloat(document.getElementById(name).value);
-                }
+            inputs.forEach((input, i) => {
+                if (i === 0) return; // Skip the first element
+                const parts = input.split(' ');
+                const namePart = parts.find(part => part.startsWith('name='));
+                const name = namePart.split('=')[1];
+                values[name] = parseFloat(document.getElementById(name).value);
             });
+            console.log('Input values:', values); // Debugging log
 
             // Replace variables in the expression with their values
             let expression = topic["mathExpression-output"];
             Object.keys(values).forEach(key => {
                 expression = expression.replace(new RegExp(key, 'g'), values[key]);
             });
+            console.log('Expression to evaluate:', expression); // Debugging log
 
             // Use math.js to evaluate the expression
             const finalResult = math.evaluate(expression);
+            console.log('Calculated result:', finalResult); // Debugging log
 
             document.getElementById('result').innerText = `Result: ${finalResult}`;
         }
-       </script>
+    </script>
+       
 <br>
 <br>
 </div>

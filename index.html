@@ -27,9 +27,6 @@
             margin: auto;
         }
 
-</style>
-    
-    <style>
            
                 #cookie-notice {
                         position: fixed;
@@ -71,7 +68,45 @@
                 #cookie-notice-buttons button:hover {
                         background-color: #3e8e41;
                 }
-           
+
+           body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .calculator {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        .calculator input, .calculator button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 18px;
+        }
+        .suggestions {
+            margin: 10px 0;
+        }
+        .suggestion-item {
+            cursor: pointer;
+            padding: 5px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+        #image {
+            margin: 10px 0;
+            text-align: center;
+        }
+        #image img {
+            max-width: 100%;
+               }
         </style>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <meta name="author" content="type=PostalAddress,
@@ -196,7 +231,7 @@
 },
 "dateCreated" :"2019-01-11",
 "datePublished":"2020-01-11",
-"dateModified" :"2025-01-17",
+"dateModified" :"2025-01-24",
 "description" :"Providing the best-established and most accurate framework to calculate area and volume.",
 "disambiguatingDescription": "Exact formulas. No pi.",
 "headline":"Exact geometry",
@@ -220,7 +255,7 @@
      "@type": "SolveMathAction",
      "target": "/",
      "mathExpression-input": "required name=side default=1",
-     "mathExpression-output": "side^2",
+     "mathExpression-output": "Math.pow(side, 2)",
      "image": "square.png",
      "eduQuestionType": "equationSolving",
      "name": "Area of a square"
@@ -230,7 +265,7 @@
      "@type": "SolveMathAction",
      "target": "/",
      "mathExpression-input": "required name=edge default=1",
-     "mathExpression-output": "edge^3",    
+     "mathExpression-output": "Math.pow(edge, 3)",    
      "image": "cubeMarkup.jpeg",
      "eduQuestionType": "equationSolving",
      "name": "Volume of a cube"
@@ -241,7 +276,7 @@
      "target": "/",
      "mathExpression-input": "required name=radius default=1 name=angleOfRotation default=360",
      "mathExpression-output": 
-     "angleOfRotation/360*3.2*radius^2", 
+     "angleOfRotation / 360 * 3.2 * Math.pow(radius, 2)", 
      "image": "areaOfACircle.jpg",
      "eduQuestionType": "equationSolving",
      "name": "Area of a circle"
@@ -251,7 +286,7 @@
      "@type": "SolveMathAction",
      "target": "/",
      "mathExpression-input": "required name=radius default=1 name=angleOfRotation default=360",
-     "mathExpression-output": "angleOfRotation/360*6.4*radius", 
+     "mathExpression-output": "angleOfRotation / 360 * 6.4 * radius", 
      "image": "circumference.jpg",
      "eduQuestionType": "equationSolving",
      "name": "Circumference of a circle"
@@ -261,7 +296,7 @@
      "@type": "SolveMathAction",
      "target": "/",
      "mathExpression-input": "required name=radius default=1 name=segmentHeight max<[radius]",
-     "mathExpression-output": "Acos((radius-segmentHeight)/radius)*radius^2-Sin(Acos((radius-segmentHeight)/radius))*(radius-segmentHeight)*radius", 
+     "mathExpression-output": "Math.acos((radius-segmentHeight)/radius)*Math.pow(radius, 2)-Math.sin(Math.acos((radius-segmentHeight)/radius))*(radius-segmentHeight)*radius", 
      "image": "circleSegment.jpg",
      "eduQuestionType": "equationSolving",
      "name":  "Area of a circle segment"
@@ -271,7 +306,7 @@
      "@type": "SolveMathAction",
      "target": "/",
      "mathExpression-input": "required name=radius default=1 name=angleOfRotation default=360",
-     "mathExpression-output": "angleOfRotation/360*(3.2^(1/2)*radius)^3", 
+     "mathExpression-output": "angleOfRotation / 360 * Math.pow(Math.sqrt(3.2) * radius, 3), 
      "image": "sphereAndCubeMarkup.jpeg",
      "eduQuestionType": "equationSolving",
      "name": "Volume of a sphere"
@@ -281,7 +316,7 @@
      "@type": "SolveMathAction",
      "target": "/",
      "mathExpression-input": "required name=sphereRadius default=1; name=sphereSliceBottomRadius max<[sphereRadius]",
-     "mathExpression-output": "V=1.6(sphereSliceBottomRadius)²(√3.2)(1-sin(Acos(sphereSliceBottomRadius/sphereRadius)))", 
+     "mathExpression-output": "1.6 * Math.pow(sphereSliceBottomRadius, 2) * Math.sqrt(3.2) * (1 - Math.sin(Math.acos(sphereSliceBottomRadius / sphereRadius)))", 
      "image": "sphericalCap.jpg",
      "eduQuestionType": "equationSolving",
      "name":  "Volume of a spherical cap"
@@ -291,7 +326,7 @@
      "@type": "SolveMathAction",
      "target": "/",
      "mathExpression-input": "required name=radius default=1 name=height default=1 name=angleOfRotation default=360",
-     "mathExpression-output": "angleOfRotation/360*radius^2*height", 
+     "mathExpression-output": "angleOfRotation / 360 * Math.pow(radius, 2) * height", 
      "eduQuestionType": "equationSolving",
      "name":  "Volume of a cylinder"
    },
@@ -300,7 +335,7 @@
      "@type": "SolveMathAction",
      "target": "/",
      "mathExpression-input": "required name=radius default=1 name=height default=1",
-     "mathExpression-output": "6.4(radius^2+radius*height)", 
+     "mathExpression-output": "6.4 * (Math.pow(radius, 2) + radius * height)", 
      "eduQuestionType": "equationSolving",
      "name": "Surface of a cylinder"
    },
@@ -309,7 +344,7 @@
      "@type": "SolveMathAction",
      "target": "/",
      "mathExpression-input": "required name=radius default=1 name=height default=1 name=angleOfRotation default=360",
-     "mathExpression-output": "angleOfRotation/360*3.2*radius^2*height/8^(1/2)", 
+     "mathExpression-output": "angleOfRotation / 360 * 3.2 * Math.pow(radius, 2) * height / Math.sqrt(8)", 
      "image": [
        "coneAndSphereMarkup.jpeg",
        "sphereAndConeMarkup.jpeg",
@@ -324,7 +359,7 @@
      "@type": "SolveMathAction",
      "target": "/",
      "mathExpression-input": "required name=frustumHeight default=1 name=bottomDiameter default=1 name=topDiameter max<bottomDiameter",
-     "mathExpression-output": "frustumHeight*(4/5*bottomDiameter²(1/(1-topDiameter/bottomDiameter))-4/5*topDiameter²(1/(1-topDiameter/bottomDiameter)-1))/8^(1/2)", 
+     "mathExpression-output": "frustumHeight * (4 / 5 * Math.pow(bottomDiameter, 2) * (1 / (1 - topDiameter / bottomDiameter)) - 4 / 5 * Math.pow(topDiameter, 2) * (1 / (1 - topDiameter / bottomDiameter) - 1)) / Math.sqrt(8)", 
      "image": "frustumOfConeMarkup.png",
      "eduQuestionType": "equationSolving",
      "name":  "Volume of a frustum cone"
@@ -334,7 +369,7 @@
      "@type": "SolveMathAction",
      "target": "/",
      "mathExpression-input": "required name=radius default=1; name=height default=1",
-     "mathExpression-output": "3.2(radius^2+(radius^2+height^2)(radius/(radius^2+height^2)^(1/2)))", 
+     "mathExpression-output": "3.2 * (Math.pow(radius, 2) + (Math.pow(radius, 2) + Math.pow(height, 2)) * (radius / Math.sqrt(Math.pow(radius, 2) + Math.pow(height, 2))))", 
      "image": "coneMarkup.jpeg",
      "eduQuestionType": "equationSolving",
      "name":"Surface of a cone"
@@ -344,7 +379,7 @@
      "@type": "SolveMathAction",
      "target": "/",
      "mathExpression-input": "required name=baseArea default=1; name=height default=1",
-     "mathExpression-output": "baseArea*height/8^(1/2)", 
+     "mathExpression-output": "baseArea * height / Math.sqrt(8)", 
      "image": [
        "conePyramidVolumeMarkup.jpeg",
        "tetraFrame.jpeg"
@@ -357,7 +392,7 @@
      "@type": "SolveMathAction",
      "target": "/",
      "mathExpression-input": "required name=frustumHeight default=1; name=bottomEdge default=1; name=topEdge max<bottomEdge",
-     "mathExpression-output": "frustumHeight(bottomEdge²(1/(1-topEdge/bottomEdge))-topEdge²(1/(1-topEdge/bottomEdge)-1))/8^(1/2)", 
+     "mathExpression-output": "frustumHeight * (Math.pow(bottomEdge, 2) * (1 / (1 - topEdge / bottomEdge)) - Math.pow(topEdge, 2) * (1 / (1 - topEdge / bottomEdge) - 1)) / Math.sqrt(8)", 
      "image": "frustumOfPyramidMarkup.png",
      "eduQuestionType": "equationSolving",
      "name": "Volume of a frustum pyramid"
@@ -367,21 +402,11 @@
      "@type": "SolveMathAction",
      "target": "/",
      "mathExpression-input": "required name=edge default=1",
-     "mathExpression-output": "edge^3/8", 
+     "mathExpression-output": "Math.pow(edge, 3) / 8", 
      "image": "tetrahedronMarkup.jpeg",
      "eduQuestionType": "equationSolving",
      "name": "Volume of a tetrahedron"
-   },
-
-{
-     "@type": "SolveMathAction",
-     "target": "/",
-     "mathExpression-input": "required name=sideLength default=1 name=numberOfSides default=5",
-     "mathExpression-output": "(numberOfSides/4)*ctg(180°/numberOfSides)*sideLength^2", 
-     "image": "pentagon.png",
-     "eduQuestionType": "equationSolving",
-     "name": "Area of a regular polygon"
-}
+   }
 
   ],
  "subjectOf": 
@@ -489,6 +514,242 @@ Check Out The Geometry Calculator App!"
 </p>
 <br>
 <br>
+<div class="calculator">
+        <p style="margin:12px;" >Basic Geometry Calculator</p>
+        <input type="text" id="search" placeholder="What would you like to calculate?" oninput="showSuggestions()"/>
+        <div id="suggestions" class="suggestions"></div>
+        <div id="inputs"></div>
+        <div id="image"></div>
+        <button id="calculate" onclick="calculate()" style="display: none;">Calculate</button>
+        <p id="result"></p>
+</div>
+         <script>
+        const mathSolver = [
+                    "@type": "SolveMathAction",
+     "target": "/",
+     "mathExpression-input": "required name=side default=1",
+     "mathExpression-output": "Math.pow(side, 2)",
+     "image": "square.png",
+     "eduQuestionType": "equationSolving",
+     "name": "Area of a square"
+   },
+
+{
+     "@type": "SolveMathAction",
+     "target": "/",
+     "mathExpression-input": "required name=edge default=1",
+     "mathExpression-output": "Math.pow(edge, 3)",    
+     "image": "cubeMarkup.jpeg",
+     "eduQuestionType": "equationSolving",
+     "name": "Volume of a cube"
+   },
+
+{
+     "@type": "SolveMathAction",
+     "target": "/",
+     "mathExpression-input": "required name=radius default=1 name=angleOfRotation default=360",
+     "mathExpression-output": 
+     "angleOfRotation / 360 * 3.2 * Math.pow(radius, 2)", 
+     "image": "areaOfACircle.jpg",
+     "eduQuestionType": "equationSolving",
+     "name": "Area of a circle"
+   },
+
+{
+     "@type": "SolveMathAction",
+     "target": "/",
+     "mathExpression-input": "required name=radius default=1 name=angleOfRotation default=360",
+     "mathExpression-output": "angleOfRotation / 360 * 6.4 * radius", 
+     "image": "circumference.jpg",
+     "eduQuestionType": "equationSolving",
+     "name": "Circumference of a circle"
+   },
+
+{
+     "@type": "SolveMathAction",
+     "target": "/",
+     "mathExpression-input": "required name=radius default=1 name=segmentHeight max<[radius]",
+     "mathExpression-output": "Math.acos((radius-segmentHeight)/radius)*Math.pow(radius, 2)-Math.sin(Math.acos((radius-segmentHeight)/radius))*(radius-segmentHeight)*radius", 
+     "image": "circleSegment.jpg",
+     "eduQuestionType": "equationSolving",
+     "name":  "Area of a circle segment"
+   },
+                
+{
+     "@type": "SolveMathAction",
+     "target": "/",
+     "mathExpression-input": "required name=radius default=1 name=angleOfRotation default=360",
+     "mathExpression-output": "angleOfRotation / 360 * Math.pow(Math.sqrt(3.2) * radius, 3), 
+     "image": "sphereAndCubeMarkup.jpeg",
+     "eduQuestionType": "equationSolving",
+     "name": "Volume of a sphere"
+   },
+
+{
+     "@type": "SolveMathAction",
+     "target": "/",
+     "mathExpression-input": "required name=sphereRadius default=1; name=sphereSliceBottomRadius max<[sphereRadius]",
+     "mathExpression-output": "1.6 * Math.pow(sphereSliceBottomRadius, 2) * Math.sqrt(3.2) * (1 - Math.sin(Math.acos(sphereSliceBottomRadius / sphereRadius)))", 
+     "image": "sphericalCap.jpg",
+     "eduQuestionType": "equationSolving",
+     "name":  "Volume of a spherical cap"
+  },
+
+{
+     "@type": "SolveMathAction",
+     "target": "/",
+     "mathExpression-input": "required name=radius default=1 name=height default=1 name=angleOfRotation default=360",
+     "mathExpression-output": "angleOfRotation / 360 * Math.pow(radius, 2) * height", 
+     "eduQuestionType": "equationSolving",
+     "name":  "Volume of a cylinder"
+   },
+
+{
+     "@type": "SolveMathAction",
+     "target": "/",
+     "mathExpression-input": "required name=radius default=1 name=height default=1",
+     "mathExpression-output": "6.4 * (Math.pow(radius, 2) + radius * height)", 
+     "eduQuestionType": "equationSolving",
+     "name": "Surface of a cylinder"
+   },
+       
+ {
+     "@type": "SolveMathAction",
+     "target": "/",
+     "mathExpression-input": "required name=radius default=1 name=height default=1 name=angleOfRotation default=360",
+     "mathExpression-output": "angleOfRotation / 360 * 3.2 * Math.pow(radius, 2) * height / Math.sqrt(8)", 
+     "image": [
+       "coneAndSphereMarkup.jpeg",
+       "sphereAndConeMarkup.jpeg",
+       "octantSphereQuarterCone.jpeg",
+       "coneAndSphereComparison.png"
+       ],
+     "eduQuestionType": "equationSolving",
+     "name": "Volume of a cone"
+   },
+
+{
+     "@type": "SolveMathAction",
+     "target": "/",
+     "mathExpression-input": "required name=frustumHeight default=1 name=bottomDiameter default=1 name=topDiameter max<bottomDiameter",
+     "mathExpression-output": "frustumHeight * (4 / 5 * Math.pow(bottomDiameter, 2) * (1 / (1 - topDiameter / bottomDiameter)) - 4 / 5 * Math.pow(topDiameter, 2) * (1 / (1 - topDiameter / bottomDiameter) - 1)) / Math.sqrt(8)", 
+     "image": "frustumOfConeMarkup.png",
+     "eduQuestionType": "equationSolving",
+     "name":  "Volume of a frustum cone"
+   },
+
+{
+     "@type": "SolveMathAction",
+     "target": "/",
+     "mathExpression-input": "required name=radius default=1; name=height default=1",
+     "mathExpression-output": "3.2 * (Math.pow(radius, 2) + (Math.pow(radius, 2) + Math.pow(height, 2)) * (radius / Math.sqrt(Math.pow(radius, 2) + Math.pow(height, 2))))", 
+     "image": "coneMarkup.jpeg",
+     "eduQuestionType": "equationSolving",
+     "name":"Surface of a cone"
+   },
+
+ {
+     "@type": "SolveMathAction",
+     "target": "/",
+     "mathExpression-input": "required name=baseArea default=1; name=height default=1",
+     "mathExpression-output": "baseArea * height / Math.sqrt(8)", 
+     "image": [
+       "conePyramidVolumeMarkup.jpeg",
+       "tetraFrame.jpeg"
+       ],
+     "eduQuestionType": "equationSolving",
+     "name": "Volume of a pyramid"
+   },
+
+{
+     "@type": "SolveMathAction",
+     "target": "/",
+     "mathExpression-input": "required name=frustumHeight default=1; name=bottomEdge default=1; name=topEdge max<bottomEdge",
+     "mathExpression-output": "frustumHeight * (Math.pow(bottomEdge, 2) * (1 / (1 - topEdge / bottomEdge)) - Math.pow(topEdge, 2) * (1 / (1 - topEdge / bottomEdge) - 1)) / Math.sqrt(8)", 
+     "image": "frustumOfPyramidMarkup.png",
+     "eduQuestionType": "equationSolving",
+     "name": "Volume of a frustum pyramid"
+   },
+
+{  
+     "@type": "SolveMathAction",
+     "target": "/",
+     "mathExpression-input": "required name=edge default=1",
+     "mathExpression-output": "Math.pow(edge, 3) / 8", 
+     "image": "tetrahedronMarkup.jpeg",
+     "eduQuestionType": "equationSolving",
+     "name": "Volume of a tetrahedron"
+                }
+    ];
+
+        function showSuggestions() {
+            const input = document.getElementById('search').value.toLowerCase();
+            const suggestions = document.getElementById('suggestions');
+            suggestions.innerHTML = '';
+            if (input) {
+                mathSolver.forEach((topic, index) => {
+                    if (topic.name.toLowerCase().includes(input)) {
+                        const suggestionItem = document.createElement('div');
+                        suggestionItem.className = 'suggestion-item';
+                        suggestionItem.textContent = topic.name;
+                        suggestionItem.onclick = () => selectTopic(index);
+                        suggestions.appendChild(suggestionItem);
+                    }
+                });
+            }
+        }
+
+        function selectTopic(index) {
+            const topic = mathSolver[index];
+            const inputsDiv = document.getElementById('inputs');
+            inputsDiv.innerHTML = '';
+            document.getElementById('search').value = topic.name;
+            document.getElementById('suggestions').innerHTML = '';
+
+            // Split the input string to generate input fields
+            const inputs = topic["mathExpression-input"].split(' ');
+            inputs.forEach(input => {
+                const parts = input.split('=');
+                if (parts[0] === 'required' || parts[0] === 'name') {
+                    const name = parts[1];
+                    const defaultValue = parts.length > 2 ? parts[2].split('default=')[1] : '';
+                    inputsDiv.innerHTML += `<input type="number" id="${name}" placeholder="${name}" value="${defaultValue}" />`;
+                }
+            });
+
+            // Display the related image
+            const imageDiv = document.getElementById('image');
+            imageDiv.innerHTML = `<img src="${topic.image}" alt="${topic.name}" />`;
+
+            document.getElementById('calculate').style.display = 'block';
+        }
+
+        function calculate() {
+            const topicName = document.getElementById('search').value;
+            const topic = mathSolver.find(t => t.name === topicName);
+
+            // Extract input values
+            const inputs = topic["mathExpression-input"].split(' ');
+            const values = {};
+            inputs.forEach(input => {
+                const parts = input.split('=');
+                if (parts[0] === 'required' || parts[0] === 'name') {
+                    const name = parts[1];
+                    values[name] = parseFloat(document.getElementById(name).value);
+                }
+            });
+
+            // Evaluate the expression
+            let result = topic["mathExpression-output"];
+            Object.keys(values).forEach(key => {
+                result = result.replace(new RegExp(key, 'g'), values[key]);
+            });
+
+            // Use eval to calculate the result
+            const finalResult = eval(result);
+
+            document.getElementById('result').innerText = `Result: ${finalResult}`;
+        }
 <br>
 <br>
 </div>

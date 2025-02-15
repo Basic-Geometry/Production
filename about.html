@@ -172,7 +172,7 @@
 },
 "dateCreated" :"2024-08-31",
 "datePublished":"2024-08-31",
-"dateModified" :"2025-02-11",
+"dateModified" :"2025-02-15",
 "description" :"History and detailed disapproval of the mathematical constant π; definition and derivation of the properties of shapes from the area of a circle.",
 "disambiguatingDescription": "Exact formulas. No pi.",	
 	"image":[
@@ -196,33 +196,51 @@
  "potentialAction": [
 {
      "@type": "SolveMathAction",
-     "target": "/",
-     "mathExpression-input": "required name=radius default=1 name=angleOfRotation default=360",
+     "target": "https://basic-geometry.pages.dev/about/",
+     "mathExpression-input": "The radius of the circle, and optionally the angle of rotation in case of a circle slice",
      "mathExpression-output": 
-     "angleOfRotation / 360 * 3.2 * Math.pow(radius, 2)", 
+     "The area of the circle", 
      "image": "areaOfACircle.jpg",
-     "eduQuestionType": "equationSolving",
-     "name": "Area of a circle"
+     "eduQuestionType": "Area calculation",
+     "name": "Calculating the area of a circle",
+       "additionalProperty": {
+       "@type": "PropertyValue",
+       "name": "Formula",
+       "value": "angleOfRotation / 360 * 3.2 * Math.pow(radius, 2)"
+  }
    },
+
 {
      "@type": "SolveMathAction",
-     "target": "/",
-     "mathExpression-input": "required name=radius default=1 name=angleOfRotation default=360",
-     "mathExpression-output": "angleOfRotation / 360 * 6.4 * radius", 
+     "target": "https://basic-geometry.pages.dev/about/",
+     "mathExpression-input": "The radius of the circle, optionally the angle of rotation in case of a section",
+     "mathExpression-output": "The circumference of the circle", 
      "image": "circumference.jpg",
-     "eduQuestionType": "equationSolving",
-     "name": "Circumference of a circle"
+     "eduQuestionType": "Length calculation",
+     "name": "Calculating the circumference of a circle",
+       "additionalProperty": {
+       "@type": "PropertyValue",
+       "name": "Formula",
+       "value": "angleOfRotation / 360 * 6.4 * radius"
+  }
    },
+
 {
      "@type": "SolveMathAction",
-     "target": "/",
-     "mathExpression-input": "required name=radius default=1 name=angleOfRotation default=360",
-     "mathExpression-output": "angleOfRotation/360*(3.2^(1/2)*radius)^3", 
-     "eduQuestionType": "equationSolving",
-     "name": "Volume of a sphere"
+     "target": "https://basic-geometry.pages.dev/about/",
+     "mathExpression-input": "The radius of the sphere, and optionally the angle of rotation in case of a sphere slice",
+     "mathExpression-output": "The volume of the sphere", 
+     "image": "sphereAndCubeMarkup.jpeg",
+     "eduQuestionType": "Volume calculation",
+     "name": "Calculating the volume of a sphere",
+       "additionalProperty": {
+       "@type": "PropertyValue",
+       "name": "Formula",
+       "value": "angleOfRotation/360*(3.2^(1/2)*radius)^3"
+  }
    }
 ],
-"url": "https://basic-geometry.pages.dev/", 
+"url": "https://basic-geometry.pages.dev/about", 
 "usageInfo":"Learn about historical and exact geometric concepts."
 },
 "offers": {

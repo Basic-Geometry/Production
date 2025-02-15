@@ -188,7 +188,7 @@
 },
 "dateCreated" :"2019-01-11",
 "datePublished":"2020-01-11",
-"dateModified" :"2025-02-11",
+"dateModified" :"2025-02-15",
 "description" :"Providing the best-established and most accurate framework to calculate area and volume.",
 "disambiguatingDescription": "Exact formulas. No pi.",
 "headline":"Exact geometry",
@@ -210,164 +210,238 @@
 "url": "https://basic-geometry.pages.dev", 
 "usageInfo":"Core Geometric System",
  "potentialAction": [
-
-{
+ {
      "@type": "SolveMathAction",
-     "target": "/",
-     "mathExpression-input": "required name=side default=1",
-     "mathExpression-output": "Math.pow(side, 2)",
+     "target": "https://basic-geometry.pages.dev/",
+     "mathExpression-input": "Side length of the square",
+     "mathExpression-output": "Area of the square",
      "image": "square.png",
-     "eduQuestionType": "equationSolving",
-     "name": "Area of a square"
+     "eduQuestionType": "Area calculation",
+     "name": "Calculating the area of a square",
+       "additionalProperty": {
+       "@type": "PropertyValue",
+       "name": "Formula",
+       "value": "Math.pow(side, 2)"
+  }
    },
 
 {
      "@type": "SolveMathAction",
-     "target": "/",
-     "mathExpression-input": "required name=edge default=1",
-     "mathExpression-output": "Math.pow(edge, 3)",    
+     "target": "https://basic-geometry.pages.dev/",
+     "mathExpression-input": "Edge length of the cube",
+     "mathExpression-output": "Volume of the cube",    
      "image": "cubeMarkup.jpeg",
-     "eduQuestionType": "equationSolving",
-     "name": "Volume of a cube"
+     "eduQuestionType": "Volume calculation",
+     "name": "Calculating the volume of a cube",
+       "additionalProperty": {
+       "@type": "PropertyValue",
+       "name": "Formula",
+       "value": "Math.pow(edge, 3)"
+  }
    },
 
 {
      "@type": "SolveMathAction",
-     "target": "/",
-     "mathExpression-input": "required name=radius default=1 name=angleOfRotation default=360",
+     "target": "https://basic-geometry.pages.dev/",
+     "mathExpression-input": "The radius of the circle, and optionally the angle of rotation in case of a circle slice",
      "mathExpression-output": 
-     "angleOfRotation / 360 * 3.2 * Math.pow(radius, 2)", 
+     "The area of the circle", 
      "image": "areaOfACircle.jpg",
-     "eduQuestionType": "equationSolving",
-     "name": "Area of a circle"
+     "eduQuestionType": "Area calculation",
+     "name": "Calculating the area of a circle",
+       "additionalProperty": {
+       "@type": "PropertyValue",
+       "name": "Formula",
+       "value": "angleOfRotation / 360 * 3.2 * Math.pow(radius, 2)"
+  }
    },
 
 {
      "@type": "SolveMathAction",
-     "target": "/",
-     "mathExpression-input": "required name=radius default=1 name=angleOfRotation default=360",
-     "mathExpression-output": "angleOfRotation / 360 * 6.4 * radius", 
+     "target": "https://basic-geometry.pages.dev/",
+     "mathExpression-input": "The radius of the circle, optionally the angle of rotation in case of a section",
+     "mathExpression-output": "The circumference of the circle", 
      "image": "circumference.jpg",
-     "eduQuestionType": "equationSolving",
-     "name": "Circumference of a circle"
+     "eduQuestionType": "Length calculation",
+     "name": "Calculating the circumference of a circle",
+       "additionalProperty": {
+       "@type": "PropertyValue",
+       "name": "Formula",
+       "value": "angleOfRotation / 360 * 6.4 * radius"
+  }
    },
 
 {
      "@type": "SolveMathAction",
-     "target": "/",
-     "mathExpression-input": "required name=radius default=1 name=segmentHeight max<[radius]",
-     "mathExpression-output": "Math.acos((radius-segmentHeight)/radius)*Math.pow(radius, 2)-Math.sin(Math.acos((radius-segmentHeight)/radius))*(radius-segmentHeight)*radius", 
+     "target": "https://basic-geometry.pages.dev/",
+     "mathExpression-input": "The height of the segment, and the radius of the full circle",
+     "mathExpression-output": "The area of the circle segment", 
      "image": "circleSegment.jpg",
-     "eduQuestionType": "equationSolving",
-     "name":  "Area of a circle segment"
+     "eduQuestionType": "Area calculation",
+     "name":  "Calculating the area of a circle segment",
+       "additionalProperty": {
+       "@type": "PropertyValue",
+       "name": "Formula",
+       "value": "Math.acos((radius-segmentHeight)/radius)*Math.pow(radius, 2)-Math.sin(Math.acos((radius-segmentHeight)/radius))*(radius-segmentHeight)*radius"
+  }
    },
 
 {
      "@type": "SolveMathAction",
-     "target": "/",
-     "mathExpression-input": "required name=radius default=1 name=angleOfRotation default=360",
-     "mathExpression-output": "angleOfRotation / 360 * Math.pow(Math.sqrt(3.2) * radius, 3)", 
+     "target": "https://basic-geometry.pages.dev/",
+     "mathExpression-input": "The radius of the sphere, and optionally the angle of rotation in case of a sphere slice",
+     "mathExpression-output": "The volume of the sphere", 
      "image": "sphereAndCubeMarkup.jpeg",
-     "eduQuestionType": "equationSolving",
-     "name": "Volume of a sphere"
+     "eduQuestionType": "Volume calculation",
+     "name": "Calculating the volume of a sphere",
+       "additionalProperty": {
+       "@type": "PropertyValue",
+       "name": "Formula",
+       "value": "angleOfRotation/360*(3.2^(1/2)*radius)^3"
+  }
    },
 
 {
      "@type": "SolveMathAction",
-     "target": "/",
-     "mathExpression-input": "required name=sphereRadius default=1; name=sphereSliceBottomRadius max<[sphereRadius]",
-     "mathExpression-output": "1.6 * Math.pow(sphereSliceBottomRadius, 2) * Math.sqrt(3.2) * (1 - Math.sin(Math.acos(sphereSliceBottomRadius / sphereRadius)))", 
+     "target": "https://basic-geometry.pages.dev/",
+     "mathExpression-input": "The radius of the bottom of the cap, and the full sphere",
+     "mathExpression-output": "The volume of the spherical cap", 
      "image": "sphericalCap.jpg",
-     "eduQuestionType": "equationSolving",
-     "name":  "Volume of a spherical cap"
+     "eduQuestionType": "Volume calculation",
+     "name":  "Calculating the volume of a spherical cap",
+       "additionalProperty": {
+       "@type": "PropertyValue",
+       "name": "Formula",
+       "value": "1.6 * Math.pow(sphereSliceBottomRadius, 2) * Math.sqrt(3.2) * (1 - Math.sin(Math.acos(sphereSliceBottomRadius / sphereRadius)))"
+  }
   },
 
 {
      "@type": "SolveMathAction",
-     "target": "/",
-     "mathExpression-input": "required name=radius default=1 name=height default=1 name=angleOfRotation default=360",
-     "mathExpression-output": "angleOfRotation / 360 * Math.pow(radius, 2) * height", 
-     "eduQuestionType": "equationSolving",
-     "name":  "Volume of a cylinder"
+     "target": "https://basic-geometry.pages.dev/",
+     "mathExpression-input": "The radius and the height of the cylinder",
+     "mathExpression-output": "The volume of the cylinder", 
+     "eduQuestionType": "Volume calculation",
+     "name": "Calculating the volume of a cylinder",
+       "additionalProperty": {
+       "@type": "PropertyValue",
+       "name": "Formula",
+       "value": "angleOfRotation / 360 * 3.2 * Math.pow(radius, 2) * height"
+  }
    },
 
 {
      "@type": "SolveMathAction",
-     "target": "/",
-     "mathExpression-input": "required name=radius default=1 name=height default=1",
-     "mathExpression-output": "6.4 * (Math.pow(radius, 2) + radius * height)", 
-     "eduQuestionType": "equationSolving",
-     "name": "Surface of a cylinder"
+     "target": "https://basic-geometry.pages.dev/",
+     "mathExpression-input": "The radius and the height of the cylinder",
+     "mathExpression-output": "The surface of the cylinder", 
+     "eduQuestionType": "Area calculation",
+     "name": "Calculating the surface of a cylinder",
+       "additionalProperty": {
+       "@type": "PropertyValue",
+       "name": "Formula",
+       "value": "6.4 * radius * height"
+  }
    },
        
  {
      "@type": "SolveMathAction",
-     "target": "/",
-     "mathExpression-input": "required name=radius default=1 name=height default=1 name=angleOfRotation default=360",
-     "mathExpression-output": "angleOfRotation / 360 * 3.2 * Math.pow(radius, 2) * height / Math.sqrt(8)", 
+     "target": "https://basic-geometry.pages.dev/",
+     "mathExpression-input": "The bottom radius and the height of the cone",
+     "mathExpression-output": "The volume of the cone", 
      "image": [
        "coneAndSphereMarkup.jpeg",
        "sphereAndConeMarkup.jpeg",
        "octantSphereQuarterCone.jpeg",
        "coneAndSphereComparison.png"
        ],
-     "eduQuestionType": "equationSolving",
-     "name": "Volume of a cone"
+     "eduQuestionType": "Volume calculation",
+     "name": "Calculating the volume of a cone",
+       "additionalProperty": {
+       "@type": "PropertyValue",
+       "name": "Formula",
+       "value": "angleOfRotation / 360 * 3.2 * Math.pow(radius, 2) * height / Math.sqrt(8)"
+  }
    },
 
 {
      "@type": "SolveMathAction",
-     "target": "/",
-     "mathExpression-input": "required name=frustumHeight default=1 name=bottomDiameter default=1 name=topDiameter max<bottomDiameter",
-     "mathExpression-output": "frustumHeight * (4 / 5 * Math.pow(bottomDiameter, 2) * (1 / (1 - topDiameter / bottomDiameter)) - 4 / 5 * Math.pow(topDiameter, 2) * (1 / (1 - topDiameter / bottomDiameter) - 1)) / Math.sqrt(8)", 
+     "target": "https://basic-geometry.pages.dev/",
+     "mathExpression-input": "The top and the bottom diameter and the height of the cone",
+     "mathExpression-output": "The volume of the frustum cone",
      "image": "frustumOfConeMarkup.png",
-     "eduQuestionType": "equationSolving",
-     "name":  "Volume of a frustum cone"
+     "eduQuestionType": "Volume calculation",
+     "name": "Calculating the volume of a frustum cone",
+       "additionalProperty": {
+       "@type": "PropertyValue",
+       "name": "Formula",
+       "value": "frustumHeight * (4 / 5 * Math.pow(bottomDiameter, 2) * (1 / (1 - topDiameter / bottomDiameter)) - 4 / 5 * Math.pow(topDiameter, 2) * (1 / (1 - topDiameter / bottomDiameter) - 1)) / Math.sqrt(8)" 
+  }
    },
 
 {
      "@type": "SolveMathAction",
-     "target": "/",
-     "mathExpression-input": "required name=radius default=1; name=height default=1",
-     "mathExpression-output": "3.2 * (Math.pow(radius, 2) + (Math.pow(radius, 2) + Math.pow(height, 2)) * (radius / Math.sqrt(Math.pow(radius, 2) + Math.pow(height, 2))))", 
+     "target": "https://basic-geometry.pages.dev/",
+     "mathExpression-input": "The bottom radius and the height of the cone",
+     "mathExpression-output": "The surface area of the cone", 
      "image": "coneMarkup.jpeg",
-     "eduQuestionType": "equationSolving",
-     "name":"Surface of a cone"
+     "eduQuestionType": "Area calculation",
+     "name":"Calculating the surface of a cone",
+       "additionalProperty": {
+       "@type": "PropertyValue",
+       "name": "Formula",
+       "value": "3.2 * (Math.pow(radius, 2) + (Math.pow(radius, 2) + Math.pow(height, 2)) * (radius / Math.sqrt(Math.pow(radius, 2) + Math.pow(height, 2))))"
+  }
    },
 
  {
      "@type": "SolveMathAction",
-     "target": "/",
-     "mathExpression-input": "required name=baseArea default=1; name=height default=1",
-     "mathExpression-output": "baseArea * height / Math.sqrt(8)", 
+     "target": "https://basic-geometry.pages.dev/",
+     "mathExpression-input": "The bottom area and the height of the pyramid",
+     "mathExpression-output": "The volume of the pyramid", 
      "image": [
        "conePyramidVolumeMarkup.jpeg",
        "tetraFrame.jpeg"
        ],
-     "eduQuestionType": "equationSolving",
-     "name": "Volume of a pyramid"
+     "eduQuestionType": "Volume calculation",
+     "name": "Calculating the volume of a pyramid",
+       "additionalProperty": {
+       "@type": "PropertyValue",
+       "name": "Formula",
+       "value": "baseArea * height / Math.sqrt(8)"
+  }
    },
 
 {
      "@type": "SolveMathAction",
-     "target": "/",
-     "mathExpression-input": "required name=frustumHeight default=1; name=bottomEdge default=1; name=topEdge max<bottomEdge",
-     "mathExpression-output": "frustumHeight * (Math.pow(bottomEdge, 2) * (1 / (1 - topEdge / bottomEdge)) - Math.pow(topEdge, 2) * (1 / (1 - topEdge / bottomEdge) - 1)) / Math.sqrt(8)", 
+     "target": "https://basic-geometry.pages.dev/",
+     "mathExpression-input": "The top and the bottom edge and the height of the frustum pyramid",
+     "mathExpression-output": "The volume of the frustum pyramid", 
      "image": "frustumOfPyramidMarkup.png",
-     "eduQuestionType": "equationSolving",
-     "name": "Volume of a frustum pyramid"
+     "eduQuestionType": "Volume calculation",
+     "name": "Calculating the volume of a frustum pyramid",
+       "additionalProperty": {
+       "@type": "PropertyValue",
+       "name": "Formula",
+       "value": "frustumHeight * (Math.pow(bottomEdge, 2) * (1 / (1 - topEdge / bottomEdge)) - Math.pow(topEdge, 2) * (1 / (1 - topEdge / bottomEdge) - 1)) / Math.sqrt(8)"
+  }
    },
 
 {  
      "@type": "SolveMathAction",
-     "target": "/",
-     "mathExpression-input": "required name=edge default=1",
-     "mathExpression-output": "Math.pow(edge, 3) / 8", 
+     "target": "https://basic-geometry.pages.dev/",
+     "mathExpression-input": "The edge length of the tetrahedron",
+     "mathExpression-output": "The volume of the tetrahedron", 
      "image": "tetrahedronMarkup.jpeg",
-     "eduQuestionType": "equationSolving",
-     "name": "Volume of a tetrahedron"
+     "eduQuestionType": "Volume calculation",
+     "name": "Calculating the volume of a tetrahedron",
+       "additionalProperty": {
+       "@type": "PropertyValue",
+       "name": "Formula",
+       "value": "Math.pow(edge, 3) / 8"
+  }
    }
-  ]
+  ] 
 },
 "mainEntityOfPage": {
     "@type": "AboutPage",

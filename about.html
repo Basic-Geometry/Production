@@ -172,7 +172,7 @@
 },
 "dateCreated" :"2024-08-31",
 "datePublished":"2024-08-31",
-"dateModified" :"2025-05-24",
+"dateModified" :"2025-05-26",
 "description" :"Introducing the best-established and most accurate framework to calculate area and volume.",
 "disambiguatingDescription": "Providing precise formulas based on empirical considerations and fundamental relationships instead of the conventional approximations.",	
 	"image":[
@@ -191,54 +191,43 @@
 "name" :"Szentendre, Hungary"},
 "mainEntity" : 
 {"@type": ["MathSolver", "LearningResource"],
- "name" : "Exact Geometry",
+ "name" : "Core Geometric System ™",
  "inLanguage":"en-us",
  "potentialAction": [
+	
 {
      "@type": "SolveMathAction",
-     "target": "https://basic-geometry.pages.dev/about/",
-     "mathExpression-input": "The radius of the circle, and optionally the angle of rotation in case of a circle slice",
-     "mathExpression-output": 
-     "The area of the circle", 
+	"name": "Area of a circle",
+"description": "Calculates the exact area of a circle using a refined approach that replaces traditional π-based approximations. This method is based on direct shape relationships, ensuring greater accuracy in real-world measurements.",
+     "target": "https://basic-geometry.github.io/about/",
+     "mathExpression-input": "r=5 A=?",
+     "mathExpression-output": "angle of rotation / 360 * 3.2 * Math.pow(radius, 2)",
      "image": "areaOfACircle.jpg",
-     "eduQuestionType": "Area calculation",
-     "name": "Calculating the area of a circle",
-       "additionalProperty": {
-       "@type": "PropertyValue",
-       "name": "Formula",
-       "value": "angleOfRotation / 360 * 3.2 * Math.pow(radius, 2)"
-  }
-   },
+     "eduQuestionType": "Area calculation"
+        },
 
 {
      "@type": "SolveMathAction",
-     "target": "https://basic-geometry.pages.dev/about/",
-     "mathExpression-input": "The radius of the circle, optionally the angle of rotation in case of a section",
-     "mathExpression-output": "The circumference of the circle", 
+"name": "Circumference of a circle",
+     "description": "Calculates the exact circumference of a circle using a refined approach that replaces traditional π-based approximations. This method is based on direct shape relationships, ensuring greater accuracy in real-world measurements.",
+	"target": "https://basic-geometry.github.io/about/",
+     "mathExpression-input": "r=5 C=?", 
+     "mathExpression-output": "angle of rotation / 360 * 6.4 * radius",
      "image": "circumference.jpg",
-     "eduQuestionType": "Length calculation",
-     "name": "Calculating the circumference of a circle",
-       "additionalProperty": {
-       "@type": "PropertyValue",
-       "name": "Formula",
-       "value": "angleOfRotation / 360 * 6.4 * radius"
-  }
-   },
+     "eduQuestionType": "Length calculation"
+},
 
 {
      "@type": "SolveMathAction",
-     "target": "https://basic-geometry.pages.dev/about/",
-     "mathExpression-input": "The radius of the sphere, and optionally the angle of rotation in case of a sphere slice",
-     "mathExpression-output": "The volume of the sphere", 
+	"name": "Volume of a sphere",
+	 "description": "Calculates the exact volume of a sphere by directly comparing it to a cube. This method is based on direct shape relationships, ensuring greater accuracy in real-world measurements.",
+     "target": "https://basic-geometry.github.io/about/",
+     "mathExpression-input": "r=3 V=?",
+     "mathExpression-output": "angle of rotation / 360 * Math.pow((Math.sqrt(3.2) * radius), 3)", 
      "image": "sphereAndCubeMarkup.jpeg",
-     "eduQuestionType": "Volume calculation",
-     "name": "Calculating the volume of a sphere",
-       "additionalProperty": {
-       "@type": "PropertyValue",
-       "name": "Formula",
-       "value": "angleOfRotation/360*(3.2^(1/2)*radius)^3"
-  }
+     "eduQuestionType": "Volume calculation"
    }
+	
 ],
 "url": "https://basic-geometry.pages.dev/about", 
 "usageInfo":"Calculate area and volume with enhanced accuracy using the Core Geometric System ™. This innovative framework provides a practical alternative to traditional methods, rooted in comparative geometry and scaling principles. Learn exact formulas for circles (A = 3.2r^2, C = 6.4r), spheres (V = (√(3.2)r)^3), cones, and more, with applications in engineering, computer graphics, and scientific research."

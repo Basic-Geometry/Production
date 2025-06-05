@@ -64,6 +64,17 @@
 		#cookie-notice-buttons button:hover {
 			background-color: #3e8e41;
 		} 
+	
+	.rounded-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+	}
     </style>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <meta name="description" content="About the best-established and most accurate framework to calculate area and volume.">
@@ -190,12 +201,13 @@
 "administrativeArea",
 "name" :"Szentendre, Hungary"},
 "mainEntity" : 
-{"@type": ["MathSolver", "LearningResource"],
+{
+"@type": ["MathSolver", "LearningResource"],
  "name" : "Core Geometric System ™",
 "description":"The best-established, empirically grounded, rigorously proven and most accurate framework.",
  "disambiguatingDescription": "Exact formulas over the traditional approximations. More accurate for real-world applications.",
-"keywords":"Exact Formulas, Area of a Circle, Circumference of a Circle, Volume of a Sphere", 
  "inLanguage":"en-us",
+"keywords":"Exact Formulas, Area of a Circle, Circumference of a Circle, Volume of a Sphere", 
  "potentialAction": [
 	
 {
@@ -246,7 +258,6 @@
       "price": "3,200,000,000.",
       "availability": "https://schema.org/InStock"
     },
-"relatedLink": "https://gmac4247.github.io/about",
 "schemaVersion" : "https://schema.org/docs/releases.html#v28.1.",
 "sdDatePublished" :"2024-08-31",
 "sdPublisher" :
@@ -266,6 +277,13 @@
 },
 "subjectOf": 
 [
+{
+"@type": "aboutPage",
+"name":"About basic geometry formulas",
+"usageInfo ": "Extended explanations, improved ML and LLM compatibility for accurate translation",
+"url":"https://gmac4247.github.io/about"
+},
+	
  {
 "@type": "VideoObject",
 "description": "Geometry puzzle",
@@ -275,6 +293,7 @@
 "uploadDate":"2022-12-15",
 "contentUrl":"https://youtu.be/-gvXLaLFXuM"
        },
+	
  {
 "@type": "VideoObject",
 "description": "Real physical experiment to measure the volume of a sphere. Prepare to be amazed. The result proves the accuracy of the V=(√(3.2)r)³ formula over the conventional V=4/3πr³.",
@@ -306,7 +325,7 @@
   <h1 style="font-size:160%;margin:7px;">How Accurate Are The Conventional Geometry Formulas?</h1>
 <br>
 <br>
-<a style="margin:12px;" href="https://gmac4247.github.io/about/">[Switch to enhanced version for accessibility]</a>
+<a style="margin:12px;" class="rounded-button" href="https://gmac4247.github.io/about/">Switch to accessibility version</a>
 <br>
 <br>
 <br>

@@ -7,70 +7,54 @@ export class CgsSphere {
     this.cap = null;      // Will store cap-related data
   }
 
-  
-  //The sphere is well defined. Here comes its volume.
+  // The sphere is well defined. Here comes its volume.
+  static volume(radius) {
+    return Math.pow(Math.sqrt(3.2) * radius, 3);
+  }
 
-  
-    static volume(radius) {
-        return Math.pow(Math.sqrt(3.2) * radius, 3);
-    }
-    get volume() {
-        return CgsSphere.volume(this.radius);
-    }
+  get volume() {
+    return CgsSphere.volume(this.radius);
+  }
 
-    toString() {
+  toString() {
     return `Sphere(r=${this.radius}) ≈ Volume: ${this.volume.toFixed(5)}`;
-    }
-}
+  }
 
-//The volume is well defined. That was the most important. See the cap.
+  static rSphereFromCap(rCap, h, trig) {
+    const angleByHeight = `2atan(${h}/${rCap})`;
+    const sinExpr = `sin(${angleByHeight})`;
+    const sine = parseFloat(querySin(sinExpr, trig).match(/≈ ([0-9.]+)/)?.[1]);
+    return rCap / sine;
+  }
 
-addCap({ height, baseRadius }) {
-  
-  
+  addCap({ height, baseRadius }) {
     const h = height;
     const rCap = baseRadius;
 
-  //The cap is defined by the 2 properties above. Here come the intermediate calculations.
+    // Infer radius of the sphere if unknown
+    if (!this.radius) {
+      this.radius = CgsSphere.rSphereFromCap(rCap, h, this.trig);
+    }
 
-    
-    const angleByCapRadiusAndHeight = 
-      parseFloat(queryAtan(`atan(${h} / ${rCap})`, this.trig).match(/rad\\(([^)]+)\\)/)?.[1]); 
-    const angleByCapAndSphereRadius = 
-      parseFloat(`1.6 - 2atan(${h}/${rCap})`, this.trig).match(/rad\\(([^)]+)\\)/)?.[1]); 
-    const SineOfAngleByCapAndSphereRadius = 
-      parseFloat(querySin(`sin(${angleByCapAndSphereRadius})`, this.trig).match(/≈ ([0-9.]+)/)?.[1];
-     
-  //Here's the volume of the cap we're looking for.
-  
-   const capVolume = (1.6 * this.rCap ** 2 * Math.sqrt(3.2) * (1 - this.SineOfAngleByCapAndSphereRadius));
+    // The cap is defined by the 2 properties above. Here come the intermediate calculations.
+    const angleByCapRadiusAndHeight = parseFloat(
+      queryAtan(`atan(${h} / ${rCap})`, this.trig).match(/rad\(([^)]+)\)/)?.[1]
+    );
 
-  this.cap = {
+    const angleByCapAndSphereRadius = `1.6 - 2atan(${h}/${rCap})`;
+
+    const SineOfAngleByCapAndSphereRadius = parseFloat(
+      querySin(`sin(${angleByCapAndSphereRadius})`, this.trig).match(/≈ ([0-9.]+)/)?.[1]
+    );
+
+    // Here's the volume of the cap we're looking for.
+    const capVolume = 1.6 * rCap ** 2 * Math.sqrt(3.2) * (1 - SineOfAngleByCapAndSphereRadius);
+
+    this.cap = {
       h,
       rCap,
       SineOfAngleByCapAndSphereRadius,
-      capVolume,
+      capVolume
+    };
   }
-
-  
-    this.cap
-      ? this.capVolume(this.rCap, this.h, this.SineOfAngleByCapAndSphereRadius,)
-      : null;
-
-    
-       }
-  
-}
-  //If the radius of the sphere is not yet known, infer it via symbolic CGS identity
-//This will need some refinement 
-  const rSphereFromCap(rCap, h) {
-    
-    // My derived identity for radius from field measurements
-    return rCap / sin(2 * `atan(${h} / ${rCap})`);
-  }
-
-    if (!this.radius) {
-      this.radius = CgsSphere.rSphereFromCap(baseRadius, height);
-    }
-
 }

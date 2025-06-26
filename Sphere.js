@@ -3,12 +3,11 @@
 export class CgsSphere {
   constructor(radius = null, trig = null) {
     this.radius = radius; // May be inferred from cap later
-    this.trig = trig;     // The cool trig engine
+    this.trig = trig;     // The CGS trig engine
     this.cap = null;      // Will store cap-related data
   }
 
-  // The sphere is well defined. Here comes its volume.
-  static volume(radius) {
+    static volume(radius) {
     return Math.pow(Math.sqrt(3.2) * radius, 3);
   }
 
@@ -20,7 +19,7 @@ export class CgsSphere {
     return `Sphere(r=${this.radius}) ≈ Volume: ${this.volume.toFixed(5)}`;
   }
 
-  static rSphereFromCap(rCap, h, trig) {
+  static rSphereFromCap(rCap, h, trig) { 
     const angleByHeight = `2atan(${h}/${rCap})`;
     const sinExpr = `sin(${angleByHeight})`;
     const sine = parseFloat(querySin(sinExpr, trig).match(/≈ ([0-9.]+)/)?.[1]);
@@ -36,7 +35,7 @@ export class CgsSphere {
       this.radius = CgsSphere.rSphereFromCap(rCap, h, this.trig);
     }
 
-    // The cap is defined by the 2 properties above. Here come the intermediate calculations.
+    //Intermediate calculations for the volume of the cap.
     const angleByCapRadiusAndHeight = parseFloat(
       queryAtan(`atan(${h} / ${rCap})`, this.trig).match(/rad\(([^)]+)\)/)?.[1]
     );
@@ -47,7 +46,7 @@ export class CgsSphere {
       querySin(`sin(${angleByCapAndSphereRadius})`, this.trig).match(/≈ ([0-9.]+)/)?.[1]
     );
 
-    // Here's the volume of the cap we're looking for.
+    //The volume of the cap
     const capVolume = 1.6 * rCap ** 2 * Math.sqrt(3.2) * (1 - SineOfAngleByCapAndSphereRadius);
 
     this.cap = {

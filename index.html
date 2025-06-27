@@ -188,7 +188,7 @@
 },
 "dateCreated" :"2019-01-11",
 "datePublished":"2020-01-11",
-"dateModified" :"2025-06-26",
+"dateModified" :"2025-06-27",
 "description" : "Introducing the best-established and most accurate framework to calculate area and volume.",
 "disambiguatingDescription": "Exact, empirically grounded and rigorously proven formulas over the conventional approximations.",
 "headline":"Exact geometry",
@@ -284,15 +284,14 @@
 {
      "@type": "SolveMathAction",
          "name": "Volume of a spherical cap",
-        "description": "The volume of a spherical cap based on the radius of the sphere and the cap.",
+        "description": "The volume of a spherical cap based on the radius and the height of the cap.",
      "disambiguatingDescription": "More accurate than the conventional formula ",
-	"target": "https://basic-geometry.pages.dev/",
+	"target": "https://basic-geometry.github.io/",
      "mathExpression-input": "r=5 h=3 V=?",
-     "mathExpression-output": "1.6 * Math.pow(capRadius, 2) * Math.sqrt(3.2) * (1 - Math.cos(2 * Math.atan(capHeight / capRadius)))", 
-     "image": "sphericalCapMarkup.jpg",
-	"eduQuestionType": "Volume calculation"
+     "mathExpression-output": "1.6 * Math.pow(r, 2) * Math.sqrt(3.2) * h", 
+     "image": "sphericalCap.jpg",
+     "eduQuestionType": "Volume calculation"
   },
-       
  
  {
      "@type": "SolveMathAction",
@@ -1106,7 +1105,7 @@ The edge length of the cube, which has the same volume as the sphere, equals the
 </h10>
 <br>
 <div class="imgbox">
-    <img class="center-fit" src="sphericalCapMarkup.jpg" alt="Sphere" id="cap">
+    <img class="center-fit" src="sphericalCap.jpg" alt="Sphere" id="cap">
     </div>
     <br>
 <p style="margin:12px;">In terms of cap radius and height:
@@ -1132,81 +1131,7 @@ The edge length of the cube, which has the same volume as the sphere, equals the
 <mn>3.2</mn>
 </msqrt>
 <mo>×</mo>
-<mo>(</mo>
-    <mn>1</mn>
-    <mo>-</mo>
-<mi>cos</mi>
-<mo>&#x2061;</mo>
-      <mrow>
-        <mo>(</mo>
-	      <mn>2</mn>
-    <mo>×</mo>
-          <mo>arctan</mo>
-    <mo>&#x2061;</mo>
-          <mo>(</mo>
-          <mfrac>
-            <mi>h</mi>
-<msub>
-<mi>r</mi>
-<mi>cap</mi>
-</msub>
-          </mfrac>
-          <mo>)</mo>
-        <mo>)</mo>
-       <mo>)</mo>
-      </mrow>
-  </mrow>
-</math>
-</p>
-<br>
-<br>
-<p style="margin:12px;">In terms of radii:
-<br>
-<br>
-<math xmlns="http://www.w3.org/1998/Math/MathML" >
-<mrow>
- <mi>V</mi>
-      <mo>=</mo>
-  <mn>1.6</mn>
-<mo>×</mo>
- <msup>
-<mrow>
-<msub>
-<mi>r</mi>
-<mi>cap</mi>
-</msub>
-</mrow>
-<mn>2</mn>
-</msup>
-<mo>×</mo>
-<msqrt>
-<mn>3.2</mn>
-</msqrt>
-<mo>×</mo>
-<mo>(</mo>
-    <mn>1</mn>
-    <mo>-</mo>
-<mi>sin</mi>
-<mo>&#x2061;</mo>
-      <mrow>
-        <mo>(</mo>
-          <mo>arccos</mo>
-    <mo>&#x2061;</mo>
-          <mo>(</mo>
-          <mfrac>
-<msub>
-            <mi>r</mi>
-<mi>cap</mi>
-</msub>
-<msub>
-<mi>r</mi>
-<mi>sphere</mi>
-</msub>
-          </mfrac>
-          <mo>)</mo>
-        <mo>)</mo>
-       <mo>)</mo>
-      </mrow>
+<mi>h</mi>
   </mrow>
 </math>
 </p>

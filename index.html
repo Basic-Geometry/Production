@@ -188,7 +188,7 @@
 },
 "dateCreated" :"2019-01-11",
 "datePublished":"2020-01-11",
-"dateModified" :"2025-06-27",
+"dateModified" :"2025-08-06",
 "description" : "Introducing the best-established and most accurate framework to calculate area and volume.",
 "disambiguatingDescription": "Exact, empirically grounded and rigorously proven formulas over the conventional approximations.",
 "headline":"Exact geometry",
@@ -216,9 +216,11 @@
        "name": "Area of a square",
 	"description": "The basis of area calculation",
 "target": "https://basic-geometry.pages.dev/",
-     "mathExpression-input": "a=5 A=?",
-     "mathExpression-output": "Math.pow(side, 2)",
-     "image": "square.png",
+     "mathExpression-input": "required name=a=5_A=?",
+  "mathExpression-output": "area=Math.pow(side, 2)",
+  "abstract": "A rectangle is a 2 dimensional plane shape. Its measurable properties are its width and its length. Its area equals width * length. Related shapes are triangle, cube, cuboid and rectangle. A square is a special case of a rectangle with equal width and length. Related shapes are square, cuboid and triangle.",
+  "keywords": "side, length, area",
+  "image": "square.png",
      "eduQuestionType": "Area calculation"
    },
 
@@ -227,9 +229,11 @@
        "name": "Volume of a cube",
        "description": "The basis of volume calculation",
      "target": "https://basic-geometry.pages.dev/",
-     "mathExpression-input": "a=5 V=?",
+     "mathExpression-input": "required name=a=5_V=?",
      "mathExpression-output": "Math.pow(edge, 3)",    
-     "image": "cubeMarkup.jpeg",
+       "abstract": "A cuboid is a 3 dimensional solid shape. Its measurable properties are width, length and height. Its volume is width * length * height. Its projections are rectangle, rectangle and rectangle. Related shapes are regular polygon based block, square, cube and rectangle. A cube is a special case of a cuboid. Its measurable property is its edge length. Its projections are square, square and square. Related shapes are sphere, square and cuboid.",
+  "keywords": "edge, length, volume",
+    "image": "cubeMarkup.jpeg",
      "eduQuestionType": "Volume calculation"
    },
 
@@ -239,9 +243,11 @@
      "description": "The exact area of a circle based on direct comparison with a square.",
      "disambiguatingDescription": "Replaces traditional π-based approximations ensuring greater accuracy in real-world measurements.",
 	"target": "https://basic-geometry.pages.dev/",
-     "mathExpression-input": "r=5 A=?",
+     "mathExpression-input": "required name=r=5_A=?",
      "mathExpression-output": "angle of rotation / 360 * 3.2 * Math.pow(radius, 2)",
-     "image": "areaOfACircle.jpg",
+     "abstract": "A circle is a 2 dimensional plane shape. Its measurable property is its diameter. Its radius is half of the diameter. Related shapes are sphere, cylinder and cone.",
+	"keywords": "radius, area",
+	 "image": "areaOfACircle.jpg",
      "eduQuestionType": "Area calculation"
         },
      
@@ -251,7 +257,7 @@
        "description": "The exact area of a circle segment by subtracting a triangle from a circle slice.",
      "disambiguatingDescription": "Equivalent to the conventional method, but relies on trigonometric functions.",
 	"target": "https://basic-geometry.pages.dev/",
-     "mathExpression-input": "r=5 h=2 A=?",
+     "mathExpression-input": "required name=r=5_h=2_A=?",
      "mathExpression-output": "Math.acos((radius-segmentHeight)/radius)*Math.pow(radius, 2)-Math.sin(Math.acos((radius-segmentHeight)/radius))*(radius-segmentHeight)*radius", 
      "image": "circleSegment.jpg",
      "eduQuestionType": "Area calculation"
@@ -263,7 +269,7 @@
 "description": "Algebraic derivation of the exact circumference of a circle from its area",
 "disambiguatingDescription": "Replaces traditional π-based approximations ensuring greater accuracy in real-world measurements.",
 	"target": "https://basic-geometry.pages.dev/",
-     "mathExpression-input": "r=5 C=?", 
+     "mathExpression-input": "required name=r=5_C=?", 
      "mathExpression-output": "angle of rotation / 360 * 6.4 * radius",
      "image": "circumference.jpg",
      "eduQuestionType": "Length calculation"
@@ -275,9 +281,11 @@
 	 "description": "The exact volume of a sphere by directly comparing it to a cube. Direct shape relationships ensure greater accuracy in real-world measurements.",
     "disambiguatingDescription": "More accurate than the traditional exhaustion method based formula which is a very rough underestimate.",
    "target": "https://basic-geometry.pages.dev/",
-     "mathExpression-input": "r=3 V=?",
+     "mathExpression-input": "required name=r=3_V=?",
      "mathExpression-output": "angle of rotation / 360 * Math.pow((Math.sqrt(3.2) * radius), 3)", 
-     "image": "sphereAndCubeMarkup.jpeg",
+     "abstract": "A sphere is a 3 dimensional solid shape. Its measurable property is its diameter. Its radius is half of the diameter. Its projection is a circle. Related shapes are circle, cylinder, cube and cone.",
+	"keywords": "radius, volume",
+	"image": "sphereAndCubeMarkup.jpeg",
      "eduQuestionType": "Volume calculation"
    },
 
@@ -287,7 +295,7 @@
         "description": "The volume of a spherical cap based on the radius and the height of the cap.",
      "disambiguatingDescription": "More accurate than the conventional formula ",
 	"target": "https://basic-geometry.github.io/",
-     "mathExpression-input": "r=5 h=3 V=?",
+     "mathExpression-input": "required name=r=5_h=3_V=?",
      "mathExpression-output": "1.6 * Math.pow(r, 2) * Math.sqrt(3.2) * h", 
      "image": "sphericalCap.jpg",
      "eduQuestionType": "Volume calculation"
@@ -299,9 +307,11 @@
 	 "description": "The exact volume of a cone by comparing the volume of a quarter cone to an octant sphere with an equal radius.",
 	"disambiguatingDescription": "Instead of the inaccurate base×height/3 approximation, direct shape relationships ensure greater accuracy in real-world measurements.",
 	"target": "https://basic-geometry.pages.dev/",
-    "mathExpression-input": "r=5 H=3 V=?",
+    "mathExpression-input": "required name=r=5_H=3_V=?",
      "mathExpression-output": "angleOfRotation / 360 * 3.2 * Math.pow(radius, 2) * height / Math.sqrt(8)",
-     "image": [
+     "abstract": "A cone is a 3 dimensional solid shape. Its measurable properties are its height and diameter. Its radius is half of the diameter. Its projections are circle and triangle. Related shapes are triangle, tetrahedron, regular polygon based pyramid, circle, cylinder and sphere.",
+	"keywords": "radius, height, volume",
+	 "image": [
        "coneAndSphereMarkup.jpeg",
        "sphereAndConeMarkup.jpeg",
        "octantSphereQuarterCone.jpeg",
@@ -316,7 +326,7 @@
        "description": "The exact volume of a frustum cone based on its top and bottom diameter and height",
      "disambiguatingDescription": "The formula subtracts the missing tip from a theoretical full cone",
 	"target": "https://basic-geometry.pages.dev/",
-     "mathExpression-input": "d1=5 d2=2 h=3 V=?",
+     "mathExpression-input": "required name=d1=5_d2=2_h=3_V=?",
      "mathExpression-output": "frustumHeight * (4 / 5 * Math.pow(bottomDiameter, 2) * (1 / (1 - topDiameter / bottomDiameter)) - 4 / 5 * Math.pow(topDiameter, 2) * (1 / (1 - topDiameter / bottomDiameter) - 1)) / Math.sqrt(8)",
      "image": "frustumOfConeMarkup.png",
      "eduQuestionType": "Volume calculation"
@@ -328,7 +338,7 @@
        "description": "The exact surface area of a cone based on its radius and height.",
      "disambiguatingDescription": "Equivalent to the conventional formula, but relies on the real height.",
 	"target": "https://basic-geometry.pages.dev/",
-     "mathExpression-input": "r=5 H=3 A=?",
+     "mathExpression-input": "required name=r=5_H=3_A=?",
      "mathExpression-output": "3.2 * (Math.pow(radius, 2) + (Math.pow(radius, 2) + Math.pow(height, 2)) * (radius / Math.sqrt(Math.pow(radius, 2) + Math.pow(height, 2))))", 
      "image": "coneMarkup.jpeg",
      "eduQuestionType": "Area calculation"
@@ -340,9 +350,11 @@
      "description": "The exact volume of a pyramid based on its bottom area and height using the coefficient of the volume of a cone",
      "disambiguatingDescription": "Instead of the inaccurate base×height/3 approximation, direct shape relationships ensure greater accuracy in real-world measurements.",
 	"target": "https://basic-geometry.pages.dev/",
-     "mathExpression-input": "A=5 H=3 V=?",
+          "mathExpression-input": "required name=A=5_H=3_V=?",
      "mathExpression-output": "baseArea * height / Math.sqrt(8)", 
-     "image": [
+     "abstract": "A regular pyramid is a 3 dimensional solid shape. Its measurable properties are its number and length of the sides of its base and its height. Its projections are polygon and triangle. Related shapes are regular polygon, regular polygon based block, tetrahedron, cone and triangle.",
+	"keywords": "base, height, volume",
+	"image": [
        "conePyramidVolumeMarkup.jpeg",
        "tetraFrame.jpeg"
        ],
@@ -355,7 +367,7 @@
     "description": "The exact volume of a frustum pyramid based on its top and bottom base area and height",
      "disambiguatingDescription": "The formula subtracts the missing tip from a theoretical full pyramid. Universally applicable",
 	"target": "https://basic-geometry.pages.dev/",
-     "mathExpression-input": "a=5 b=3 H=2 V=?",
+     "mathExpression-input": "required name=a=5_b=3_H=2_V=?",
        "mathExpression-output": "frustumHeight * (Math.pow(bottomEdge, 2) * (1 / (1 - topEdge / bottomEdge)) - Math.pow(topEdge, 2) * (1 / (1 - topEdge / bottomEdge) - 1)) / Math.sqrt(8)",
      "image": "frustumOfPyramidMarkup.png",
      "eduQuestionType": "Volume calculation"
@@ -367,16 +379,18 @@
        "description": "The exact volume of a tetrahedron based on its edge length",
      "disambiguatingDescription": "Based on the base×height/√8 formula, instead of the inaccurate conventional coefficient",
 "target": "https://basic-geometry.pages.dev/",
-     "mathExpression-input": "a=5 V=?",
+     "mathExpression-input": "required name=a=5_V=?",
      "mathExpression-output": "Math.pow(edge, 3) / 8", 
-     "image": "tetrahedronMarkup.jpeg",
+     "abstract": "A tetrahedron is a 3 dimensional solid shape. Its measurable property is its edge length. Its projections are triangle and triangle. Related shapes are triangle, regular polygon based pyramid and cone.",
+	"keywords": "edge, length, volume",
+	"image": "tetrahedronMarkup.jpeg",
      "eduQuestionType": "Volume calculation"
    }
   ] ,
 "url": "https://basic-geometry.pages.dev", 
 "usageInfo":"Calculate area and volume with enhanced accuracy using the Core Geometric System ™. This innovative framework provides a practical alternative to traditional methods, rooted in comparative geometry and scaling principles. Learn exact formulas for circles (A = 3.2r^2, C = 6.4r), spheres (V = (√(3.2)r)^3), cones, and more, with applications in engineering, computer graphics, and scientific research."
 },
-"schemaVersion" : "https://schema.org/docs/releases.html#v28.1.",
+"schemaVersion" : "https://schema.org/docs/releases.html#v29.2.",
 "sdDatePublished" :"2021-03-29",
 "sdPublisher" : {
 "@type" : "Person" ,

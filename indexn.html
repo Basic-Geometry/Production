@@ -1,0 +1,3766 @@
+﻿<!DOCTYPE html>
+<html lang='en-us'>
+<head>
+<meta charset="UTF-8">
+<title>Home of Basic Geometry</title>
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="android-chrome" sizes="256x256" href="android-chrome-256x256.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="manifest" href="/manifest.json">
+<link href="https://fonts.googleapis.com/css2?family=OpenDyslexic&display=swap" rel="stylesheet">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="theme-color" content="#000000">
+<style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+       
+
+                #cookie-notice {
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        background-color: #f2f2f2;
+                        padding: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+                        z-index: 1;
+                }
+
+
+                #cookie-notice-text {
+                        margin-right: 20px;
+                }
+
+
+                #cookie-notice-buttons {
+                        display: flex;
+                        align-items: center;
+                }
+
+
+                #cookie-notice-buttons button {
+                        margin-left: 10px;
+                        background-color: #4CAF50;
+                        color: white;
+                        border: none;
+                        padding: 10px;
+                        border-radius: 5px;
+                        cursor: pointer;
+                }
+
+
+                #cookie-notice-buttons button:hover {
+                        background-color: #3e8e41;
+                }
+       
+        body {
+            font-family: 'OpenDyslexic', sans-serif;
+        }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="author" content="type=PostalAddress,
+  addressLocality=Szentendre,
+  addressRegion=Hungary,
+  postalCode=2000,
+  streetAddress=Ady Endre way 6A,
+  email=gmac4247@gmail.com,
+  jobTitle=Administrator, 
+  name=Gaal Sandor,
+  telephone=+36305075125,
+  url=https://www.x.com/gmac4247">
+<meta name="description" content="Introducing the best-established and most accurate framework to calculate area and volume.">
+<meta name="keywords" content="Core Geometric Systems, Accurate Geometric Calculations, Engineering Design Solutions, Computer Graphics Rendering, Algorithm Optimization, Quantum Computing Applications">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="type=PostalAddress,
+  addressLocality=Szentendre,
+  addressRegion=Hungary,
+  postalCode=2000,
+  streetAddress=Ady Endre way 6A,
+  email=gmac4247@gmail.com,
+  jobTitle=Administrator, 
+  name=Gaal Sandor,
+  telephone=+36305075125,
+  url=https://www.x.com/gmac4247">
+<meta name="twitter:site" content="gmac4247.github.io">
+<meta name="twitter:title" content="Home of Basic Geometry">
+<meta name="twitter:description" content="Introducing the best-established and most accurate framework to calculate area and volume.">
+<meta name="twitter:image" content="android-chrome-256x256.png">
+<meta name="google-site-verification" content="CpLBi02S_32-FQW8m39B49j8i4oMY6lNkSsZ8VEFHsE" />
+<meta name="msvalidate.01" content="EA6B8354B9F3C956E862954E97EB8CD0" />
+       <script type="application/ld+json" async>
+
+{
+  "@context": "https://schema.org",
+  "@type": "webSite",
+  "name": "Home of Basic Geometry",
+ "about": {
+    "@type": "AboutPage",
+    "name": "About Basic Geometry Formulas",
+    "url": "https://gmac4247.github.io/about"
+  },
+  "alternateName": "Exact Geometry",
+"accessMode" : "mathOnVisual" ,
+"accessibilityFeature" :"dyslexicFriendly, machine-readable, online calculator" ,
+"accessibilityHazard" :"none" ,
+"accessibilitySummary" : "View videos, figures and equations with explanation" ,
+"accountablePerson" : {
+"@type" : "Person" ,
+"address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Szentendre",
+    "addressRegion": "Hungary",
+    "postalCode": "2000",
+    "streetAddress": "Ady Endre út 6.A"
+  },
+    "email": "gmac4247@gmail.com",
+    "jobTitle": "Administrator",
+  "name": "Gaál Sándor",
+  "telephone": "+36305075125",
+  "url": "https://www.x.com/gmac4247"
+},
+"author" : {
+"@type" : "Person" ,
+"address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Szentendre",
+    "addressRegion": "Hungary",
+    "postalCode": "2000",
+    "streetAddress": "Ady Endre út 6.A"
+  },
+    "email": "gmac4247@gmail.com",
+    "jobTitle": "Administrator",
+  "name": "Gaál Sándor",
+  "telephone": "+36305075125",
+  "url": "https://www.x.com/gmac4247"
+},
+"contributor" : [
+		   
+{
+"@type" : "Thing",
+"name": "Microsoft Copilot",
+"role": [
+    "AI language model",
+    "Images generated with the help of Microsoft Copilot"]
+}, 
+		   
+{
+    "@type" : "Thing",
+    "name": "Gemini",
+    "role": "AI language model"
+  }
+       ],
+"copyrightHolder" : {
+"@type" : "Person" ,
+"address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Szentendre",
+    "addressRegion": "Hungary",
+    "postalCode": "2000",
+    "streetAddress": "Ady Endre út 6.A"
+  },
+    "email": "gmac4247@gmail.com",
+    "jobTitle": "Administrator",
+  "name": "Gaál Sándor",
+  "telephone": "+36305075125",
+  "url": "https://www.x.com/gmac4247"
+},
+"copyrightNotice" :"All rights reserved." ,
+"copyrightYear" :"2020",
+"creator" : {
+"@type" : "Person" ,
+"address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Szentendre",
+    "addressRegion": "Hungary",
+    "postalCode": "2000",
+    "streetAddress": "Ady Endre út 6.A"
+  },
+    "email": "gmac4247@gmail.com",
+    "jobTitle": "Administrator",
+  "name": "Gaál Sándor",
+  "telephone": "+36305075125",
+  "url": "https://www.x.com/gmac4247"
+},
+"dateCreated" :"2019-01-11",
+"datePublished":"2020-01-11",
+"dateModified" :"2025-08-08",
+"description" : "Introducing the best-established and most accurate framework to calculate area and volume.",
+"disambiguatingDescription": "Exact, empirically grounded and rigorously proven formulas over the conventional approximations.",
+"headline":"Introducing the Core Geometric System ™",
+"image":[
+     "geometry.jpeg",
+     "trigonometry.png",
+	"equityFigure.jpg",
+	"cubeDissection.png"
+],
+"inLanguage":"en-us",
+"isFamilyFriendly":"true",
+"keywords":"Core Geometric Systems, Accurate Geometric Calculations, Engineering Design Solutions, Computer Graphics Rendering, Algorithm Optimization, Quantum Computing Applications",
+"learningResourceType": "mathSolver",
+"locationCreated": {
+"@type":"administrativeArea",
+"name" :"Szentendre, Hungary"},
+"mainEntity" : {
+ "@type": ["MathSolver", "LearningResource"],
+ "name" : "Core Geometric System ™",
+"description":"The best-established, empirically grounded, rigorously proven and most accurate framework.",
+ "disambiguatingDescription": "Exact formulas over the traditional approximations. More accurate for real-world applications.",
+"inLanguage":"en-us",
+"keywords":"Exact Formulas, Area of a Circle, Circumference of a Circle, Volume of a Sphere, Volume of a Cone, Volume of a Pyramid, Volume of a Tetrahedron, Volume of a Frustum", 
+ "potentialAction": [
+{
+     "@type": "SolveMathAction",
+       "name": "Area of a square",
+	"description": "The basis of area calculation",
+"target": "https://gmac4247.github.io",
+ "mathExpression-input": "required square_side=5_Area=?",
+  "mathExpression-output": "area = side * side = side^2",
+   "abstract": "A rectangle is a 2 dimensional plane shape. Its measurable properties are its width and its length. Its area equals width * length. Related shapes are triangle, cube, cuboid and rectangle. A square is a special type of a rectangle with equal width and length. Related shapes are square, cuboid and triangle.",
+  "keywords": "side, length, area",
+    "image": "square.png",
+     "eduQuestionType": "Area calculation"
+   },
+
+{
+     "@type": "SolveMathAction",
+       "name": "Volume of a cube",
+       "description": "The basis of volume calculation",
+     "target": "https://gmac4247.github.io",
+          "mathExpression-input": "required cube_edge=5_Volume=?",
+     "mathExpression-output": "volume = edge * edge * edge = edge^3",  
+        "abstract": "A cuboid is a 3 dimensional solid shape. Its measurable properties are width, length and height. Its volume is width * length * height. Its projections are rectangle, rectangle and rectangle. Related shapes are regular polygon based block, square, cube and rectangle. A cube is a special case of a cuboid. Its measurable property is its edge length. Its projections are square, square and square. Related shapes are sphere, square and cuboid.",
+  "keywords": "edge, length, volume",
+     "image": "cubeMarkup.jpeg",
+     "eduQuestionType": "Volume calculation"
+   },
+
+{
+     "@type": "SolveMathAction",
+	"name": "Area of a circle",
+     "description": "The exact area of a circle based on direct comparison with a square.",
+     "disambiguatingDescription": "Replaces traditional π-based approximations ensuring greater accuracy in real-world measurements.",
+	"target": "https://gmac4247.github.io",
+"mathExpression-input": "required circle_radius=5_Area=?",
+     "mathExpression-output": "3.2 * radius^2",
+  "abstract": "A circle is a 2 dimensional plane shape. Its measurable property is its diameter. Its radius is half of the diameter. Related shapes are sphere, cylinder and cone.",
+	"keywords": "radius, area",
+	  "image": "areaOfACircle.jpg",
+     "eduQuestionType": "Area calculation"
+        },
+     
+{
+     "@type": "SolveMathAction",
+       "name":  "Area of a circle segment",
+"description": "The exact area of a circle segment by subtracting a triangle from a circle slice.",
+   "disambiguatingDescription": "Equivalent to the conventional method, but relies on trigonometric functions.",
+	"target": "https://gmac4247.github.io",
+     "mathExpression-input": "required segment_radius=5_height=2_Area=?",
+     "mathExpression-output": "Acos((radius-segmentHeight) / radius) * radius^2 - sin(Acos((radius-segmentHeight)/radius)) * (radius-segmentHeight) * radius", 
+    "image": "circleSegment.jpg",
+     "eduQuestionType": "Area calculation"
+   },
+
+{
+     "@type": "SolveMathAction",
+"name": "Circumference of a circle",
+     "description": "Algebraic derivation of the exact circumference of a circle from its area",
+"disambiguatingDescription": "Replaces traditional π-based approximations ensuring greater accuracy in real-world measurements.",
+	"target": "https://gmac4247.github.io",
+"mathExpression-input": "required circle_radius=5_Circumference=?", 
+     "mathExpression-output": "6.4 * radius",
+     "image": "circumference.jpg",
+     "eduQuestionType": "Length calculation"
+},
+              
+{
+     "@type": "SolveMathAction",
+	"name": "Volume of a sphere",
+	 "description": "The exact volume of a sphere by directly comparing it to a cube.",
+    "disambiguatingDescription": "More accurate than the traditional 4 × π × r³ / 3 formula.",
+"target": "https://gmac4247.github.io",
+    "mathExpression-input": "required cone_radius=5_height=3_Volume=?",
+     "mathExpression-output": "3.2 * radius^2 * height / sqrt(8)",
+    "abstract": "A sphere is a 3 dimensional solid shape. Its measurable property is its diameter. Its radius is half of the diameter. Its projection is a circle. Related shapes are circle, cylinder, cube and cone.",
+	"keywords": "radius, volume",
+	"image": "sphereAndCubeMarkup.jpeg",
+     "eduQuestionType": "Volume calculation"
+   },
+
+{
+     "@type": "SolveMathAction",
+         "name": "Volume of a spherical cap",
+        "description": "The volume of a spherical cap based on the radius and the height of the cap.",
+     "disambiguatingDescription": "More accurate than the conventional formula ",
+	"target": "https://gmac4247.github.io",
+     "mathExpression-input": "required cap_radius=5_height=3_Volume=?",
+     "mathExpression-output": "1.6 * radius^2 * sqrt(3.2) * height", 
+    "image": "sphericalCap.jpg",
+     "eduQuestionType": "Volume calculation"
+  },
+       
+   {
+     "@type": "SolveMathAction",
+      "name": "Volume of a cone",
+	 "description": "The exact volume of a cone by comparing the volume of a quarter cone to an octant sphere with an equal radius.",
+	"disambiguatingDescription": "Direct shape relationships ensure greater accuracy in real-world measurements then the base × height / 3 approximation.",
+	"target": "https://gmac4247.github.io",
+        "mathExpression-input": "required cone_radius=5_height=3_Volume=?",
+     "mathExpression-output": "3.2 * radius^2 * height / sqrt(8)",
+      "abstract": "A cone is a 3 dimensional solid shape. Its measurable properties are its height and diameter. Its radius is half of the diameter. Its projections are circle and triangle. Related shapes are triangle, tetrahedron, regular polygon based pyramid, circle, cylinder and sphere.",
+	"keywords": "radius, height, volume",
+	"image": [
+       "coneAndSphereMarkup.jpeg",
+       "sphereAndConeMarkup.jpeg",
+       "octantSphereQuarterCone.jpeg",
+       "coneAndSphereComparison.png"
+       ],
+     "eduQuestionType": "Volume calculation"
+  },
+
+{
+     "@type": "SolveMathAction",
+       "name": "Volume of a frustum cone",
+       "description": "The exact volume of a frustum cone based on its top and bottom diameter and height by subtracting the missing tip from a theoretical full cone.",
+     "disambiguatingDescription": "Not the translation of the simplified formula of the frustum pyramid.",
+	"target": "https://gmac4247.github.io",
+     "mathExpression-input": "required bottomDiameter=5_topDiameter=2_frustumHeight=3_Volume=?",
+     "mathExpression-output": "frustumHeight * (4 / 5 * bottomDiameter^2 * (1 / (1 - topDiameter / bottomDiameter)) - 4 / 5 * topDiameter^2 * (1 / (1 - topDiameter / bottomDiameter) - 1)) / sqrt(8)",
+       "image": "frustumOfConeMarkup.png",
+     "eduQuestionType": "Volume calculation"
+   },
+
+{
+     "@type": "SolveMathAction",
+       "name":"Surface area of a cone",
+       "description": "The exact surface area of a cone based on its radius and height.",
+     "disambiguatingDescription": "Based on the real height.",
+	"target": "https://gmac4247.github.io",
+"mathExpression-input": "required cone_radius=5_height=3_Area=?",
+     "mathExpression-output": "3.2 * radius * (radius + sqrt(radius^2 +height^2))", 
+         "image": "coneMarkup.jpeg",
+     "eduQuestionType": "Area calculation"
+   },
+
+ {
+     "@type": "SolveMathAction",
+       "name": "Volume of a pyramid",
+     "description": "The exact volume of a pyramid based on its bottom area and height using the base × height / √8 coefficient of the volume of a cone",
+     "disambiguatingDescription": "Direct shape relationships ensure greater accuracy in real-world measurements then the base × height / 3 approximation.",
+	"target": "https://gmac4247.github.io",
+          "mathExpression-input": "required pyramid_baseArea=5_height=3_Volume=?",
+     "mathExpression-output": "baseArea * height / sqrt(8)", 
+      "abstract": "A regular pyramid is a 3 dimensional solid shape. Its measurable properties are its number and length of the sides of its base and its height. Its projections are polygon and triangle. Related shapes are regular polygon, regular polygon based block, tetrahedron, cone and triangle.",
+	"keywords": "base, height, volume",
+	"image": [
+       "conePyramidVolumeMarkup.jpeg",
+       "tetraFrame.jpeg"
+       ],
+     "eduQuestionType": "Volume calculation"
+   },
+
+{
+     "@type": "SolveMathAction",
+        "name": "Volume of a square frustum pyramid",
+    "description": "The exact volume of a square frustum pyramid based on its top and bottom base area and height",
+     "disambiguatingDescription": "The formula subtracts the missing tip from a theoretical full pyramid. Universally applicable",
+	"target": "https://gmac4247.github.io",
+"mathExpression-input": "required bottomEdge=5_topEdge=3_frustumHeight=2_Volume=?",
+       "mathExpression-output": "frustumHeight * (bottomEdge^2 * (1 / (1 - topEdge / bottomEdge)) - topEdge^2 * (1 / (1 - topEdge / bottomEdge) - 1)) / sqrt(8)",
+  "image": "frustumOfPyramidMarkup.png",
+     "eduQuestionType": "Volume calculation"
+   },
+
+{  
+     "@type": "SolveMathAction",
+       "name": "Volume of a tetrahedron",
+       "description": "The exact volume of a tetrahedron based on its edge length using the exact base × height / √8 coefficient of the volume of a cone",
+     "disambiguatingDescription": "Direct shape relationships ensure greater accuracy in real-world measurements then the base × height / 3 approximation.",
+"target": "https://gmac4247.github.io",
+     "mathExpression-input": "required edge=5_Volume=?",
+     "mathExpression-output": "edge^3 / 8", 
+   "abstract": "A tetrahedron is a 3 dimensional solid shape. Its measurable property is its edge length. Its projections are triangle and triangle. Related shapes are triangle, regular polygon based pyramid and cone.",
+	"keywords": "edge, length, volume",
+	"image": "tetrahedronMarkup.jpeg",
+     "eduQuestionType": "Volume calculation"
+   }
+
+  ],
+"url": "https://gmac4247.github.io", 
+"usageInfo":"Calculate area and volume with enhanced accuracy using the Core Geometric System ™. This innovative framework provides a practical alternative to traditional methods, rooted in comparative geometry and scaling principles. Learn exact formulas for circles (A = 3.2r^2, C = 6.4r), spheres (V = (√(3.2)r)^3), cones, and more, with applications in engineering, computer graphics, and scientific research."
+},
+"schemaVersion" : "https://schema.org/docs/releases.html#v29.2.",
+"sdDatePublished" :"2021-03-29",
+"sdPublisher" : {
+"@type" : "Person" ,
+"address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Szentendre",
+    "addressRegion": "Hungary",
+    "postalCode": "2000",
+    "streetAddress": "Ady Endre út 6.A"
+  },
+    "email": "gmac4247@gmail.com",
+    "jobTitle": "Administrator",
+  "name": "Gaál Sándor",
+  "telephone": "+36305075125",
+  "url": "https://www.x.com/gmac4247"
+},
+"thumbnail": "android-chrome-256x256.png",
+"typicalAgeRange" :"5-105",
+"url": "https://gmac4247.github.io", 
+"usageInfo":"Discover the Core Geometric System ™, a groundbreaking framework offering a fresh perspective on calculating area and volume using a 3D coordinate system. Challenging conventional formulas, this system provides empirically-grounded alternatives with a focus on practical accuracy for real-world applications in engineering, design, science, and beyond. Explore exact values and intuitive geometric relationships for circles, spheres, cones, and more."
+}
+</script>
+</head>
+<body>
+<div id="cookie-notice">
+                <div id="cookie-notice-text">
+                        This website uses cookies to ensure you get the best experience on it.<br>
+                        Love it, or leave it.
+                </div>
+                <div id="cookie-notice-buttons">
+                        <button onclick="document.getElementById('cookie-notice').style.display = 'none';">Accept</button>
+                        <button onclick="document.getElementById('cookie-notice').style.display = 'none';">Reject</button>
+                </div>
+</div>
+<br>
+<p style="margin:12px;" >The ratios are in the shapes.
+</p>
+<br>
+<br>
+<div>
+<h1 style="font-size:160%;margin:7px">Introducing the Core Geometric System ™</h1>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="geometry.jpeg"  alt="Geometry">
+</div>
+<br>
+<p style="margin:12px;">Providing the best-established and most accurate framework to calculate area and volume using the 3D coordinate system.
+</p>
+<br>
+<br>
+<p style="margin:12px;">Key Points:
+<br>
+<br>
+- Comparative Geometry: Using geometric relationships to derive areas and volumes.
+<br>
+<br>
+- Scaling and Proportions: Applying proportional relationships for accurate calculations.
+<br>
+<br>
+- Algebraic Manipulation: Simplifying equations to ensure consistency and precision.
+<br>
+<br>
+- Exact Values instead of Approximations: Prioritizing the use of simpler constants for practicality while maintaining exact values for accuracy.
+<br>
+<br>
+1. Area of a Circle:
+<br>
+- Compared to a square, using geometric properties and the Pythagorean theorem.
+<br>
+- Formula:  A = 3.2 × ( square value of the radius ). 
+<br>
+<br>
+2. Circumference of a Circle:
+<br>
+- Derived from the area by subtracting a smaller theoretical circle.
+<br>
+- Formula:  C = 6.4 × radius. 
+<br>
+<br>
+3. Volume of a Sphere:
+<br>
+- Compared to a cube, using the area of the sphere's cross-section.
+<br>
+- Formula:  V = " cubic value of ( √( 3.2 ) × radius ) ". 
+<br>
+<br>
+4. Volume of a Cone:
+<br>
+- Compared to an octant sphere and a quarter cylinder.
+<br>
+- Formula:  V = 3.2 × ( square value of the radius ) × height, divided by √8 .
+</p>
+<br>
+<br>
+</div>
+<div>
+  <h2 style="font-size:160%;margin:7px;">How Accurate Are The Conventional Geometry Formulas?</h2>
+<br>
+<br>
+<p style="margin:12px;">Historically, Euclidean geometry has provided a framework for understanding and describing the physical world. It is based on axioms and postulates, leading to well-defined formulas for the calculation of areas and volumes of shapes such as circles and spheres.
+<br>
+<br>
+Setting the square and the cube as the basis of the area and the volume calculation is well established and straightforward. Regardless of the shape of the measured object, the unit of measurement of the area is square units and the volume can be expressed in cubic units. 
+</p>
+</div>
+<br>
+<br>
+<div>
+<h3 style="font-size:160%;margin:7px;">Area of a square</h3>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="square.png" alt="Square" id="square">
+    </div>
+<br>
+<p style="margin:12px;">
+A rectangle is a 2 dimensional plane shape. Its measurable properties are its width and its length. Its area equals width × length.
+<br>
+<br>
+A square is a type of rectangle with equal width and length.
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+ <mi>A</mi>
+      <mo>=</mo>
+	<mrow>
+	<mi>side</mi>
+<mo>×</mo>
+	<mi>side</mi>
+	</mrow>
+	<mo>=</mo>
+      <msup>
+        <mi>side</mi>
+        <mn>2</mn>
+      </msup>
+</mrow>
+    </math>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div>
+<h4 style="font-size:160%;margin:7px;">Volume of a cube</h4>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="cubeMarkup.jpeg" alt="Cube" id="cube">
+    </div>
+<br>
+<p style="margin:12px;">A cuboid is a 3 dimensional solid shape. Its measurable properties are width, length and height. The volume of a cuboid is a simple multiplication of the edges, width × length × height. The cubic root of the product of the edges is the edge length of the theoretical cube that has the same volume as the cuboid. 
+<br>
+<br>
+A cube is a type of cuboid with equal width, length and height.
+</p>
+<br>
+ <math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+ <mi>V</mi>
+      <mo>=</mo>
+	 <mrow>
+		 <mi>edge</mi>
+		 <mo>×</mo>
+		 <mi>edge</mi>
+		 <mo>×</mo>
+		 <mi>edge</mi>
+	 </mrow>
+	 <mo>=</mo>
+      <msup>
+        <mi>edge</mi>
+        <mn>3</mn>
+      </msup>
+</mrow>
+    </math>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div>
+<h5 style="font-size:160%;margin:7px">Trigonometry</h5>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="trigonometry.png" alt="Trigonometry" id="trigonometry">
+    </div>
+<br>
+<div>
+<p style="margin:12px;">
+In a right triangle:
+<br>
+<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+ <mi>sine</mi>
+      <mo>=</mo>
+      <mfrac>
+        <mi>opposite</mi>
+        <mi>hypotenuse</mi>
+      </mfrac>
+</mrow>
+</math>
+
+<br>
+<br>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+ <mi>cosine</mi>
+      <mo>=</mo>
+      <mfrac>
+        <mi>adjacent</mi>
+        <mi>hypotenuse</mi>
+      </mfrac>
+</mrow>
+</math>
+
+<br>
+<br>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+ <mi>tangent</mi>
+      <mo>=</mo>
+      <mfrac>
+        <mi>opposite</mi>
+        <mi>adjacent</mi>
+      </mfrac>
+</mrow>
+</math>
+
+<br>
+<br>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML"> <mrow>
+ <mi>cotangent</mi>
+      <mo>=</mo>
+      <mfrac>
+        <mi>adjacent</mi>
+        <mi>opposite</mi>
+      </mfrac>
+</mrow>
+</math>
+
+<br>
+<br>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+<msup>
+<mrow>
+<msub>
+ <mi>leg</mi>
+<mn>1</mn>
+</msub>
+</mrow>
+<mn>2</mn>
+</msup>
+<mo>+</mo>
+<msup>
+<mrow>
+<msub>
+ <mi>leg</mi>
+<mn>2</mn>
+</msub>
+</mrow>
+<mn>2</mn>
+</msup>
+ <mo>=</mo>
+<msup>
+<mi>hypotenuse</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</math>
+</p>
+</div>
+<br>
+<br>
+<br>
+<div>
+<script>
+
+// ---- Trigonometry ----
+	
+// Lookup-based trigonometry functions
+	
+const trig = {
+
+"rad(1.6)": {
+  "sin": 1,
+  "cos": 0,
+  "tan": undefined,
+  "deg": 90.0
+},
+
+"rad(1.597)": {
+  "sin": 0.99999,
+  "cos": 0.003,
+  "tan": 318.31,
+  "deg": 89.82
+},
+
+"rad(1.584)": {
+  "sin": 0.9999,
+  "cos": 0.016,
+  "tan": 63.657,
+  "deg": 89.10
+},
+
+"rad(1.568)": {
+  "sin": 0.9995,
+  "cos": 0.0314,
+  "tan": 31.82,
+  "deg": 88.20
+},
+
+"rad(1.552)": {
+  "sin": 0.999,
+  "cos": 0.047,
+  "tan": 21.205,
+  "deg": 87.30
+},
+
+"rad(1.536)": {
+  "sin": 0.998,
+  "cos": 0.0628,
+  "tan": 15.895,
+  "deg": 86.40
+},
+
+"rad(1.52)": {
+  "sin": 0.997,
+  "cos": 0.079,
+  "tan": 12.706,
+  "deg": 85.50
+},
+	
+"rad(1.504)": {
+  "sin": 0.996,
+  "cos": 0.094,
+  "tan": 10.58,
+  "deg": 84.60
+},
+	
+"rad(1.488)": {
+  "sin": 0.994,
+  "cos": 0.11,
+  "tan": 9.06,
+  "deg": 83.70
+},
+
+"rad(1.467)": {
+  "sin": 0.991,
+  "cos": 0.131,
+  "tan": 7.596,
+  "deg": 82.50
+},
+	
+"rad(1.456)": {
+  "sin": 0.99,
+  "cos": 0.141,
+  "tan": 7.026,
+  "deg": 81.9
+},
+
+"rad(1.44)": {
+  "sin": 0.988,
+  "cos": 0.156,
+  "tan": 6.314,
+  "deg": 81.0
+},
+
+"rad(1.409)": {
+  "sin": 0.983,
+  "cos": 0.186,
+  "tan": 5.275,
+  "deg": 79.265
+},
+
+"rad(1.4)": {
+  "sin": 0.981,
+  "cos": 0.195,
+  "tan": 5.027,
+  "deg": 78.750
+},
+
+"rad(1.376)": {
+  "sin": 0.976,
+  "cos": 0.218,
+  "tan": 4.474,
+  "deg": 77.40
+},
+
+"rad(1.355)": {
+  "sin": 0.971,
+  "cos": 0.238,
+  "tan": 4.084,
+  "deg": 76.242
+},
+
+"rad(1.333)": {
+  "sin": 0.966,
+  "cos": 0.259,
+  "tan": 3.732,
+  "deg": 75.0
+},
+
+"rad(1.312)": {
+  "sin": 0.96,
+  "cos": 0.279,
+  "tan": 3.44,
+  "deg": 73.80
+},
+	
+"rad(1.296)": {
+  "sin": 0.956,
+  "cos": 0.294,
+  "tan": 3.25,
+  "deg": 72.90
+},
+
+"rad(1.28)": {
+  "sin": 0.951,
+  "cos": 0.309,
+  "tan": 3.078,
+  "deg": 72.0
+},
+	
+"rad(1.253)": {
+  "sin": 0.943,
+  "cos": 0.334,
+  "tan": 2.822,
+  "deg": 70.488
+},
+
+"rad(1.232)": {
+  "sin": 0.935,
+  "cos": 0.354,
+  "tan": 2.646,
+  "deg": 69.30
+},
+	
+"rad(1.216)": {
+  "sin": 0.93,
+  "cos": 0.37,
+  "tan": 2.526,
+  "deg": 68.40
+},
+
+"rad(1.2)": {
+  "sin": 0.924,
+  "cos": 0.383,
+  "tan": 2.414,
+  "deg": 67.50
+},
+
+"rad(1.184)": {
+  "sin": 0.918,
+  "cos": 0.397,
+  "tan": 2.311,
+  "deg": 66.60
+},
+
+"rad(1.168)": {
+  "sin": 0.911,
+  "cos": 0.412,
+  "tan": 2.215,
+  "deg": 65.70
+},
+
+"rad(1.152)": {
+  "sin": 0.905,
+  "cos": 0.426,
+  "tan": 2.125,
+  "deg": 64.80
+},
+
+"rad(1.136)": {
+  "sin": 0.898,
+  "cos": 0.44,
+  "tan": 2.041,
+  "deg": 63.90
+},
+	
+"rad(1.12)": {
+  "sin": 0.891,
+  "cos": 0.454,
+  "tan": 1.963,
+  "deg": 63.0
+},
+
+"rad(1.104)": {
+  "sin": 0.884,
+  "cos": 0.468,
+  "tan": 1.889,
+  "deg": 62.10
+},
+	
+"rad(1.088)": {
+  "sin": 0.876,
+  "cos": 0.482,
+  "tan": 1.819,
+  "deg": 61.20
+},
+	
+"rad(1.067)": {
+  "sin": 0.866,
+  "cos": 0.5,
+  "tan": 1.732,
+  "deg": 60.0
+},
+
+"rad(1.04)": {
+  "sin": 0.853,
+  "cos": 0.523,
+  "tan": 1.632,
+  "deg": 58.50
+},
+
+"rad(1.024)": {
+  "sin": 0.844,
+  "cos": 0.536,
+  "tan": 1.576,
+  "deg": 57.60
+},
+	
+"rad(1.008)": {
+  "sin": 0.836,
+  "cos": 0.55,
+  "tan": 1.522,
+  "deg": 56.70
+},
+	
+"rad(0.992)": {
+  "sin": 0.827,
+  "cos": 0.562,
+  "tan": 1.472,
+  "deg": 55.80
+},
+  
+"rad(0.96)": {
+  "sin": 0.81,
+  "cos": 0.588,
+  "tan": 1.376,
+  "deg": 54.0
+},
+
+"rad(0.944)": {
+  "sin": 0.8,
+  "cos": 0.6,
+  "tan": 1.332,
+  "deg": 53.10
+},
+
+"rad(0.928)": {
+  "sin": 0.79,
+  "cos": 0.613,
+  "tan": 1.29,
+  "deg": 52.20
+},
+
+"rad(0.912)": {
+  "sin": 0.78,
+  "cos": 0.625,
+  "tan": 1.248,
+  "deg": 51.30
+},
+
+"rad(0.88)": {
+  "sin": 0.76,
+  "cos": 0.65,
+  "tan": 1.17,
+  "deg": 49.50
+},
+
+"rad(0.864)": {
+  "sin": 0.75,
+  "cos": 0.661,
+  "tan": 1.134,
+  "deg": 48.60
+},
+
+"rad(0.848)": {
+  "sin": 0.74,
+  "cos": 0.673,
+  "tan": 1.09,
+  "deg": 47.70
+},
+
+"rad(0.832)": {
+  "sin": 0.729,
+  "cos": 0.685,
+  "tan": 1.065,
+  "deg": 46.80
+},
+
+"rad(0.816)": {
+  "sin": 0.718,
+  "cos": 0.696,
+  "tan": 1.032,
+  "deg": 45.90
+},
+
+"rad(0.8)": {
+  "sin": 0.7071,
+  "cos": 0.7071,
+  "tan": 1,
+  "deg": 45.0
+}
+	
+}
+	
+// Helper: Finds closest rad(x) match for given function (sin or cos)
+ function closestRad(radian) {
+  let closestKey = null;
+  let minDiff = Infinity;
+
+  for (const key in trig) {
+    const match = key.match(/rad\(([\d.]+)\)/);
+    if (!match) continue;
+
+    const rad = parseFloat(match[1]);
+    const difference = Math.abs(rad - radian);
+
+    if (difference < minDiff) {
+      minDiff = difference;
+      closestKey = key;
+    }
+  }
+
+  return closestKey ?? null;
+}
+
+function sin(radian) {
+if (typeof radian !== 'number' || isNaN(radian) || radian > 1.6 || radian < 0) return null;
+  const radKey = `rad(${radian.toFixed(3)})`;
+
+  // 🔹 Case 1: Exact match
+  if (trig[radKey]?.sin !== undefined) return trig[radKey].sin;
+
+  // 🔹 Case 2: 0.8 > x → Use cosine reflection
+  if (radian < 0.8) {
+    const reflected = 1.6 - radian;
+    const reflectedKey = `rad(${reflected.toFixed(3)})`;
+
+    if (trig[reflectedKey]?.cos !== undefined) return trig[reflectedKey].cos;
+
+    const fallbackKey = closestRad(reflected);
+return trig[fallbackKey]?.cos ?? null;
+  }
+
+  // 🔹 Case 3: Otherwise, search sin column directly
+  const fallbackKey = closestRad(radian);
+return trig[fallbackKey]?.sin ?? null;
+}
+	
+function cos(radian) {
+  if (typeof radian !== 'number' || isNaN(radian) || radian > 1.6 || radian < 0) return null;
+  const radKey = `rad(${radian.toFixed(3)})`;
+
+  // 🔹 Case 1: Exact match
+  if (trig[radKey]?.cos !== undefined) return trig[radKey].cos;
+
+  // 🔹 Case 2: 0.8 > x → Use sine reflection
+  if (radian < 0.8) {
+    const reflected = 1.6 - radian;
+    const reflectedKey = `rad(${reflected.toFixed(3)})`;
+
+    if (trig[reflectedKey]?.sin !== undefined) return trig[reflectedKey].sin;
+
+    const fallbackKey = closestRad(reflected);
+return trig[fallbackKey]?.sin ?? null;
+  }
+
+  // 🔹 Case 3: Otherwise, search sin column directly
+  const fallbackKey = closestRad(radian);
+return trig[fallbackKey]?.cos ?? null;
+}
+
+function tan(radian) {
+if (typeof radian !== 'number' || isNaN(radian) || radian > 1.6 || radian < 0) return null;
+  const radKey = `rad(${radian.toFixed(3)})`;
+
+  // 🔹 Case 1: Exact match
+  if (trig[radKey]?.tan !== undefined) return trig[radKey].tan;
+
+  // 🔹 Case 2: Reflective zone: 0 < x < 0.8
+  if (radian < 0.8) {
+    const reflected = 1.6 - radian;
+    const reflectedKey = `rad(${reflected.toFixed(3)})`;
+
+    let reflectedTan = trig[reflectedKey]?.tan;
+
+    if (reflectedTan === undefined) {
+      const fallbackKey = closestRad(reflected);
+      reflectedTan = trig[fallbackKey]?.tan ?? null;
+    }
+
+    if (typeof reflectedTan !== 'number' || reflectedTan === 0) return null;
+
+    return parseFloat((1 / reflectedTan).toFixed(3));
+  }
+
+  // 🔹 Case 3: Fallback
+  const fallbackKey = closestRad(radian);
+  return trig[fallbackKey]?.tan ?? null;
+}
+	
+function closestValue(input, funcType) {
+  let bestMatch = null;
+  let minDiff = Infinity;
+
+  for (const key in trig) {
+    const value = trig[key][funcType];
+    if (typeof value !== 'number') continue;
+
+    const difference = Math.abs(value - input);
+    if (difference < minDiff) {
+      minDiff = difference;
+      bestMatch = {
+        angle: key,  // We're using this key as the input (the angle) that produced the value
+        value: value
+      };
+    }
+  }
+
+  return bestMatch;
+}
+
+function Asin(x) {
+  if (typeof x !== 'number' || isNaN(x) || x < 0 || x > 1) return null;
+
+  let radian = null;
+
+  if (x >= 0.7071) {
+    // Direct match via sine
+    const match = closestValue(x, 'sin');
+    if (!match?.angle) return null;
+    const parsed = match.angle.match(/rad\(([\d.]+)\)/);
+    if (!parsed) return null;
+    radian = parseFloat(parsed[1]);
+  } else {
+    // Reflective match via cosine
+    const match = closestValue(x, 'cos');
+    if (!match?.angle) return null;
+    const parsed = match.angle.match(/rad\(([\d.]+)\)/);
+    if (!parsed) return null;
+    const angle = parseFloat(parsed[1]);
+    radian = parseFloat((1.6 - angle).toFixed(3));
+  }
+
+  return radian;
+}
+
+function Acos(x) {
+  if (typeof x !== 'number' || isNaN(x) || x < 0 || x > 1) return null;
+
+  let radian = null;
+
+  if (x <= 0.7071) {
+    // Direct match via cosine
+    const match = closestValue(x, 'cos');
+    if (!match?.angle) return null;
+    const parsed = match.angle.match(/rad\(([\d.]+)\)/);
+    if (!parsed) return null;
+    radian = parseFloat(parsed[1]);
+  } else {
+    // Reflective match via sine
+    const match = closestValue(x, 'sin');
+    if (!match?.angle) return null;
+    const parsed = match.angle.match(/rad\(([\d.]+)\)/);
+    if (!parsed) return null;
+    const angle = parseFloat(parsed[1]);
+    radian = parseFloat((1.6 - angle).toFixed(3));
+  }
+
+  return radian;
+}
+	
+function Atan(x) {
+  if (typeof x !== 'number' || isNaN(x) || x <= 0) return null;
+
+  let radian = null;
+
+  if (x > 1) {
+    // Direct match
+    const match = closestValue(x, 'tan');
+    if (!match?.angle) return null;
+    const parsed = match.angle.match(/rad\(([\d.]+)\)/);
+    if (!parsed) return null;
+    radian = parseFloat(parsed[1]);
+  } else {
+    // Reflective zone
+    const reciprocal = 1 / x;
+    const match = closestValue(reciprocal, 'tan');
+    if (!match?.angle) return null;
+    const parsed = match.angle.match(/rad\(([\d.]+)\)/);
+    if (!parsed) return null;
+    const reflected = parseFloat(parsed[1]);
+    radian = parseFloat((1.6 - reflected).toFixed(3));
+  }
+
+  return radian;
+}
+	
+</script>
+</div>
+<div>
+ <p style="margin:12px;">Multiplying the base by the height of a triangle gives a rectangle with an area exactly the double of the triangle. The square root of half of the area of the rectangle is the side length of the theoretical square that has the same area as the triangle. 
+<br>
+<br>
+The area of a triangle can also be calculated by the length of its sides.
+</p>
+<br>
+<br>
+<div>
+<label style="margin:12px;" for="side1">Side 1:</label>
+<input id="side1" type="number" value="1" step="any" />
+<br>
+<label style="margin:12px;" for="side2">Side 2:</label>
+<input id="side2" type="number" value="1" step="any" />
+<br>
+<label style="margin:12px;" for="side3">Side 3:</label>
+<input id="side3" type="number" value="1" step="any" />
+	
+<script>
+  function triangleArea(product) {
+  return Math.sqrt(product);
+}
+
+function updateTriangleArea() {
+  const side1 = parseFloat(document.getElementById('side1').value);
+  const side2 = parseFloat(document.getElementById('side2').value);
+  const side3 = parseFloat(document.getElementById('side3').value);
+
+  if (isNaN(side1) || isNaN(side2) || isNaN(side3)) {
+    document.getElementById('triangle-area').innerText = '';
+    return;
+  }
+
+    // Triangle validity check
+  if (side1 + side2 <= side3 || side2 + side3 <= side1 || side3 + side1 <= side2) {
+    document.getElementById('triangle-area').innerText = 'The sum of the length of the two shorter sides of a triangle is larger than the thrid one.';
+    return;
+  }
+
+  const s = (side1 + side2 + side3) / 2;
+  const product = s * (s - side1) * (s - side2) * (s - side3);
+  const area = triangleArea(product);
+
+  document.getElementById('triangle-area').innerText =
+    `Area: ${area.toFixed(5)} square units`;
+}
+
+  document.getElementById('side1').addEventListener('input', updateTriangleArea);
+  document.getElementById('side2').addEventListener('input', updateTriangleArea);
+  document.getElementById('side3').addEventListener('input', updateTriangleArea);
+</script>
+<p style="margin:12px;" id="triangle-area"></p>
+</div>
+<br>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+ <mrow>
+ <mi>A</mi>
+<mo>=</mo>
+<mfrac>
+<mrow>
+<mi>base</mi>
+<mo>×</mo>
+<mi>height</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>=</mo>
+<msqrt>
+<mrow>
+<mi>S</mi>
+<mo>×</mo>
+<mo>(</mo>
+<mi>S</mi>
+<mo>-</mo>
+<msub>
+<mi>side</mi>
+<mn>1</mn>
+</msub>
+<mo>)</mo>
+<mo>×</mo>
+<mo>(</mo>
+<mi>S</mi>
+<mo>-</mo>
+<msub>
+<mi>side</mi>
+<mn>2</mn>
+</msub>
+<mo>)</mo>
+<mo>×</mo>
+<mo>(</mo>
+<mi>S</mi>
+<mo>-</mo>
+<msub>
+<mi>side</mi>
+<mn>3</mn>
+</msub>
+<mo>)</mo>
+</mrow>
+</msqrt>
+</mrow>
+</math>
+
+<br>
+<br>
+
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" > <mrow>
+ <mi>S</mi>
+      <mo>=</mo>
+<mi>Semi perimeter</mi>
+      <mo>=</mo>
+<mfrac>
+<mrow>
+<mo>(</mo>
+      <msub>
+        <mi>side</mi>
+        <mn>1</mn>
+      </msub>
+<mo>+</mo>
+      <msub>
+        <mi>side</mi>
+        <mn>2</mn>
+      </msub>
+<mo>+</mo>
+      <msub>
+        <mi>side</mi>
+        <mn>3</mn>
+      </msub>
+<mo>)</mo>
+</mrow>
+<mn>2</mn>
+</mfrac>
+</mrow>
+</math>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div>
+<h6 style="font-size:160%;margin:7px;">Area of a regular polygon</h6>
+<br>
+<br>
+<div>
+<label style="margin:12px;" for="side-number">Number of sides:</label>
+<input id="side-number" type="number" value="5" step="1" />
+<br>
+<label style="margin:12px;" for="side-length">Side length:</label>
+<input id="side-length" type="number" value="1" step="any" />
+	
+<script>
+  function polygonArea(length, number, tangent) {
+    return number / 4  * length ** 2 / tangent;
+  }
+
+function updatePolygonArea() {
+  const length = parseFloat(document.getElementById('side-length').value);
+  const number = parseFloat(document.getElementById('side-number').value);
+
+  if (isNaN(length) || isNaN(number)) {
+    document.getElementById('polygon-area').innerText = '';
+    return;
+  }
+
+// Polygon validity check
+  if (number < 3) {
+    document.getElementById('polygon-area').innerText = 'It takes at least three sides to form a polygon.';
+    return;
+  }
+	
+  const ratio = 3.2 / number;
+  const tangent = parseFloat(tan(ratio));
+  const area = polygonArea(length, number, tangent);
+
+  document.getElementById('polygon-area').innerText =
+    `Area: ${area.toFixed(5)} square units`;
+}
+
+  document.getElementById('side-length').addEventListener('input', updatePolygonArea);
+  document.getElementById('side-number').addEventListener('input', updatePolygonArea);
+</script>
+<p style="margin:12px;" id="polygon-area"></p>
+</div>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="pentagon.png" alt="Pentagon" id="pentagon">
+    </div>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+<mi>A</mi>
+<mo>=</mo>
+<mfrac>
+<mi>n</mi>
+<mn>4</mn>
+</mfrac>
+<mo>×</mo>
+    <mi>ctg</mi>
+    <mo>&#x2061;⁡</mo> 
+    <mo>(</mo>
+    <mfrac>
+      <mrow>
+        <mn>180</mn>
+        <mo>&#xB0;</mo>
+      </mrow>
+      <mi>n</mi>
+    </mfrac>
+    <mo>)</mo>
+<mo>×</mo>
+<msup>
+        <mi>x</mi>
+        <mn>2</mn>
+</msup>
+</mrow>
+</math>
+
+<br>
+<br>
+
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+ <mi>n</mi>
+      <mo>=</mo>
+   <mi>number of sides</mi>
+</mrow>
+</math>
+<br>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+ <mi>x</mi>
+ <mo>=</mo>
+ <mi>side length</mi>
+</mrow>
+</math>
+<br>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+<mi>Sum of the internal angles of a polygon</mi>
+<mo>=</mo>
+<mo>(</mo>
+<mi>n</mi>
+<mo>-</mo>
+<mn>2</mn>
+<mo>)</mo>
+<mo>×</mo>
+<mrow>
+<mn>180</mn>
+<mo>&#xB0;</mo>
+ </mrow>
+</mrow>
+</math>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div>
+<h7 style="font-size:160%;margin:7px">Area of a circle</h7>
+<br>
+<br>
+<div>
+<label style="margin:12px;" for="circle-radius-a">Radius:</label>
+<input id="circle-radius-a" type="number" value="1" step="any" />
+<script>
+  function circleArea(radius) {
+    return 3.2 * radius * radius;
+  }
+
+  document.getElementById('circle-radius-a').addEventListener('input', function () {
+    const radius = parseFloat(this.value);
+	  
+    if (isNaN(radius)) {
+      document.getElementById('circle-area').innerText = '';
+    return;
+    }
+
+    document.getElementById('circle-area').innerText =
+      `Area: ${circleArea(radius).toFixed(5)} square units`;
+    });
+</script>
+<p style="margin:12px;" id="circle-area"></p>
+</div>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="areaOfACircle.jpg" alt="Circle" id="circle">
+</div>
+<br>
+<p style="margin:12px;" >
+The area of a circle is defined by comparing it to a square since that is the base of area calculation.
+<br>
+<br>
+The circle is cut to four quadrants, each placed with their origin on the vertices of a square.
+<br>
+<br>
+In this layout the arcs of the quadrants of an inscribed circle would meet at the midpoints of the sides of the square. 
+<br>
+<br>
+The arcs of the quadrants of a circumscribed circle would meet at the center of the square.
+<br>
+<br>
+When the arcs of the quadrant circles intersect at the quarter of the centerline of the square, the uncovered area in the middle equals exactly the sum of the overlapping areas respectively. 
+</p>
+<br>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="equityFigure.jpg" alt="Figure" id="figure">
+    </div>
+<br>
+<p style="margin:12px;">Quarter of the uncovered area in the middle:
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+ <mfrac>
+<mrow>
+<mn>3.2</mn>
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mn>4</mn>
+</mfrac>
+<mo>-</mo>
+<mo>(</mo>
+<mn>3.2</mn>
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<mn>90</mn>
+<mo>-</mo>
+<mn>2</mn>
+<mo>×</mo>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mn>360</mn>
+</mfrac>
+<mo>+</mo>
+<mn>2</mn>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>4</mn>
+</mfrac>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+<mo>=</mo>
+</mrow>
+</math>
+<br>
+<br>
+<p style="margin:12px;">The area of an overlapping section:
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<mn>2</mn>
+<mo>×</mo>
+<mo>(</mo>
+<mn>3.2</mn>
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mn>360</mn>
+</mfrac>
+<mo>-</mo>
+<mfrac>
+<mrow>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>4</mn>
+</mfrac>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+</math>
+<br>
+<br>
+<p style="margin:12px;">The equation is calculable using a calculator, or it can be simplified algebraically.
+</p>
+<br>
+<br>
+<p style="margin:12px;">Simplifying the original equation:
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+ <mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+<mo>-</mo>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<mn>90</mn>
+<mo>-</mo>
+<mn>2</mn>
+<mo>×</mo>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mn>360</mn>
+</mfrac>
+<mo>+</mo>
+<mfrac>
+<mn>1</mn>
+<mn>8</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mo>=</mo>
+<mrow>
+<mn>2</mn>
+<mo>×</mo>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mn>360</mn>
+</mfrac>
+<mo>-</mo>
+<mfrac>
+<mrow>
+<mo>(</mo>
+<mfrac>
+<mn>1</mn>
+<mn>8</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+</math>
+<br>
+<br>
+<p style="margin:12px;">Simplifying further:
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+ <mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+<mo>-</mo>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<mn>90</mn>
+<mo>-</mo>
+<mn>2</mn>
+<mo>×</mo>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mn>360</mn>
+</mfrac>
+<mo>)</mo>
+<mo>=</mo>
+<mn>2</mn>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mn>360</mn>
+</mfrac>
+</mrow>
+</math>
+<br>
+<br>
+<p style="margin:12px;">Substituting 90°/360° for 1/4:
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<mfrac>
+<mn>90</mn>
+<mn>360</mn>
+</mfrac>
+<mo>-</mo>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<mn>90</mn>
+<mo>-</mo>
+<mn>2</mn>
+<mo>×</mo>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mn>360</mn>
+</mfrac>
+<mo>)</mo>
+<mo>=</mo>
+<mn>2</mn>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mn>360</mn>
+</mfrac>
+</mrow>
+</math>
+<br>
+<br>
+<p style="margin:12px;">Simplifying further:
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+<mo>=</mo>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+</math>
+<br>
+<br>
+<p style="margin:12px;">Which is equivalent to:
+<br>
+1 = 1
+</p>
+<br>
+<br>
+<p style="margin:12px;">
+The ratio between the radius of the circle and the side of the square can be calculated by using the Pythagorean theorem.
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+<msup>
+ <mi>r</mi>
+ <mn>2</mn>
+</msup>
+<mo>=</mo>
+<msup>
+<mrow>
+<mo>(</mo>
+<mfrac>
+   <mi>side</mi>
+   <mn>4</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mn>2</mn>
+ </msup>
+ <mo>+</mo>
+<msup>
+<mrow>
+<mo>(</mo>
+<mn>2</mn>
+<mo>×</mo>
+<mrow>
+<mo>(</mo>
+<mfrac>
+ <mi>side</mi>
+ <mn>4</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mo>)</mo>
+</mrow>
+<mn>2</mn>
+</msup>
+</mrow>
+</math>
+<br>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+ <mrow>
+ <mi>r</mi>
+ <mo>=</mo>
+ <msqrt>
+<mn>5</mn>
+</msqrt>
+<mo>×</mo>
+<mfrac>
+<mi>side</mi>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</math>
+<br>
+<br>
+<p style="margin:12px;"> The area of both the square and the sum of the quadrants equals 16 right triangles with legs of a quarter and a half of the square's sides, and its hypotenuse equal to the radius of the circle. 
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+<mi>A</mi>
+<mo>=</mo>
+<mrow>
+<mfrac>
+<mn>16</mn>
+<mn>5</mn>
+</mfrac>
+<mo>×</mo>
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mo>=</mo>
+<mn>3.2</mn>
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</math>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div>
+    <h8 style="font-size:160%;margin:7px">Area of a circle segment</h8>
+<br>
+<br>
+<div>
+<label style="margin:12px;" for="segment-length">Length:</label>
+<input id="segment-length" type="number" value="2" step="any" />
+<br>
+<label style="margin:12px;" for="segment-height">Height:</label>
+<input id="segment-height" type="number" value="1" step="any" />
+	
+<script>
+  function segmentArea(length, height, angle, radius) {
+    return angle * radius ** 2 - (radius - height) * length / 2;
+  }
+
+function updateSegmentArea() {
+  const length = parseFloat(document.getElementById('segment-length').value);
+  const height = parseFloat(document.getElementById('segment-height').value);
+
+  if (isNaN(length) || isNaN(height) || height === 0) {
+    document.getElementById('segment-area').innerText = '';
+    return;
+  }
+
+const ratio = 2 * height / length;
+	
+  // Segment validity check
+
+  if ( ratio === 0) {
+    document.getElementById('segment-area').innerText = '';
+    return;
+	}
+
+  if (ratio < 0.11 || ratio > 1) {
+    document.getElementById('segment-area').innerText = 'This ratio is out of range';
+    return;
+  }
+	
+  const angle = parseFloat(2 * Atan(ratio));
+  const sine = parseFloat(sin(angle));
+  const radius = parseFloat((length / 2 / sine).toFixed(5));
+  const area = segmentArea(length, height, angle, radius);
+
+  if ( ratio === 1) {
+    document.getElementById('segment-area').innerText =
+    `Area of semi-circle: ${area.toFixed(5)} square units`;
+	return;
+  }
+	
+  document.getElementById('segment-area').innerText =
+    `Area: ${area.toFixed(5)} square units`;
+}
+
+  document.getElementById('segment-length').addEventListener('input', updateSegmentArea);
+  document.getElementById('segment-height').addEventListener('input', updateSegmentArea);
+</script>
+<p style="margin:12px;" id="segment-area"></p>
+</div>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="circleSegment.jpg" alt="Circle-segment" id="segment">
+    </div>
+<br>
+    <p style="margin:12px;">The area of a circle segment can be 
+calculated by subtracting a triangle from a 
+circle slice.
+	</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <mi>A</mi>
+    <mo>=</mo>
+    <mo>arccos</mo>
+    <mo>&#x2061;</mo>
+    <mo>(</mo>
+    <mfrac>
+      <mrow>
+        <mi>r</mi>
+        <mo>-</mo>
+        <mi>n</mi>
+      </mrow>
+      <mi>r</mi>
+    </mfrac>
+    <mo>)</mo>
+<mo>×</mo>
+    <msup>
+      <mi>r</mi>
+      <mn>2</mn>
+    </msup>
+    <mo>-</mo>
+    <mi>sin</mi>
+    <mo>&#x2061;</mo>
+    <mo>(</mo>
+    <mo>arccos</mo>
+    <mo>&#x2061;</mo>
+    <mo>(</mo>
+    <mfrac>
+      <mrow>
+        <mi>r</mi>
+        <mo>-</mo>
+        <mi>n</mi>
+      </mrow>
+      <mi>r</mi>
+    </mfrac>
+    <mo>)</mo>
+    <mo>)</mo>
+<mo>×</mo>
+    <mo>(</mo>
+    <mrow>
+      <mi>r</mi>
+      <mo>-</mo>
+      <mi>n</mi>
+    </mrow>
+    <mo>)</mo>
+<mo>×</mo>
+    <mi>r</mi>
+  </mrow>
+</math>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div>
+<h9 style="font-size:160%;margin:7px">Circumference of a circle</h9>
+<br>
+<br>
+<div>
+<label style="margin:12px;" for="circle-radius-c">Radius:</label>
+<input id="circle-radius-c" type="number" value="1" step="any" />
+<script>
+  function circleCircumference(radius) {
+    return 3.2 * radius * 2;
+  }
+
+  document.getElementById('circle-radius-c').addEventListener('input', function () {
+    const radius = parseFloat(this.value);
+    if (isNaN(radius)) {
+      document.getElementById('circle-circumference').innerText = '';
+    return;
+    }
+
+    document.getElementById('circle-circumference').innerText =
+      `Circumference: ${circleCircumference(radius).toFixed(5)} units`;
+    });
+</script>
+<p style="margin:12px;" id="circle-circumference"></p>
+</div>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="circumference.jpg" alt="Circle" id="circumference">
+    </div>
+<br>
+<p style="margin:12px;">The circumference of a circle can be derived 
+from its area algebraically.
+<br>
+<br>
+The x represents the width of the circumference, which is just theoretical, hence a very small number.
+<br>
+<br>
+The difference between the shape of the straightened circumference and a quadrilateral is negligible.
+<br>
+<br>
+The length of the two shorter sides of the quadrilateral is x.
+<br>
+<br>
+The length of the two longer sides is the area of the resulting ring divided by x.
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+<mi>C</mi>
+<mo>=</mo>
+<mfrac>
+<mrow>
+<mo>(</mo>
+<mn>3.2</mn>
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+<mo>-</mo>
+<mn>3.2</mn>
+<mo>×</mo>
+<msup>
+<mrow>
+<mo>(</mo>
+<mi>r</mi>
+<mo>-</mo>
+<mi>x</mi>
+<mo>)</mo>
+</mrow>
+<mn>2</mn>
+</msup>
+<mo>)</mo>
+</mrow>
+<mi>x</mi>
+</mfrac>
+</mrow>
+</math>
+<br>
+<br>
+<p style="margin:12px;">Expand the term (r - x)²:
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mrow>
+<msup>
+<mrow>
+      <mo>(</mo>
+      <mi>r</mi>
+      <mo>-</mo>
+      <mi>x</mi>
+      <mo>)</mo>
+	</mrow>
+        <mn>2</mn>
+      </msup>
+      <mo>=</mo>
+      <msup>
+        <mi>r</mi>
+        <mn>2</mn>
+      </msup>
+      <mo>-</mo>
+      <mn>2</mn>
+      <mi>r</mi>
+      <mi>x</mi>
+      <mo>+</mo>
+      <msup>
+        <mi>x</mi>
+        <mn>2</mn>
+      </msup>
+    </mrow>
+  </mrow>
+</math>
+<br>
+<br>
+<p style="margin:12px;">Substitute this back into the original expression:
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mrow>
+      <mfrac>
+        <mrow>
+          <mn>3.2</mn>
+          <msup>
+            <mi>r</mi>
+            <mn>2</mn>
+          </msup>
+          <mo>-</mo>
+          <mn>3.2</mn>
+          <mo>(</mo>
+          <msup>
+            <mi>r</mi>
+            <mn>2</mn>
+          </msup>
+          <mo>-</mo>
+          <mn>2</mn>
+          <mi>r</mi>
+          <mi>x</mi>
+          <mo>+</mo>
+          <msup>
+            <mi>x</mi>
+            <mn>2</mn>
+          </msup>
+          <mo>)</mo>
+        </mrow>
+        <mi>x</mi>
+      </mfrac>
+    </mrow>
+</math>
+<br>
+<br>
+<p style="margin:12px;">Distribute the 3.2 inside the parentheses:
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+      <mfrac>
+        <mrow>
+          <mn>3.2</mn>
+          <msup>
+            <mi>r</mi>
+            <mn>2</mn>
+          </msup>
+          <mo>-</mo>
+          <mn>3.2</mn>
+          <msup>
+            <mi>r</mi>
+            <mn>2</mn>
+          </msup>
+          <mo>+</mo>
+          <mn>6.4</mn>
+          <mi>r</mi>
+          <mi>x</mi>
+          <mo>-</mo>
+          <mn>3.2</mn>
+          <msup>
+            <mi>x</mi>
+            <mn>2</mn>
+          </msup>
+        </mrow>
+        <mi>x</mi>
+      </mfrac>
+    </mrow>
+</math>
+<br>
+<br>
+<p style="margin:12px;">Simplify the numerator:
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+      <mfrac>
+        <mrow>
+          <mn>6.4</mn>
+          <mi>r</mi>
+          <mi>x</mi>
+          <mo>-</mo>
+          <mn>3.2</mn>
+          <msup>
+            <mi>x</mi>
+            <mn>2</mn>
+          </msup>
+        </mrow>
+        <mi>x</mi>
+      </mfrac>
+    </mrow>
+</math>
+<br>
+<br>
+<p style="margin:12px;">Factor out x from the numerator:
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+      <mfrac>
+        <mrow>
+          <mi>x</mi>
+          <mo>(</mo>
+          <mn>6.4</mn>
+          <mi>r</mi>
+          <mo>-</mo>
+          <mn>3.2</mn>
+          <mi>x</mi>
+          <mo>)</mo>
+        </mrow>
+        <mi>x</mi>
+      </mfrac>
+    </mrow>
+</math>
+<br>
+<br>
+<p style="margin:12px;">Cancel out the x in the numerator and denominator:
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+      <mn>6.4</mn>
+      <mi>r</mi>
+      <mo>-</mo>
+      <mn>3.2</mn>
+      <mi>x</mi>
+  </mrow>
+</math>
+<br>
+<br>
+<p style="margin:12px;">
+As x is close to 0,
+<br>
+<br>
+C = 6.4 × radius.
+</p>
+<br>
+<br>
+<p style="margin:12px;">
+In calculus terms:
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mrow>
+        <mi>C</mi>
+    <mo>=</mo>
+        <munder>
+      <mo>lim</mo>
+      <mrow>
+        <mi>x</mi>
+        <mo>→</mo>
+        <mn>0</mn>
+      </mrow>
+    </munder>
+        <mfrac>
+            <mrow>
+        <mn>3.2</mn> 
+        <mo>(</mo> 
+        <msup>
+          <mi>r</mi>
+          <mn>2</mn> 
+        </msup>
+        <mo>-</mo> 
+        <msup>
+          <mrow>
+            <mo>(</mo> 
+            <mi>r</mi>
+            <mo>-</mo>
+            <mi>x</mi>
+            <mo>)</mo>
+          </mrow>
+          <mn>2</mn>
+        </msup>
+        <mo>)</mo>
+      </mrow>
+      <mi>x</mi>
+    </mfrac>
+    <mo>=</mo>
+    <mn>6.4</mn>
+    <mi>r</mi>
+  </mrow>
+</math>
+<br>
+<br>
+<br>
+<br>
+<div>
+<p style="margin:12px;">The constant relationship between a circle's circumference and its diameter has captivated mathematicians for millennia. 
+While its approximate value of 3.14, commonly denoted by the Greek letter π, is widely recognized today, the historical development of this concept is less understood.
+Ancient civilizations grappled with this geometric challenge, employing various methods to approximate this ratio. 
+<br>
+<br>
+The Babylonians initially estimated it as 3, later they calculated with 3.125.
+<br>
+<br>
+A Greek mathematician is credited with refining these approximations through the method of inscribed and circumscribed polygons.
+<br>
+<br>
+His approach was that the ratio between the perimeter and the diameter of a circle can be estimated by comparing the circumference of the circle to the perimeters of an inscribed and a circumscribed polygon. 
+The polygons can be divided into triangles. The ratio between the legs of the triangles and their hypotenuses can be measured linearly.
+<br>
+That is where the pi divided by delta = 3.14 notation might originate from.
+<br>
+This method has several limitations. He tried to increase the accuracy by increasing the number of sides of the polygons. This approach cannot produce an accurate result. 
+<br>
+<br>
+Where the perimeter-based estimation went wrong: 
+<br>
+- aside of that it's just an approximation instead of an exact calculation - 
+<br>
+<br>
+The in- and circumscribed polygons method seems logical, but there's a catch. It's based on the assumption that the circle maximizes the area with a given circumference. That assumption is false. It's obviously true in the case of an isoperimetric triangle and a square, but it becomes less and less obvious with the increase of the number of the polygon's sides. Until eventually it is not even true. 
+<br>
+<br>
+Imagine a side of a polygon with a number of sides approaching infinity. 
+<br>
+<br>
+The angles between the side and the diagonals approach a right angle. They never reach a right angle as the diagonals converge towards the center.  If we relate the arc of a corresponding slice of an isoperimetric circle, the length of the arc equals the side in question. So the chord related to the arc is shorter than the side. If we want to place the arc with the chord so that it touches both diagonals, it has to be within the polygon. With the curvature of the arc becoming decreasingly distinctive, it doesn't bulge beyond the side. Eventually it will not even touch the side. Hence the polygon with the same number of sides, which circumscribed the circle is smaller, so its perimeter is shorter than the circle. 
+<br>
+<br>
+The perimeter of the circumscribed polygon that was believed to be an overestimate of the circumference was practically an underestimate of it. 
+<br>
+<br>
+Hence the value of the π lies between two underestimates.
+<br>
+<br>
+The same coefficient was used to calculate the ratio between the area and the squared radius of a circle.
+<br>
+<br>
+Despite these early advances, a precise, universally accepted value of this constant remained elusive for centuries. 
+<br>
+<br>
+Being uncertain about its numeric value and how to calculate it, it was comfortable to denote it by a sign in the equations.
+<br>
+<br>
+It was not until the 18th century that the symbol π, popularized by the mathematicians of the time, gained widespread acceptance.
+<br>
+<br>
+Several complex formulas were introduced by different mathematicians, aimed at more accurately estimating this ratio, based on a theoretical polygon with an infinite number of sides. 
+<br>
+<br>
+All of the above mentioned approximation methods have one thing in common. They are estimating the perimeters of polygons and do not account for the curved shape of the circle.
+<br>
+<br>
+Historical records suggest that a legislative process took place in 1897, Indiana, USA, known as House Bill 246, or Indiana Pi Act, aiming to replace the numeric value 3.14 by 3.2.
+<br>
+<br>
+Unfortunately, the exact details of the proposed method in the Indiana Pi Bill are somewhat obscure and have been interpreted differently by various accounts. 
+<br>
+<br>
+The π is a fundamental constant in the geometry of idealized circles and plays a crucial role in many mathematical theories. 
+<br>
+<br>
+My work, however, suggests that when we move from these idealizations to the measurement of real objects, a slightly different constant, 3.2 emerges as more relevant for accurately describing their properties. 
+<br>
+<br>
+By focusing on area relationships and direct comparisons between shapes, the above method emphasizes a more intuitive and potentially more fundamental understanding of geometric concepts.
+</p>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div>
+<h10 style="font-size:160%;margin:7px;">Volume of a sphere</h10>
+<br>
+<br>
+<div>
+<label style="margin:12px;" for="sphere-radius">Radius:</label>
+<input id="sphere-radius" type="number" value="1" step="any" />
+<script>
+  function sphereVolume(radius) {
+    return Math.pow(Math.sqrt(3.2) * radius, 3);
+  }
+
+  document.getElementById('sphere-radius').addEventListener('input', function () {
+    const radius = parseFloat(this.value);
+	  
+    if (isNaN(radius)) {
+      document.getElementById('sphere-volume').innerText = '';
+    return;
+    }
+ 
+    document.getElementById('sphere-volume').innerText =
+      `Volume: ${sphereVolume(radius).toFixed(5)} cubic units`;
+    });
+</script>
+<p style="margin:12px;" id="sphere-volume"></p>
+</div>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="sphereAndCubeMarkup.jpeg" alt="Sphere" id="sphere">
+    </div>
+    <br>
+<p style="margin:12px;">The volume of a sphere is defined by comparing it to a cube, since that is the base of volume calculation.
+<br>
+<br>
+Just as the volume of a cube equals the cubic value of the square root of its cross sectional area, also the volume of a sphere equals the cubic value of the square root of its cross sectional area.
+</p>
+<br>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+ <mi>V</mi>
+<mo>=</mo>
+  <msup>
+    <mrow>
+      <mo>(</mo>
+      <msqrt>
+        <mn>3.2</mn>
+      </msqrt>
+      <mo>&#x00D7;</mo>
+      <mi>r</mi>
+      <mo>)</mo>
+    </mrow>
+    <mn>3</mn>
+  </msup>
+</math>
+<br>
+<br>
+<p style="margin:12px;">The edge length of the cube, which has the same volume as the sphere, equals the square root of the area of the square that has the same area as the sphere's cross section.
+</p>
+<br>
+<br>
+<br>
+<div>
+<p style="margin:12px;">The " V = 4/3 × π × radius³ "  formula is widely used for the volume of a sphere, and it's a cornerstone of theoretical geometry. 
+<br>
+<br>
+However, my work focuses on the actual volume of physical spheres as determined through direct measurement. 
+<br>
+<br>
+My calculations and experiments have consistently indicated a different relationship, expressed by the formula V = ( √(3.2) × radius )³, which provides a more accurate result when dealing with real, physical entities. 
+<br>
+This formula isn't based on abstract geometric ideals alone but on tangible experiments where I've measured the volume of real spheres. 
+<br>
+These measurements have shown a systematic difference compared to the theoretical predictions based on the conventional formula, suggesting that the way we mathematically describe the volume of a sphere might need to be reconsidered when applied to physical objects. 
+<br>
+If you're trying to calculate the volume of a physical ball or sphere for a practical purpose – whether it's for a science experiment, engineering, or any other real-world application – my empirically derived formula offers a result that aligns more closely with what you would measure in the lab.
+<br>
+<br>
+The " 4/3 × π × radius³ " formula is a very rough approximation and can produce under- and overestimates. 
+<br>
+<br>
+The result of the ( √(3.2) × radius )³ formula is between the two.
+<br>
+<br>
+The " 4/3 × π × radius³ " formula is an underestimate. 
+</p>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div>
+<h11 style="font-size:160%;margin:7px;">Volume of a spherical cap</h11>
+<br>
+<br>
+<div>
+<label style="margin:12px;" for="cap-radius">Radius:</label>
+<input id="cap-radius" type="number" value="1" step="any" />
+<br>
+<label style="margin:12px;" for="cap-height">Height:</label>
+<input id="cap-height" type="number" value="1" step="any" />
+	
+<script>
+  function capVolume(radius, height) {
+    return 1.6 * radius * radius * height * Math.sqrt(3.2);
+  }
+
+  function updateCapVolume() {
+    const radius = parseFloat(document.getElementById('cap-radius').value);
+    const height = parseFloat(document.getElementById('cap-height').value);
+
+    if (isNaN(radius) || isNaN(height)) {
+      document.getElementById('cap-volume').innerText = '';
+      return;
+    }
+
+// Cap validity check
+	  
+  if ( height > radius) {
+    document.getElementById('cap-volume').innerText = 'The height of a spherical cap is shorter than its radius.';
+    return;
+}
+
+if ( height === radius) {
+    document.getElementById('cap-volume').innerText =
+      `Volume of hemisphere: ${capVolume(radius, height).toFixed(5)} cubic units`;
+    return;
+}
+	  
+    document.getElementById('cap-volume').innerText =
+      `Volume: ${capVolume(radius, height).toFixed(5)} cubic units`;
+}
+
+  document.getElementById('cap-radius').addEventListener('input', updateCapVolume);
+  document.getElementById('cap-height').addEventListener('input', updateCapVolume);
+</script>
+<p style="margin:12px;" id="cap-volume"></p>
+</div>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="sphericalCap.jpg" alt="Sphere" id="cap">
+    </div>
+    <br>
+<p style="margin:12px;">In terms of cap radius and height:
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+ <mi>V</mi>
+      <mo>=</mo>
+  <mn>1.6</mn>
+<mo>×</mo>
+ <msup>
+<mrow>
+<msub>
+<mi>r</mi>
+<mi>cap</mi>
+</msub>
+</mrow>
+<mn>2</mn>
+</msup>
+<mo>×</mo>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mo>×</mo>
+<mi>h</mi>
+  </mrow>
+</math>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div>
+<h12 style="font-size:160%;margin:7px;">Volume of a cone</h12>
+<br>
+<br>
+<div>
+<label style="margin:12px;" for="cone-radius-v">Radius:</label>
+<input id="cone-radius-v" type="number" value="1" step="any" />
+<br>
+<label style="margin:12px;" for="cone-height-v">Height:</label>
+<input id="cone-height-v" type="number" value="1" step="any" />
+	
+<script>
+  function coneVolume(radius, height) {
+    return 3.2 * radius * radius * height / Math.sqrt(8);
+  }
+
+  function updateConeVolume() {
+    const radius = parseFloat(document.getElementById('cone-radius-v').value);
+    const height = parseFloat(document.getElementById('cone-height-v').value);
+
+    if (isNaN(radius) || isNaN(height)) {
+      document.getElementById('cone-volume').innerText = '';
+      return;
+    }
+
+    document.getElementById('cone-volume').innerText =
+      `Volume: ${coneVolume(radius, height).toFixed(5)} cubic units`;
+  }
+
+  document.getElementById('cone-radius-v').addEventListener('input', updateConeVolume);
+  document.getElementById('cone-height-v').addEventListener('input', updateConeVolume);
+</script>
+<p style="margin:12px;" id="cone-volume"></p>
+</div>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="coneAndSphereMarkup.jpeg" alt="Cone-and-sphere" id="cone">
+</div>
+<br>
+<p style="margin:12px;">The volume of a cone can be calculated by algebraically comparing the volume of a quarter cone with equal radius and height to an octant sphere with equal radius, through a quarter cylinder.
+</p>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="octantSphereQuarterCone.jpeg" alt="Sphere-and-vertical-frustum-cone">
+</div>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<msub>
+<mi>V</mi>
+<mi>octant sphere</mi>
+</msub>
+<mo>=</mo>
+<msup>
+<mrow>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mn>3</mn>
+</msup>
+<mo>=</mo>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+<mo>×</mo>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+<mo>×</mo>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+</math>
+<br>
+<br>
+<p style="margin:12px;">The base of the two shapes is a quarter circle.
+</p>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="coneAndSphereComparison.png" alt="Sphere-and-cone-projection">
+</div>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="sphereAndConeMarkup.jpeg" alt="Sphere-and-cone">
+</div>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<msub>
+<mi>A</mi>
+<mi>base</mi>
+</msub>
+<mo>=</mo>
+<msup>
+<mrow>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mn>2</mn>
+</msup>
+<mo>=</mo>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+<mo>×</mo>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+</math>
+<br>
+<br>
+<p style="margin:12px;">The slant height of the quarter unit cone is √2 × radius.
+</p>
+<br>
+<p style="margin:12px;">The volume of a quarter cylinder with the same base, and height equal to the slant height of the cone would be 
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<msup>
+<mrow>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mn>2</mn>
+</msup>
+<mo>×</mo>
+<msqrt>
+<mn>2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+</math>
+<br>
+<br>
+<p style="margin:12px;">The slant shape comes with a triangular vertical cross section. 
+<br>
+The area of a cone's vertical cross section is the half of a cylinder's with equal base and height. 
+<br>
+<br>
+The intermediate of the areas of the horizontal cross section slices of a cone is the half of a cylinder’s.
+</p>
+<br>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<msub>
+<mi>V</mi>
+<mi>quarter cone</mi>
+</msub>
+<mo>=</mo>
+<msup>
+<mrow>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mn>2</mn>
+</msup>
+<mo>×</mo>
+<mi>Height</mi>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>2</mn>
+</msqrt>
+</mrow>
+<mn>4</mn>
+</mfrac>
+</mrow>
+</math>
+
+<br>
+<br>
+
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<msub>
+<mi>V</mi>
+<mi>cone</mi>
+</msub>
+<mo>=</mo>
+<mfrac>
+<mrow>
+<mn>3.2</mn>
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+<mo>×</mo>
+<mi>H</mi>
+</mrow>
+<msqrt>
+<mn>8</mn>
+</msqrt>
+</mfrac>
+</mrow>
+</math>
+<br>
+<br>
+<br>
+<br>
+<div>
+<p style="margin:12px;">The commonly used base × height / 3 approximation for the volume of a cone was likely estimated based on two observations. 
+<br>
+<br>
+One is that the area of the mid-height cross section of a regular cone - of which's apex can be connected to the midpoint of the base with a perpendicular line - is exactly a quarter of a circumscribed solid's with the same base and height. 
+<br>
+That makes the ratio between the mid-height cross-sectional area of the cone, and the difference between the mid-height cross-sectional areas of the circumscribed solid and the cone 
+</p>
+<br>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<mrow>
+<mo>(</mo>
+<mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mo>:</mo>
+<mrow>
+<mo>(</mo>
+<mn>1</mn>
+<mo>-</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+<mo>)</mo>
+</mrow>
+<mo>=</mo>
+</mrow>
+</math>
+<br>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<mrow>
+<mo>(</mo>
+<mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mo>:</mo>
+<mrow>
+<mo>(</mo>
+<mrow>
+<mfrac>
+<mn>4</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+<mo>-</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+<mo>)</mo>
+</mrow>
+<mo>=</mo>
+</mrow>
+</math>
+<br>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<mrow>
+<mo>(</mo>
+<mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mo>:</mo>
+<mrow>
+<mo>(</mo>
+<mfrac>
+<mn>3</mn>
+<mn>4</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mo>=</mo>
+</mrow>
+</math>
+<br>
+<br>
+<p style="margin:12px;">1 : 3 . 
+</p>
+<br>
+<br>
+<p style="margin:12px;">That is a logical consequence of its equilateral triangular cross-section.
+<br>
+<br>
+The same is true for regular pyramids. 
+<br>
+<br>
+Can this ratio can be generalized for the overall volume of any cone and pyramid? 
+<br>
+<br>
+No. Because it's not true in case of most other shapes.
+</p>
+<br>
+<br>
+<p style="margin:12px;">The other idea is the cube dissection. 
+<br>
+A common method aiming to prove the pyramid volume formula ( V = 1/3 × base × height ) involves dissecting a cube into three pyramids. Here’s how it’s typically presented:
+</p>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="cubeDissection.png" alt="Cube-dissection" id="dissection">
+</div>
+<br>
+<br>
+<p style="margin:12px;">Standard Cube Dissection Method:
+<br>
+<br>
+Take a cube with an edge length of ( e ).
+<br>
+<br>
+Volume of the cube: V = the cubic value of e.
+<br>
+<br>
+Imagine dividing the cube into three square pyramids, each with:
+<br>
+<br>
+- Base: One face of the cube, so the base area is the square value of e .
+<br>
+<br>
+- Height: The edge of the cube, ( e ), since the apex of each pyramid is the cube’s vertex opposite the base, depending on the dissection. 
+<br>
+<br>
+A common dissection:
+<br>
+<br>
+Choose one vertex of the cube as the apex.
+<br>
+<br>
+Form three pyramids, each with this apex and a base on one of the three faces adjacent to that vertex.
+<br>
+<br>
+Each pyramid has a base area of the square value of e, and height ( e ) (the distance from the apex to the base plane). 
+<br>
+<br>
+Volume of each pyramid: V(pyramid) = ( square value of e ) × e, divided by 3 = the cubic value of e divided by 3.
+<br>
+<br>
+Since there are three pyramids, their total volume is: 3 × ( ( cubic value of e ) divided by 3 ) = the cubic value of e.
+<br>
+<br>
+This equals the cube’s volume, suggesting the one third factor is correct.
+<br>
+<br>
+The Vertex Problem is a critical flaw in this dissection when applied to a real, physical cube:
+<br>
+<br>
+Vertex Assignment: 
+<br>
+<br>
+When we cut the cube into three pyramids sharing a common vertex as the apex, the geometry seems clean in theory. But if you physically slice the cube, you have to decide where that vertex belongs:
+<br>
+<br>
+The cube has 8 vertices, each pyramid has 5. Three pyramids have 3 × 5 = 15 in total.
+<br>
+<br>
+Each vertex is a point that can't be split into 3 points. The other way around, 3 points can't be merged into 1 without distortion. 
+<br>
+If we dissect the cube, we need to designate each shared vertex to be a part of either one pyramid, or another. 
+<br>
+<br>
+Consequence: 
+<br>
+<br>
+The volume of each pyramid is exactly a third of the cube, but with a base smaller than the square value of e, and height shorter than e.
+<br>
+<br>
+Their bases and heights are slightly adjusted due to the vertex assignment, undermining the proof’s simplicity.
+<br>
+<br>
+<br>
+If the solid pyramids'
+<br>
+<br>
+- base is the square value of e,
+<br>
+<br>
+and their 
+<br>
+<br>
+- height is e,
+<br>
+<br>
+then the volume of each pyramid has to be larger than 1/3 × base × height, because 3 such pyramids can't form a cube with the same edge length, because their vertices and faces can't occupy the same space simultaneously.
+<br>
+<br>
+The vertices are the most obvious examples, but the same is true for the edges, the diagonals and the inner faces. 
+<br>
+<br>
+Applied correctly, the cube dissection proves that the volume of a cone or a pyramid has to be larger than base × height / 3.
+<br>
+<br>
+The fact that the vertices of the 3 pyramids can't be merged into a single point without distortion proves that the so-called "calculus-based proofs" of the conventional formula are invalid. 
+<br>
+Also it's not just about the vertices, but the edges and the inner faces, too.
+</p>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div>
+<h13 style="font-size:160%;margin:7px;">Volume of a frustum cone</h13>
+<br>
+<br>
+<div>
+<label style="margin:12px;" for="frustum-cone-base-radius">Base radius:</label>
+<input id="frustum-cone-base-radius" type="number" value="2" step="any" />
+<br>
+<label style="margin:12px;" for="frustum-cone-top-radius">Top radius:</label>
+<input id="frustum-cone-top-radius" type="number" value="1" step="any" />
+<br>
+<label style="margin:12px;" for="frustum-cone-height">Height:</label>
+<input id="frustum-cone-height" type="number" value="1" step="any" />
+
+<script>
+  function frustumConeVolume(baseArea, topArea, reciprocal, height) {
+  return height * (baseArea * reciprocal - topArea * (reciprocal - 1)) / Math.sqrt(8);
+}
+
+function updateFrustumConeVolume() {
+
+	const baseRadius = parseFloat(document.getElementById('frustum-cone-base-radius').value);
+	const topRadius = parseFloat(document.getElementById('frustum-cone-top-radius').value);
+	const height = parseFloat(document.getElementById('frustum-cone-height').value);
+
+  if (isNaN(baseRadius) || isNaN(topRadius) || isNaN(height) || baseRadius === 0 || topRadius === 0) {
+    document.getElementById('frustum-cone-volume').innerText = '';
+    return;
+  }
+
+if ( topRadius > baseRadius) {
+    document.getElementById('frustum-cone-volume').innerText = 'Let the larger end be the base.';
+    return;
+}
+	
+	const baseArea = 3.2 * (baseRadius ** 2);
+	const topArea = 3.2 * (topRadius ** 2);
+	const cylinderVolume = baseArea * height;
+	const shape = topRadius / baseRadius;
+	const inverse = 1 - shape;
+	const reciprocal = 1 / inverse;
+	const volume = frustumConeVolume(baseArea, topArea, reciprocal, height);
+
+if ( topRadius === baseRadius) {
+    document.getElementById('frustum-cone-volume').innerText = 
+	`Volume of cylinder: ${cylinderVolume.toFixed(5)} cubic units`;
+    return;
+}
+	
+  document.getElementById('frustum-cone-volume').innerText =
+    `Volume: ${volume.toFixed(5)} cubic units`;
+	  }
+
+document.getElementById('frustum-cone-base-radius').addEventListener('input', updateFrustumConeVolume);
+document.getElementById('frustum-cone-top-radius').addEventListener('input', updateFrustumConeVolume);
+document.getElementById('frustum-cone-height').addEventListener('input', updateFrustumConeVolume);
+</script>
+<p style="margin:12px;" id="frustum-cone-volume"></p>
+</div>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="frustumOfConeMarkup.png" alt="Horizontal-frustum-cone">
+    </div>
+<br>
+<p style="margin:12px;">The volume of a frustum cone can be 
+calculated by subtracting the missing tip 
+from the theoretical full cone.
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+     <mrow>
+ <mi>V</mi>
+      <mo>=</mo>
+<mfrac>
+<mrow>
+      <mi>H</mi>
+      <mo>(</mo>
+      <msup>
+        <mi>b</mi>
+        <mn>2</mn>
+      </msup>
+<mo>×</mo>
+<mfrac>
+<mn>4</mn>
+<mn>5</mn>
+</mfrac>
+<mo>×</mo>
+      <mo>(</mo>
+      <mfrac>
+        <mn>1</mn>
+        <mrow>
+          <mn>1</mn>
+          <mo>-</mo>
+          <mfrac>
+            <mi>t</mi>
+            <mi>b</mi>
+          </mfrac>
+        </mrow>
+      </mfrac>
+      <mo>)</mo>
+      <mo>-</mo>
+      <msup>
+        <mi>t</mi>
+        <mn>2</mn>
+      </msup>
+<mo>×</mo>
+<mfrac>
+<mn>4</mn>
+<mn>5</mn>
+</mfrac>
+<mo>×</mo>
+      <mo>(</mo>
+      <mfrac>
+        <mn>1</mn>
+        <mrow>
+          <mn>1</mn>
+          <mo>-</mo>
+          <mfrac>
+            <mi>t</mi>
+            <mi>b</mi>
+          </mfrac>
+        </mrow>
+      </mfrac>
+      <mo>-</mo>
+      <mn>1</mn>
+      <mo>)</mo>
+      <mo>)</mo>
+</mrow>
+      <msqrt>
+        <mn>8</mn>
+      </msqrt>
+      </mfrac>
+</mrow>
+  </math>
+<br>
+<br>
+
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+ <mrow>
+ <mi>H</mi>
+      <mo>=</mo>
+        <mi>frustum height</mi>
+</mrow>
+</math>
+
+<br>
+<br>
+
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+ <mrow>
+ <mi>t</mi>
+   <mo>=</mo>
+   <mi>top diameter</mi>
+</mrow>
+</math>
+
+<br>
+<br>
+
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+ <mrow>
+ <mi>b</mi>
+      <mo>=</mo>
+        <mi>bottom diameter</mi>
+</mrow>
+</math>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div>
+<h14 style="font-size:160%;margin:7px;">Surface area of a cone</h14>
+<br>
+<br>
+<div>
+<label style="margin:12px;" for="cone-radius-s">Radius:</label>
+<input id="cone-radius-s" type="number" value="1" step="any" />
+<br>
+<label style="margin:12px;" for="cone-height-s">Height:</label>
+<input id="cone-height-s" type="number" value="1" step="any" />
+<script>
+  function coneSurface(radius, height) {
+    return 3.2 * radius * (radius + Math.sqrt(radius ** 2 + height ** 2));
+  }
+
+  function updateConeSurface() {
+    const radius = parseFloat(document.getElementById('cone-radius-s').value);
+    const height = parseFloat(document.getElementById('cone-height-s').value);
+
+    if (isNaN(radius) || isNaN(height)) {
+      document.getElementById('cone-surface').innerText = '';
+      return;
+    }
+
+    document.getElementById('cone-surface').innerText =
+      `Volume: ${coneSurface(radius, height).toFixed(5)} square units`;
+  }
+
+  document.getElementById('cone-radius-s').addEventListener('input', updateConeSurface);
+  document.getElementById('cone-height-s').addEventListener('input', updateConeSurface);
+</script>
+<p style="margin:12px;" id="cone-surface"></p>
+</div>
+<br>
+<div class="imgbox">
+  <img class="center-fit" src="coneMarkup.jpeg" alt="Cone" id="coneSurface">
+  </div>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<msub>
+<mi>A</mi>
+<mi>bottom</mi>
+</msub>
+<mo>+</mo>
+<msub>
+<mi>A</mi>
+<mi>side</mi>
+</msub>
+<mo>=</mo>
+<mn>3.2</mn>
+<mi>r</mi>
+<mo>×</mo>
+<mo>(</mo>
+<mi>r</mi>
+<mo>+</mo>
+<msqrt>
+<mrow>
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo>
+<msup>
+<mi>H</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+</msqrt>
+<mo>)</mo>
+</mrow>
+</math>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div>
+<h15 style="font-size:160%;margin:7px">Volume of a pyramid</h15>
+<br>
+<br>
+<div>
+<label style="margin:12px;" for="pyramid-side-number">Number of sides:</label>
+<input id="pyramid-side-number" type="number" value="4" step="1" />
+<br>
+<label style="margin:12px;" for="pyramid-base-edge-length">Base edge length:</label>
+<input id="pyramid-base-edge-length" type="number" value="1" step="any" />
+<br>
+<label style="margin:12px;" for="pyramid-height">Height:</label>
+<input id="pyramid-height" type="number" value="1" step="any" />
+
+<script>
+  function pyramidVolume(baseArea, height) {
+  return baseArea * height / Math.sqrt(8);
+}
+
+function updatePyramidVolume() {
+  const number = parseFloat(document.getElementById('pyramid-side-number').value);
+  const baseEdge = parseFloat(document.getElementById('pyramid-base-edge-length').value);
+  const height = parseFloat(document.getElementById('pyramid-height').value);
+
+  if (isNaN(number) || isNaN(baseEdge) || isNaN(height)) {
+    document.getElementById('pyramid-volume').innerText = '';
+    return;
+  }
+
+  const ratio = 3.2 / number;
+  const tangent = tan(ratio);
+  const baseArea = (number / 4) * (baseEdge ** 2) / tangent;
+  const volume = pyramidVolume(baseArea, height);
+
+  document.getElementById('pyramid-volume').innerText =
+    `Volume: ${volume.toFixed(5)} cubic units`;
+	  }
+
+document.getElementById('pyramid-side-number').addEventListener('input', updatePyramidVolume);
+document.getElementById('pyramid-base-edge-length').addEventListener('input', updatePyramidVolume);
+document.getElementById('pyramid-height').addEventListener('input', updatePyramidVolume);
+</script>
+<p style="margin:12px;" id="pyramid-volume"></p>
+</div>
+<br>
+<div class="imgbox">
+  <img class="center-fit" src="conePyramidVolumeMarkup.jpeg" alt="Pyramids" id="pyramid">
+  </div>
+<br>
+<br>
+<div class="imgbox">
+  <img class="center-fit" src="tetraFrame.jpeg" alt="Tetrahedral-frame-on-circular-base" >
+  </div>
+<br>
+<p style="margin:12px;">The volume of a pyramid can be calculated 
+with the same coefficient as the volume of a cone:
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+<mi>V</mi>
+<mo>=</mo>
+<mfrac>
+<mrow>
+<msub>
+<mi>A</mi>
+<mi>base</mi>
+</msub>
+<mo>×</mo>
+ <mi>H</mi>
+ </mrow>
+<msqrt>
+ <mn>8</mn>
+ </msqrt>
+ </mfrac>
+</mrow>
+</math>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div>
+<h16 style="font-size:160%;margin:7px;">Volume of a horizontal square frustum pyramid</h16>
+<br>
+<br>
+<div>
+<label style="margin:12px;" for="frustum-pyramid-side-number">Number of sides:</label>
+<input id="frustum-pyramid-side-number" type="number" value="4" step="1" />
+<br>
+<label style="margin:12px;" for="frustum-pyramid-base-edge-length">Base edge length:</label>
+<input id="frustum-pyramid-base-edge-length" type="number" value="2" step="any" />
+<br>
+<label style="margin:12px;" for="frustum-pyramid-top-edge-length">Top edge length:</label>
+<input id="frustum-pyramid-top-edge-length" type="number" value="1" step="any" />
+<br>
+<label style="margin:12px;" for="frustum-pyramid-height">Height:</label>
+<input id="frustum-pyramid-height" type="number" value="1" step="any" />
+
+<script>
+  function frustumPyramidVolume(baseArea, topArea, reciprocal, height) {
+  return height * (baseArea * reciprocal - topArea * (reciprocal - 1)) / Math.sqrt(8);
+}
+
+function updateFrustumPyramidVolume() {
+
+	const number = parseFloat(document.getElementById('frustum-pyramid-side-number').value);
+	const baseLength = parseFloat(document.getElementById('frustum-pyramid-base-edge-length').value);
+	const topLength = parseFloat(document.getElementById('frustum-pyramid-top-edge-length').value);
+	const height = parseFloat(document.getElementById('frustum-pyramid-height').value);
+
+  if (isNaN(number) || isNaN(baseLength) || isNaN(topLength) || isNaN(height) || baseLength === 0 || topLength === 0) {
+    document.getElementById('frustum-pyramid-volume').innerText = '';
+    return;
+}
+
+  if ( number < 3) {
+    document.getElementById('frustum-pyramid-volume').innerText = 'It takes at least three sides to form a pyramid.';
+    return;
+}
+
+if ( topLength > baseLength) {
+    document.getElementById('frustum-pyramid-volume').innerText = 'Let the larger end be the base.';
+    return;
+}
+	
+  const ratio = 3.2 / number;
+  const tangent = tan(ratio);
+	const baseArea = (number / 4) * (baseLength ** 2) / tangent;
+	const topArea = (number / 4) * (topLength ** 2) / tangent;
+	const solidVolume = baseArea * height;
+	const shape = topLength / baseLength;
+	const inverse = 1 - shape;
+	const reciprocal = 1 / inverse;
+	const volume = frustumPyramidVolume(baseArea, topArea, reciprocal, height);
+
+
+if ( topLength === baseLength) {
+    document.getElementById('frustum-pyramid-volume').innerText = 
+	`Volume of solid: ${solidVolume.toFixed(5)} cubic units`;
+    return;
+	}
+	
+  document.getElementById('frustum-pyramid-volume').innerText =
+    `Volume: ${volume.toFixed(5)} cubic units`;
+	  }
+
+document.getElementById('frustum-pyramid-side-number').addEventListener('input', updateFrustumPyramidVolume);
+document.getElementById('frustum-pyramid-base-edge-length').addEventListener('input', updateFrustumPyramidVolume);
+document.getElementById('frustum-pyramid-top-edge-length').addEventListener('input', updateFrustumPyramidVolume);
+document.getElementById('frustum-pyramid-height').addEventListener('input', updateFrustumPyramidVolume);
+</script>
+<p style="margin:12px;" id="frustum-pyramid-volume"></p>
+</div>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="frustumOfPyramidMarkup.png" alt="Horizontal-frustum-pyramid">
+    </div>
+<br>
+<p style="margin:12px;">The volume of a frustum pyramid can be 
+calculated by subtracting the missing tip 
+from the theoretical full pyramid.
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+     <mrow>
+ <mi>V</mi>
+      <mo>=</mo>
+<mfrac>
+<mrow>
+      <mi>H</mi>
+      <mo>(</mo>
+      <msup>
+        <mi>b</mi>
+        <mn>2</mn>
+      </msup>
+<mo>×</mo>
+      <mo>(</mo>
+      <mfrac>
+        <mn>1</mn>
+        <mrow>
+          <mn>1</mn>
+          <mo>-</mo>
+          <mfrac>
+            <mi>t</mi>
+            <mi>b</mi>
+          </mfrac>
+        </mrow>
+      </mfrac>
+      <mo>)</mo>
+      <mo>-</mo>
+      <msup>
+        <mi>t</mi>
+        <mn>2</mn>
+      </msup>
+<mo>×</mo>
+      <mo>(</mo>
+      <mfrac>
+        <mn>1</mn>
+        <mrow>
+          <mn>1</mn>
+          <mo>-</mo>
+          <mfrac>
+            <mi>t</mi>
+            <mi>b</mi>
+          </mfrac>
+        </mrow>
+      </mfrac>
+      <mo>-</mo>
+      <mn>1</mn>
+      <mo>)</mo>
+      <mo>)</mo>
+</mrow>
+      <msqrt>
+        <mn>8</mn>
+      </msqrt>
+      </mfrac>
+</mrow>
+  </math>
+<br>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+<mi>V</mi>
+<mo>=</mo>
+<mfrac>
+<mrow>
+<mi>H</mi>
+<mo>×</mo>
+<mo>(</mo>
+<msup>
+<mi>b</mi>
+<mn>2</mn>
+</msup>
+<mo>+</mo>
+<mi>b</mi>
+<mo>×</mo>
+<mi>t</mi>
+<mo>+</mo>
+<msup>
+<mi>t</mi>
+<mn>2</mn>
+</msup>
+<mo>)</mo>
+</mrow>
+<msqrt>
+ <mn>8</mn>
+ </msqrt>
+ </mfrac>
+</mrow>
+  </math>
+
+<br>
+<br>
+
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+     <mrow>
+ <mi>H</mi>
+      <mo>=</mo>
+        <mi>frustum height</mi>
+</mrow>
+</math>
+
+<br>
+<br>
+
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+ <mrow>
+ <mi>t</mi>
+   <mo>=</mo>
+   <mi>top edge</mi>
+</mrow>
+</math>
+
+<br>
+<br>
+
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+     <mrow>
+ <mi>b</mi>
+      <mo>=</mo>
+        <mi>bottom edge</mi>
+</mrow>
+</math>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div>
+<h17 style="font-size:160%;margin:7px">Volume of a tetrahedron</h17>
+<br>
+<br>
+<div>
+<label style="margin:12px;" for="tetrahedron-edge">Edge:</label>
+<input id="tetrahedron-edge" type="number" value="1" step="any" />
+
+<script>
+  function tetrahedronVolume(edge) {
+    return Math.pow(edge, 3) / 8;
+  }
+
+  document.getElementById('tetrahedron-edge').addEventListener('input', function () {
+    const edge = parseFloat(this.value);
+    if (isNaN(edge)) {
+      document.getElementById('tetrahedron-volume').innerText = '';
+    return;
+    }
+
+    document.getElementById('tetrahedron-volume').innerText =
+      `Volume: ${tetrahedronVolume(edge).toFixed(5)} cubic units`;
+    });
+</script>
+<p style="margin:12px;" id="tetrahedron-volume"></p>
+</div>
+<br>
+<div class="imgbox">
+  <img class="center-fit" src="tetrahedronMarkup.jpeg" alt="Tetrahedron" id="tetrahedron">
+  </div>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+   <mrow>
+ <mi>V</mi>
+    <mo>=</mo>
+<mfrac>
+<mrow>
+    <mo>(</mo>
+    <mfrac>
+      <msqrt>
+        <mn>3</mn>
+      </msqrt>
+      <mn>4</mn>
+    </mfrac>
+    <msup>
+      <mi>edge</mi>
+      <mn>2</mn>
+    </msup>
+    <mo>)</mo>
+    <mo>(</mo>
+<mfrac>
+   <msqrt>
+ <mn>2</mn>
+</msqrt>
+<msqrt>
+<mn>3</mn>
+</msqrt>
+</mfrac>
+    <mi>edge</mi>
+    <mo>)</mo>
+</mrow>
+          <msqrt>
+        <mn>8</mn>
+      </msqrt>
+    </mfrac>
+ <mo>=</mo>
+<msup>
+<mrow>
+<mo>(</mo>
+    <mfrac>
+      <msqrt>
+        <mn>2</mn>
+      </msqrt>
+      <mn>4</mn>
+    </mfrac>
+    <mo>)</mo>
+</mrow>
+     <mn>2</mn>
+    </msup>
+    <msup>
+      <mi>edge</mi>
+      <mn>3</mn>
+    </msup>
+<mo>=</mo>
+<mfrac>
+<mrow>
+    <msup>
+      <mi>edge</mi>
+      <mn>3</mn>
+    </msup>
+</mrow>
+      <mn>8</mn>
+    </mfrac>
+  </mrow>
+</math>
+<br>
+</div>
+<br>
+<br>
+<br>
+<br>
+<footer>
+<p style="margin:12px;">® All rights reserved</p>
+<br>
+<br>
+<a style="margin:6px;" href="about">About</a>
+<br>
+<br> 
+<a style="margin:6px;" href="privacy-policy">Do Not Sell My Personal Information</a>
+ <br>
+ <br>
+</footer>
+</body>
+</html>

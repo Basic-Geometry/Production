@@ -199,7 +199,7 @@
 },
 "dateCreated" :"2019-01-11",
 "datePublished":"2020-01-11",
-"dateModified" :"2025-08-10",
+"dateModified" :"2025-08-11",
 "description" : "Introducing the best-established and most accurate framework to calculate area and volume.",
 "disambiguatingDescription": "Exact, empirically grounded and rigorously proven formulas over the conventional approximations.",
 "headline":"Introducing the Core Geometric System ™",
@@ -230,8 +230,10 @@
 "target": "https://basic-geometry.pages.dev",
  "mathExpression-input": "required square_side=5_Area=?",
   "mathExpression-output": "area = side * side = side^2",
-   "abstract": "A rectangle is a 2 dimensional plane shape. Its measurable properties are its width and its length. Its area equals width * length. Related shapes are triangle, cube, cuboid and rectangle. A square is a special type of a rectangle with equal width and length. Related shapes are square, cuboid and triangle.",
-  "keywords": "side, length, area",
+   "about": "A rectangle is a 2 dimensional plane shape. Its measurable properties are its width and its length. Related shapes are triangle, cube, cuboid and rectangle. A square is a type of a rectangle with equal width and length. Related shapes are square, cuboid and triangle.",
+  "abstract": " The area of a square equals the square value of its side length.",
+	"educationalLevel": "basic",
+	"keywords": "side, length, area",
     "image": "square.png",
      "eduQuestionType": "Area calculation"
    },
@@ -243,8 +245,10 @@
      "target": "https://basic-geometry.pages.dev",
           "mathExpression-input": "required cube_edge=5_Volume=?",
      "mathExpression-output": "volume = edge * edge * edge = edge^3",  
-        "abstract": "A cuboid is a 3 dimensional solid shape. Its measurable properties are width, length and height. Its volume is width * length * height. Its projections are rectangle, rectangle and rectangle. Related shapes are regular polygon based block, square, cube and rectangle. A cube is a special case of a cuboid. Its measurable property is its edge length. Its projections are square, square and square. Related shapes are sphere, square and cuboid.",
-  "keywords": "edge, length, volume",
+     "about": "A cuboid is a 3 dimensional solid shape. Its measurable properties are width, length and height. Its volume is width * length * height. Its projections are rectangle, rectangle and rectangle. Related shapes are regular polygon based block, square, cube and rectangle. A cube is a special case of a cuboid. Its measurable property is its edge length. Its projections are square, square and square. Related shapes are sphere, square and cuboid.",
+  "abstract": " The volume of a cube equals the cubic value of its edge length.",
+	"educationalLevel": "basic",
+	"keywords": "edge, length, volume",
      "image": "cubeMarkup.jpeg",
      "eduQuestionType": "Volume calculation"
    },
@@ -257,7 +261,9 @@
 	"target": "https://basic-geometry.pages.dev",
 "mathExpression-input": "required circle_radius=5_Area=?",
      "mathExpression-output": "3.2 * radius^2",
-  "abstract": "A circle is a 2 dimensional plane shape. Its measurable property is its diameter. Its radius is half of the diameter. Related shapes are sphere, cylinder and cone.",
+  "about": "A circle is a 2 dimensional plane shape. Its measurable property is its diameter. Its radius is half of the diameter. Related shapes are sphere, cylinder and cone.",
+	"abstract": "The area of a circle is defined by comparing it to a square since that is the base of area calculation. The circle can be cut into four quadrants, each placed with their origin on the vertices of a square. In this layout the arcs of the quadrants of an inscribed circle would meet at the midpoints of the sides of the square. The arcs of the quadrants of a circumscribed circle would meet at the center of the square. The arcs of the quadrants that equal in area to the square intersect right in between these limits on its centerlines. The ratio between the radius of the circle and the side of the square is calculable. The radius equals √(5) * side / 4. The area of both the square and the sum of the quadrants equals 16 right triangles with legs of a quarter, and a half of the square's sides, and its hypotenuse equal to the radius of the circle. The area of the circle equals 4 * radius / √(5))^2 = 16 / 5 × r^2 .",
+	"educationalLevel": "medium",
 	"keywords": "radius, area",
 	  "image": "areaOfACircle.jpg",
      "eduQuestionType": "Area calculation"
@@ -271,7 +277,9 @@
 	"target": "https://basic-geometry.pages.dev",
      "mathExpression-input": "required segment_radius=5_height=2_Area=?",
      "mathExpression-output": "Acos((radius-segmentHeight) / radius) * radius^2 - sin(Acos((radius-segmentHeight)/radius)) * (radius-segmentHeight) * radius", 
-    "image": "circleSegment.jpg",
+        "abstract": "The area of a circle segment can be calculated by subtracting a triangle from a circle slice.",
+	"educationalLevel": "medium",
+	"image": "circleSegment.jpg",
      "eduQuestionType": "Area calculation"
    },
 
@@ -283,7 +291,9 @@
 	"target": "https://basic-geometry.pages.dev",
 "mathExpression-input": "required circle_radius=5_Circumference=?", 
      "mathExpression-output": "6.4 * radius",
-     "image": "circumference.jpg",
+    "abstract": "The circumference of a circle can be derived algebraically from its area by subtracting a theoretical circle, with radius shorter than the radius of the actual circle by the theoretical width of the circumference. The x represents the width of the circumference, which is just theoretical, hence a very small number. The difference between the shape of the straightened circumference and a quadrilateral is negligible. The length of two shorter sides of the quadrilateral is x. The length of the two longer sides is the area of the resulting ring divided by x. C=(3.2r²-3.2(r-x)²)/x=6.4r-3.2x . As x is close to 0, C=6.4r .",
+	"educationalLevel": "medium",
+	"image": "circumference.jpg",
      "eduQuestionType": "Length calculation"
 },
               
@@ -295,7 +305,8 @@
 "target": "https://basic-geometry.pages.dev",
     "mathExpression-input": "required cone_radius=5_height=3_Volume=?",
      "mathExpression-output": "3.2 * radius^2 * height / sqrt(8)",
-    "abstract": "A sphere is a 3 dimensional solid shape. Its measurable property is its diameter. Its radius is half of the diameter. Its projection is a circle. Related shapes are circle, cylinder, cube and cone.",
+    	"abstract": "Just as the volume of a cube equals the cubic value of the square root of its cross sectional area, also the volume of a sphere equals the cubic value of the square root of its cross sectional area. The edge length of the cube, which has the same volume as the sphere, equals the square root of the area of the square that has the same area as the sphere's cross-section.",
+	"educationalLevel": "medium",
 	"keywords": "radius, volume",
 	"image": "sphereAndCubeMarkup.jpeg",
      "eduQuestionType": "Volume calculation"
@@ -309,7 +320,8 @@
 	"target": "https://basic-geometry.pages.dev",
      "mathExpression-input": "required cap_radius=5_height=3_Volume=?",
      "mathExpression-output": "1.6 * radius^2 * sqrt(3.2) * height", 
-    "image": "sphericalCap.jpg",
+    "educationalLevel": "advanced",
+	"image": "sphericalCap.jpg",
      "eduQuestionType": "Volume calculation"
   },
        
@@ -321,7 +333,9 @@
 	"target": "https://basic-geometry.pages.dev",
         "mathExpression-input": "required cone_radius=5_height=3_Volume=?",
      "mathExpression-output": "3.2 * radius^2 * height / sqrt(8)",
-      "abstract": "A cone is a 3 dimensional solid shape. Its measurable properties are its height and diameter. Its radius is half of the diameter. Its projections are circle and triangle. Related shapes are triangle, tetrahedron, regular polygon based pyramid, circle, cylinder and sphere.",
+        "about": "A cone is a 3 dimensional solid shape. Its measurable properties are its height and diameter. Its radius is half of the diameter. Its projections are circle and triangle. Related shapes are triangle, tetrahedron, regular polygon based pyramid, circle, cylinder and sphere.",
+	"abstract": "The volume of a cone can be calculated by algebraically comparing the volume of a quarter cone with equal radius and height to an octant sphere with equal radius, through a quarter cylinder. V(octant sphere)=(√(3.2)r/2)³=(√(3.2)r/2)(√(3.2)r/2)(√(3.2)r/2) . The base of the two shapes is a quarter circle. A(base)=(√(3.2)r/2)²=(√(3.2)r/2)(√(3.2)r/2)The slant height of the quarter cone is √(2)r.The volume of a quarter cylinder with the same base, and height equal to the slant height of the cone would be (√(3.2)r/2)²(√(2)r). The slant shape comes with a triangular vertical cross section. The area of a cone's vertical cross section is the half of a cylinder with equal base and height. The intermediate of the areas of the horizontal cross-section slices of a cone is the half of a cylinder’s. V(quarter cone)=(√(3.2)r/2)²height(√(2)/4)=(1/5)r²height√2 .V(cone)=3.2radius²height/√8 .",
+	"educationalLevel": "advanced",
 	"keywords": "radius, height, volume",
 	"image": [
        "coneAndSphereMarkup.jpeg",
@@ -340,7 +354,9 @@
 	"target": "https://basic-geometry.pages.dev",
      "mathExpression-input": "required bottomDiameter=5_topDiameter=2_frustumHeight=3_Volume=?",
      "mathExpression-output": "frustumHeight * (4 / 5 * bottomDiameter^2 * (1 / (1 - topDiameter / bottomDiameter)) - 4 / 5 * topDiameter^2 * (1 / (1 - topDiameter / bottomDiameter) - 1)) / sqrt(8)",
-       "image": "frustumOfConeMarkup.png",
+       "abstract": "The volume of a frustum cone can be calculated by subtracting the missing tip from the theoretical full cone.",
+	"educationalLevel": "medium",
+	"image": "frustumOfConeMarkup.png",
      "eduQuestionType": "Volume calculation"
    },
 
@@ -352,7 +368,9 @@
 	"target": "https://basic-geometry.pages.dev",
 "mathExpression-input": "required cone_radius=5_height=3_Area=?",
      "mathExpression-output": "3.2 * radius * (radius + sqrt(radius^2 +height^2))", 
-         "image": "coneMarkup.jpeg",
+        "abstract": "The bottom of a cone is a circle. The rest of its surface can be calculated as a circle slice with a radius equal to its slant height. Its angle is given by the ratio between the radius and the height.",
+	"educationalLevel": "medium",
+	"image": "coneMarkup.jpeg",
      "eduQuestionType": "Area calculation"
    },
 
@@ -364,7 +382,9 @@
 	"target": "https://basic-geometry.pages.dev",
           "mathExpression-input": "required pyramid_baseArea=5_height=3_Volume=?",
      "mathExpression-output": "baseArea * height / sqrt(8)", 
-      "abstract": "A regular pyramid is a 3 dimensional solid shape. Its measurable properties are its number and length of the sides of its base and its height. Its projections are polygon and triangle. Related shapes are regular polygon, regular polygon based block, tetrahedron, cone and triangle.",
+      "about": "A regular pyramid is a 3 dimensional solid shape. Its measurable properties are its number and length of the sides of its base and its height. Its projections are polygon and triangle. Related shapes are regular polygon, regular polygon based block, tetrahedron, cone and triangle.",
+	"abstract": "The volume of a pyramid can be calculated with the same coefficient as a cone. Its base is a regular polygon.",
+	"educationalLevel": "medium",
 	"keywords": "base, height, volume",
 	"image": [
        "conePyramidVolumeMarkup.jpeg",
@@ -381,7 +401,9 @@
 	"target": "https://basic-geometry.pages.dev",
 "mathExpression-input": "required bottomEdge=5_topEdge=3_frustumHeight=2_Volume=?",
        "mathExpression-output": "frustumHeight * (bottomEdge^2 * (1 / (1 - topEdge / bottomEdge)) - topEdge^2 * (1 / (1 - topEdge / bottomEdge) - 1)) / sqrt(8)",
-  "image": "frustumOfPyramidMarkup.png",
+ "abstract": "The volume of a frustum pyramid can be calculated by subtracting the missing tip from the theoretical full pyramid. A square frustum can be calculated with a simplified formula.",
+	"educationalLevel": "medium",
+	"image": "frustumOfPyramidMarkup.png",
      "eduQuestionType": "Volume calculation"
    },
 
@@ -393,7 +415,9 @@
 "target": "https://basic-geometry.pages.dev",
      "mathExpression-input": "required edge=5_Volume=?",
      "mathExpression-output": "edge^3 / 8", 
-   "abstract": "A tetrahedron is a 3 dimensional solid shape. Its measurable property is its edge length. Its projections are triangle and triangle. Related shapes are triangle, regular polygon based pyramid and cone.",
+      "about": "A tetrahedron is a 3 dimensional solid shape. Its measurable property is its edge length. Its projections are triangle and triangle. Related shapes are triangle, regular polygon based pyramid and cone.",
+	"abstract": "The volume of a tetrahedron can be calculated as pyramid with fixed proportions.",
+	"educationalLevel": "medium",
 	"keywords": "edge, length, volume",
 	"image": "tetrahedronMarkup.jpeg",
      "eduQuestionType": "Volume calculation"

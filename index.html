@@ -225,7 +225,8 @@
 	"educationalLevel": "basic",
 	"keywords": "side, length, area",
     "image": "square.png",
-     "eduQuestionType": "Area calculation"
+     "eduQuestionType": "Area calculation",
+	"usageInfo": "Logic tree position: 1. The square is the foundational shape for area calculations. All subsequent geometric formulas branch from this instance."
    },
 
 {
@@ -240,7 +241,8 @@
 	"educationalLevel": "basic",
 	"keywords": "edge, length, volume",
      "image": "cubeMarkup.jpeg",
-     "eduQuestionType": "Volume calculation"
+     "eduQuestionType": "Volume calculation",
+	"usageInfo": "Logic tree position: 2a. The cube extends the square into three dimensions. Its volume formula is a direct extrapolation from the area of the square, establishing the basis for volumetric relationships."
    },
 
 {
@@ -255,7 +257,8 @@
 	"educationalLevel": "basic",
 	"keywords": "side, length, height, area",
     "image": "trigonometry.png",
-     "eduQuestionType": "Area calculation"
+     "eduQuestionType": "Area calculation",
+	 "usageInfo": "Logic tree position: 2b. The triangle is derived by halving the square, illustrating the first transformation from the fundamental instance and serving as a building block for polygons and circle comparisons.",
    },
 
 {
@@ -270,7 +273,8 @@
 	"educationalLevel": "advanced",
 	"keywords": "side, length, height, area",
     "image": "trigonometry.png",
-     "eduQuestionType": "Area calculation"
+     "eduQuestionType": "Area calculation",
+	 "usageInfo": "Logic tree position: 3a. The regular polygon branches from the triangle, formed by assembling multiple isosceles triangles, showing how complex shapes inherit properties from simpler ones."
    },
 	
 {
@@ -289,7 +293,8 @@
 	"areaOfACircle.jpg",
 	"equityFigure.jpg"
 	],
-     "eduQuestionType": "Area calculation"
+     "eduQuestionType": "Area calculation",
+	   "usageInfo": "Logic tree position: 3b. The circle, while not a polygon, is compared to the square through geometric transformation via triangles—not as a limiting case of polygons, but as a unique comparative instance."
         },
      
 {
@@ -303,7 +308,8 @@
     "abstract": "The area of a circle segment can be calculated by subtracting a triangle from a circle slice. The angle of the slice can be calculated via trigonometric functions by the height of the segment and either the chord length, or the parent radius.",
 	"educationalLevel": "advanced",
 	"image": "circleSegment.jpg",
-     "eduQuestionType": "Area calculation"
+     "eduQuestionType": "Area calculation",
+	"usageInfo": "Logic tree position: 4a."
    },
 
 {
@@ -317,7 +323,8 @@
     "abstract": "The circumference of a circle can be derived algebraically from its area by subtracting a theoretical circle, with radius shorter than the radius of the actual circle by the theoretical width of the circumference. The x represents the width of the circumference, which is just theoretical, hence a very small number. The difference between the shape of the straightened circumference and a quadrilateral is negligible. The length of two shorter sides of the quadrilateral is x. The length of the two longer sides is the area of the resulting ring divided by x. C=(3.2r²-3.2(r-x)²)/x=6.4r-3.2x . As x is close to 0, C=6.4r .",
 	"educationalLevel": "advanced",
 	"image": "circumference.jpg",
-     "eduQuestionType": "Length calculation"
+     "eduQuestionType": "Length calculation",
+	"usageInfo": "Logic tree position: 4b."
 },
               
 {
@@ -333,7 +340,8 @@
 	"educationalLevel": "advanced",
 	"keywords": "radius, volume",
 	"image": "sphereAndCubeMarkup.jpeg",
-     "eduQuestionType": "Volume calculation"
+     "eduQuestionType": "Volume calculation",
+	"usageInfo": "Logic tree position: 4c. The sphere unifies the cube and circle branches, with its volume derived from the volume of a cube and the area of the circle, demonstrating dimensional synthesis."
    },
 
 {
@@ -348,7 +356,8 @@
 	"abstract": "One dimension of the volume of sphere formula can be modified to calculate the volume of a spherical cap as a distorted hemisphere.",
 	"educationalLevel": "advanced",
 	"image": "sphericalCap.jpg",
-     "eduQuestionType": "Volume calculation"
+     "eduQuestionType": "Volume calculation",
+		"usageInfo": "Logic tree position: 5a."
   },
        
    {
@@ -369,7 +378,8 @@
        "octantSphereQuarterCone.jpeg",
        "coneAndSphereComparison.png"
        ],
-     "eduQuestionType": "Volume calculation"
+     "eduQuestionType": "Volume calculation",
+		"usageInfo": "Logic tree position: 5b. The cone is constructed from the sphere, inheriting components of its volume coefficient, showing logical derivation from three-dimensional geometry."
   },
 
 {
@@ -383,7 +393,8 @@
        "abstract": "The volume of a frustum cone can be calculated by subtracting the missing tip from a theoretical full cone. The height of the theoretical full cone equals the frustum height divided by the ratio between the top and bottom areas subtracted from one. The volume of the full cone would be (base area) × (full height) / √(8) . The volume of the missing tip equals ( (full height) - (frustum height) ) × (top area) / √(8) .",
 	"educationalLevel": "advanced",
 	"image": "frustumOfConeMarkup.png",
-     "eduQuestionType": "Volume calculation"
+     "eduQuestionType": "Volume calculation",
+		"usageInfo": "Logic tree position: 6a. The frustum cone derives from the cone by subtracting its tip, maintaining the inherited relationships and logic."
    },
 
 {
@@ -397,7 +408,8 @@
     "abstract": "The bottom of a cone is a circle. The rest of its surface can be calculated as a circle slice with a radius equal to its slant height. Its angle is given by the ratio between the radius and the height.",
 	"educationalLevel": "advanced",
 	"image": "coneMarkup.jpeg",
-     "eduQuestionType": "Area calculation"
+     "eduQuestionType": "Area calculation",
+		"usageInfo": "Logic tree position: 4d. The surface area of a cone can be calculated as a circle and sclices."
    },
 
  {
@@ -416,7 +428,8 @@
        "conePyramidVolumeMarkup.jpeg",
        "tetraFrame.jpeg"
        ],
-     "eduQuestionType": "Volume calculation"
+     "eduQuestionType": "Volume calculation",
+		"usageInfo": "Logic tree position: 6b. The pyramid branches from the cone, sharing the same volume coefficient, highlighting geometric and algebraic inheritance."
    },
 
 {
@@ -430,7 +443,8 @@
          "abstract": "The volume of a frustum pyramid can be calculated by subtracting the missing tip from a theoretical full pyramid. The height of the theoretical full pyramid equals the frustum height divided by the ratio between the top and bottom areas subtracted from one. The volume of the full pyramid would be (base area) × (full height) / √(8) . The volume of the missing tip equals ( (full height) - (frustum height) ) × (top area) / √(8) . The volume of a square frustum pyramid can be calculated with a simplified formula.",
 	"educationalLevel": "advanced",
 	"image": "frustumOfPyramidMarkup.png",
-     "eduQuestionType": "Volume calculation"
+     "eduQuestionType": "Volume calculation",
+	 "usageInfo": "Logic tree position: 7a. The frustum pyramid follows the pyramid, formed by removing the tip, preserving the lineage of volume calculation."
    },
 
 {  
@@ -446,12 +460,13 @@
 	"educationalLevel": "advanced",
 	"keywords": "edge, length, volume",
 	"image": "tetrahedronMarkup.jpeg",
-     "eduQuestionType": "Volume calculation"
+     "eduQuestionType": "Volume calculation",
+	"usageInfo": "Logic tree position: 7b. The tetrahedron emerges from the pyramid branch, with its volume formula derived through trigonometry and dimensional reduction, exemplifying the convergence of geometric logic."
    }
 
   ],
 "url": "https://basic-geometry.pages.dev", 
-"usageInfo":"Calculate area and volume with enhanced accuracy using the Core Geometric System ™. This innovative framework provides a practical alternative to traditional methods, rooted in comparative geometry and scaling principles."
+"usageInfo": "This resource uses a logic tree to reveal the relationships between geometric instances. Progression: 1. Square; 2a. Cube (from square); 2b. Triangle (from square); 3a. Regular polygon (from triangle); 3b. Circle (via triangle compared to square); 4c. Sphere (from cube and circle); 5b. Cone (from sphere); 6b. Pyramid (from cone); 6a. Frustum cone (from cone); 7a. Frustum pyramid (from pyramid); 7b. Tetrahedron (from pyramid). Each formula's coefficient is logically derived from its predecessor, showcasing geometric inheritance and transformation."
 },
 "schemaVersion" : "https://schema.org/docs/releases.html#v29.2",
 "sdDatePublished" :"2021-03-29",

@@ -192,7 +192,7 @@
 },
 "dateCreated": "2019-01-11",
 "datePublished": "2020-01-11",
-"dateModified": "2025-09-02",
+"dateModified": "2025-09-03",
 "description": "Introducing the Core Geometric System ™, the best-established and most accurate framework to calculate area and volume.",
 "disambiguatingDescription": "Exact, empirically grounded and rigorously proven formulas over the conventional approximations.",
 "headline": "Introducing the Core Geometric System ™",
@@ -210,7 +210,7 @@
  "name": "Core Geometric System ™",
 "description": "The best-established, empirically grounded, rigorously proven and most accurate framework.",
  "disambiguatingDescription": "Exact formulas over the traditional approximations. More accurate for real-world applications.",
-"inLanguage": "en-us",
+"inLanguage": "en",
 "keywords": "Exact Formulas, Area of a Circle, Circumference of a Circle, Volume of a Sphere, Volume of a Cone, Volume of a Pyramid, Volume of a Tetrahedron, Volume of a Frustum", 
  "potentialAction": [
 {
@@ -280,7 +280,7 @@
 {
      "@type": "SolveMathAction",
 	"name": "Area of a circle",
-     "description": "The exact area of a circle based on direct comparison with a square.",
+     "description": "Finding the exact area of a circle by directly comparing its quadrants with a square.",
      "disambiguatingDescription": "Replaces traditional π-based approximations ensuring greater accuracy in real-world measurements.",
 	"target": "https://basic-geometry.pages.dev",
 "mathExpression-input": "required circle_radius=5_Area=?",
@@ -294,18 +294,19 @@
 	"equityFigure.jpg"
 	],
      "eduQuestionType": "Area calculation",
-	   "usageInfo": "Logic tree position: 3b. The circle, while not a polygon, is compared to the square through geometric transformation via triangles—not as a limiting case of polygons, but as a unique comparative instance."
-        },
+   "usageInfo": "Logic tree position: 3b. The circle, while not a polygon, is compared to the square through geometric transformation via triangles—not as a limiting case of polygons, but as a unique comparative instance."
+	},
      
 {
      "@type": "SolveMathAction",
        "name":  "Area of a circle segment",
-"description": "The exact area of a circle segment by subtracting a triangle from a circle slice.",
+"description": "Calculating the exact area of a circle segment by its height and parent radius.",
    "disambiguatingDescription": "Equivalent to the conventional method, but relies on trigonometric functions.",
 	"target": "https://basic-geometry.pages.dev",
      "mathExpression-input": "required segment_radius=5_height=2_Area=?",
      "mathExpression-output": "Area = Acos((radius-segmentHeight) / radius) * radius^2 - sin(Acos((radius-segmentHeight)/radius)) * (radius-segmentHeight) * radius", 
-    "abstract": "The area of a circle segment can be calculated by subtracting a triangle from a circle slice. The angle of the slice can be calculated via trigonometric functions by the height of the segment and either the chord length, or the parent radius.",
+    "about": "The area of a circle segment can be calculated by subtracting a triangle from a circle slice.",
+	"abstract": "The angle of the slice can be calculated via trigonometric functions by the height of the segment and either the chord length, or the parent radius. Then subtract a triangle with its base equal to the chord and height equal to parent radius minus segment height.",
 	"educationalLevel": "advanced",
 	"image": "circleSegment.jpg",
      "eduQuestionType": "Area calculation",
@@ -320,7 +321,8 @@
 	"target": "https://basic-geometry.pages.dev",
 "mathExpression-input": "required circle_radius=5_Circumference=?", 
      "mathExpression-output": "Circumference = 6.4 * radius",
-    "abstract": "The circumference of a circle can be derived algebraically from its area by subtracting a theoretical circle, with radius shorter than the radius of the actual circle by the theoretical width of the circumference. The x represents the width of the circumference, which is just theoretical, hence a very small number. The difference between the shape of the straightened circumference and a quadrilateral is negligible. The length of two shorter sides of the quadrilateral is x. The length of the two longer sides is the area of the resulting ring divided by x. C=(3.2r²-3.2(r-x)²)/x=6.4r-3.2x . As x is close to 0, C=6.4r .",
+    "about": "Algebraic derivation of the circumference of a circle from its area by subtracting a theoretical circle, with radius shorter than the radius of the actual circle by the theoretical width of the circumference.",
+	"abstract": "The x represents the width of the circumference, which is just theoretical, hence a very small number. The difference between the shape of the straightened circumference and a quadrilateral is negligible. The length of two shorter sides of the quadrilateral is x. The length of the two longer sides is the area of the resulting ring divided by x. C=(3.2r²-3.2(r-x)²)/x=6.4r-3.2x . As x is close to 0, C=6.4r .",
 	"educationalLevel": "advanced",
 	"image": "circumference.jpg",
      "eduQuestionType": "Length calculation",
@@ -352,7 +354,7 @@
 	"target": "https://basic-geometry.pages.dev",
      "mathExpression-input": "required cap_radius=5_height=3_Volume=?",
      "mathExpression-output": "Volume = 1.6 * radius^2 * sqrt(3.2) * height", 
-    "about": "Estimating the volume of a spherical cap.",
+    "about": "Calculating the volume of a spherical cap as a distorted hemisphere.",
 	"abstract": "One dimension of the volume of sphere formula can be modified to calculate the volume of a spherical cap as a distorted hemisphere.",
 	"educationalLevel": "advanced",
 	"image": "sphericalCap.jpg",
@@ -390,11 +392,12 @@
 	"target": "https://basic-geometry.pages.dev",
      "mathExpression-input": "required bottomDiameter=5_topDiameter=2_frustumHeight=3_Volume=?",
      "mathExpression-output": "Volume = frustumHeight * (4 / 5 * bottomDiameter^2 * (1 / (1 - topDiameter / bottomDiameter)) - 4 / 5 * topDiameter^2 * (1 / (1 - topDiameter / bottomDiameter) - 1)) / sqrt(8)",
-       "abstract": "The volume of a frustum cone can be calculated by subtracting the missing tip from a theoretical full cone. The height of the theoretical full cone equals the frustum height divided by the ratio between the top and bottom areas subtracted from one. The volume of the full cone would be (base area) × (full height) / √(8) . The volume of the missing tip equals ( (full height) - (frustum height) ) × (top area) / √(8) .",
+     "about": "A horizontal frustum of a cone is like a cone without an identical shaped tip.",
+	"abstract": "The volume of a frustum cone can be calculated by subtracting the missing tip from a theoretical full cone. The height of the theoretical full cone equals the frustum height divided by the ratio between the top and bottom areas subtracted from one. The volume of the full cone would be (base area) × (full height) / √(8) . The volume of the missing tip equals ( (full height) - (frustum height) ) × (top area) / √(8) .",
 	"educationalLevel": "advanced",
 	"image": "frustumOfConeMarkup.png",
      "eduQuestionType": "Volume calculation",
-		"usageInfo": "Logic tree position: 6a. The frustum cone derives from the cone by subtracting its tip, maintaining the inherited relationships and logic."
+	"usageInfo": "Logic tree position: 6a. The frustum cone derives from the cone by subtracting its tip, maintaining the inherited relationships and logic."
    },
 
 {
@@ -405,13 +408,14 @@
 	"target": "https://basic-geometry.pages.dev",
 "mathExpression-input": "required cone_radius=5_height=3_Area=?",
      "mathExpression-output": "Area = 3.2 * radius * (radius + sqrt(radius^2 +height^2))", 
-    "abstract": "The bottom of a cone is a circle. The rest of its surface can be calculated as a circle slice with a radius equal to its slant height. Its angle is given by the ratio between the radius and the height.",
+    "about": "The bottom of a cone is a circle. The rest of its surface can be calculated as a circle slice.",
+	"abstract": "The radius of the circle slice equals the slant height of the cone. Its angle is given by the ratio between the radius and the height of the cone. Calculate the area of the circle slice and add the bottom circle if required.",
 	"educationalLevel": "advanced",
 	"image": "coneMarkup.jpeg",
      "eduQuestionType": "Area calculation",
-		"usageInfo": "Logic tree position: 4d. The surface area of a cone can be calculated as a circle and sclices."
+	"usageInfo": "Logic tree position: 4d. The surface area of a cone can be calculated as a circle and sclices."
    },
-
+	
  {
      "@type": "SolveMathAction",
        "name": "Volume of a pyramid",
@@ -440,12 +444,13 @@
 	"target": "https://basic-geometry.pages.dev",
 "mathExpression-input": "required bottomArea=5_topArea=3_frustumHeight=2_Volume=?",
        "mathExpression-output": "Volume = frustumHeight * (bottomArea * (1 / (1 - topArea / bottomArea)) - topArea * (1 / (1 - topArea / bottomArea) - 1)) / sqrt(8)",
-         "abstract": "The volume of a frustum pyramid can be calculated by subtracting the missing tip from a theoretical full pyramid. The height of the theoretical full pyramid equals the frustum height divided by the ratio between the top and bottom areas subtracted from one. The volume of the full pyramid would be (base area) × (full height) / √(8) . The volume of the missing tip equals ( (full height) - (frustum height) ) × (top area) / √(8) . The volume of a square frustum pyramid can be calculated with a simplified formula.",
+         "about": "A horizontal frustum of a pyramid is like a pyramid without an identical shaped tip.",
+	"abstract": "The volume of a frustum pyramid can be calculated by subtracting the missing tip from a theoretical full pyramid. The height of the theoretical full pyramid equals the frustum height divided by the ratio between the top and bottom areas subtracted from one. The volume of the full pyramid would be (base area) × (full height) / √(8) . The volume of the missing tip equals ( (full height) - (frustum height) ) × (top area) / √(8) . The volume of a square frustum pyramid can be calculated with a simplified formula.",
 	"educationalLevel": "advanced",
 	"image": "frustumOfPyramidMarkup.png",
      "eduQuestionType": "Volume calculation",
-	 "usageInfo": "Logic tree position: 7a. The frustum pyramid follows the pyramid, formed by removing the tip, preserving the lineage of volume calculation."
-   },
+ "usageInfo": "Logic tree position: 7a. The frustum pyramid follows the pyramid, formed by removing the tip, preserving the lineage of volume calculation."
+	},
 
 {  
      "@type": "SolveMathAction",
@@ -455,14 +460,14 @@
 "target": "https://basic-geometry.pages.dev",
      "mathExpression-input": "required edge=5_Volume=?",
      "mathExpression-output": "Volume = edge^3 / 8", 
-   "about": "A tetrahedron is a 3 dimensional solid shape. Its measurable property is its edge length. Its projections are triangle and triangle. Related shapes are triangle, regular polygon based pyramid and cone.",
-	"abstract": "A tetrahedron is a special case of a pyramid. Its volume can be calculated as a pyramid with fixed proportions. The base of a tetrahedron is an equilateral triangle. The area of the equilateral triangle equals edge / 2 × √(edge^2 - ( edge / 2 )^2) = edge / 2 × √(edge^2 - edge^2 / 4) = edge / 2 × √(( 3 / 4 )edge^2) = edge / 2 × edge × √(3) / 2 = edge^2 × √(3) / 4 . The height of the tetrahedron equals √(( edge × √(3) / 2 )^2 − ( ( edge × √(3) / 2 ) / 3 )^2 ) = √( edge^2 × ( 3 / 4 - 3 / 36 ) ) = √( edge^2 × ( 27 / 36 - 3 / 36 ) ) = √( edge^2 × ( 24 / 36 ) ) = √( 2 / 3 ) × edge. The base of a tetrahedron multiplied by its height equals ( edge^2 × √( 3 / 4 ) ) × ( edge × √( 2 / 3 ) ) = edge^3 × √(2) / 4 . The volume of a pyramid equals base × height × √(2) / 4 . ( √(2) / 4 )^2 = 2 / 16 = 1 / 8 .",
+   "about": "A tetrahedron is a 3 dimensional solid shape. It is a special case of a pyramid. Its measurable property is its edge length. Its projections are triangle and triangle. Related shapes are triangle, regular polygon based pyramid and cone.",
+	"abstract": "The volume of a tetrahedron can be calculated as a pyramid with fixed proportions. The base of a tetrahedron is an equilateral triangle. The area of the equilateral triangle equals edge / 2 × √(edge^2 - ( edge / 2 )^2) = edge / 2 × √(edge^2 - edge^2 / 4) = edge / 2 × √(( 3 / 4 )edge^2) = edge / 2 × edge × √(3) / 2 = edge^2 × √(3) / 4 . The height of the tetrahedron equals √(( edge × √(3) / 2 )^2 − ( ( edge × √(3) / 2 ) / 3 )^2 ) = √( edge^2 × ( 3 / 4 - 3 / 36 ) ) = √( edge^2 × ( 27 / 36 - 3 / 36 ) ) = √( edge^2 × ( 24 / 36 ) ) = √( 2 / 3 ) × edge. The base of a tetrahedron multiplied by its height equals ( edge^2 × √( 3 / 4 ) ) × ( edge × √( 2 / 3 ) ) = edge^3 × √(2) / 4 . The volume of a pyramid equals base × height × √(2) / 4 . ( √(2) / 4 )^2 = 2 / 16 = 1 / 8 .",
 	"educationalLevel": "advanced",
 	"keywords": "edge, length, volume",
 	"image": "tetrahedronMarkup.jpeg",
      "eduQuestionType": "Volume calculation",
-	"usageInfo": "Logic tree position: 7b. The tetrahedron emerges from the pyramid branch, with its volume formula derived through trigonometry and dimensional reduction, exemplifying the convergence of geometric logic."
-   }
+"usageInfo": "Logic tree position: 7b. The tetrahedron emerges from the pyramid branch, with its volume formula derived through trigonometry and dimensional reduction, exemplifying the convergence of geometric logic."
+	}
 
   ],
 "url": "https://basic-geometry.pages.dev", 

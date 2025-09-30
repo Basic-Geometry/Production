@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset="UTF-8">
+<title>About Basic Geometry Formulas</title>
+<link rel="icon" type="image/png" sizes="256x256" href="android-chrome-256x256.png">
+<link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+<link href="https://fonts.googleapis.com/css2?family=OpenDyslexic&display=swap" rel="stylesheet">
+<style>
+	
+        * {
+            margin: 0;
+            padding: 0;
+        }
+	
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+	
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+	
+		#cookie-notice {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			background-color: #f2f2f2;
+			padding: 10px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+			z-index: 1;
+		}
+
+		#cookie-notice-text {
+			margin-right: 20px;
+		}
+
+		#cookie-notice-buttons {
+			display: flex;
+			align-items: center;
+		}
+
+		#cookie-notice-buttons button {
+			margin-left: 10px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			padding: 10px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		#cookie-notice-buttons button:hover {
+			background-color: #3e8e41;
+		}
+	    body {
+            font-family: 'OpenDyslexic', sans-serif;
+	    }
+.rounded-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+	}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="description" content="About the context of the Core Geometric System ™, the best-established and most accurate framework to calculate area and volume.">
+<meta name="author" content="Gaál Sándor">
+<meta name="keywords" content="Core Geometric Systems, Accurate Geometric Calculations, Engineering Design Solutions, Computer Graphics Rendering, Algorithm Optimization">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@gmac4247">
+<meta name="twitter:title" content="About Basic Geometry Formulas">
+<meta name="twitter:description" content="About the context of the Core Geometric System ™, the best-established and most accurate framework to calculate area and volume.">
+<meta name="twitter:image" content="android-chrome-256x256.png">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="theme-color" content="#000000">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About Basic Geometry Formulas",
+  "alternateName": "About page",
+  "accessMode": "textOnVisual",
+"accessibilityFeature": [
+"dyslexicFriendly", 
+"extended explanations"
+],
+"accessibilityHazard": "none",
+"accessibilitySummary": "View videos, figures and equations with explanation." ,
+"accountablePerson": {
+"@type": "Person",
+"address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Szentendre",
+    "addressRegion": "Hungary",
+    "postalCode": "2000",
+    "streetAddress": "Ady Endre út 6.A"
+  },
+    "email": "gmac4247@gmail.com",
+    "jobTitle": "Administrator",
+  "name": "Gaál Sándor",
+  "telephone": "+36305075125",
+  "url": "https://www.x.com/gmac4247"
+},
+"author": {
+"@type": "Person",
+"address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Szentendre",
+    "addressRegion": "Hungary",
+    "postalCode": "2000",
+    "streetAddress": "Ady Endre út 6.A"
+  },
+    "email": "gmac4247@gmail.com",
+    "jobTitle": "Administrator",
+  "name": "Gaál Sándor",
+  "telephone": "+36305075125",
+  "url": "https://www.x.com/gmac4247"
+},
+"contributor": [
+{
+"@type": "Person",
+"name": "Adina",
+"description": "Spiritual supporter"
+},
+	
+{
+"@type": "Thing",
+"name": "Microsoft Copilot",
+"description": "AI language model, images generated with the help of Microsoft Copilot"
+}, 
+		   
+{
+"@type" : "Thing",
+"name": "Gemini",
+"description": "AI language model"
+  }
+],
+"copyrightHolder": {
+"@type" : "Person",
+"address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Szentendre",
+    "addressRegion": "Hungary",
+    "postalCode": "2000",
+    "streetAddress": "Ady Endre út 6.A"
+  },
+    "email": "gmac4247@gmail.com",
+    "jobTitle": "Administrator",
+  "name": "Gaál Sándor",
+  "telephone": "+36305075125",
+  "url": "https://www.x.com/gmac4247"
+},
+"copyrightNotice": "All rights reserved." ,
+"copyrightYear": "2020",
+"creator": {
+"@type": "Person",
+"address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Szentendre",
+    "addressRegion": "Hungary",
+    "postalCode": "2000",
+    "streetAddress": "Ady Endre út 6.A"
+  },
+    "email": "gmac4247@gmail.com",
+    "jobTitle": "Administrator",
+  "name": "Gaál Sándor",
+  "telephone": "+36305075125",
+  "url": "https://www.x.com/gmac4247"
+},
+"dateCreated": "2024-08-31",
+"datePublished": "2024-08-31",
+"dateModified": "2025-09-30",
+"description": "About the context of the Core Geometric System ™, the best-established and most accurate framework to calculate area and volume.",
+"disambiguatingDescription": "Exact, empirically grounded and rigorously proven formulas over the conventional approximations.",
+"headline": "Introducing the Core Geometric System ™",
+"image": [
+	"equityFigure.jpg",
+	"sphereSurface.jpeg",
+	"cubeDissection.jpeg",
+	"sphereAndConeMarkup.jpeg",
+	"conePyramidVolumeMarkup.jpeg"
+	],
+"inLanguage": "en",
+"isFamilyFriendly": true,
+"keywords": "Core Geometric Systems, Accurate Geometric Calculations, Engineering Design Solutions, Computer Graphics Rendering, Algorithm Optimization",
+"locationCreated": {
+"@type": "AdministrativeArea",
+"name" :"Szentendre, Hungary"
+	},
+"offers": {
+"@type": "Offer",
+ "name": "Surface area of a sphere formula",
+    "description": "Exact formula of the surface area of a sphere. No explanation; only the equation.",
+      "priceCurrency": "USD",
+      "price": "3,200,000,000",
+      "availability": "https://schema.org/InStock"
+    },
+"schemaVersion": "https://schema.org/docs/releases.html#v29.2",
+"sdDatePublished": "2024-08-31",
+"sdPublisher": {
+"@type": "Person" ,
+"address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Szentendre",
+    "addressRegion": "Hungary",
+    "postalCode": "2000",
+    "streetAddress": "Ady Endre út 6.A"
+  },
+    "email": "gmac4247@gmail.com",
+    "jobTitle": "Administrator",
+  "name": "Gaál Sándor",
+  "telephone": "+36305075125",
+  "url": "https://www.x.com/gmac4247"
+},
+"subjectOf": [ 
+{
+"@type": "VideoObject",
+"description": "Explaining the basics of geometry with everyday items",
+"duration": "PT2M09S",
+"name": "Introduction to basic geometry",
+"thumbnailUrl": "https://i.ytimg.com/vi/U5eHkmmVVEA/mqdefault.jpg",
+"uploadDate": "2023-09-29",
+"contentUrl": "https://youtu.be/U5eHkmmVVEA"
+       },
+{
+"@type": "VideoObject",
+"description": "Geometry puzzle",
+"duration": "PT0M38S",
+"name": "Geometry puzzle",
+"thumbnailUrl": "https://i.ytimg.com/vi/-gvXLaLFXuM/mqdefault.jpg",
+"uploadDate": "2022-12-15",
+"contentUrl": "https://youtu.be/-gvXLaLFXuM"
+},
+ {
+"@type": "VideoObject",
+"description": "Real physical experiment to measure the volume of a sphere. Prepare to be amazed. The result proves the accuracy of the V=(√(3.2)r)³ formula over the conventional V=4/3πr³.",
+"duration": "PT1M26S",
+"name": "The sphere experiment",
+"thumbnailUrl": "https://i.ytimg.com/vi/7uxyLfh2B38/mqdefault.jpg",
+"uploadDate": "2024-04-19",
+"contentUrl": "https://youtu.be/7uxyLfh2B38"
+}
+],
+"thumbnail": "android-chrome-256x256",
+"typicalAgeRange": "12-102",
+  "url": "https://basic-geometry.github.io/about",
+  "usageInfo": "Discover the Core Geometric System ™, a groundbreaking framework offering a fresh perspective on calculating area and volume using the 3D coordinate system. Challenging conventional formulas, this system provides empirically-grounded alternatives."
+}
+</script>
+</head>
+<body>
+<div id="cookie-notice">
+		<div id="cookie-notice-text">
+			This website uses cookies to ensure you get the best experience on our website. Love it, or leave it.
+		</div>
+		<div id="cookie-notice-buttons">
+			<button onclick="document.getElementById('cookie-notice').style.display = 'none';">Accept</button>
+			<button onclick="document.getElementById('cookie-notice').style.display = 'none';">Reject</button>
+		</div>
+</div>
+<div>
+<h1 style="font-size:160%;margin:7px;">How Accurate Are The Conventional Geometry Formulas?</h1>
+<br>
+<br>
+<div>
+<iframe title="Introduction to basic geometry" width="420" height="315" src="https://youtube.com/embed/U5eHkmmVVEA">
+</iframe>
+</div>
+<br>
+<br>
+<div>
+<p style="margin:12px;">Historically, Euclidean geometry has provided a framework for understanding and describing the physical world. It is based on axioms and postulates, leading to well-defined formulas for the calculation of areas and volumes of shapes such as circles and spheres.
+</p>
+<br>
+<br>
+<p style="margin:12px;">The constant relationship between a circle's circumference and its diameter has captivated mathematicians for millennia. 
+While its approximate value of 3.14, commonly denoted by the Greek letter π, is widely recognized today, the historical development of this concept is less understood.
+Ancient civilizations grappled with this geometric challenge, employing various methods to approximate this ratio. 
+<br>
+<br>
+The Babylonians initially estimated it as 3, later they calculated with 3.125.
+<br>
+<br>
+A Greek mathematician is credited with refining these approximations through the method of inscribed and circumscribed polygons.
+<br>
+<br>
+His approach was that the ratio between the perimeter and the diameter of a circle can be estimated by comparing the circumference of the circle to the perimeters of an inscribed and a circumscribed polygon. 
+The polygons can be divided into triangles. The ratio between the legs of the triangles and their hypotenuses can be measured linearly.
+<br>
+That is where the pi divided by delta ( with delta = 1 ) π ~ 3.14 notation might originate from.
+<br>
+This method has several limitations. He tried to increase the accuracy by increasing the number of sides of the polygons. This approach cannot produce an accurate result. 
+<br>
+<br>
+Where the perimeter-based estimation went wrong: 
+<br>
+- aside of that it's just an approximation instead of an exact calculation - 
+<br>
+<br>
+The in- and circumscribed polygons method seems logical, but there's a catch. It's based on the assumption that the circle maximizes the area with a given circumference. That assumption is false. It's obviously true in the case of an isoperimetric triangle and a square, but it becomes less and less obvious with the increase of the number of the polygon's sides. Until eventually it is not even true. 
+<br>
+<br>
+Imagine a side of a polygon with a number of sides approaching infinity. 
+<br>
+<br>
+The angles between the side and the diagonals approach a right angle. They never reach a right angle as the diagonals converge towards the center.  If we relate the arc of a corresponding slice of an isoperimetric circle, the length of the arc equals the side in question. So the chord related to the arc is shorter than the side. If we want to place the arc with the chord so that it touches both diagonals, it has to be within the polygon. With the curvature of the arc becoming decreasingly distinctive, it doesn't bulge beyond the side. Eventually it will not even touch the side. Hence the polygon with the same number of sides, which circumscribed the circle is smaller, so its perimeter is shorter than the circle. 
+<br>
+<br>
+The perimeter of the circumscribed polygon that was believed to be an overestimate of the circumference was practically an underestimate of it. 
+<br>
+<br>
+Hence the value of the π lies between two underestimates.
+<br>
+<br>
+The same coefficient was used to calculate the ratio between the area and the squared radius of a circle.
+<br>
+<br>
+Despite these early advances, a precise, universally accepted value of this constant remained elusive for centuries. 
+<br>
+<br>
+Being uncertain about its numeric value and how to calculate it, it was comfortable to denote it by a sign in the equations.
+<br>
+<br>
+It was not until the 18th century that the symbol π, popularized by the mathematicians of the time, gained widespread acceptance.
+<br>
+<br>
+Several complex formulas were introduced by different mathematicians, aimed at more accurately estimating this ratio, based on a theoretical polygon with an infinite number of sides. 
+<br>
+<br>
+All of the above mentioned approximation methods have one thing in common. They are estimating the perimeters of polygons and do not account for the curved shape of the circle.
+<br>
+<br>
+Historical records suggest that a legislative process took place in 1897, Indiana, USA, known as House Bill 246, or Indiana Pi Act, aiming to replace the numeric value 3.14 by 3.2.
+<br>
+<br>
+Unfortunately, the exact details of the proposed method in the Indiana Pi Bill are somewhat obscure and have been interpreted differently by various accounts. 
+<br>
+<br>
+The π is a fundamental constant in the geometry of idealized circles and plays a crucial role in many mathematical theories. 
+</p>
+</div>
+<br>
+<div>
+<p style="margin:12px;">My work, however, suggests that when we move from these idealizations to the measurement of real objects, a slightly different constant, 3.2 emerges as more relevant for accurately describing their properties. 
+<br>
+<br>
+By focusing on area relationships and direct comparisons between shapes, my method emphasizes a more intuitive and potentially more fundamental understanding of geometric concepts.
+</p>
+<br>
+<strong style="font-size:160%;margin:7px;">THE AREA OF A CIRCLE is defined by comparing it to a square since that is the base of area calculation.
+</strong>
+<br>
+<div>
+<iframe title="Geometry puzzle" width="420" height="315" src="https://youtube.com/embed/-gvXLaLFXuM">
+</iframe>
+</div>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="equityFigure.jpg" alt="figure-square-circle-area-equity" id="area">
+    </div>
+<br>
+<p style="margin:12px;">Quarter of the uncovered area in the middle:
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+ <mfrac>
+<mrow>
+<mn>3.2</mn>
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mn>4</mn>
+</mfrac>
+<mo>-</mo>
+<mo>(</mo>
+<mn>3.2</mn>
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<mn>90</mn>
+<mo>&#xB0;</mo>
+<mo>-</mo>
+<mrow>
+<mn>2</mn>
+<mo>×</mo>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+</mrow>
+<mrow>
+<mn>360</mn>
+<mo>&#xB0;</mo>
+</mrow>
+</mfrac>
+<mo>+</mo>
+<mn>2</mn>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>4</mn>
+</mfrac>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+<mo>=</mo>
+</mrow>
+</math>
+<br>
+<br>
+<br>
+<p style="margin:12px;">The area of an overlapping section:
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<mn>2</mn>
+<mo>×</mo>
+<mo>(</mo>
+<mn>3.2</mn>
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mrow>
+<mn>360</mn>
+<mo>&#xB0;</mo>
+</mrow>
+</mfrac>
+<mo>-</mo>
+<mfrac>
+<mrow>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>4</mn>
+</mfrac>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<msqrt>
+<mn>3.2</mn>
+</msqrt>
+<mi>r</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+</math>
+<br>
+<br>
+<br>
+<p style="margin:12px;">The equation can be simplified algebraically.
+</p>
+<br>
+<p style="margin:12px;">Dividing both sides by 3.2r² :
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+ <mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+<mo>-</mo>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<mn>90</mn>
+<mo>&#xB0;</mo>
+<mo>-</mo>
+<mn>2</mn>
+<mo>×</mo>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mrow>
+<mn>360</mn>
+<mo>&#xB0;</mo>
+</mrow>
+</mfrac>
+<mo>+</mo>
+<mfrac>
+<mn>1</mn>
+<mn>8</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mo>=</mo>
+<mrow>
+<mn>2</mn>
+<mo>×</mo>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mrow>
+<mn>360</mn>
+<mo>&#xB0;</mo>
+</mrow>
+</mfrac>
+<mo>-</mo>
+<mfrac>
+<mrow>
+<mo>(</mo>
+<mfrac>
+<mn>1</mn>
+<mn>8</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mn>2</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+</math>
+<br>
+<br>
+<br>
+<p style="margin:12px;">Simplifying further:
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+ <mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+<mo>-</mo>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<mn>90</mn>
+<mo>&#xB0;</mo>
+<mo>-</mo>
+<mn>2</mn>
+<mo>×</mo>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mrow>
+<mn>360</mn>
+<mo>&#xB0;</mo>
+</mrow>
+</mfrac>
+<mo>)</mo>
+<mo>=</mo>
+<mn>2</mn>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mrow>
+<mn>360</mn>
+<mo>&#xB0;</mo>
+</mrow>
+</mfrac>
+</mrow>
+</math>
+<br>
+<br>
+<br>
+<p style="margin:12px;">Substituting 90° / 360° for 1 / 4 :
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<mfrac>
+<mrow>
+<mn>90</mn>
+<mo>&#xB0;</mo>
+</mrow>
+<mrow>
+<mn>360</mn>
+<mo>&#xB0;</mo>
+</mrow>
+</mfrac>
+<mo>-</mo>
+<mo>(</mo>
+<mfrac>
+<mrow>
+<mn>90</mn>
+<mo>&#xB0;</mo>
+<mo>-</mo>
+<mn>2</mn>
+<mo>×</mo>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mrow>
+<mn>360</mn>
+<mo>&#xB0;</mo>
+</mrow>
+</mfrac>
+<mo>)</mo>
+<mo>=</mo>
+<mn>2</mn>
+<mo>×</mo>
+<mfrac>
+<mrow>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+<mrow>
+<mn>360</mn>
+<mo>&#xB0;</mo>
+</mrow>
+</mfrac>
+</mrow>
+</math>
+<br>
+<br>
+<br>
+<p style="margin:12px;">Simplifying further:
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+<mo>=</mo>
+<mi>Atan</mi>
+  <mo>(</mo>
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+<mo>)</mo>
+</mrow>
+</math>
+<br>
+<br>
+<br>
+<p style="margin:12px;">Which is equivalent to 1 = 1 .
+<br>
+<br>
+When the arcs of the quadrant circles intersect at the quarter of the centerline of the square, the uncovered area in the middle equals exactly the sum of the overlapping areas respectively.
+</p>
+</div>
+<br>
+<br>
+<div>
+<p style="margin:12px;">The quadrant method not only proves that the area of a circle is 3.2 × radius², it necessarily rules out the validity of the π.
+<br>
+<br>
+Using the same quadrants model, in which we were able to find a direct relationship between the radius of the circle and the side length of the square that equals in area by ensuring that the overlaps equal the uncovered space, 
+and the radius of the circle equals √5 × quarter of the side, I change the side length of the square to √π, assuming that the area of a circle equals π × radius². 
+<br>
+<br>
+Looking for the ratio between the length of the side, I could denote the side of the square as 1, and compare the radius to that, or denote the radius as 1 and express the side compared to that. 
+<br>
+<br>
+I denoted the radius as 1 and the side as √π, because if the area equaled π × radius², the side length of the square that has the same area as the circle was √( π × 1² ). 
+<br>
+<br>
+But the square consists of 16 right triangles with legs of a quarter side and a half side, and hypotenuse of √π × √5 divided by 4 ( about 0.991 ), which should equal the radius.
+<br>
+<br>
+This means that the radius is shorter than it should logically be ( one ). 
+<br>
+<br>
+That is a logical error in the " Area = π × radius² " formula; not in the model.
+<br>
+<br>
+The π is a very rough approximation; 3.2 is an exact value.
+<br>
+<br>
+The area of a circle is exactly 3.2 × radius².
+</p>
+</div>
+<br>
+<br>
+<br>
+<div>
+<strong style="font-size:160%;margin:7px;">THE CIRCUMFERENCE OF A CIRCLE can be derived from the area algebraically.
+</strong>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="circumference.jpg" alt="figure-circumference=6.4r" id="circumference">
+    </div>
+<br>
+<p style="margin:12px;">For the derivation method to be valid it has to have a thickness. 
+<br>
+<br>
+Its value has to be greater than 0, by at least the smallest number. 
+<br>
+<br>
+For that reason the circumference just approaches 6.4 × radius. 
+</p>
+<br>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+<mi>C</mi>
+<mo>=</mo>
+<mfrac>
+<mrow>
+<mo>(</mo>
+<mn>3.2</mn>
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+<mo>-</mo>
+<mn>3.2</mn>
+<mo>×</mo>
+<msup>
+<mrow>
+<mo>(</mo>
+<mi>r</mi>
+<mo>-</mo>
+<mi>x</mi>
+<mo>)</mo>
+</mrow>
+<mn>2</mn>
+</msup>
+<mo>)</mo>
+</mrow>
+<mi>x</mi>
+</mfrac>
+</mrow>
+</math>
+<br>
+<br>
+<br>
+<p style="margin:12px;">Expand the term (r - x)²:
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mrow>
+<msup>
+<mrow>
+      <mo>(</mo>
+      <mi>r</mi>
+      <mo>-</mo>
+      <mi>x</mi>
+      <mo>)</mo>
+	</mrow>
+        <mn>2</mn>
+      </msup>
+      <mo>=</mo>
+      <msup>
+        <mi>r</mi>
+        <mn>2</mn>
+      </msup>
+      <mo>-</mo>
+      <mn>2</mn>
+      <mi>r</mi>
+      <mi>x</mi>
+      <mo>+</mo>
+      <msup>
+        <mi>x</mi>
+        <mn>2</mn>
+      </msup>
+    </mrow>
+  </mrow>
+</math>
+<br>
+<br>
+<br>
+<p style="margin:12px;">Substitute this back into the original expression:
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mrow>
+      <mfrac>
+        <mrow>
+          <mn>3.2</mn>
+          <msup>
+            <mi>r</mi>
+            <mn>2</mn>
+          </msup>
+          <mo>-</mo>
+          <mn>3.2</mn>
+          <mo>(</mo>
+          <msup>
+            <mi>r</mi>
+            <mn>2</mn>
+          </msup>
+          <mo>-</mo>
+          <mn>2</mn>
+          <mi>r</mi>
+          <mi>x</mi>
+          <mo>+</mo>
+          <msup>
+            <mi>x</mi>
+            <mn>2</mn>
+          </msup>
+          <mo>)</mo>
+        </mrow>
+        <mi>x</mi>
+      </mfrac>
+    </mrow>
+</math>
+<br>
+<br>
+<br>
+<p style="margin:12px;">Distribute the 3.2 inside the parentheses:
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+      <mfrac>
+        <mrow>
+          <mn>3.2</mn>
+          <msup>
+            <mi>r</mi>
+            <mn>2</mn>
+          </msup>
+          <mo>-</mo>
+          <mn>3.2</mn>
+          <msup>
+            <mi>r</mi>
+            <mn>2</mn>
+          </msup>
+          <mo>+</mo>
+          <mn>6.4</mn>
+          <mi>r</mi>
+          <mi>x</mi>
+          <mo>-</mo>
+          <mn>3.2</mn>
+          <msup>
+            <mi>x</mi>
+            <mn>2</mn>
+          </msup>
+        </mrow>
+        <mi>x</mi>
+      </mfrac>
+    </mrow>
+</math>
+<br>
+<br>
+<br>
+<p style="margin:12px;">Simplify the numerator:
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+      <mfrac>
+        <mrow>
+          <mn>6.4</mn>
+          <mi>r</mi>
+          <mi>x</mi>
+          <mo>-</mo>
+          <mn>3.2</mn>
+          <msup>
+            <mi>x</mi>
+            <mn>2</mn>
+          </msup>
+        </mrow>
+        <mi>x</mi>
+      </mfrac>
+    </mrow>
+</math>
+<br>
+<br>
+<br>
+<p style="margin:12px;">Factor out x from the numerator:
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+      <mfrac>
+        <mrow>
+          <mi>x</mi>
+          <mo>(</mo>
+          <mn>6.4</mn>
+          <mi>r</mi>
+          <mo>-</mo>
+          <mn>3.2</mn>
+          <mi>x</mi>
+          <mo>)</mo>
+        </mrow>
+        <mi>x</mi>
+      </mfrac>
+    </mrow>
+</math>
+<br>
+<br>
+<br>
+<p style="margin:12px;">Cancel out the x in the numerator and denominator:
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+      <mn>6.4</mn>
+      <mi>r</mi>
+      <mo>-</mo>
+      <mn>3.2</mn>
+      <mi>x</mi>
+  </mrow>
+</math>
+<br>
+<br>
+<br>
+<p style="margin:12px;">
+As x is close to 0,
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+<mi>C</mi>
+<mo>=</mo>
+<mn>6.4</mn>
+<mi>r</mi>
+</mrow>
+</math>
+<br>
+<br>
+<br>
+<p style="margin:12px;">
+In calculus terms:
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mrow>
+        <mi>C</mi>
+    <mo>=</mo>
+        <munder>
+      <mo>lim</mo>
+      <mrow>
+        <mi>x</mi>
+        <mo>→</mo>
+        <mn>0</mn>
+      </mrow>
+    </munder>
+        <mfrac>
+            <mrow>
+        <mn>3.2</mn> 
+        <mo>(</mo> 
+        <msup>
+          <mi>r</mi>
+          <mn>2</mn> 
+        </msup>
+        <mo>-</mo> 
+        <msup>
+          <mrow>
+            <mo>(</mo> 
+            <mi>r</mi>
+            <mo>-</mo>
+            <mi>x</mi>
+            <mo>)</mo>
+          </mrow>
+          <mn>2</mn>
+        </msup>
+        <mo>)</mo>
+      </mrow>
+      <mi>x</mi>
+    </mfrac>
+    <mo>=</mo>
+    <mn>6.4</mn>
+    <mi>r</mi>
+  </mrow>
+</math>
+</div>
+<br>
+<br>
+<p style="margin:12px;">
+Irrational or not, with an infinitesimally small thickness the circumference practically equals 6.4 × radius.
+<br>
+<br>
+Since the ratio can be expressed as a real number, there is no reason to substitute it with any other sign.
+<br>
+<br>
+The best practice is writing it as it is.
+<br>
+<br>
+From a historical perspective the mathematical constant named π is what it is. It's unlikely to change much. 
+<br>
+<br>
+From a scientific perspective they call it irrational for a reason. It doesn't make much sense. It's a logical dead end.
+<br>
+<br>
+The people deserve better than an irrational approximation if an exact calculation is available.
+<br>
+<br>
+That makes the arc value of 360° = 6.4radian, and 
+<br>
+sin( π / 2 ) < 1 . 
+<br>
+<br>
+These are two aspects of that.
+</p>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div>
+<strong style="font-size:160%;margin:7px;">THE VOLUME OF A SPHERE is another aspect of the area relationship, cubing the square root of its cross sectional area.
+</strong>
+<br>
+<div>
+ <iframe title="The sphere experiment" width="420" height="315" src="https://youtube.com/embed/7uxyLfh2B38">
+ </iframe>
+</div>
+<br>
+<p style="margin:12px;">The " V = 4 / 3 × π × radius³ "  estimate is widely used for the volume of a sphere, and it's a cornerstone of theoretical geometry. 
+<br>
+<br>
+It was estimated by comparing a hemisphere to the difference between the approximate volume a cone and a circumscribed cylinder.
+<br>
+<br>
+However, my work focuses on the actual volume of physical spheres as determined through direct measurement. 
+<br>
+<br>
+My calculations and experiments have consistently indicated a different relationship, expressed by the formula V = " cubic value of ( √( 3.2 ) × radius ) ", which provides a more accurate result when dealing with real, physical entities. 
+<br>
+This formula isn't based on abstract geometric ideals alone but on tangible experiments where I've measured the volume of real spheres. 
+<br>
+These measurements have shown a systematic difference compared to the theoretical predictions based on the traditional formula, suggesting that the way we mathematically describe the volume of a sphere might need to be reconsidered when applied to physical objects. 
+<br>
+<br>
+The " 4 / 3 × π × radius³ " formula is a very rough underestimate. 
+<br>
+<br>
+If you're trying to calculate the volume of a physical ball or sphere for a practical purpose – whether it's for a science experiment, engineering, or any other real-world application – my empirically derived V = " cubic value of ( √( 3.2 ) × radius ) " formula offers a result that aligns more closely with what you would measure in the lab.
+<br>
+<br>
+The conventional formula for the surface area of a sphere was developed from the " volume = 4 / 3 × π × radius³ " formula.
+</p>
+<br>
+<br>
+<br>
+<br>
+<div style="border: 2px solid red; 
+            padding: 10px;">
+  <p style="margin:6px;">Advertisement
+<br>
+<br>
+</p>
+  <div>
+	<h2 style="margin:6px;">SURFACE AREA OF A SPHERE</h2>
+<br>
+<br>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="sphereSurface.jpeg" alt="sphere-surface-illustration" id="sphereSurface">
+<br>
+<p style="margin:6px;">The image is an illustration.</p>
+<br>
+<br>
+</div>
+<p style="margin:6px;">The formula of the surface area of a sphere is available for 3.2 billion USD. (+tax, if applies)</p>
+ <br>
+ <br>
+</div>
+<a style="margin:12px;" class="rounded-button" href="privacy-policy">Contact</a>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div>
+<div>
+<strong style="font-size:160%;margin:7px;">THE VOLUME OF A CONE can be derived algebraically by comparing a vertical quadrant of a cone to an octant of a sphere.
+</strong>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="sphereAndConeMarkup.jpeg" alt="figure-Cone-volume-from-sphere=base×height/√8">
+</div>
+<br>
+<p style="margin:12px;">The result is base × height / √8 .
+</p>
+<br>
+<strong style="font-size:160%;margin:7px;">THE VOLUME OF A PYRAMID can be calculated with the same coefficient. 
+</strong>
+<br>
+<div class="imgbox">
+  <img class="center-fit" src="conePyramidVolumeMarkup.jpeg" alt="figure-Pyramids-volume=base×height/√8" id="pyramid">
+  </div>
+</div>
+<br>
+<br>
+<br>
+<div>
+<p style="margin:12px;">The commonly used base × height / 3 approximation for the volume of a pyramid was likely estimated based on two observations. 
+<br>
+<br>
+One is that the area of the mid-height cross section of a regular pyramid - of which's apex can be connected to the midpoint of the base with a perpendicular line - is exactly a quarter of a circumscribed solid's with the same base and height. 
+<br>
+That makes the ratio between the mid-height cross-sectional area of the pyramid, and the difference between the mid-height cross-sectional areas of the circumscribed solid and the pyramid 1 : 3 .
+</p>
+<br>
+<math style="margin:12px;" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<mrow>
+<mrow>
+<mo>(</mo>
+<mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mo>:</mo>
+<mrow>
+<mo>(</mo>
+<mn>1</mn>
+<mo>-</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+<mo>)</mo>
+</mrow>
+</mrow>
+<mo>=</mo>
+<mrow>
+<mrow>
+<mo>(</mo>
+<mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mo>:</mo>
+<mrow>
+<mo>(</mo>
+<mrow>
+<mfrac>
+<mn>4</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+<mo>-</mo>
+<mrow>
+<mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+</mrow>
+<mo>)</mo>
+</mrow>
+</mrow>
+<mo>=</mo>
+<mrow>
+<mrow>
+<mo>(</mo>
+<mfrac>
+<mn>1</mn>
+<mn>4</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mo>:</mo>
+<mrow>
+<mo>(</mo>
+<mfrac>
+<mn>3</mn>
+<mn>4</mn>
+</mfrac>
+<mo>)</mo>
+</mrow>
+</mrow>
+<mo>=</mo>
+<mrow>
+<mn>1</mn>
+<mo>:</mo>
+<mn>3</mn>
+</mrow>
+</mrow>
+</math>
+<br>
+<br>
+<p style="margin:12px;">That is a logical consequence of its equilateral triangular cross-section.
+<br>
+<br>
+The same is true for a cone. 
+<br>
+<br>
+Can this ratio can be generalized for the overall volume of any cone and pyramid? 
+<br>
+<br>
+No. Because it's not true in case of most other shapes.
+</p>
+</div>
+<br>
+<br>
+<div>
+<p style="margin:12px;">The other idea is the cube dissection. 
+</p>
+<br>
+<br>
+<div class="imgbox">
+    <img class="center-fit" src="cubeDissection.jpeg" alt="Cube-dissection" id="dissection">
+</div>
+<br>
+<p style="margin:12px;">A common method aiming to prove the pyramid volume formula ( V = base × height / 3 ) involves dissecting a cube into three pyramids. Here’s how it’s typically presented:
+<br>
+<br>
+Take a cube with an edge length of ( e ).
+<br>
+<br>
+Volume of the cube: V = the cubic value of e.
+<br>
+<br>
+Imagine dividing the cube into three square pyramids, each with:
+<br>
+<br>
+- Base: One face of the cube, so the base area is the square value of e .
+<br>
+<br>
+- Height: The edge of the cube, ( e ), since the apex of each pyramid is the cube’s vertex opposite the base, depending on the dissection. 
+<br>
+<br>
+A common dissection:
+<br>
+<br>
+Choose one vertex of the cube as the apex.
+<br>
+<br>
+Form three pyramids, each with this apex and a base on one of the three faces adjacent to that vertex.
+<br>
+<br>
+Each pyramid has a base area of the square value of e, and height ( e ) (the distance from the apex to the base plane). 
+<br>
+<br>
+Volume of each pyramid: V(pyramid) = ( square value of e ) × e, divided by 3 = the cubic value of e divided by 3.
+<br>
+<br>
+Since there are three pyramids, their total volume is: 3 × ( ( cubic value of e ) divided by 3 ) = the cubic value of e.
+<br>
+<br>
+This equals the cube’s volume, suggesting the one third factor is correct.
+<br>
+<br>
+The Vertex Problem is a critical flaw in this dissection when applied to a real, physical cube:
+<br>
+<br>
+Vertex Assignment: 
+<br>
+<br>
+When we cut the cube into three pyramids sharing a common vertex as the apex, the geometry seems clean in theory. But if you physically slice the cube, you have to decide where that vertex belongs:
+<br>
+<br>
+The cube has 8 vertices, each pyramid has 5. Three pyramids have 3 × 5 = 15 in total.
+<br>
+<br>
+Each vertex is a point that can't be split into 3 points. The other way around, 3 points can't be merged into 1 without distortion. 
+<br>
+If we dissect the cube, we need to designate each shared vertex to be a part of either one pyramid, or another. 
+<br>
+<br>
+Consequence: 
+<br>
+<br>
+The volume of each pyramid is exactly a third of the cube, but with a base smaller than the square value of e, and height shorter than e.
+<br>
+<br>
+Their bases and heights are slightly adjusted due to the vertex assignment, undermining the proof’s simplicity.
+<br>
+<br>
+<br>
+If the solid pyramids'
+<br>
+<br>
+- base is the square value of e,
+<br>
+<br>
+and their 
+<br>
+<br>
+- height is e,
+<br>
+<br>
+then the volume of each pyramid has to be larger than 1/3 × base × height, because 3 such pyramids can't form a cube with the same edge length, because their vertices and faces can't occupy the same space simultaneously.
+<br>
+<br>
+The vertices are the most obvious examples, but the same is true for the edges, the diagonals and the inner faces. 
+<br>
+<br>
+Applied correctly, the cube dissection proves that the volume of a cone or a pyramid has to be larger than base × height / 3.
+<br>
+<br>
+The fact that the vertices of the 3 pyramids can't be merged into a single point without distortion proves that the so-called "calculus-based proofs" of the conventional formula are invalid. 
+<br>
+Also it's not just about the vertices, but the edges and the inner faces, too.
+</p>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<footer>
+<p style="margin:12px;">® All rights reserved</p>
+<br>
+<br>
+<a style="margin:6px;" href="index">Home</a>
+<br>
+<br>
+  <a style="margin:6px;" href="privacy-policy">Do Not Sell My Personal Information</a>
+ <br>
+ <br>
+</footer>
+</body>
+</html>

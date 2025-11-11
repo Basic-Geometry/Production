@@ -153,6 +153,12 @@
 "@type" : "Thing",
 "name": "Gemini",
 "description": "AI language model"
+  },
+	
+{
+"@type" : "Thing",
+"name": "Grok",
+"description": "AI language model"
   }
 ],
 "copyrightHolder": {
@@ -338,25 +344,25 @@ Archimedes approximated the circle using inscribed and circumscribed polygons. H
 <br>
 This narrowing gap was key. Archimedes likely believed that as the number of sides increased, the difference between the perimeters of the inscribed and circumscribed polygons would converge toward zero, approaching the circumference of the circle.
 <br>
-He assumed that more sides mean closer resemblance to a circle. That was backed by the isoperimetric theory, which states that a circle maximizes area for a given perimeter. That idea likely emerged from observing simple polygons: the triangle has the smallest area, the square is larger, and so on. From this pattern, it was assumed that the trend continues indefinitely — that a polygon with an infinite number of sides would resemble a circle perfectly, with its area approaching from below.
+He assumed that more sides mean closer resemblance to a circle. That was backed by the isoperimetric inequality theory, which states that a circle maximizes area for a given perimeter. That idea likely emerged from observing simple polygons: the triangle has the smallest area, the square is larger, and so on. From this pattern, it was assumed that the trend continues indefinitely — that a polygon with an infinite number of sides would resemble a circle perfectly, with its area approaching from below.
 <br>
 <br>
-But that assumption ignores a crucial geometric reality: as the number of sides increases, the internal angles of the polygon approach 180°, which is far from the curvature of a circle. In contrast, polygons with internal angles in the range of ~150°–160°, such as the 13- to 16-gon, preserve a meaningful bend that better reflects circularity.
+But that assumption ignores a crucial geometric reality: as the number of sides increases, the internal angles of the polygon approach 180° — it is 180° - 360° / 96 = 176.25° in the case of a 96-gon —, nearing a straight line rather than a curve. In contrast, polygons with internal angles in the range between 150° and 160°, such as the 13- to 16-gon, preserve a meaningful bend that better reflects circularity.
 <br>
 <br>
 Archimedes pushed his method far beyond this curve-aligned threshold — and the result was a recursive underestimate. The perimeter of the circumscribed polygon that he believed to be an overestimate of the circumference was practically an underestimate of it. 
 <br>
 <br>
-Hence his final value of 3.14... lies between two underestimates. The method itself introduced compounding errors. These include:
+Thus his final result of 3.14... lies between two underestimates. The method itself introduced compounding errors. These include:
 <br>
 <br>
 - Misapplied isoperimetric logic beyond its valid range
 <br>
 <br>
-- Possible trigonometric inaccuracies in calculating the properties of the 96-gon
+- Possible inaccuracies in calculating the properties of the 96-gon via angle bisecton
 <br>
 <br>
-- Rounding errors of infinite fractions, multiplied 96 times
+- Rounding errors of infinite fractions, amplified over 96 iterations 
 <br>
 <br>
 What we’re left with is not a proof, but a layered approximation — one that has shaped centuries of geometry, but now deserves a closer, more rational reexamination.

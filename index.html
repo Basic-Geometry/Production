@@ -206,7 +206,7 @@
 },
 "dateCreated": "2019-01-11",
 "datePublished": "2020-01-11",
-"dateModified": "2025-12-06",
+"dateModified": "2025-12-07",
 "description": "Introducing the best-established and most accurate framework to calculate area and volume.",
 "disambiguatingDescription": "By fundamentally shifting the axioms from the abstract, zero-dimensional point to the square and the cube as the primary, physically-relevant units for measurement, we define the properties of shapes like the circle and sphere not through abstract limits, but through their direct, rational relationship to these foundational units. This system doesn't require advanced calculus or imaginary numbers.",
 "headline": "Introducing the Core Geometric System ™",
@@ -300,10 +300,7 @@
  "mathExpression-input": "required circle_radius=5_Area=?",
      "mathExpression-output": "Area = 3.2 * radius^2",
   "about": "The ratio between the radius of the circle and the side of the square is calculable. The radius equals √(5) * side / 4.",
-	"abstract": "The circle can be cut into four quadrants, each placed with their origin on the vertices of a square.
-In this layout the arcs of the quadrants of an inscribed circle would meet at the midpoints of the sides of the square, leaving some of the square uncovered.
-The arcs of the quadrants of a circumscribed circle would overlap, and intersect at the center of the square, covering it all.
-The arcs of the quadrants of the circle that equals in area to the square intersect right in between those limits, at the quarters on its centerlines.",
+	"abstract": "The circle can be cut into four quadrants, each placed with their origin on the vertices of a square. In this layout the arcs of the quadrants of an inscribed circle would meet at the midpoints of the sides of the square, leaving some of the square uncovered. The arcs of the quadrants of a circumscribed circle would overlap, and intersect at the center of the square, covering it all. The arcs of the quadrants of the circle that equals in area to the square intersect right in between those limits, at the quarters on its centerlines.",
 	"educationalLevel": "advanced",
 	"keywords": "exact area of a circle, geometry",
 	  "image": [
@@ -323,11 +320,7 @@ The arcs of the quadrants of the circle that equals in area to the square inters
 "mathExpression-input": "required circle_radius=5_Circumference=?", 
      "mathExpression-output": "Circumference = 6.4 * radius",
     "about": "The circumference of a circle can be derived from its area algebraically by subtracting the area of a smaller circle from it and dividing the difference by the difference of the radii.",
-	"abstract": "The x represents the theoretical width of the circumference, which is a very small number. 
-The difference between the shape of the straightened circumference and a quadrilateral is negligible. 
-The length of the two shorter sides of the quadrilateral is x. 
-The length of the two longer sides is the area of the resulting ring divided by x. 
-C=3.2(r^2-(r-x)^2)/x=6.4r-x The length of the circumference approaches 6.4 × radius as its thickness approaches 0.",
+	"abstract": "The x represents the theoretical width of the circumference, which is a very small number. The difference between the shape of the straightened circumference and a quadrilateral is negligible. The length of the two shorter sides of the quadrilateral is x. The length of the two longer sides is the area of the resulting ring divided by x. C=3.2(r^2-(r-x)^2)/x=6.4r-x The length of the circumference approaches 6.4 × radius as its thickness approaches 0.",
 	"keywords": "exact circumference, radians, geometry",
 	"educationalLevel": "advanced",
 	"image": "circumference.jpg",
@@ -1086,7 +1079,7 @@ The result of raising to a fraction is a root.
 <br>
 <br>
 <br>
-<section itemscope itemtype="http://schema.org/CreativeWork" id="powers_manifesting_as_area_and_volume">
+<section itemscope itemtype="http://schema.org/CreativeWork" id="geometry">
 <h3 itemprop="name" style="margin:7px">The 2nd and the 3rd Powers manifesting in Geometry</h3>
 <br>
 <br>
@@ -1179,11 +1172,9 @@ That is a direct extrapolation from the area of the square, establishing the bas
     </math>
 </section>
 </section>
-</section>
 </details>
 </section>
 </details>
-</section>
 <br>
 <br>
 <br>
@@ -1377,7 +1368,7 @@ The area of a triangle can also be calculated by the length of its sides.
 <br>
 <br>
 <br>
-<section itemscope itemtype="http://schema.org/CreativeWork" id="polygon">
+<section itemscope itemtype="http://schema.org/CreativeWork" itemref="trigonometry" id="polygon">
 <h3 itemprop="name" style="margin:7px">Area of a regular Polygon</h3>
 <br>
 <figure class="imgbox">
@@ -1632,7 +1623,7 @@ The ratio between the radius of the circle and the side of the square is calcula
 </math>
 <br>
 <br>
-<section itemscope itemtype="http://schema.org/CreativeWork" id="circle_area_proof">
+<section itemscope itemtype="http://schema.org/CreativeWork" itemref="trigonometry" id="circle_area_proof">
 <details>
   <summary><h4 itemprop="description" style="margin:7px">When the overlapping area equals to the uncovered area in the middle, the sum of the areas of the quadrants is equal to the area of the square. That square represents the area of the circle in square units.
 </h4></summary>
@@ -2634,7 +2625,7 @@ The final conclusion is that adopting a consistent, rational constant like 3.2 o
 <br>
 <br>
 <br>
-<section itemscope itemtype="http://schema.org/CreativeWork" id="circle-segment">
+<section itemscope itemtype="http://schema.org/CreativeWork" itemref="trigonometry" id="circle-segment">
     <h3 itemprop="name" style="margin:7px">Area of a Circle Segment</h3>
 <br>
 <figure class="imgbox">
@@ -2911,9 +2902,9 @@ The formula for the real surface area of a sphere is available for 3.2 billion U
 <section itemscope itemtype="http://schema.org/CreativeWork">
 <h3 itemprop="name" style="margin:7px">Volume of a Cone</h3>
 <br>
-<div class="imgbox">
+<figure class="imgbox">
     <img class="center-fit" src="coneAndSphereMarkup.jpeg" alt="Cone volume from sphere = base × height / √8">
-</div>
+</figure>
 <br>
 <p itemprop="description" style="margin:12px"><strong>The volume of a cone can be calculated by algebraically comparing the volume of a vertical quadrant of a cone with equal radius and height to an octant sphere with equal radius, through a quadrant cylinder.
 </strong>
@@ -3515,7 +3506,6 @@ with the same coefficient as the volume of a cone.</h3>
  </mfrac>
 </mrow>
 </math>
-</section>
 <br>
 <br>
 <br>
@@ -3941,10 +3931,12 @@ Its volume is calculated as a pyramid with an equilateral triangle base and fixe
   </mrow>
 </math>
 </section>
+</section>
 </div>
 </div>
 </div>
 </div>
+</section>
 </article>
 <br>
 <br> 

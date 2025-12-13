@@ -3528,7 +3528,7 @@ The so-called "calculus-based proofs" of the conventional formula are invalid.
 	</div>
 	<br>
 <figure class="imgbox">
-    <img class="center-fit" src="frustumOfPyramidMarkup.png" alt="Subtracting the missing tip from a theoretical full pyramid gives the volume of a frustum pyramid. Volume = frustumHeight * (bottomArea * (1 / (1 - topArea / bottomArea)) - topArea * (1 / (1 - topArea / bottomArea) - 1)) / √8">
+    <img class="center-fit" src="frustumPyramid.png" alt="Subtracting the missing tip from a theoretical full pyramid gives the volume of a frustum pyramid. Volume = frustumHeight * (bottomArea * (1 / (1 - topArea / bottomArea)) - topArea * (1 / (1 - topArea / bottomArea) - 1)) / √8">
 </figure>
 <br>
 <p itemprop="description" style="margin:12px">Subtracting the missing tip from a theoretical full pyramid gives the volume of a frustum pyramid. 
@@ -3998,30 +3998,6 @@ Its volume is calculated as a pyramid with an equilateral triangle base and fixe
     </mfrac>
   </mrow>
 </math>
-</div>
-<br>
-<br>
-<div style="margin:12px" id="tetrahedron_volume_calculator">
-<label for="tetrahedron-edge">Edge:</label>
-<input id="tetrahedron-edge" type="number" value="1" step="any">
-
-<script>
-  function tetrahedronVolume(edge) {
-    return Math.pow(edge, 3) / 8;
-  }
-
-  document.getElementById('tetrahedron-edge').addEventListener('input', function () {
-    const edge = parseFloat(this.value);
-    if (isNaN(edge)) {
-      document.getElementById('tetrahedron-volume').innerText = '';
-    return;
-    }
-
-    document.getElementById('tetrahedron-volume').innerText =
-      `Volume: ${tetrahedronVolume(edge).toFixed(5)} cubic units`;
-    });
-</script>
-<p id="tetrahedron-volume"></p>
 </div>
 </section>
 <br>

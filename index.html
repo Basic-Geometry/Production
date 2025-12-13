@@ -2550,8 +2550,27 @@ The length of the two longer sides is the area of the resulting ring divided by 
 <br>
     <p itemprop="abstract" style="margin:12px">The area of a circle segment can be calculated by subtracting a triangle from a circle slice.</p>
 <br>
-<p itemprop="description" style="margin:12px">The triangle is given by the ratio between the chord and the height or the parent radius via trigonometric functions.</p>
+<p itemprop="description" style="margin:12px">The angle of the slice is given by the ratio between the segment height and the radius of the parent circle. The base of the triangle is the chord, its height is the segment height subtracted from the radius of the parent circle. If the radius of the parent circle is unknown it can be calculated from the the length of the segment ( chord ).</p>
 <br>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <mi>radius</mi>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <msup><mi>chord</mi><mn>2</mn></msup>
+      <mo>+</mo>
+      <mn>4</mn>
+      <msup><mi>height</mi><mn>2</mn></msup>
+    </mrow>
+    <mrow>
+      <mn>8</mn>
+      <mo>&#x2062;</mo> <!-- invisible times -->
+      <mi>h</mi>
+    </mrow>
+  </mfrac>
+</math>
+<br>	
+<br>	
 <div itemprop="mathExpression">
 <math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML">
   <mrow>

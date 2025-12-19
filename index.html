@@ -797,8 +797,8 @@ A cube is a cuboid with equal edges.</p>
 <meta itemprop="target" content="https://basic-geometry.pages.dev?q={triangle_side1=3_side2=4_side3=5_area=?}">
 <div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
 <meta itemprop="name" content="Triangle area formula">
-<meta itemprop="usageInfo" content="Multiply the length of the base by the half of the height">
-<br>
+<meta itemprop="usageInfo" content="Either by base length and height, or perimeter">
+	<br>
 <p itemprop="description" style="margin:12px">The area of a triangle equals half of the area of a rectangle with a width equal to the base of the triangle and length equal to the height of the triangle.</p>
 <p itemprop="abstract" style="margin:12px">The base of a triangle multiplied by its height equals a rectangle with twice the area of the triangle.
 <br>
@@ -1774,6 +1774,7 @@ function Atan(x) {
 <meta itemprop="target" content="https://basic-geometry.pages.dev?q={polygon_side_number=5_length=2_area=?}">
 <div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
 <meta itemprop="name" content="Regular polygon area formula">
+<meta itemprop="usageInfo" content="Only for regular polygons that can be tiled up to isosceles triangles">
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="pentagon.png" alt="A regular polygon can be divided into as many isosceles triangles as many sides it has. Area = (number of sides) / 4 × ctg( 180° / (number of sides) ) × (side length)²">
@@ -3165,6 +3166,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
 <meta itemprop="target" content="https://basic-geometry.pages.dev?q={circle_segment_height=1_length=3_radius=4_area=?}">
 <div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
 <meta itemprop="name" content="Circle segment area formula">
+<meta itemprop="usageInfo" content="By segment height and radius. The radius can be calculated from the chord length.">
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="circleSegment.jpg" alt="The area of a circle segment can be calculated by subtracting a triangle from a circle slice. Area = Acos(( r - n ) / r ) × r² - sin( Acos(( r - n ) / r ) × ( r - n ) × r">
@@ -3339,6 +3341,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
 <meta itemprop="target" content="https://basic-geometry.pages.dev?q={cone_radius=1_height=2_area=?}">
 <div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
 <meta itemprop="name" content="Cone surface area formula">
+<meta itemprop="usageInfo" content="With or without bottom area">
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
   <img class="center-fit" src="cone.jpeg" alt="The surface area of a cone is calculated as a circle slice with a radius equal to the slant height. Area = 3.2r × ( r + √( r² + H² )">
@@ -3429,6 +3432,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
 <meta itemprop="target" content="https://basic-geometry.pages.dev?q={sphere_radius=1_volume=?}">
 <div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
 <meta itemprop="name" content="Sphere volume formula">
+<meta itemprop="usageInfo" content="Universally applicable">
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="sphere.jpeg" alt="The edge length of the cube, which has the same volume as the sphere, equals the square root of the area of the square that has the same area as the sphere's cross-section. Volume = ( √ ( 3.2 ) × r )³">
@@ -3650,6 +3654,7 @@ if ( height === radius) {
 <h3 itemprop="eduQuestionType" style="margin:7px">Volume of a Cone</h3>
 <meta itemprop="target" content="https://basic-geometry.pages.dev?q={cone_radius=1_height=2_volume=?}">
 <div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
+<meta itemprop="usageInfo" content="Universally applicable">
 <meta itemprop="name" content="Cone volume formula">
 	<br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
@@ -4221,6 +4226,7 @@ document.getElementById('frustum-cone-height').addEventListener('input', updateF
 <meta itemprop="target" content="https://basic-geometry.pages.dev?q={pyramid_bottom_edge_number=5_length=3_height=2_volume=?}">
 <div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
 <meta itemprop="name" content="Pyramid volume formula">
+<meta itemprop="usageInfo" content="Universally applicable">
 <br>
 <figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
   <img class="center-fit" src="conePyramidVolume.jpeg" alt="The volume of a pyramid can be calculated with the same coefficient as the volume of a cone. Volume = base × height / √8">
@@ -4414,6 +4420,7 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 <meta itemprop="target" content="https://basic-geometry.pages.dev?q={frustum_pyramid_height=3_edge_length_top=1_bottom=2_number=5_volume=?}">
 <div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
 <meta itemprop="name" content="Horizontal frustum pyramid volume formula">
+<meta itemprop="usageInfo" content="Universally applicable">
 <br>
 <figure class="imgbox">
     <img class="center-fit" src="frustumPyramid.jpeg" alt="Subtracting the missing tip from a theoretical full pyramid gives the volume of a frustum pyramid. Volume = frustumHeight * (bottomArea * (1 / (1 - topArea / bottomArea)) - topArea * (1 / (1 - topArea / bottomArea) - 1)) / √8">
@@ -4556,7 +4563,8 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 <meta itemprop="target" content="https://basic-geometry.pages.dev?q={square_frustum_pyramid_height=3_edge_length_top=1_bottom=2_volume=?}">
 <div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
 <meta itemprop="name" content="Horizontal square frustum pyramid volume formula">
-	<br>
+<meta itemprop="usageInfo" content="Only for square frustum pyramids">
+<br>
 <figure class="imgbox">
     <img class="center-fit" src="squareFrustum.jpeg" alt="Square frustum pyramid">
 </figure>

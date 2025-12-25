@@ -108,7 +108,7 @@
                 </div>
                 <div id="cookie-notice-buttons">
                         <button onclick="document.getElementById('cookie-notice').style.display = 'none';">Accept</button>
-                        <button onclick="document.getElementById('cookie-notice').style.display = 'none';">Reject</button>
+                        <button onclick="location.replace('about:blank')">Leave</button>
                 </div>
 </div>
 <h1 style="font-size:140%;margin:7px">Introducing The Core Geometric System ™</h1>
@@ -768,7 +768,7 @@ A cube is a cuboid with equal edges.</p>
 <meta itemprop="description" content="Lookup-based trigonometry value finder for the calculator apps. Values aligned to circumference=6.4radius with ~ ± rad / 100 accuracy.">
 <meta itemprop="disambiguatingDescription" content="The arc values are more accurate than the results of other tools with many decimals for any value but based on the pi=3.14...">
 <meta itemprop="usageInfo" content="Defines independent trigonometric functions. The steps are limited by the number of entries.">
-<script>
+<script type="module" async>
 
 // ---- Trigonometry ----
 	
@@ -1614,7 +1614,7 @@ The square root of half of the area of the rectangle is the side length of the t
 <br>
 <label for="side3">Side 3:</label>
 <input id="side3" type="number" value="1" step="any">
-<script>
+<script type="module" async>
   function triangleArea(product) {
   return Math.sqrt(product);
 }
@@ -1762,7 +1762,7 @@ The height of each triangle is calculable via trigonometric functions.</p>
 <br>
 <label for="side-length">Side length:</label>
 <input id="side-length" type="number" value="1" step="any">
-<script>
+<script type="module" async>
   function polygonArea(length, number, tangent) {
     return number / 4  * length ** 2 / tangent;
   }
@@ -2385,7 +2385,7 @@ The ratio between the radius of the circle and the side of the square is calcula
 <meta itemprop="usageInfo" content="Enter the radius">
 <label for="circle-radius-a">Radius:</label>
 <input id="circle-radius-a" type="number" value="1" step="any">
-<script>
+<script type="module" async>
   function circleArea(radius) {
     return 3.2 * radius * radius;
   }
@@ -2917,7 +2917,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
 <meta itemprop="usageInfo" content="Enter the radius">
 <label for="circle-radius-c">Radius:</label>
 <input id="circle-radius-c" type="number" value="1" step="any">
-<script>
+<script type="module" async>
   function circleCircumference(radius) {
     return 3.2 * radius * 2;
   }
@@ -3043,7 +3043,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
 <label for="parent-radius">Circle Radius:</label>
 <input id="parent-radius" type="number" step="any">
 <br>
-<script>
+<script type="module" async>
 let autoFilledField = null;
 let userEntered = { h: false, l: false, r: false };
 
@@ -3196,7 +3196,7 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 <br>
 <label for="cone-height-s">Height:</label>
 <input id="cone-height-s" type="number" value="1" step="any">
-<script>
+<script type="module" async>
   function coneSurface(radius, height) {
     return 3.2 * radius * (radius + Math.sqrt(radius ** 2 + height ** 2));
   }
@@ -3298,7 +3298,7 @@ That is a very exaggerated, distortion-based comparison that discards the differ
 <meta itemprop="usageInfo" content="Enter the radius">
 <label for="sphere-radius">Radius:</label>
 <input id="sphere-radius" type="number" value="1" step="any">
-<script>
+<script type="module" async>
   function sphereVolume(radius) {
     return Math.pow(Math.sqrt(3.2) * radius, 3);
   }
@@ -3331,7 +3331,7 @@ That is a very exaggerated, distortion-based comparison that discards the differ
 <p style="margin:6px">The image is an illustration.</p>
 </div>
 <br>
-<p itemprop="disambiguatingDescription" style="margin:6px">The conventional "4×pi×radius²" formula for the surface area of a sphere was allegedly developed from the " volume = 4/3×pi×radius³ " formula.</p>
+<p itemprop="disambiguatingDescription" style="margin:6px">The conventional formula for the surface area of a sphere was allegedly developed from the conventional volume formula.</p>
 <br>
 <p itemprop="description" style="margin:6px"><strong>
 Unlock the true formula to calculate the surface area of a sphere.</strong></p>
@@ -3397,7 +3397,7 @@ Unlock the true formula to calculate the surface area of a sphere.</strong></p>
 <label for="cap-height">Height:</label>
 <input id="cap-height" type="number" value="1" step="any">
 	
-<script>
+<script type="module" async>
   function capVolume(radius, height) {
     return 1.6 * radius * radius * height * Math.sqrt(3.2);
   }
@@ -3786,8 +3786,7 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 <br>
 <label for="cone-height-v">Height:</label>
 <input id="cone-height-v" type="number" value="1" step="any">
-	
-<script>
+<script type="module" async>
   function coneVolume(radius, height) {
     return 3.2 * radius * radius * height / Math.sqrt(8);
   }
@@ -3944,7 +3943,7 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 <br>
 <label for="frustum-cone-height">Height:</label>
 <input id="frustum-cone-height" type="number" value="1" step="any">
-<script>
+<script type="module" async>
   function frustumConeVolume(baseArea, topArea, reciprocal, height) {
   return height * (baseArea * reciprocal - topArea * (reciprocal - 1)) / Math.sqrt(8);
 }
@@ -4120,8 +4119,7 @@ The so-called "calculus-based proofs" of the conventional formula are invalid.</
 <br>
 <label style="margin:12px" for="pyramid-height">Height:</label>
 <input id="pyramid-height" type="number" value="1" step="any">
-
-<script>
+<script type="module" async>
   function pyramidVolume(baseArea, height) {
   return baseArea * height / Math.sqrt(8);
 }
@@ -4241,7 +4239,7 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 <br>
 <label for="frustum-pyramid-height">Height:</label>
 <input id="frustum-pyramid-height" type="number" value="1" step="any">
-<script>
+<script type="module" async>
   function frustumPyramidVolume(baseArea, topArea, reciprocal, height) {
   return height * (baseArea * reciprocal - topArea * (reciprocal - 1)) / Math.sqrt(8);
 }
@@ -4676,8 +4674,7 @@ The base is an equilateral triangle.</p>
 <meta itemprop="usageInfo" content="Enter the edge length">
 <label for="tetrahedron-edge">Edge:</label>
 <input id="tetrahedron-edge" type="number" value="1" step="any">
-
-<script>
+<script type="module" async>
   function tetrahedronVolume(edge) {
     return Math.pow(edge, 3) / 8;
   }
@@ -4719,7 +4716,7 @@ Simplifying equations to ensure consistency and precision.</p>
 <br><br>
 <br><br>
   <div itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
-    <p style="margin:12px"><span itemprop="name">Gaál Sándor</span></p>
+    <p style="margin:12px"><span itemprop="familyName">Gaál</span> <span itemprop="givenName">Sándor</span></p>
   </div>
 	<p style="margin:12px" itemprop="copyrightNotice">® All rights reserved</p>
 	<p style="margin:12px" itemprop="copyrightYear">2025</p>

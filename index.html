@@ -1828,14 +1828,17 @@ function updatePolygonArea() {
 <meta itemprop="isFamilyFriendly" content="true">
 <meta itemprop="keywords" content="Core Geometric System, Exact Geometric Calculations, Analysis, Engineering Design Solutions, Computer Graphics Rendering, Algorithm Optimization, Navigation">
 <meta itemprop="educationalLevel" content="from basic to advanced">
-<meta itemprop="typicalAgeRange" content="6-18">
-<section id="circle">
-<div itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction">
-<h3 itemprop="eduQuestionType" style="margin:7px">Area of a Circle</h3>
+<meta itemprop="typicalAgeRange" content="12-18">
+<section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="circle">
+<meta itemprop="eduQuestionType" content="Circle area calculation">
+<div itemprop="actionProcess" itemscope itemtype="https://schema.org/HowTo">
+<div itemprop="estimatedCost" itemscope itemtype="https://schema.org/MonetaryAmount">
+<meta itemprop="currency" content="USD">
+<meta itemprop="value" content="0">
+</div>
+<meta itemprop="totalTime" content="PT05S">
+<h3 itemprop="name" style="margin:7px">Area of a Circle</h3>
 <meta itemprop="target" content="https://basic-geometry.pages.dev?q={circle_radius=1_area=?}">
-<div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
-<meta itemprop="name" content="Circle area formula">
-<meta itemprop="usageInfo" content="Universally applicable">
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="circle.png" alt="The circle is cut into four quadrants, each placed with their origin on the vertices of a square. The arcs of the quadrants of the circle that equals in area to the square intersect at the quarters on its centerlines. The ratio between the radius of the circle and the side of the square is calculable. r = side × √5 / 4 Area = 3.2r²">
@@ -1854,10 +1857,15 @@ In this layout the arcs of the quadrants of an inscribed circle would meet at th
 The arcs of the quadrants of a circumscribed circle would overlap, and intersect at the center of the square, covering it all.
 <br><br>
 <strong>The arcs of the quadrants of the circle that equals in area to the square intersect right in between those limits, at the quarters on its centerlines.</strong>
-<br><br>
-The ratio between the radius of the circle and the side of the square is calculable.</p>
+<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<meta itemprop="position" content="1">
+<div itemprop="text">
+<p style="margin:12px">The length of the centerline equals the side length of the square.
 <br>
-<div itemprop="description">
+The quarter of the centerline and the half of the side of the square form two legs of a right triangle with its hypotenuse equal to the radius.
+<br>
+The ratio between the radius and the side length is calculable.</p>
+<br>
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <msup>
@@ -1890,7 +1898,12 @@ The ratio between the radius of the circle and the side of the square is calcula
 </msup>
 </mrow>
 </math>
+</div>
+</div>
 <br><br>
+<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<meta itemprop="position" content="2">
+<div itemprop="text">
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
 <mi>r</mi>
@@ -1930,6 +1943,17 @@ The ratio between the radius of the circle and the side of the square is calcula
 </mrow>
 </msqrt>
 </mrow>
+</mrow>
+</math>
+</div>
+</div>
+<br><br>
+<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<meta itemprop="position" content="3">
+<div itemprop="text">
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<mi>r</mi>
 <mo>=</mo>
 <mrow>
 <msqrt>
@@ -1950,6 +1974,17 @@ The ratio between the radius of the circle and the side of the square is calcula
 </mrow>
 </msqrt>
 </mrow>
+</mrow>
+</math
+</div>
+</div>
+<br><br>
+<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<meta itemprop="position" content="4">
+<div itemprop="text">
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML" >
+<mrow>
+<mi>r</mi>
 <mo>=</mo>
 <mrow>
  <msqrt>
@@ -1963,6 +1998,7 @@ The ratio between the radius of the circle and the side of the square is calcula
 </mrow>
 </mrow>
 </math>
+</div>
 </div>
 <br>
 <section itemprop="description" style="margin:12px" id="circle_area_proof">
@@ -2359,9 +2395,11 @@ The ratio between the radius of the circle and the side of the square is calcula
 <br><br>
 </details>
 </section>
-<p style="margin:12px" itemprop="abstract">The area of both the square and the sum of the quadrants equals 16 right triangles with legs of a quarter, and a half of the square's sides, and its hypotenuse equal to the radius of the circle.</p>
-<br>
+<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+<meta itemprop="position" content="5">
 <div itemprop="text">
+<p style="margin:12px">The area of both the square and the sum of the quadrants equals 16 right triangles with legs of a quarter, and a half of the square's sides, and its hypotenuse equal to the radius of the circle.</p>
+<br>
 <math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mi>A</mi>
@@ -2377,6 +2415,17 @@ The ratio between the radius of the circle and the side of the square is calcula
 <mn>2</mn>
 </msup>
 </mrow>
+</mrow>
+</math>
+</div>
+</div>
+</div>
+<br><br>
+<div itemprop="result" itemscope itemtype="https://schema.org/Observation">
+<div itemprop="measuredProperty">
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+<mi>Area</mi>
 <mo>=</mo>
 <mn>3.2</mn>
 <msup>
@@ -2387,15 +2436,7 @@ The ratio between the radius of the circle and the side of the square is calcula
 </math>
 </div>
 </div>
-</div>
 <br><br>
-<div itemprop="about" itemscope itemtype="https://schema.org/Observation">
-<meta itemprop="measurementTechnique" content="Comparing the circle to a square through triangles.">
-<label itemprop="measuredProperty" for="circle-radius-a">Radius:</label>
-<input id="circle-radius-a" type="number" value="1" step="any">
-<br><br>
-<p itemprop="measuredProperty" id="circle-area">Area</p>
-</div>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="circle_area_calculator">
 <meta itemprop="name" content="Circle Area Calculator">
 <meta itemprop="applicationCategory" content="Geometric Calculator">
@@ -2406,6 +2447,10 @@ The ratio between the radius of the circle and the side of the square is calcula
 <meta itemprop="usageInfo" content="Enter the radius">
 <meta itemprop="interactivityType" content="Active">
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
+<label for="circle-radius-a">Radius:</label>
+<input id="circle-radius-a" type="number" value="1" step="any">
+<br><br>
+<p id="circle-area">Area</p>
 <script type="module" async>
   function circleArea(radius) {
     return 3.2 * radius * radius;

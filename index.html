@@ -1481,26 +1481,10 @@ function Atan(x) {
 </div>
 </section>
 <br><br><br><br>
-<main itemscope itemtype="https://schema.org/LearningResource https://schema.org/MathSolver">
-<meta itemprop="name" content="Core Geometric System ™">
-<meta itemprop="url" content="https://basic-geometry.pages.dev">
-<meta itemprop="inLanguage" content="en">
-<meta itemprop="accessibilityHazard" content="none">
-<meta itemprop="accessibilitySummary" content="Equations with figures and explanations">
-<meta itemprop="accessMode" content="mathOnVisual">
-<meta itemprop="isAccessibleForFree" content="true">
-<meta itemprop="isFamilyFriendly" content="true">
-<meta itemprop="keywords" content="Core Geometric System, Exact Geometric Calculations, Analysis, Engineering Design Solutions, Computer Graphics Rendering, Algorithm Optimization, Navigation">
-<meta itemprop="educationalLevel" content="from basic to advanced">
-<meta itemprop="typicalAgeRange" content="6-18">
-<section id="triangle">
-<div itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction">
-<h3 style="margin:7px" itemprop="eduQuestionType">Area of a Triangle</h3>
-<meta itemprop="target" content="https://basic-geometry.pages.dev?q={triangle_side1=3_side2=4_side3=5_area=?}">
-<div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
-<meta itemprop="name" content="Triangle area formula">
-<meta itemprop="usageInfo" content="Either by base length and height, or perimeter">
+<section itemscope itemtype="https://schema.org/LearningResource" id="triangle">
+<h3 style="margin:7px" itemprop="name">Area of a Triangle</h3>
 <br>
+<section>
 <p itemprop="description" style="margin:12px">The area of a triangle equals half of the area of a rectangle with a width equal to the base of the triangle and length equal to the height of the triangle.</p>
 <p itemprop="abstract" style="margin:12px">The base of a triangle multiplied by its height equals a rectangle with twice the area of the triangle.
 <br>
@@ -1524,10 +1508,9 @@ The square root of half of the area of the rectangle is the side length of the t
  </mrow>
 </math>
 </div>
-</div>
+</section>
 <br><br>
-<div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
-<meta itemprop="name" content="Triangle area formula aka Heron's formula">
+<section>
 <p itemprop="description" style="margin:12px">The area of a triangle can also be calculated by the length of its sides.</p>
 <br>
 <div itemprop="usageInfo">
@@ -1606,8 +1589,7 @@ The square root of half of the area of the rectangle is the side length of the t
 </mrow>
 </math>
 </div>
-</div>
-</div>
+</section>
 <br><br>
 <div itemprop="about" itemscope itemtype="https://schema.org/Observation">
 <meta itemprop="measurementTechnique" content="Comparing the triangle to a square through a rectangle">
@@ -1668,13 +1650,8 @@ const area = triangleArea(product);
 </div>
 </section>
 <br><br><br><br>
-<section id="polygon">
-<div itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction">
-<h3 itemprop="eduQuestionType" style="margin:7px">Area of a regular Polygon</h3>
-<meta itemprop="target" content="https://basic-geometry.pages.dev?q={polygon_side_number=5_length=2_area=?}">
-<div itemprop="result" itemscope itemtype="https://schema.org/LearningResource">
-<meta itemprop="name" content="Regular polygon area formula">
-<meta itemprop="usageInfo" content="Only for regular polygons that can be tiled up to isosceles triangles">
+<section itemscope itemtype="https://schema.org/LearningResource" id="polygon">
+<h3 itemprop="name" style="margin:7px">Area of a regular Polygon</h3>
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="polygon.png" alt="A regular polygon can be divided into as many isosceles triangles as many sides it has. Area = (number of sides) / 4 × ctg( 180° / (number of sides) ) × (side length)²">
@@ -1765,8 +1742,6 @@ The height of each triangle is calculable via trigonometric functions.</p>
 </mrow>
 </math>
 </div>
-</div>
-</div>
 <br><br>
 <div itemprop="about" itemscope itemtype="https://schema.org/Observation">
 <meta itemprop="measurementTechnique" content="Comparing the polygon to a square through a rectangle through triangles">
@@ -1842,6 +1817,18 @@ function updatePolygonArea() {
 </div>
 </section>
 <br><br><br><br>
+<main itemscope itemtype="https://schema.org/LearningResource https://schema.org/MathSolver">
+<meta itemprop="name" content="Core Geometric System ™">
+<meta itemprop="url" content="https://basic-geometry.pages.dev">
+<meta itemprop="inLanguage" content="en">
+<meta itemprop="accessibilityHazard" content="none">
+<meta itemprop="accessibilitySummary" content="Equations with figures and explanations">
+<meta itemprop="accessMode" content="mathOnVisual">
+<meta itemprop="isAccessibleForFree" content="true">
+<meta itemprop="isFamilyFriendly" content="true">
+<meta itemprop="keywords" content="Core Geometric System, Exact Geometric Calculations, Analysis, Engineering Design Solutions, Computer Graphics Rendering, Algorithm Optimization, Navigation">
+<meta itemprop="educationalLevel" content="from basic to advanced">
+<meta itemprop="typicalAgeRange" content="6-18">
 <section id="circle">
 <div itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction">
 <h3 itemprop="eduQuestionType" style="margin:7px">Area of a Circle</h3>

@@ -2421,14 +2421,15 @@ Circle area = square area</p>
 <br><br>
 </details>
 </section>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="2">
+<div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
+<meta itemprop="description" content="Exact circle area formula">
 <p itemprop="abstract">The area of both the square and the sum of the quadrants equals 16 right triangles with legs of a quarter, and a half of the square's sides, and its hypotenuse equal to the radius of the circle.</p>
-<br>
+<br><br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
 <span itemprop="name">A<sub>(circle)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
 <mrow>
 <mfrac>
 <mn>16</mn>
@@ -2440,16 +2441,7 @@ Circle area = square area</p>
 <mn>2</mn>
 </msup>
 </mrow>
-</math>
-</span>
-</div>
-</div>
-</div>
-<br>
-<div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">A<sub>(circle)</sub></span>=
-<span itemprop="value">
-<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mo>=</mo>
 <mrow>
 <mn>3.2</mn>
 <mo>&#x2062;</mo> <!-- invisible times -->
@@ -2458,8 +2450,10 @@ Circle area = square area</p>
 <mn>2</mn>
 </msup>
 </mrow>
+</mrow>
 </math>
 </span>
+</div>
 </div>
 <br><br>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="circle_area_calculator">
@@ -2981,7 +2975,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<p itemprop="description" style="margin:12px">The length of the circumference approaches 6.4 × radius as its thickness approaches 0.</p>
+<p itemprop="description">The length of the circumference approaches 6.4 × radius as its thickness approaches 0.</p>
 <br>
 <span itemprop="name">Circumference</span>=
 <span itemprop="value">
@@ -3199,6 +3193,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
+<meta itemprop="description" content="Exact circle segment area formula">
 <span itemprop="name">A<sub>(segment)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -3587,6 +3582,7 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
+<meta itemprop="description" content="Exact cone surface area formula">
 <span itemprop="name">Surface<sub>(cone)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -3766,6 +3762,7 @@ That is a very exaggerated, distortion-based comparison that discards the differ
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
+<meta itemprop="description" content="Exact sphere volume formula">
 <span itemprop="name">V<sub>(sphere)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -3873,6 +3870,7 @@ Unlock the true formula to calculate the surface area of a sphere.</strong></p>
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
+<meta itemprop="description" content="Spherical cap volume formula">
 <span itemprop="name">V<sub>(cap)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -4310,6 +4308,7 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
+<meta itemprop="description" content="Exact cone volume formula">
 <span itemprop="name">V<sub>(cone)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -4554,6 +4553,7 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
+<meta itemprop="description" content="Exact frustum cone volume formula">
 <span itemprop="name">V<sub>(frustum)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -4783,6 +4783,7 @@ The so-called "calculus-based proofs" of the conventional formula are invalid.</
   </figure>
 <br><br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
+<meta itemprop="description" content="Exact pyramid volume formula">
 <span itemprop="name">V<sub>(pyramid)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -4880,6 +4881,7 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
+<meta itemprop="description" content="Exact frustum pyramid volume formula">
 <span itemprop="name">V<sub>(frustum)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -5032,7 +5034,7 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 <h3 itemprop="eduQuestionType" style="margin:12px">Calculate the Volume of a square Frustum</h3>
 <meta itemprop="target" content="https://basic-geometry.pages.dev?q={square_frustum_pyramid_height=3_edge_length_top=1_bottom=2_volume=?}">
 <meta itemprop="name" content="Horizontal square frustum pyramid volume calculation">
-<meta itemprop="disambiguatingDescription" content="Based on the exact volume of a pyramid - base × height / √8 -, instead of the base × height / 3 approximate.">
+<meta itemprop="disambiguatingDescription" content="Only for square frustum pyramids. Based on the exact volume of a pyramid - base × height / √8 -, instead of the base × height / 3 approximate.">
 <br>
 <figure class="imgbox">
     <img class="center-fit" src="squareFrustum.jpeg" alt="Square frustum pyramid">
@@ -5068,6 +5070,7 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
+<meta itemprop="description" content="Exact square frustum pyramid volume formula">
 <span itemprop="name">V<sub>(square frustum)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -5412,6 +5415,7 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
+<meta itemprop="description" content="Exact tetrahedron volume formula">
 <span itemprop="name">V<sub>(tetrahedron)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">

@@ -2529,18 +2529,21 @@ Historical records suggest that ancient Babylonians initially calculated it as 3
 <br><br>
 Observing how the difference between the two polygonal perimeters — one inside the circle, one outside — became smaller, Archimedes likely believed that as the number of sides increased, the difference between the perimeters of the inscribed and circumscribed polygons would converge toward zero, approaching the circumference of the circle.
 <br><br>
-But there’s a catch:
-<br><br>
-Inscribed and circumscribed describe only the position of the polygon relative to the circle — vertices on the circle, or sides touching it.  
-<br><br>
-Traditional geometry adds the claim that the perimeter of the circumscribed polygon must be longer than the circumference.</p>
-<details>
-<summary><h4>But that claim depends on assumptions about curvature that fail once the polygon’s internal angles flatten toward 180°.</h4></summary>
+But that method depends entirely on the assumption that the relationship between a chord and its half-angle is a fixed, linear progression that never "drifts" as the angles get smaller.
 <br>
-<p>A simple physical model exposes this flaw: two rigid plates forming a narrow V, closed by a straight lid that just fits. If we bend that lid into a curve, its ends can slip lower between the plates — even if the lid becomes slightly longer.</p>
-</details>
+He started with the hexagon (30° half-angle), where the sine is exactly 0.5 because it's half of an equilateral triangle side. That is a solid reference point. But every step after that — 15°, 7.5°, 3.75° — relies on the Half-Angle Formula.
 <br>
-<p>The curved path fits the same angular span with a greater length. This shows that ‘lying outside’ does not uniquely determine that a path is longer than the corresponding curve.
+If the angle bisection formula is even slightly "off" for non-standard angles, then by the time Archimedes reached the 96-gon, that error would have compounded.
+<br><br>
+Furthermore, inscribed and circumscribed describe only the position of the polygon relative to the circle — vertices on the circle, or sides touching it.  
+<br><br>
+Traditional geometry adds the claim that the perimeter of the circumscribed polygon must be longer than the circumference.
+<br><br>
+But that claim depends on assumptions about curvature that fail once the polygon’s internal angles flatten toward 180°.
+<br><br>
+A simple physical model exposes this flaw: two rigid plates forming a narrow V, closed by a straight lid that just fits. If we bend that lid into a curve, its ends can slip lower between the plates — even if the lid becomes slightly longer.
+<br>
+The curved path fits the same angular span with a greater length. This shows that ‘lying outside’ does not uniquely determine that a path is longer than the corresponding curve.
 <br><br>
 As the number of sides increases, the internal angles flatten toward 180°, nearing a straight line rather than a curve, and the polygon no longer reflects the circle’s curvature.  
 <br>
@@ -2557,10 +2560,8 @@ This seems obvious when comparing a triangle or a square to a circle. An isoperi
 Some try to prove it via area relationships based on the pi. But that is problematic if the pi itself is the quantity under investigation.
 <br><br>
 In contrast, polygons with internal angles in the range between 150° and 160°, such as the 13‑ to 16‑gon, preserve a meaningful bend that better reflects circularity.
-<br><br>
-This is where Archimedes’ logic snaps.
-<br><br>
-When the circle’s area and circumference are calculated with the constant 3.2, it becomes clear that the area of an isoperimetric 14‑gon is larger than the circle’s. A flat angle encloses the area differently than a curve. This flips the script: the polygon can enclose more area even with the same perimeter. As the number of sides increases the effect is stronger, so the isoperimetric polygon behaves like a circumscribed figure despite having equal perimeter. This overlooked disproportion shows that polygons do not approach the circle in every sense — above 13 sides, the comparison underestimates the circle.
+<br>
+When the circle’s area and circumference are calculated with the constant 3.2, it becomes clear that a flat angle encloses the area differently than a curve. This flips the script: the polygon can enclose equal area with the same perimeter. This overlooked disproportion shows that polygons do not approach the circle in every sense.
 <br><br>
 Archimedes pushed his method far beyond this curve‑aligned threshold — and the result is a recursive underestimate.
 <br><br>

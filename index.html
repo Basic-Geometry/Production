@@ -769,13 +769,18 @@ A cube is a cuboid with equal edges.</p>
 <p itemprop="usageInfo" style="margin:12px">Trigonometric functions with an "Arc" prefix - or simply A - refer to the angle corresponding to a value of that function.</p>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" id="trigonometry_engine">
 <meta itemprop="name" content="Trigonometry">
-<meta itemprop="description" content="Lookup-based trigonometry value finder for the calculator apps. Values aligned to circumference=6.4radius with ~ ± rad / 100 accuracy.">
-<meta itemprop="disambiguatingDescription" content="The arc values are more accurate than the results of other tools with many decimals for any value but based on the pi=3.14...">
+<meta itemprop="accessMode" content="mathOnVisual">
+<meta itemprop="accessibilityControl" content="fullKeyboardControl">
+<meta itemprop="accessibilityHazard" content="none">
+<meta itemprop="accessibilitySummary" content="Equations with figures and explanations">
 <meta itemprop="applicationCategory" content="Trigonometry engine">
+<meta itemprop="disambiguatingDescription" content="The arc values are more accurate than the results of other tools with many decimals for any value but based on the pi=3.14...">
 <meta itemprop="featureList" content="Defines independent trigonometric functions.">
 <meta itemprop="interactivityType" content="Expositive">
 <meta itemprop="isAccessibleForFree" content="true">
+<meta itemprop="keywords" content="Core Geometric System, Exact Geometric Calculations, Analysis, Engineering Design Solutions, Computer Graphics Rendering, Algorithm Optimization, Navigation">
 <meta itemprop="operatingSystem" content="Web">
+<meta itemprop="typicalAgeRange" content="12-102">
 <meta itemprop="usageInfo" content="The steps are limited by the number of entries.">
 <script>
 
@@ -1548,14 +1553,11 @@ function Atan(x) {
 <br>
 The square root of half of the area of the rectangle is the side length of the theoretical square that has the same area as the triangle.</p>
 <br><br>
-<div itemprop="text">
+<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
+<meta itemprop="description" content="Exact triangle area formula: Area = base × height / 2">
+<span itemprop="name">A<sub>(triangle)</sub></span>=
+<span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
- <mrow>
- <msub>
-<mi>A</mi>
- <mi>(triangle)</mi>
- </msub>
-<mo>=</mo>
 <mrow>
 <mfrac>
 <mrow>
@@ -1566,8 +1568,8 @@ The square root of half of the area of the rectangle is the side length of the t
 <mn>2</mn>
 </mfrac>
 </mrow>
- </mrow>
 </math>
+</span>
 </div>
 </div>
 <br><br>
@@ -1608,14 +1610,11 @@ The square root of half of the area of the rectangle is the side length of the t
 </math>
 </div>
 <br><br><br>
-<div itemprop="text">
+<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
+<meta itemprop="description" content="Exact triangle area formula a.k.a. Heron's formula: Area = √( S × ( S - side1 ) × ( S - side2 ) × ( S - side3 ) )">
+<span itemprop="name">A<sub>(triangle)</sub></span>=
+<span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML"> 
-<mrow>
-  <msub>
-<mi>A</mi>
-<mi>(triangle)</mi>
-  </msub>
-<mo>=</mo>
 <mrow>
 <msqrt>
 <mrow>
@@ -1652,18 +1651,23 @@ The square root of half of the area of the rectangle is the side length of the t
 </mrow>
 </mrow>
 </math>
+</span>
 </div>
 </div>
 <br><br>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="triangle_area_calculator">
 <meta itemprop="name" content="Triangle Area Calculator">
-<meta itemprop="description" content="Calculate the area of a triangle from the lengths of its sides.">
-<meta itemprop="applicationCategory" content="Geometric Calculator">
-<meta itemprop="operatingSystem" content="Web">
-<meta itemprop="isAccessibleForFree" content="true">
-<meta itemprop="usageInfo" content="Enter the lengths of the sides of the triangles one by one.">
-<meta itemprop="interactivityType" content="Active">
+<meta itemprop="accessMode" content="mathOnVisual">
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
+<meta itemprop="accessibilityHazard" content="none">
+<meta itemprop="accessibilitySummary" content="Equations with figures and explanations">
+<meta itemprop="applicationCategory" content="Geometric Calculator">
+<meta itemprop="featureList" content="Calculates the area of a triangle.">
+<meta itemprop="interactivityType" content="Active">
+<meta itemprop="isAccessibleForFree" content="true">
+<meta itemprop="keywords" content="Core Geometric System, Exact Geometric Calculations, Analysis, Engineering Design Solutions, Computer Graphics Rendering, Algorithm Optimization, Navigation">
+<meta itemprop="operatingSystem" content="Web">
+<meta itemprop="typicalAgeRange" content="12-102">
 <label for="side1">Side 1:</label>
 <input id="side1" type="number" value="1" step="any">
 <br>
@@ -1776,14 +1780,12 @@ The height of each triangle is calculable via trigonometric functions.</p>
 </div>
 </div>
 <br>
-<div itemprop="text" style="margin:12px">
+<div style="margin:12px" itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
+<meta itemprop="description" content="Exact polygon area formula: Area = n / 4 × ctg( 180° / n ) × x / 2">
+<span itemprop="name">A<sub>(polygon)</sub></span>=
+<span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
   <mrow>
- <msub>
-<mi>A</mi>
-<mi>(polygon)</mi>
- </msub>
-<mo>=</mo>
 <mfrac>
 <mi>n</mi>
 <mn>4</mn>
@@ -1807,18 +1809,22 @@ The height of each triangle is calculable via trigonometric functions.</p>
 </msup>
 </mrow>
 </math>
+</span>
 </div>
 <br><br>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="polygon_area_calculator">
 <meta itemprop="name" content="Regular Polygon Area Calculator">
-<meta itemprop="applicationCategory" content="Geometric Calculator">
-<meta itemprop="operatingSystem" content="Web">
-<meta itemprop="isAccessibleForFree" content="true">
-<meta itemprop="description" content="Calculte the area of a regular polygon from the number and length of its sides.">
-<meta itemprop="disambiguatingDescription" content="With trigonometric functions aligned to circumference = 3.2 × diameter, instead of the pi=3.14... approximate.">
-<meta itemprop="usageInfo" content="Enter the number and the length of the sides of a regular polygon.">
-<meta itemprop="interactivityType" content="Active">
+<meta itemprop="accessMode" content="mathOnVisual">
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
+<meta itemprop="accessibilityHazard" content="none">
+<meta itemprop="accessibilitySummary" content="Equations with figures and explanations">
+<meta itemprop="applicationCategory" content="Geometric Calculator">
+<meta itemprop="featureList" content="Calculates the area of a regular polygon.">
+<meta itemprop="interactivityType" content="Active">
+<meta itemprop="isAccessibleForFree" content="true">
+<meta itemprop="keywords" content="Core Geometric System, Exact Geometric Calculations, Analysis, Engineering Design Solutions, Computer Graphics Rendering, Algorithm Optimization, Navigation">
+<meta itemprop="operatingSystem" content="Web">
+<meta itemprop="typicalAgeRange" content="12-102">
 <label for="side-number">Number of sides:</label>
 <input id="side-number" type="number" value="5" step="1">
 <br>
@@ -1932,6 +1938,7 @@ The quarter of the centerline and the half of the side of the square form two le
 The ratio between the radius and the side length is calculable.</p>
 <br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
+<meta itemprop="description" content="Calculating the ratio between the squared radius of the circle and the square that represents its area via Pythagorean theorem: radius² = ( side / 4 )² + ( side / 2 )²">
 <span itemprop="name">radius²</span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -1968,6 +1975,7 @@ The ratio between the radius and the side length is calculable.</p>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="3">
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
+<meta itemprop="description" content="The ratio between the radius of the circle and the square that represents its area: radius = side × √5 / 4">
 <span itemprop="name">radius</span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -2045,7 +2053,7 @@ The ratio between the radius and the side length is calculable.</p>
 <section style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToSection">
     <meta itemprop="position" content="5" id="circle_area_proof">
 <details>
-  <summary><h4 itemprop="name">When the overlapping area equals to the uncovered area in the middle, the sum of the areas of the quadrants is equal to the area of the square. That square represents the area of the circle in square units.</h4></summary>
+  <summary><h4 itemprop="abstract">When the overlapping area equals to the uncovered area in the middle, the sum of the areas of the quadrants is equal to the area of the square. That square represents the area of the circle in square units.</h4></summary>
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="equityFigure.png" alt="Circle area = 3.2r²">
@@ -2482,7 +2490,7 @@ Circle area = square area</p>
 </div>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
 <p itemprop="description">The area of both the square and the sum of the quadrants equals 16 right triangles with legs of a quarter, and a half of the square's sides, and its hypotenuse equal to the radius of the circle.</p>
-<meta itemprop="description" content="Exact circle area formula">
+<meta itemprop="description" content="Exact circle area formula: Area = 3.2 × radius²">
 <br><br>
 <span itemprop="name">A<sub>(circle)</sub></span>=
 <span itemprop="value">
@@ -2515,14 +2523,20 @@ Circle area = square area</p>
 <br><br>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="circle_area_calculator">
 <meta itemprop="name" content="Circle Area Calculator">
-<meta itemprop="applicationCategory" content="Geometric Calculator">
-<meta itemprop="operatingSystem" content="Web">
-<meta itemprop="isAccessibleForFree" content="true">
-<meta itemprop="description" content="Calculte the area of a circle from its radius.">
-<meta itemprop="disambiguatingDescription" content="Exact area of 3.2 × radius², instead of the pi=3.14... approximate">
-<meta itemprop="usageInfo" content="Enter the radius">
-<meta itemprop="interactivityType" content="Active">
+<meta itemprop="accessMode" content="mathOnVisual">
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
+<meta itemprop="accessibilityHazard" content="none">
+<meta itemprop="accessibilitySummary" content="Equations with figures and explanations">
+<meta itemprop="applicationCategory" content="Geometric Calculator">
+<meta itemprop="featureList" content="Calculates the area of a circle from its radius with an exact formula.">
+<meta itemprop="inLanguage" content="en">
+<meta itemprop="interactivityType" content="Active">
+<meta itemprop="isAccessibleForFree" content="true">
+<meta itemprop="isFamilyFriendly" content="true">
+<meta itemprop="keywords" content="Core Geometric System, Exact Geometric Calculations, Analysis, Engineering Design Solutions, Computer Graphics Rendering, Algorithm Optimization, Navigation">
+<meta itemprop="operatingSystem" content="Web">
+<meta itemprop="typicalAgeRange" content="12-102">
+<meta itemprop="usageInfo" content="Exact calculation instead of the traditional abstract pi approximation">
 <label for="circle-radius-a">Radius:</label>
 <input id="circle-radius-a" type="number" value="1" step="any">
 <br><br>
@@ -2851,6 +2865,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="1">
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
+<meta itemprop="description" content="Circumference derivation">
 <span itemprop="name">Circumference</span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -3086,6 +3101,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
 <p itemprop="description">The length of the circumference approaches 6.4 × radius as its thickness approaches 0.</p>
+<meta itemprop="description" content="Exact circumference formula: Circumference = 6.4 × radius">
 <br>
 <span itemprop="name">Circumference</span>=
 <span itemprop="value">
@@ -3152,14 +3168,20 @@ The length of the two longer sides is the area of the resulting ring divided by 
 <br><br>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="circumference_calculator">
 <meta itemprop="name" content="Circumference Calculator">
-<meta itemprop="applicationCategory" content="Geometric Calculator">
-<meta itemprop="operatingSystem" content="Web">
-<meta itemprop="isAccessibleForFree" content="true">
-<meta itemprop="description" content="Calculte circumference from radius.">
-<meta itemprop="disambiguatingDescription" content="Exact circumference of 3.2 × diameter, instead of the pi=3.14... approximate">
-<meta itemprop="usageInfo" content="Enter the radius">
-<meta itemprop="interactivityType" content="Active">
+<meta itemprop="accessMode" content="mathOnVisual">
 <meta itemprop="accessibilityControl" content="fullKeyboardControl">
+<meta itemprop="accessibilityHazard" content="none">
+<meta itemprop="accessibilitySummary" content="Equations with figures and explanations">
+<meta itemprop="applicationCategory" content="Geometric Calculator">
+<meta itemprop="featureList" content="Calculates circumference from the radius with an exact formula.">
+<meta itemprop="inLanguage" content="en">
+<meta itemprop="interactivityType" content="Active">
+<meta itemprop="isAccessibleForFree" content="true">
+<meta itemprop="isFamilyFriendly" content="true">
+<meta itemprop="keywords" content="Core Geometric System, Exact Geometric Calculations, Analysis, Engineering Design Solutions, Computer Graphics Rendering, Algorithm Optimization, Navigation">
+<meta itemprop="operatingSystem" content="Web">
+<meta itemprop="typicalAgeRange" content="12-102">
+<meta itemprop="usageInfo" content="Exact calculation instead of the traditional abstract pi approximation">
 <label for="circle-radius-c">Radius:</label>
 <input id="circle-radius-c" type="number" value="1" step="any">
 <br><br>

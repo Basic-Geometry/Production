@@ -2577,19 +2577,129 @@ Historical records suggest that ancient Babylonians initially calculated it as 3
 <section itemprop="disambiguatingDescription" id="Archimedes">
 <h4>Archimedes and the Illusion of Limits</h4>
 <br><br>
-<p>The Greek Archimedes’ method for estimating the pi is often celebrated as a foundational triumph of geometric reasoning.
+<p>Archimedes’ polygon method for estimating the pi is often celebrated as a triumph of geometric reasoning.  
 <br>
-The pi is actually an approximation derived from limits. But that method itself introduced compounding errors.
+But the pi, as obtained by that method, is not a Euclidean constant — it is an analytic approximation derived from limits.  
+<br>
+And the method itself quietly imports assumptions that Euclid never provided.
 <br><br>
-Archimedes approximated the circumference using inscribed and circumscribed polygons. He began with a circle bounded by an inscribed and a circumscribed hexagon — not the absolute minimum of 3 or 4 sides — likely because the hexagon is closer to the circle while still being easily calculable. By bisecting the angles (splitting them in half), he turned the hexagons into 12‑gons, then 24‑gons, all the way to 96‑sided shapes. This allowed him to calculate the perimeter of these shapes in terms of the diameter using only straight lines.
+Archimedes approximated the circumference of a circle using inscribed and circumscribed polygons.  
 <br>
-Observing how the difference between the two polygonal perimeters — one inside the circle, one outside — became smaller, Archimedes likely believed that as the number of sides increased, the difference between the perimeters of the inscribed and circumscribed polygons would converge toward zero, approaching the circumference of the circle.
+He began with a hexagon — not the minimal 3‑ or 4‑gon — because the hexagon is both easy to construct and already close to the circle.  
+<br>
+By repeatedly bisecting the angles, he produced 12‑gons, 24‑gons, and eventually a 96‑gon.  
+<br>
+Observing that the perimeters of the inscribed and circumscribed polygons approached one another, he concluded that their common limit must be the circumference.
 <br><br>
-But that method depends entirely on the assumption that the relationship between a chord and its half-angle is a fixed, linear progression that never deviates as the angles get smaller.
+To compute these perimeters, Archimedes relied on straight‑line geometry expressed in terms of the sine and cosine of the polygon angles.  
 <br>
-He started with the hexagon (30° half-angle), where the sine is exactly 0.5 because it's half of an equilateral triangle side. That is a solid reference point. But every step after that — 15°, 7.5°, 3.75° — relies on the Half-Angle Formula.
+And here is the crucial point:
+<br><br>
+Pure Euclidean construction gives exact ratios only for a very small set of angles:</p>
+<ul style="margin:6px">
+      <li>90°</li>
+      <li>60°</li>
+      <li>45°</li>
+      <li>30°</li>
+</ul> 
 <br>
-If the angle bisection formula is even slightly inaccurate for non-standard angles, then by the time Archimedes reached the 96-gon, that error would have compounded.</p>
+<p>These arise from:</p>
+<ul style="margin:6px">
+      <li>the right triangle</li>
+      <li>the equilateral triangle</li>
+      <li>the isosceles right triangle</li>
+      <li>the 30–60–90 triangle°</li>
+</ul>  
+<br>
+<p>For these angles, the familiar identity
+<br><br>
+sin(2x) = 2sin(x)cos(x)
+<br><br>
+is not a deep theorem — it is simply a geometric tautology arising from symmetry.
+<br><br>
+But Euclid stops there.</p>
+<br>
+<p>Euclid gives exact angle bisection as a construction,  
+but Euclid does not give numerical values for:</p>
+<ul style="margin:6px">
+      <li>15°</li>
+      <li>22.5°</li>
+      <li>7.5°</li>
+      <li>3.75°</li>
+</ul>
+<br>
+<p>Even though the angles themselves can be bisected with compass and straightedge, the numeric values of their sines cannot be obtained from Euclid alone.
+<br><br>
+To compute those values, one must import Archimedean or analytic machinery — assumptions that were added centuries later:</p>
+<ul style="margin:6px">
+      <li>the angle‑addition formulas</li>
+      <li>the half‑angle formulas</li>
+      <li>the continuity of sine</li>
+	<li>the differentiability of sine</li>
+      <li>the analytic extension of sine to all real numbers</li>
+</ul>
+<br>
+<p>None of these appear in Euclid’s Elements.</p>
+<br>
+<p>The classical half‑angle formula</p>
+<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <mi>sin</mi>
+    <mrow>
+      <mo>(</mo>
+      <mfrac>
+        <mi>x</mi>
+        <mn>2</mn>
+      </mfrac>
+      <mo>)</mo>
+    </mrow>
+    <mo>=</mo>
+    <msqrt>
+      <mo>(</mo>
+		<mrow>
+        <mfrac>
+          <mrow>
+            <mn>1</mn>
+            <mo>-</mo>
+            <mi>cos</mi>
+            <mo>&#x2061;</mo>
+            <mi>x</mi>
+          </mrow>
+          <mn>2</mn>
+        </mfrac>
+      </mrow>
+	<mo>)</mo>
+    </msqrt>
+  </mrow>
+</math>
+<br>
+<p>is not a Euclidean theorem.
+<br><br>
+It is a theorem of analytic trigonometry, which presupposes the angle‑addition formulas and treats sine and cosine as smooth analytic functions.
+<br><br>
+The classical bisection formulas assume the identity
+<br><br>
+sin(2x)=2sin(x)cos(x)
+<br><br>
+for all x.
+<br><br>
+But this identity is not derivable from Euclid.  
+It is an axiom of the analytic system.
+<br><br>
+It holds for the Euclidean angles 90°, 60°, 45°, and 30° because those triangles are special.  
+There is no geometric guarantee that it holds for arbitrary angles.</p>
+<p>Thus, when Archimedes computed</p>
+<ul style="margin:6px">
+      <li>sin(15°)</li>
+      <li>sin(7.5°)</li>
+      <li>sin(3.75°)</li>
+</ul>
+<p>he was not using Euclid.  
+<br>
+He was using a numerical trigonometric ladder built on analytic assumptions that Euclid never supplied.
+<br><br>
+The angle‑bisection formulas are slightly inaccurate for non‑special angles, and by the time Archimedes reached the 96‑gon, that error had compounded — even though the construction of the angles themselves was exact.</p>
 </section>
 <br><br>
 <section itemprop="disambiguatingDescription" id="symbol">
@@ -2607,14 +2717,15 @@ It was not until the 18th century that the symbol pi, popularized by the mathema
 <section itemprop="disambiguatingDescription" id="calculus">
 <h4>∫ Calculus: Summary, Not Source</h4>
 <br><br>
-<p>Several complex formulas were introduced by different mathematicians, aimed at more accurately estimating this ratio, based on theoretical polygons with an infinite number of sides. 
-<br><br>
-All of the above mentioned approximation methods have two things in common: 
-<br><br>
-- They assume that the circle maximizes the area with a given perimeter, and
-<br><br>
-- they estimate the perimeters of polygons and do not account for the curved shape of the circle.
-<br><br>
+<p>Several complex formulas were introduced by different mathematicians, aimed at more accurately estimating this ratio, based on theoretical polygons with an infinite number of sides.</p>
+<br>
+<p>All of the above mentioned approximation methods have three things in common: 
+<ul style="margin:6px">
+<li>they estimate the perimeters of polygons</li>
+<li>they rely on analytic assumptions that imply the angle bisection formulas</li>
+<li>they assume that the circle maximizes the area with a given perimeter (Isoperimetric Theorem)</li>
+</ul>
+<br>
 Modern calculus summarizes these approximations with elegant notation, such as:</p>
 <br>
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">

@@ -2615,19 +2615,12 @@ By repeatedly bisecting the angles, he produced 12‑gons, 24‑gons, and eventu
 <br>
 Observing that the perimeters of the inscribed and circumscribed polygons approached one another, he concluded that their common limit must be the circumference.
 <br><br>
-To compute these perimeters, Archimedes relied on straight‑line geometry expressed in terms of the sine and cosine of the polygon angles.  
-<br>
-And here is the crucial point:
-<br><br>
-Pure Euclidean construction gives exact ratios only for a very small set of angles:</p>
+Pure geometric construction gives exact ratios for a set of angles:</p>
 <ul style="margin:6px">
       <li>90°</li>
       <li>60°</li>
       <li>45°</li>
       <li>30°</li>
-	<li>22.5°</li>
-	<li>15°</li>
-	<li>7.5°</li>
 </ul> 
 <br>
 <p>These arise from:</p>
@@ -2638,30 +2631,15 @@ Pure Euclidean construction gives exact ratios only for a very small set of angl
       <li>the 30–60–90 triangle°</li>
 </ul>  
 <br>
-<p>For these angles, the familiar identity
+<p>For these angles, the identity
 <br><br>
 sin(2x) = 2sin(x)cos(x)
 <br><br>
-is not a deep theorem — it is simply a geometric tautology arising from symmetry.
+is a geometric tautology arising from symmetry.
 <br><br>
-The angles 22.5°, 15° and 7.5° can be constructed by subtracting a triangle from a known triangle, but Euclid stops there.
+The angles 22.5°, 15°, 7.5° and 3.75° can be constructed by subtracting a triangle from a known triangle.
 <br><br>
-Euclid gives exact angle bisection as a geometric construction, but he provides no computational framework for evaluating the sine of the bisected angles.
-<br>
-Any angle can be bisected with compass and straightedge, yet — with a few exceptions — their numerical values cannot be derived from Euclid’s axioms or propositions.
-<br><br>
-Any method for computing these values requires additional, non‑Euclidean assumptions, that were added centuries later:</p>
-<ul style="margin:6px">
-      <li>the angle‑addition formulas</li>
-      <li>the half‑angle formulas</li>
-      <li>the continuity of sine</li>
-	<li>the differentiability of sine</li>
-      <li>the analytic extension of sine to all real numbers</li>
-</ul>
-<br>
-<p>None of these appear in Euclid’s Elements.</p>
-<br>
-<p>The classical half‑angle formula</p>
+The classical half‑angle formula</p>
 <br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
   <mrow>
@@ -2693,32 +2671,10 @@ Any method for computing these values requires additional, non‑Euclidean assum
     </msqrt>
   </mrow>
 </math>
-<br>
-<br>
-<p>is not a Euclidean theorem.
 <br><br>
-It is a theorem of analytic trigonometry, which presupposes the angle‑addition formulas and treats sine and cosine as smooth analytic functions.
+<p>enables exact calculations for the sides of the polygons. 
 <br><br>
-The classical bisection formulas assume the identity
-<br><br>
-sin(2x)=2sin(x)cos(x)
-<br><br>
-for all x.
-<br><br>
-But this identity is not derivable from Euclid.  
-It is an axiom of the analytic system.
-<br><br>
-It holds for the Euclidean angles 90°, 60°, 45°, and 30° because those triangles are special.  
-<br>
-There is no geometric guarantee that it holds for arbitrary angles.
-<br>
-Thus, when Archimedes computed sin(3.75°) he was not using Euclid.  
-<br>
-He was using a numerical trigonometric ladder built on analytic assumptions that Euclid never supplied.
-<br><br>
-If the angle‑bisection formulas are slightly inaccurate for non‑special angles, then by the time Archimedes reached the 96‑gon, that error had compounded — even though the construction of the angles themselves was exact.
-<br><br>
-But even if we momentarily accept these analytic assumptions, a deeper geometric inconsistency emerges when we compare circumscribed polygons to circles.
+But a geometric inconsistency emerges when we compare circumscribed polygons to circles.
 <br><br>
 A “circumscribed polygon” is not guaranteed to be an upper bound in every sense.
 <br><br>

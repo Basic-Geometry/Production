@@ -1050,9 +1050,9 @@ const trig = {
 },
 
 "rad(1.33333333)": {
-  "sin": 0.9656,
-  "cos": 0.26,
-  "tan": 3.7,
+  "sin": 0.9659,
+  "cos": 0.2588,
+  "tan": 3.732,
   "deg": 75.0
 },
 
@@ -2708,18 +2708,167 @@ But this identity is not derivable from Euclid.
 It is an axiom of the analytic system.
 <br><br>
 It holds for the Euclidean angles 90°, 60°, 45°, and 30° because those triangles are special.  
-There is no geometric guarantee that it holds for arbitrary angles.</p>
 <br>
-<p>Thus, when Archimedes computed</p>
-<ul style="margin:6px">
-      <li>sin(7.5°)</li>
-      <li>sin(3.75°)</li>
-</ul>
-<p>he was not using Euclid.  
+There is no geometric guarantee that it holds for arbitrary angles.
+<br>
+Thus, when Archimedes computed sin(3.75°) he was not using Euclid.  
 <br>
 He was using a numerical trigonometric ladder built on analytic assumptions that Euclid never supplied.
 <br><br>
-<strong>The angle‑bisection formulas are slightly inaccurate for non‑special angles, and by the time Archimedes reached the 96‑gon, that error had compounded — even though the construction of the angles themselves was exact.</strong></p>
+If the angle‑bisection formulas are slightly inaccurate for non‑special angles, then by the time Archimedes reached the 96‑gon, that error had compounded — even though the construction of the angles themselves was exact.</p>
+<br><br><br>
+<p>A deeper geometric issue is that the “circumscribed polygon” is not guaranteed to be an upper bound.
+<br><br>
+Even if we assume Archimedes computed sin(3.75°) exactly, a more fundamental geometric problem appears when we examine how polygonal slices compare to circular slices.
+<br><br>
+Consider a circular sector of angle 2x and radius r.</p>
+<br>
+<figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
+    <img class="center-fit" src="polygonApproximation.png" alt="A slice of a circle with angle=2x and the corresponding isosceles triangle split in half">
+</figure>
+<br>
+<p>Now look at the isosceles triangle formed by joining the endpoints of the arc to the center.  
+<br><br>
+Focus on half of this configuration: a right triangle with</p>
+<ul style="margin:6px">
+      <li>one leg = r</li>
+      <li>the other leg = half the polygon side</li>
+      <li>hypotenuse = half the polygon diagonal</li>
+</ul>
+<br>
+<p>This right triangle always contains the corresponding half‑sector of the circle, so its area is larger.  
+<br>
+But the key detail is the ratio of these areas.</p>
+<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <mi>Area of the half‑sector</mi>
+	  <mo>=</mo>
+<mfrac>
+	<mrow>
+	  <mi>x</mi>
+	<mo>×</mo>
+	  <msup>
+<mi>r</mi>
+<mn>2</mn>
+	  </msup>
+	</mrow>
+	<mn>2</mn>
+</mfrac>
+    </mrow>
+</math>
+<br><br>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+	<mrow>
+	<mi>Area of the right triangle</mi>
+	<mo>=</mo>
+        <mfrac>
+          <mrow>
+			  <mi>sin</mi>
+            <mo>&#x2061;</mo>
+            <mo>(</mo><mi>x</mi><mo>)</mo>
+		  </mrow>
+			<mrow>
+				<mn>2</mn>
+			 <mo>×</mo>
+            <mi>cos</mi>
+            <mo>&#x2061;</mo>
+            <mo>(</mo><mi>x</mi><mo>)</mo>
+          </mrow>
+        </mfrac>
+      <mo>×</mo>
+	  <msup>
+		  <mi>r</mi>
+		  <mn>2</mn>
+	  </msup>
+  </mrow>
+</math>
+<br><br>
+<p>Since</p>
+<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+	<mrow>
+	<mi></mi>
+		<mi>cos</mi>
+    <mo>&#x2061;</mo>
+    <mo>(</mo><mi>x</mi><mo>)</mo>
+	<mo>&lt;</mo>
+	<mn>1</mn>
+	</mrow>
+</math>
+<br><br>
+<p>the inequality</p>
+<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+	<mrow>
+        <mfrac>
+          <mrow>
+			  <mi>sin</mi>
+            <mo>&#x2061;</mo>
+            <mo>(</mo><mi>x</mi><mo>)</mo>
+		  </mrow>
+			<mrow>
+			<mn>2</mn>
+			 <mo>×</mo>
+            <mi>cos</mi>
+            <mo>&#x2061;</mo>
+            <mo>(</mo><mi>x</mi><mo>)</mo>
+          </mrow>
+		</mfrac>
+		<mo>&gt;</mo>
+	<mi>x</mi>
+	</mrow>
+</math>
+<br><br>
+<p>can hold even when</p>
+<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+	<mrow>
+	<mi>x</mi>
+	<mo>&gt;</mo>
+	<mi>sin</mi>
+    <mo>&#x2061;</mo>
+    <mo>(</mo><mi>x</mi><mo>)</mo>
+	</mrow>
+</math>
+<br><br>
+<p>This means that a polygon can enclose more area than the circle even when its perimeter is smaller than the circle’s circumference.
+<br><br>
+As the number of sides increases, the polygon’s vertices flatten toward 180°.
+<br>
+The polygon begins to enclose area in a fundamentally different way than the circle.
+<br>
+The usual assumption — that a tangent circumscribed polygon must have a larger perimeter — is not guaranteed.
+<br><br>
+A circle has constant curvature. A straight line has zero curvature. Treating the two as interchangeable is a category error disguised as approximation.
+<br><br>
+Imagine two rigid plates with a straight lid wedged between them.
+<br>
+If we bend the lid into a curve, it can slip lower between the plates because the distance between its endpoints decreases — even if the curved lid is longer.
+<br>
+The polygon still encloses more area, but the arc sits lower.
+<br><br>
+These are the overlooked geometric facts.</p>
+<br><br>
+<p>Why this matters
+<br>
+<br>
+The classical argument assumes:</p>
+<ul style="margin:6px">
+      <li>the inscribed polygon is always an under‑estimate</li>
+      <li>the circumscribed polygon is always an over‑estimate</li>
+      <li>and the circle lies cleanly between them in both area and perimeter</li>
+</ul>
+<br>
+<br>
+<p>But the geometry shows:</p>
+<ul style="margin:6px">
+      <li>a tangent polygon can have smaller perimeter than the circle, yet still enclose larger area</li>
+      <li>so “circumscribed” and “upper bound” are not equivalent concepts</li>
+      <li>The geometric ordering required by the polygon‑approximation method is not structurally guaranteed.</li>
+      </ul>
+<br>
+<p>Thus the isoperimetric limit argument that Archimedes’ method relies on is not as straightforward as it is usually presented.</p>
 </section>
 <br><br><br>
 <section itemprop="disambiguatingDescription" id="symbol">

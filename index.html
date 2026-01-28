@@ -1739,7 +1739,20 @@ const area = triangleArea(product);
 <br><br>
 360°, or 6.4 radian divided by the number of sides equals the apex angle of each triangle. 
 <br><br>
-The area of each triangle equals base × height / 2 .
+The area of each triangle equals</p>
+<br>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+<mfrac>
+<mrow>
+<mi>base</mi>
+<mo>×</mo>
+<mi>height</mi>
+</mrow>
+<mn>2</mn>
+</mfrac>
+  </mrow>
+</math>
 <br><br>
 The height of each triangle is calculable via trigonometric functions.</p>
 <br>
@@ -2674,41 +2687,162 @@ The classical half‑angle formula</p>
 <br><br>
 But a geometric inconsistency emerges when we compare circumscribed polygons to circles.
 <br><br>
-Consider a circular sector</p>
+<b>The Three Pillars of the Archimedean Method</b>
+<br><br>
+The classical argument rests on three ideas:
+<br><br>
+1. Upper bound:
+<br>
+A circumscribed regular polygon has a perimeter greater than the circle’s circumference.
+<br><br>
+2. Lower bound:
+<br>
+An inscribed regular polygon has a perimeter smaller than the circle’s circumference.
+<br><br>
+3. Convergence: 
+<br>
+As the number of sides increases, the perimeters of the inscribed and circumscribed polygons both approach the true circumference from below and above.
+<br><br>
+From this, the story goes: squeeze the circle between two polygons, refine indefinitely, and the true circumference is trapped in the limit.
+<br><br><br>
+<b>The Overlooked Detail</b>
+<br><br>
+If we take this approach seriously, then a hypothetical polygon that truly matches the circle’s perimeter and area in the limit would have to do something radical:</p>
+<br>
+<ul style="margin:6px">
+      <li>Its sides could not remain strictly outside the circle.</li>
+      <li>To match the circle’s boundary and area, the limiting polygon would have to cross the arc, not merely touch it from outside.</li>
+</ul>  
+<br>
+<p>In other words:
+<br><br>
+<strong>A genuine limit shape cannot be a forever‑circumscribed polygon.</strong>
+<br>
+At the true limit, the sides must coincide with—or locally cut across—the circle’s boundary.
+<br>
+A circle has constant curvature. A straight line has zero curvature. Treating the two as interchangeable is a category error disguised as approximation.
+<br><br>
+This is the point where the Archimedean assumption snaps.
+<br><br><br>
+<b>Where the Method Breaks</b>
+<br><br>
+<strong>If we insist that the circumscribed polygon always stays outside the circle, and we keep increasing the number of sides while still treating its perimeter as an upper bound, then we are forcing the circle’s circumference to be no larger than the limiting value of those “forever‑outside” polygons.</strong>
+<br><br>
+But beyond a certain threshold, the tangent construction itself becomes impossible:</p>
+<br>
+<ul style="margin:6px">
+      <li>The sides required by the tangent formulas are too short to lie outside the arc.</li>
+      <li>If we keep using those formulas anyway, we are no longer describing a genuinely circumscribed polygon.</li>
+	<li>We are describing a construction that has already slipped inside or cut across the circle.</li>
+</ul>
+<br>
+<p>Thus:
+<br><br>
+If the circumscribed polygon is never allowed to cross the arc, its limiting perimeter underestimates the true circumference of the circle.  
+<br><br>
+The method then traps the circle below its actual value, not around it.
+<br><br>
+Archimedes’ three‑pillar method assumes that circumscribed polygons can be refined indefinitely while always remaining outside the circle and still providing a valid tangent upper bound.  
+<br>
+This assumption fails beyond a finite threshold: a truly circumscribed polygon cannot both remain outside and continue to approximate the circle’s perimeter in the way the method requires.
+<br><br><br>
+<b>A Physical Demonstration of the Flaw</b>
+<br><br>
+A simple physical experiment reveals the issue:</p>
+<br>
+<ul style="margin:6px">
+      <li>Picture the half‑diagonals of a polygon as two rigid plates forming a narrow V‑shape (central angle below 15°).</li>
+      <li>The polygon side is a straight lid wedged between them at the top.</li>
+	<li>If we bend the lid into a curve, it slips lower between the plates because the distance between its endpoints decreases while its length stays the same.</li>
+</ul>
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="polygonApproximation.png" alt="A slice of a circle with angle=2x and the corresponding isosceles triangle split in half">
 </figure>
 <br>
-<p>Imagine the half diagonals as two rigid plates and the side as a straight lid wedged between them.
-<br>
-If we bend the lid into a curve, it can slip lower between the plates because the distance between its endpoints decreases, while its length doesn't change.
-<br>
-The polygon should enclose more area, but the arc sits lower.
+<p>This shows that for sufficiently small angles, the arc can lie far below the side— even with a greater length.
+<br><br><br>
+<b>Pinpointing the Threshold</b>
 <br><br>
-A “circumscribed polygon” is not guaranteed to be an upper bound in every sense.
-<br><br>
-The usual assumption — that a tangent circumscribed polygon must have a larger perimeter — is not guaranteed.
-<br><br>
-This is the overlooked geometric fact.</p>
-<br><br>
-<p>Why this matters
-<br><br>
-The classical argument assumes:</p>
-<ul style="margin:6px">
-      <li>the inscribed polygon is always an under‑estimate</li>
-      <li>the circumscribed polygon is always an over‑estimate</li>
-      <li>and the circle lies cleanly between them in both area and perimeter</li>
-</ul>
+The true circumference of the circle is 6.4r, derived from its exact area—3.2r².  
+<br>This allows us to locate the valid threshold of Archimedes’ method.</p>
 <br>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <mi>Area of a circle slice</mi>
+	  <mo>=</mo>
+<mfrac>
+	<mrow>
+	  <mi>x</mi>
+	<mo>×</mo>
+	  <msup>
+<mi>r</mi>
+<mn>2</mn>
+	  </msup>
+	</mrow>
+	<mn>2</mn>
+</mfrac>
+    </mrow>
+</math>
+<br><br>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+	<mrow>
+	<mi>Area of the corresponding triangle</mi>
+	<mo>=</mo>
+        <mfrac>
+          <mrow>
+	<mi>sin</mi>
+            <mo>&#x2061;</mo>
+            <mo>(</mo><mi>x</mi><mo>)</mo>
+		  </mrow>
+			<mrow>
+				<mn>2</mn>
+			 <mo>×</mo>
+            <mi>cos</mi>
+            <mo>&#x2061;</mo>
+            <mo>(</mo><mi>x</mi><mo>)</mo>
+          </mrow>
+        </mfrac>
+      <mo>×</mo>
+	  <msup>
+		  <mi>r</mi>
+		  <mn>2</mn>
+	  </msup>
+<mo>=</mo>
+        <mfrac>
+          <mrow>
+	<mi>tan</mi>
+        <mo>&#x2061;</mo>
+        <mo>(</mo><mi>x</mi><mo>)</mo>
+</mrow>
+	<mn>2</mn>
+</mfrac>
+<mo>×</mo>
+	  <msup>
+		  <mi>r</mi>
+		  <mn>2</mn>
+	  </msup>
+</mrow>
+</math>
+<br><br>
+<p>Since the triangle contains the slice, we must have:</p>
 <br>
-<p>But the geometry shows:</p>
-<ul style="margin:6px">
-      <li>“circumscribed” and “upper bound” are not equivalent concepts</li>
-      <li>The geometric ordering required by the polygon‑approximation method is not structurally guaranteed.</li>
-      </ul>
-<br>
-<p>Thus the isoperimetric limit argument that Archimedes’ method relies on is not as straightforward as it is usually presented.
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+	<mrow>
+	<mi></mi>
+		<mi>tan</mi>
+    <mo>&#x2061;</mo>
+    <mo>(</mo><mi>x</mi><mo>)</mo>
+	<mo>&gt;</mo>
+	<mn>x</mn>
+	</mrow>
+</math>
+<br><br>
+<p>But in a circle with circumference 6.4r, this inequality fails once the polygon has more than 24 sides.  
+<br>Beyond this point, the tangent side becomes shorter than the arc it is supposed to bound, and each refinement step inherits the error of the previous one, compounding the underestimate rather than correcting it.
+<br><br>
+Archimedes pushed his method far beyond this threshold and thereby rendered its own ordering useless.  
+<br>The result was a recursive underestimate of the true circumference. 
 <br><br>
 These structural issues in the polygon‑limit method set the stage for a second misconception: the symbolic fusion of an approximation with the geometric ratio it was meant to represent.</p>
 </section>
@@ -2719,7 +2853,7 @@ These structural issues in the polygon‑limit method set the stage for a second
 <p>Since the numeric result of Archimedes’ approximation was an infinite fraction — 3.14… — whose digits cannot all be written, he needed a symbolic notation for it in his formulas.
 <br><br>
 Technically, the circumference is a perimeter. So the perimeter‑to‑diameter ratio — P / d — became pi over delta in Greek. With the diameter chosen as the reference — d = 1 —, this simplifies to pi / 1 = pi.  
-<br>
+<br><br>
 <strong>But this is not necessarily the ratio itself — it is the notation of that ratio. That distinction matters.</strong>
 <br><br>
 The circumference‑to‑diameter ratio is a universal geometric proportion.  
@@ -2734,17 +2868,12 @@ It was not until the 18th century that the symbol, popularized by the mathematic
 <section itemprop="disambiguatingDescription" id="calculus">
 <h4>∫ Calculus: Summary, Not Source</h4>
 <br><br>
-<p>Several complex formulas were introduced by different mathematicians, aimed at more accurately estimating this ratio, based on theoretical polygons with an infinite number of sides.</p>
 <p>Over the centuries, many mathematicians introduced increasingly sophisticated formulas to estimate the circle’s circumference. These formulas all rely on the same conceptual model: a theoretical polygon with an infinite number of sides.
 <br><br>
-Despite their variety, all such approximation methods share three essential features:</p>
+<strong>Despite their variety, all such approximation methods share one essential feature:
 <br>
-<ul style="margin:6px">
-<li>they estimate the perimeters of polygons</li>
-<li>they rely on analytic assumptions that imply the angle bisection formulas</li>
-<li>they assume that the circle maximizes the area with a given perimeter (Isoperimetric Theorem)</li>
-</ul>
-<br>
+They estimate the perimeters of polygons with their number of sides approaching infinity.</strong>
+<br><br>
 <p>Modern calculus compresses these ideas into elegant notation, such as:</p>
 <br>
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">

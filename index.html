@@ -787,7 +787,7 @@ A cube is a cuboid with equal edges.</p>
 <meta itemprop="accessibilityHazard" content="none">
 <meta itemprop="accessibilitySummary" content="Equations with figures and explanations">
 <meta itemprop="applicationCategory" content="Trigonometry engine">
-<meta itemprop="disambiguatingDescription" content="The arc values are more accurate than the results of other tools with many decimals for any value but based on the pi=3.14...">
+<meta itemprop="disambiguatingDescription" content="The arc values are more accurate than the results of other tools that are aligned to circumference = 6.28...">
 <meta itemprop="featureList" content="Defines independent trigonometric functions.">
 <meta itemprop="interactivityType" content="Expositive">
 <meta itemprop="isAccessibleForFree" content="true">
@@ -1729,7 +1729,7 @@ const area = triangleArea(product);
 <h3 itemprop="name" style="margin:7px">Calculate the Area of a regular Polygon</h3>
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
-    <img class="center-fit" src="polygon.png" alt="A regular polygon can be divided into as many isosceles triangles as many sides it has. Area = (number of sides) / 4 × ctg( 180° / (number of sides) ) × (side length)²">
+    <img class="center-fit" src="polygon.png" alt="A regular polygon can be divided into as many isosceles triangles as many sides it has.">
 </figure>
 <br>
 <p itemprop="description" style="margin:12px">A regular polygon can be divided into as many isosceles triangles as many sides it has.</p>
@@ -1933,7 +1933,7 @@ function updatePolygonArea() {
 <h3 itemprop="name" style="margin:7px">Calculate the Area of a Circle</h3>
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
-    <img class="center-fit" src="circle.png" alt="The circle is cut into four quadrants, each placed with their origin on the vertices of a square. The arcs of the quadrants of the circle that equals in area to the square intersect at the quarters on its centerlines. The ratio between the radius of the circle and the side of the square is calculable. r = side × √5 / 4 Area = 3.2r²">
+    <img class="center-fit" src="circle.png" alt="Circle area">
 </figure>
 <br>
 <section>
@@ -2079,7 +2079,7 @@ The ratio between the radius and the side length is calculable.</p>
   <summary><h4 itemprop="abstract">When the overlapping area equals to the uncovered area in the middle, the sum of the areas of the quadrants is equal to the area of the square. That square represents the area of the circle in square units.</h4></summary>
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
-    <img class="center-fit" src="equityFigure.png" alt="Circle area = 3.2r²">
+    <img class="center-fit" src="equityFigure.png" alt="Circle area">
     </figure>
 <br>
 <div itemprop="itemListElement" itemscope itemtype="https://schema.org/HowToStep" id="uncovered">
@@ -2508,7 +2508,7 @@ Circle area = square area</p>
 </div>
 </div>
 <br><figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
-    <img class="center-fit" src="circleArea.png" alt="The area of both the square and the sum of the quadrants equals 16 right triangles with legs of a quarter, and a half of the square's sides, and its hypotenuse equal to the radius of the circle.">
+    <img class="center-fit" src="circleArea.png" alt="Circle area">
 	</figure>
 <br>
 </details>
@@ -2599,7 +2599,7 @@ Circle area = square area</p>
 <h3 itemprop="name" style="margin:7px">Calculate the Circumference of a Circle</h3>
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
-    <img class="center-fit" src="circumference.png" alt="The circumference of a circle is derived from its area algebraically by subtracting a smaller circle and dividing the difference by the difference of the radii. Circumference = 6.4r">
+    <img class="center-fit" src="circumference.png" alt="The circumference of a circle is derived from its area algebraically by subtracting a smaller circle">
     </figure>
 <section style="margin:12px" id="pi">
 <details>
@@ -3369,7 +3369,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
 <meta itemprop="disambiguatingDescription" content="Area based on the true area of a circle - 3.2 × radius² -, instead of the pi=3.14... approximate.">
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
-    <img class="center-fit" src="circleSegment.png" alt="The area of a circle segment can be calculated by subtracting a triangle from a circle slice. Area = Acos(( r - n ) / r ) × r² - sin( Acos(( r - n ) / r ) × ( r - n ) × r">
+    <img class="center-fit" src="circleSegment.png" alt="Circle segment">
     </figure>
 <details style="margin:12px">
   <summary><h4 itemprop="description">The area of a circle segment can be calculated by subtracting a triangle from a circle slice.</h4></summary>
@@ -3379,7 +3379,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
 <p itemprop="abstract">If the radius of the parent circle is unknown it can be calculated from the chord.</p>
 <br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Radius of the parent circle: Radius = ( length^2 + 4 × height^2 ) / 8 × height">
+<meta itemprop="description" content="Radius of the parent circle: Radius = ( length^2 + 4 × height^2 ) / ( 8 × height )">
 <span itemprop="name">Radius</span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -3665,7 +3665,7 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 <meta itemprop="disambiguatingDescription" content="Area based on the A(circle)=3.2*radius^2 formula, instead of the pi=3.14... approximate.">
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
-  <img class="center-fit" src="cone.jpeg" alt="The surface area of a cone is calculated as a circle slice with a radius equal to the slant height. Area = 3.2r × ( r + √( r² + H² )">
+  <img class="center-fit" src="cone.jpeg" alt="The surface area of a cone">
   </figure>
 <details style="margin:12px">
   <summary><h4 itemprop="description">The bottom of the cone is a circle. The area of its lateral surface is calculated as a circle slice.</h4></summary>
@@ -3792,7 +3792,7 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
   <p itemprop="abstract">Simplify the lateral surface term by canceling the common factor under the square root.</p>
 	<br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-    <meta itemprop="description" content="Lateral surface of the cone: Area = 3.2 × radius ×  sqrt( radius^2 + height^2 )">
+    <meta itemprop="description" content="Lateral surface of the cone: Area = 3.2 × radius × sqrt( radius^2 + height^2 )">
 	<span itemprop="name">A<sub>(lateral)</sub></span>=
     <span itemprop="value">
     <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -3880,7 +3880,7 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Exact surface area of the cone formula including the bottom: Area = 3.2 × radius × ( radius +  sqrt( radius² + height^2 ) )">
+<meta itemprop="description" content="Exact surface area of the cone formula including the bottom: Area = 3.2 × radius × ( radius + sqrt( radius^2 + height^2 ) )">
 <span itemprop="name">Surface<sub>(cone)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -3970,7 +3970,7 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 <h3 itemprop="name" style="margin:7px">Calculate the Volume of a Sphere</h3>
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
-    <img class="center-fit" src="sphere.jpeg" alt="The edge length of the cube, which has the same volume as the sphere, equals the square root of the area of the square that has the same area as the sphere's cross-section. Volume = ( √ ( 3.2 ) × r )³">
+    <img class="center-fit" src="sphere.jpeg" alt="Sphere and isovolumetric cube comparison">
     </figure>
 <section style="margin:12px">
 <details>
@@ -4143,7 +4143,7 @@ That is a very exaggerated, distortion-based comparison that discards the differ
 <h3 itemprop="name" style="margin:7px">Surface Area of a Sphere</h3>
 <br>
 <div class="imgbox">
-    <img class="center-fit" src="sphereSurface.jpeg" alt="sphere-surface-illustration">
+    <img class="center-fit" src="sphereSurface.jpeg" alt="sphere surface illustration">
 <br>
 <p style="margin:6px">The image is an illustration.</p>
 </div>
@@ -4172,7 +4172,7 @@ Unlock the true formula to calculate the surface area of a sphere.</strong></p>
     <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
 <p itemprop="description">One dimension of the volume of sphere formula can be adjusted to approximate the volume of a spherical cap as a distorted hemisphere.</p>
-<meta itemprop="description" content="Approximate spherical cap volume formula: Volume = 1.6 × radius² × √( 3.2 ) × height">
+<meta itemprop="description" content="Approximate spherical cap volume formula: Volume = 1.6 × radius^2 × sqrt( 3.2 ) × height">
 <br><br>
 <span itemprop="name">V<sub>(cap)</sub></span>=
 <span itemprop="value">
@@ -4214,7 +4214,7 @@ Unlock the true formula to calculate the surface area of a sphere.</strong></p>
 <meta itemprop="keywords" content="Core Geometric System, Exact Geometric Calculations, Analysis, Engineering Design Solutions, Computer Graphics Rendering, Algorithm Optimization, Navigation">
 <meta itemprop="operatingSystem" content="Web">
 <meta itemprop="typicalAgeRange" content="12-102">
-<meta itemprop="usageInfo" content="Approximation based on the exact volume of a sphere formula - V(sphere) = ( radius × √5 / 4 )³ -">
+<meta itemprop="usageInfo" content="Approximation based on the exact volume of a sphere formula - V(sphere) = ( 4 × radius / sqrt(5) )^3 -">
 <label for="cap-radius">Radius:</label>
 <input id="cap-radius" type="number" value="1" step="any">
 <br>
@@ -4271,7 +4271,7 @@ if ( height === radius) {
 <h3 itemprop="name" style="margin:7px">Calculate the Volume of a Cone</h3>
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
-    <img class="center-fit" src="coneAndSphere.jpeg" alt="Cone volume from sphere = base × height / √8">
+    <img class="center-fit" src="coneAndSphere.jpeg" alt="Sphere and cone">
 </figure>
 <section style="margin:12px">
 <details>
@@ -4374,7 +4374,7 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 </section>	
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
-    <img class="center-fit" src="octantSphereQuarterCone.jpeg" alt="The volume of a cone can be calculated by algebraically comparing the volume of a vertical quadrant of a cone with equal radius and height to an octant sphere with equal radius, through a quadrant cylinder.">
+    <img class="center-fit" src="octantSphereQuarterCone.jpeg" alt="Comparison">
 </figure>
 <br>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
@@ -4472,7 +4472,7 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 </div>
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
-    <img class="center-fit" src="sphereAndCone.jpeg" alt="The volume of a cone can be calculated by algebraically comparing the volume of a vertical quadrant of a cone with equal radius and height to an octant sphere with equal radius, through a quadrant cylinder. Volume = base × height / √8">
+    <img class="center-fit" src="sphereAndCone.jpeg" alt="Sphere and cone">
 </figure>
 <br>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
@@ -4618,7 +4618,7 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Exact cone volume formula: Volume = 3.2 × radius² / √8">
+<meta itemprop="description" content="Exact cone volume formula: Volume = 3.2 × radius^2 / sqrt(8)">
 <span itemprop="name">V<sub>(cone)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -4695,7 +4695,7 @@ The mean of the areas of the horizontal cross-sectional slices of a cone is the 
 <h3 itemprop="name" style="margin:7px">Calculate the Volume of a Pyramid</h3>
 <br>
 <figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
-  <img class="center-fit" src="conePyramidVolume.jpeg" alt="The volume of a pyramid can be calculated with the same coefficient as the volume of a cone. Volume = base × height / √8">
+  <img class="center-fit" src="conePyramidVolume.jpeg" alt="Pyramid">
   </figure>
 <section>
 <details>
@@ -4771,11 +4771,11 @@ The so-called "calculus-based proofs" of the conventional formula are invalid.</
 </section>
 <br>
 <figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
-  <img class="center-fit" src="tetraFrame.jpeg" alt="The volume of a pyramid can be calculated with the same coefficient as the volume of a cone. Volume = base × height / √8">
+  <img class="center-fit" src="tetraFrame.jpeg" alt="The volume of a pyramid can be calculated with the same coefficient as the volume of a cone.">
   </figure>
 <br><br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Exact pyramid volume formula: Volume = base × height / sqrt8">
+<meta itemprop="description" content="Exact pyramid volume formula: Volume = base × height / sqrt(8)">
 <span itemprop="name">V<sub>(pyramid)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -4867,7 +4867,7 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 <h3 itemprop="name" style="margin:12px">Calculate the Volume of a Frustum Pyramid</h3>
 <br>
 <figure class="imgbox">
-    <img class="center-fit" src="frustumPyramid.jpeg" alt="Subtracting the missing tip from a theoretical full pyramid gives the volume of a frustum pyramid. Volume = frustumHeight * (bottomArea * (1 / (1 - topArea / bottomArea)) - topArea * (1 / (1 - topArea / bottomArea) - 1)) / √8">
+    <img class="center-fit" src="frustumPyramid.jpeg" alt="Frustum pyramid">
 </figure>
 <br>
 <p itemprop="description" style="margin:12px">Subtracting the missing tip from a theoretical full pyramid gives the volume of a frustum.</p>
@@ -5001,7 +5001,7 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Exact frustum pyramid volume formula">
+<meta itemprop="description" content="Exact frustum pyramid volume formula: Volume = frustumHeight × ( bottomArea / (1 - topArea / bottomArea ) - ( topArea / (1 - topArea / bottomArea) - 1) ) / sqrt(8)">
 <span itemprop="name">V<sub>(frustum)</sub></span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -5014,14 +5014,13 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 	</mfrac>
 		<mo>×</mo>
       <mo>(</mo>
-       <msub>
-		<mi>A</mi>
-		   <mi>(bottom)</mi>
-	   </msub>
-	<mo>×</mo>
-      <mo>(</mo>
       <mfrac>
-        <mn>1</mn>
+        <mrow>
+		<msub>
+		<mi>A</mi>
+		<mi>(bottom)</mi>
+		</msub>
+		</mrow>
         <mrow>
           <mn>1</mn>
           <mo>-</mo>
@@ -5037,16 +5036,15 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
           </mfrac>
         </mrow>
       </mfrac>
-      <mo>)</mo>
       <mo>-</mo>
-        <msub>
+      <mo>(</mo>
+	<mfrac>
+        <mrow>
+		<msub>
 		<mi>A</mi>
 		<mi>(top)</mi>
 		</msub>
-<mo>×</mo>
-      <mo>(</mo>
-      <mfrac>
-        <mn>1</mn>
+		</mrow>
         <mrow>
           <mn>1</mn>
           <mo>-</mo>
@@ -5204,11 +5202,11 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 <meta itemprop="target" content="https://basic-geometry.pages.dev?q={frustum_cone_radius_top=1_bottom=2_height=3_volume=?}">
 <h3 itemprop="name" style="margin:7px">Calculate the Volume of a Frustum Cone</h3>
 <figure class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
-    <img class="center-fit" src="frustumCone.jpeg" alt="Subtracting the missing tip from a theoretical full cone gives the volume of a frustum cone. Volume = frustumHeight * (4 / 5 * bottomDiameter^2 * (1 / (1 - topDiameter / bottomDiameter)) - 4 / 5 * topDiameter^2 * (1 / (1 - topDiameter / bottomDiameter) - 1)) / √8">
+    <img class="center-fit" src="frustumCone.jpeg" alt="Frustum cone">
     </figure>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Exact frustum cone volume formula">
+<meta itemprop="description" content="Exact frustum cone volume formula: Volume = 3.2 × frustumHeight × ( bottomRadius^2 / (1 - topRadius / bottomRadius ) - ( topRadius^2 / ( 1 - topRadius / bottomRadius) - 1 ) ) / √8">
 <span itemprop="name">V</span>=
 <span itemprop="value">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -5225,6 +5223,8 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 </mfrac>
 	<mo>×</mo>
       <mo>(</mo>
+      <mfrac>
+        <mrow>
       <msup>
 			<msub>  
         <mi>r</mi>
@@ -5232,10 +5232,7 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 			</msub>
         <mn>2</mn>
 	  </msup>
-<mo>×</mo>
-      <mo>(</mo>
-      <mfrac>
-        <mn>1</mn>
+		</mrow>
         <mrow>
           <mn>1</mn>
           <mo>-</mo>
@@ -5253,6 +5250,9 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
       </mfrac>
       <mo>)</mo>
       <mo>-</mo>
+      <mo>(</mo>
+      <mfrac>
+        <mrow>
       <msup>
 			<msub>  
         <mi>r</mi>
@@ -5260,10 +5260,7 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 			</msub>
         <mn>2</mn>
 	  </msup>
-<mo>×</mo>
-      <mo>(</mo>
-      <mfrac>
-        <mn>1</mn>
+		</mrow>
         <mrow>
           <mn>1</mn>
           <mo>-</mo>
@@ -5350,7 +5347,7 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 <meta itemprop="interactivityType" content="Active">
 <meta itemprop="isAccessibleForFree" content="true">
 <meta itemprop="isFamilyFriendly" content="true">
-<meta itemprop="keywords" content="Core Geometric System, Exact Geometric Calculations, Analysis, Engineering Design Solutions, Computer Graphics Rendering, Algorithm Optimization, Navigation">
+<meta itemprop="keywords" content="Core Geometric System, Exact Geometric Calculations, Analysis, Engineering Design Solutions, Computer Graphics Rendering, Algorithm Optimization">
 <meta itemprop="operatingSystem" content="Web">
 <meta itemprop="typicalAgeRange" content="12-102">
 <label for="frustum-cone-base-radius">Base radius:</label>
@@ -5421,7 +5418,7 @@ document.getElementById('frustum-cone-height').addEventListener('input', updateF
 <h3 itemprop="name" style="margin:7px">Calculate the Volume of a Tetrahedron</h3>
 <br>
 <figure class="imgbox" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
-  <img class="center-fit" src="tetrahedron.jpeg" alt="The volume of a tetrahedron is calculated as a pyramid with an equilateral triangle base and fixed proportions. Volume = edge³ / 8">
+  <img class="center-fit" src="tetrahedron.jpeg" alt="Tetrahedron">
   </figure>
 <details>
 <summary><h4 itemprop="description" style="margin:12px">A tetrahedron is a pyramid with fixed proportions.</h4></summary>
@@ -5752,7 +5749,7 @@ document.getElementById('frustum-cone-height').addEventListener('input', updateF
 <meta itemprop="interactivityType" content="Active">
 <meta itemprop="isAccessibleForFree" content="true">
 <meta itemprop="isFamilyFriendly" content="true">
-<meta itemprop="keywords" content="Core Geometric System, Exact Geometric Calculations, Analysis, Engineering Design Solutions, Computer Graphics Rendering, Algorithm Optimization, Navigation">
+<meta itemprop="keywords" content="Core Geometric System, Exact Geometric Calculations, Analysis, Engineering Design Solutions, Computer Graphics Rendering, Algorithm Optimization">
 <meta itemprop="operatingSystem" content="Web">
 <meta itemprop="typicalAgeRange" content="12-102">
 <label for="tetrahedron-edge">Edge:</label>

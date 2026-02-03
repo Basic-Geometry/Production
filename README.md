@@ -1,1 +1,1 @@
-This is a copy of basic-geometry.github.io with a different url.
+This is a copy of basic-geometry.github.io with different structured data.

@@ -2616,16 +2616,24 @@ Historical records suggest that ancient Babylonians initially calculated it as 3
 <h4>Archimedes and the Illusion of Limits</h4>
 <br><br>
 <p>Archimedes’ method marked a turning point: instead of calculating the properties of the circle directly, he introduced an analytic process that relied on polygonal limits.
-<br>
-His polygon method for estimating the pi is often celebrated as a triumph of geometric reasoning.  
 <br><br>
-Archimedes approximated the circumference of a circle using inscribed and circumscribed polygons.  
+He approximated the circumference of a circle using inscribed and circumscribed polygons.
+<br><br>
+His argument rests on three ideas:</p>
 <br>
-He began with a hexagon because the hexagon is both easy to construct and already close to the circle.  
-<br>
-By repeatedly bisecting the angles, he produced 12‑gons, 24‑gons, and eventually a 96‑gon.  
-<br>
-Observing that the perimeters of the inscribed and circumscribed polygons approached one another, he concluded that their common limit must be the circumference.
+<ul style="margin:6px">
+    <li>1. Upper bound: A circumscribed regular polygon has a perimeter greater than the circle’s circumference.</li>
+    <li>2. Lower bound: An inscribed regular polygon has a perimeter smaller than the circle’s circumference.</li>
+	<li>3. Convergence: As the number of sides increases, the perimeters of the inscribed and circumscribed polygons both approach the true circumference from below and above. As the number of sides reaches infinity, the polygons collapse into a circle.</li>
+</ul>  
+<br><br>
+<p>From this, the classical story goes: 
+<br>squeeze the circle between two polygons, refine indefinitely, and the true circumference is trapped in the limit.
+<br><br>
+Archimedes began with a hexagon because it is easy to construct and already close to the circle.  
+By repeatedly bisecting the angles, he produced 12‑gons, 24‑gons, and eventually a 96‑gon.
+<br><br>
+To compute their perimeters in terms of the diameter of the circle, Archimedes relied on straight‑line geometry expressed in terms of the sine and cosine of the polygon angles.  
 <br><br>
 Pure geometric construction gives exact ratios for a set of angles:</p>
 <ul style="margin:6px">
@@ -2649,9 +2657,7 @@ sin(2x) = 2sin(x)cos(x)
 <br><br>
 is a geometric tautology arising from symmetry.
 <br><br>
-The angles 15°, 7.5° and 3.75° can be calculated from these.
-<br><br>
-The classical half‑angle formula</p>
+Angles like 15°, 7.5°, and 3.75° can be derived from these using the classical half‑angle formula:</p>
 <br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
   <mrow>
@@ -2675,197 +2681,149 @@ The classical half‑angle formula</p>
             <mi>cos</mi>
             <mo>&#x2061;</mo>
             <mo>(</mo><mi>x</mi><mo>)</mo>
-          </mrow>
-          <mn>2</mn>
-        </mfrac>
-      </mrow>
-	<mo>)</mo>
-    </msqrt>
+		  </mrow>
+		<mn>2</mn>
+		</mfrac>
+		</mrow>
+		<mo>)</mo>
+	</msqrt>
   </mrow>
 </math>
 <br><br>
-<p>enables exact calculations for the sides of the polygons. 
-<br><br>
-But a geometric inconsistency emerges when we compare circumscribed polygons to circles.
+<p>But a geometric inconsistency emerges when we compare circumscribed polygons to circles.
 <br><br><br>
-<b>The Three Pillars of the Archimedean Method</b>
+<b>The Core Logical Conflict in Archimedes’ Method</b>
 <br><br>
-The classical argument rests on three ideas:
+<b>1. Two different things must be separated</b>
 <br><br>
-1. Upper bound:
+(A) Constructing a circumscribed polygon directly.
+<br><br>
+This is unproblematic.  
 <br>
-A circumscribed regular polygon has a perimeter greater than the circle’s circumference.
+Given a circle, you can construct a circumscribed hexagon, a 12‑gon, a 96‑gon — as long as you construct each one independently and ensure tangency.
 <br><br>
-2. Lower bound:
-<br>
-An inscribed regular polygon has a perimeter smaller than the circle’s circumference.
+(B) Archimedes’ theoretical refinement method.
 <br><br>
-3. Convergence: 
-<br>
-As the number of sides increases, the perimeters of the inscribed and circumscribed polygons both approach the true circumference from below and above.
-<br><br>
-From this, the story goes: squeeze the circle between two polygons, refine indefinitely, and the true circumference is trapped in the limit.
-<br><br><br>
-<b>The Overlooked Detail</b>
-<br><br>
-If we take this approach seriously, then a hypothetical polygon that truly matches the circle’s perimeter and area in the limit would have to do something radical:</p>
-<br>
+This is a different procedure.</p>
 <ul style="margin:6px">
-      <li>Its sides could not remain strictly outside the circle.</li>
-      <li>To match the circle’s boundary and area, the limiting polygon would have to cross the arc, not merely touch it from outside.</li>
+      <li>It does not construct each polygon from scratch.</li>
+      <li>It assumes that if you start with a circumscribed hexagon and repeatedly bisect the sides, every resulting polygon remains circumscribed.</li>
 </ul>  
+<br>
+<p>This assumption is never proven. It is simply taken for granted.
+<br><br>
+And that is where the trouble begins.
+<br><br><br>
+<b>2. The geometric fact Archimedes does not account for</b>
+<br><br>
+Here is the key principle:
+<br><br>
+A polygon whose perimeter is very close to the circle’s circumference cannot remain circumscribed. Its sides must cut through the arc.</p>
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="isoperimetry.png" alt="The sides of a hexagon cross the arc of an isoperimetric circle">
 </figure>
 <br>
-<p>In other words:
-<br><br>
-<strong>A genuine limit shape cannot be a forever‑circumscribed polygon.</strong>
-<br>
-At the true limit, the sides must coincide with—or locally cut across—the circle’s boundary.
-<br>
-A circle has constant curvature. A straight line has zero curvature. Treating the two as interchangeable is a category error disguised as approximation.
-<br><br>
-This is the point where the Archimedean assumption snaps.
-<br><br><br>
-<b>Where the Method Breaks</b>
-<br><br>
-<strong>If we insist that the circumscribed polygon always stays outside the circle, and we keep increasing the number of sides while still treating its perimeter as an upper bound, then we are forcing the circle’s circumference to be no larger than the limiting value of those “forever‑outside” polygons.</strong>
-<br><br>
-But beyond a certain threshold, the tangent construction itself becomes impossible:</p>
-<br>
 <ul style="margin:6px">
-      <li>The sides required by the tangent formulas are too short to lie outside the arc.</li>
-      <li>If we keep using those formulas anyway, we are no longer describing a genuinely circumscribed polygon.</li>
-	<li>We are describing a construction that has already slipped inside or cut across the circle.</li>
+    <li>The circle is fixed.</li>
+    <li>Its circumference is fixed.</li>
+	<li>A circumscribed polygon must have a sufficiently large perimeter to stay outside the arc.</li>
+</ul>
+<p>If its perimeter becomes too small, tangency becomes impossible.
+<br><br>
+This is not a matter of opinion — it is a geometric necessity.
+<br><br><br>
+<b>3. The fatal trap in Archimedes’ method</b>
+<br><br>
+Archimedes’ circumscribed polygon sequence has a straightforward consequence:
+<br><br>
+Each bisection decreases the perimeter.
+<br><br>
+And here is the trap:
+<br><br>
+Archimedes assumes the polygons created via angle bisection remain circumscribed all the way down, even when their perimeters become extremely close to the circumference.
+<br><br>
+This is the unjustified leap.
+<br><br>
+Because:</p>
+<ul style="margin:6px">
+    <li>If the perimeter gets close enough, the polygon must cut through.</li>
+    <li>But Archimedes never checks when this happens.</li>
+	<li>And he cannot check, because the exact circumference is what he is trying to determine.</li>
 </ul>
 <br>
-<p>Thus:
+<p>This is the loophole:
 <br><br>
-If the circumscribed polygon is never allowed to cross the arc, its limiting perimeter underestimates the true circumference of the circle.  
+To know whether the polygon remains circumscribed, you must already know the circumference.  
 <br><br>
-The method then traps the circle below its actual value, not around it.
+But the whole point of the method is to find the circumference.
 <br><br>
-Archimedes’ three‑pillar method assumes that circumscribed polygons can be refined indefinitely while always remaining outside the circle and still providing a valid tangent upper bound.  
-<br>
-This assumption fails beyond a finite threshold: a truly circumscribed polygon cannot both remain outside and continue to approximate the circle’s perimeter in the way the method requires.
+This is the logical flaw at the heart of the method.
 <br><br><br>
-<b>A Physical Demonstration of the Flaw</b>
+<b>4. Why this becomes decisive under the true circumference 6.4r</b>
 <br><br>
-A simple physical experiment reveals the issue:</p>
-<br>
+Under the actual proportions:</p>
 <ul style="margin:6px">
-      <li>Picture the half‑diagonals of a polygon as two rigid plates forming a narrow V‑shape (central angle below 15°).</li>
-      <li>The polygon side is a straight lid wedged between them at the top.</li>
-	<li>If we bend the lid into a curve, it slips lower between the plates because the distance between its endpoints decreases while its length stays the same.</li>
+    <li>area = 3.2r²</li>
+    <li>circumference = 6.4r</li>
 </ul>
 <br>
-<figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
-    <img class="center-fit" src="polygonApproximation.png" alt="A slice of a circle with angle=2x and the corresponding isosceles triangle split in half">
-</figure>
+<p>the perimeter of the bisected polygon is already very close to the true circumference at the first step, and falls below 6.4r at a small number of sides (around 24).
+<br><br>
+At that moment:</p>
+<ul style="margin:6px">
+    <li>the polygon cannot be circumscribed,</li>
+    <li>the construction cannot remain valid,</li>
+	<li>and the method silently crosses into an impossible configuration.</li>
+</ul>
 <br>
-<p>This shows that for sufficiently small angles, the arc can lie far below the side—even with a greater length.
+<p>Archimedes’ method does not detect this.  
+It simply assumes tangency continues indefinitely.
 <br><br><br>
-<b>Pinpointing the Threshold</b>
+<b>5. Why the “limit argument” does not rescue the method</b>
 <br><br>
-The true circumference of the circle is 6.4r, derived from its exact area—3.2r².  
-<br>This allows us to locate the valid threshold of Archimedes’ method.</p>
+The classical story says:</p>
+<ul style="margin:6px">
+    <li>bisected polygons always stay outside,</li>
+    <li>their perimeters always stay above the circumference,</li>
+	<li>and they converge downward toward the true value.</li>
+</ul>
 <br>
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-  <mrow>
-    <mi>Area of a circle slice</mi>
-	  <mo>=</mo>
-<mfrac>
-	<mrow>
-	  <mi>x</mi>
-	<mo>×</mo>
-	  <msup>
-<mi>r</mi>
-<mn>2</mn>
-	  </msup>
-	</mrow>
-	<mn>2</mn>
-</mfrac>
-    </mrow>
-</math>
+<p>But these premises are not guaranteed.
 <br><br>
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-	<mrow>
-	<mi>Area of the corresponding triangle</mi>
-	<mo>=</mo>
-        <mfrac>
-          <mrow>
-	<mi>sin</mi>
-            <mo>&#x2061;</mo>
-            <mo>(</mo><mi>x</mi><mo>)</mo>
-		  </mrow>
-			<mrow>
-				<mn>2</mn>
-			 <mo>×</mo>
-            <mi>cos</mi>
-            <mo>&#x2061;</mo>
-            <mo>(</mo><mi>x</mi><mo>)</mo>
-          </mrow>
-        </mfrac>
-      <mo>×</mo>
-	  <msup>
-		  <mi>r</mi>
-		  <mn>2</mn>
-	  </msup>
-<mo>=</mo>
-        <mfrac>
-          <mrow>
-	<mi>tan</mi>
-        <mo>&#x2061;</mo>
-        <mo>(</mo><mi>x</mi><mo>)</mo>
-</mrow>
-	<mn>2</mn>
-</mfrac>
-<mo>×</mo>
-	  <msup>
-		  <mi>r</mi>
-		  <mn>2</mn>
-	  </msup>
-</mrow>
-</math>
+Beyond a certain threshold, the tangent construction itself becomes impossible because the sides required by the tangent formulas are too short to lie outside the arc.
 <br><br>
-<p>Since the triangle contains the slice, we must have:</p>
-<br>
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-	<mrow>
-	<mi></mi>
-		<mi>tan</mi>
-    <mo>&#x2061;</mo>
-    <mo>(</mo><mi>x</mi><mo>)</mo>
-	<mo>&gt;</mo>
-	<mn>x</mn>
-	</mrow>
-</math>
+If we keep applying the tangent formulas anyway, we are no longer describing a real circumscribed polygon — we are describing a figure that has already slipped inside the circle.
 <br><br>
-<p>But in a circle with circumference 6.4r, this inequality fails once the polygon has more than 24 sides.  
-<br>Beyond this point, the tangent side becomes shorter than the arc it is supposed to bound, and each refinement step inherits the error of the previous one, compounding the underestimate rather than correcting it.
+This is the hidden failure point. 
 <br><br>
-Archimedes pushed his method far beyond this threshold and thereby rendered its own ordering useless.  
-<br>The result was a recursive underestimate of the true circumference. 
+You cannot use the method to justify the assumption that makes the method valid.
+<br><br><br>
+<b>6. The conclusion that becomes unavoidable</b></p>
+<ul style="margin:6px">
+    <li>Archimedes’ refinement procedure relies on the unproven and actually false premise that repeated angle bisection of a circumscribed polygon always produces another circumscribed polygon.</li>
+    <li>A polygon whose perimeter becomes very close to the circumference cannot remain tangent.</li>
+	<li>Since the exact circumference is unknown at the start, the method cannot know when this breakdown occurs.</li>
+	<li>The apparent convergence to ≈ 3.14d is not a discovery — it is an artifact of ignoring the breakdown point that must occur when the perimeter approaches the true circumference from above.</li>
+</ul>
 <br><br>
-These structural issues in the polygon‑limit method set the stage for a second misconception: the symbolic fusion of an approximation with the geometric ratio it was meant to represent.</p>
+<p>These structural issues in the polygon‑limit method set the stage for a second misconception: the symbolic fusion of an approximation with the geometric ratio it was meant to represent.</p>
 </section>
 <br><br><br>
 <section itemprop="disambiguatingDescription" id="symbol">
 <h4>The Symbol π: A Linguistic Shortcut</h4>
 <br><br>
-<p>Since the numeric result of Archimedes’ approximation was an infinite fraction—3.14…—whose digits cannot all be written, he needed a symbolic notation for it in his formulas.
+<p>Since the numeric result of Archimedes’ approximation was an infinite fraction — 3.14…— whose digits cannot all be written, he needed a symbolic notation for it in his formulas.
 <br><br>
-Technically, the circumference is a perimeter. So the perimeter‑to‑diameter ratio—P / d—became pi over delta in Greek. With the diameter chosen as the reference—d = 1—, this simplifies to pi / 1 = pi.  
+Technically, the circumference is a perimeter. So the perimeter‑to‑diameter ratio — P / d — became pi over delta in Greek. With the diameter chosen as the reference — d = 1 —, this simplifies to pi / 1 = pi.  
 <br><br>
-<strong>But this is not necessarily the ratio itself—it is the notation of that ratio. That distinction matters.</strong>
+<strong>But this is not necessarily the ratio itself — it is the notation of that ratio. That distinction matters.</strong>
 <br><br>
 The circumference‑to‑diameter ratio is a universal geometric proportion.  
 <br><br>
-The numeric value commonly associated with it—3.14…—is the result of Archimedes’ polygon‑based approximation method.  
+The numeric value commonly associated with it — 3.14…— is the result of Archimedes’ polygon‑based approximation method.  
 <br><br>
-<strong>This is how a numerical output of a failed computational estimate gradually hardened into a symbol, and the symbol into a “geometric constant.”</strong>
+<strong>This is how a numerical output of a failed computational estimate gradually hardened into a symbol, and the symbol into a “geometric constant.” </strong>
 <br><br>
 Over time, the numerical result of Archimedes’ polygon‑limit procedure was reinterpreted as a fundamental property of the circle itself.
 <br><br>
@@ -2877,12 +2835,15 @@ It was not until the 18th century that the symbol, popularized by the mathematic
 <br><br>
 <p>Over the centuries, many mathematicians introduced increasingly sophisticated formulas to estimate the circle’s circumference. These formulas all rely on the same conceptual model: a theoretical polygon with an infinite number of sides.
 <br><br>
-When analytic geometry and calculus were developed, they absorbed the inherited circle constant directly into their definitions—especially through the power‑series expansions of sine and cosine. This cemented the number as a foundational constant, even though its original source was an approximation method with hidden geometric limitations.
+When analytic geometry and calculus were developed, they absorbed the inherited circle constant directly into their definitions — especially through the power‑series expansions of sine and cosine. This cemented the number as a foundational constant, even though its original source was an approximation method with hidden geometric limitations.
 <br><br>
-<strong>Despite their variety, all such approximation methods share one essential feature:
+Despite their variety, all such approximation methods share two essential features:</p>
 <br>
-They estimate the perimeters of polygons with their number of sides approaching infinity.</strong>
-<br><br>
+<ul style="margin:6px">
+    <li>They estimate the perimeters of polygons with their number of sides approaching infinity.</li>
+	<li>They rely on the unproven and actually false premise that repeated angle bisection of a circumscribed polygon always produces another circumscribed polygon.</li>
+</ul>
+<br>
 <p>Modern calculus compresses these ideas into elegant notation, such as:</p>
 <br>
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
@@ -2906,7 +2867,7 @@ They estimate the perimeters of polygons with their number of sides approaching 
 <br><br>
 <p><strong>But calculus is not a source of truth.
 <br><br>
-There are many different calculus methods, but ultimately all of them are compact notations of a set of basic operations—addition, subtraction, multiplication, division—and inherit whatever assumptions those operations rest on.
+There are many different calculus methods, but ultimately all of them are compact notations of a set of basic operations — addition, subtraction, multiplication, division — and inherit whatever assumptions those operations rest on.
 <br><br>
 Each and every notation in the formula should correspond to a real, logical property of the circle.</strong>
 <br>
@@ -2954,23 +2915,23 @@ The golden ratio of ( √5 + 1 ) / 2 is irrelevant to the definition of these pr
 </section>
 <br><br><br>
 <section id="warning">
-<h4 >The Cognitive Risk of flawed geometric Axioms.</h4>
+<h4>The Cognitive Risk of flawed geometric Axioms.</h4>
 <br><br>
 <p>The central concern arises from the potential cognitive harm caused by teaching the approximate, irrational constant pi as an absolute truth in foundational geometry.
 <br><br><br>
 <b>1. The Flawed Foundation</b>
 <br><br>
-The Problematic Axiom: The conventional geometric curriculum requires students to accept that the constant for circle area—A = pi × r²—is both exact and unreachable/irrational, because it is derived from the error-prone polygon approximation method (Archimedes).
+The Problematic Axiom: The conventional geometric curriculum requires students to accept that the constant for circle area — A = pi × r² — is both exact and unreachable/irrational, because it is derived from the error-prone polygon approximation method (Archimedes).
 <br><br><br>
 <b>2. The Cognitive and Pedagogical Impact</b>
 <br><br>
 The warning is that teaching the inconsistency of the pi as a fundamental truth may negatively affect a student's cognitive development:
 <br><br>
-Creates Cognitive Dissonance: It forces the brain's pattern-recognition systems to accept a conflict: an "absolute" constant that is fundamentally imperfect and inconsistent with the true basis of area—the square.
+Creates Cognitive Dissonance: It forces the brain's pattern-recognition systems to accept a conflict: an "absolute" constant that is fundamentally imperfect and inconsistent with the true basis of area — the square.
 <br><br>
 Hinders Logical Consistency: It teaches students that in mathematics, the search for perfect, elegant logical consistency can be abandoned in favor of memorizing an approximate rule.
 <br><br>
-Inhibits Whole-Brain Synchronization: It potentially creates a disconnect between the brain's visual/spatial centers—which recognize the geometric imperfection—and its analytical centers—which are forced to accept the numerical approximation—, leading to poor integration of geometric understanding.
+Inhibits Whole-Brain Synchronization: It potentially creates a disconnect between the brain's visual/spatial centers — which recognize the geometric imperfection — and its analytical centers — which are forced to accept the numerical approximation —, leading to poor integration of geometric understanding.
 <br><br>
 The final conclusion is that using the consistent, exact constant 3.2 offers a path to a more coherent and structurally sound foundation for geometric thought, thereby avoiding the introduction of a fundamental logical flaw into developing minds.</p>
 </section>	
@@ -2990,17 +2951,17 @@ However, using geometric construction and algebraic simplification we find that 
 <br>
 The pi is just a failed, primitive approximate.
 <br><br>
-The solution (CGS): The Core Geometric System™ (CGS) provides a logically self-consistent alternative where the area constant is the rational number 3.2—A = 3.2r²—, derived from an algebraically proven Area Balance Axiom with the square.
+The solution (CGS): The Core Geometric System™ (CGS) provides a logically self-consistent alternative where the area constant is the rational number 3.2 — A = 3.2r² —, derived from an algebraically proven Area Balance Axiom with the square.
 <br>
 By focusing on area relationships and direct comparisons between shapes, these methods emphasize a more intuitive and potentially more fundamental understanding of geometric concepts.
 <br>
-These values are exact, rational, and logically derived. They can be verified numerically, but more importantly, they can be proven algebraically—without relying on infinite fractions, symbolic shortcuts, or flawed assumptions.
+These values are exact, rational, and logically derived. They can be verified numerically, but more importantly, they can be proven algebraically — without relying on infinite fractions, symbolic shortcuts, or flawed assumptions.
 <br><br>
-<strong>Since the true ratio is exactly 3.2, and that is a rational number, then we can—and should—write it as it is. Let the pi remain in the history books. Geometry deserves better.
+<strong>Since the true ratio is exactly 3.2, and that is a rational number, then we can — and should — write it as it is. Let the pi remain in the history books. Geometry deserves better.
 <br><br>
 That makes the arc value of 360° = 6.4radian, and trigonometric functions that rely on arc value have to be aligned to 3.2 respectively.</strong>
 <br><br>
-Once the historical assumptions are stripped away, the geometry itself becomes simple—and the technical construction follows naturally.</p>
+Once the historical assumptions are stripped away, the geometry itself becomes simple — and the technical construction follows naturally.</p>
 <br>
 </section>
 </details>

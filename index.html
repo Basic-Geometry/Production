@@ -2965,7 +2965,7 @@ The length of the two longer sides is the area of the resulting ring divided by 
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
 <meta itemprop="description" content="Circumference derivation">
 <span itemprop="name">Circumference </span>=
-<span itemprop="value">
+<meta itemprop="value" content="( 3.2 × radius² - 3.2 × ( radius - circumferenceWidth )² ) / circumferenceWidth">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mfrac>
@@ -2996,7 +2996,6 @@ The length of the two longer sides is the area of the resulting ring divided by 
 </mfrac>
 </mrow>
 </math>
-</span>
 </div>
 </div>
 <br>
@@ -3200,9 +3199,9 @@ The length of the two longer sides is the area of the resulting ring divided by 
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
 <p itemprop="description">The length of the circumference approaches 6.4 × radius as its thickness approaches 0.</p>
 <br><br>
-<meta itemprop="description" content="Exact circumference formula: Circumference = 6.4 × radius">
+<meta itemprop="description" content="Exact circumference formula">
 <span itemprop="name">Circumference </span>=
-<span itemprop="value">
+<meta itemprop="value" content="6.4 × radius">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mn>6.4</mn>
@@ -3210,7 +3209,6 @@ The length of the two longer sides is the area of the resulting ring divided by 
 <mi>radius</mi>
 </mrow>
 </math>
-</span>
 <br><br><br>
 <div itemprop="description">
 <p>In calculus terms:</p>
@@ -3326,9 +3324,8 @@ The length of the two longer sides is the area of the resulting ring divided by 
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
 <p itemprop="description">If the radius of the parent circle is unknown it can be calculated from the chord.</p>
 <br>
-<meta itemprop="description" content="Radius of the parent circle: Radius = ( length^2 + 4 × height^2 ) / ( 8 × height )">
 <span itemprop="name">Radius </span>=
-<span itemprop="value">
+<meta itemprop="value" content="( length² + 4 × height² ) / ( 8 × height )">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
   <mfrac>
@@ -3347,18 +3344,16 @@ The length of the two longer sides is the area of the resulting ring divided by 
   </mfrac>
 </mrow>
 </math>
-</span>
 </div>
 </div>
 <br><br>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="2">
-<p itemprop="description">The ratio between the bottom radius and the slant height gives the angle of the circle slice.</p>
+<p itemprop="description">The ratio between the segment height and the radius of the parent circle gives the cosine of the angle of the slice.
 <br>
-<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Central angle of the corresponding circle slice: Angle = Acos( ( radius - height ) / radius )">
+<meta itemprop="description" content="Central angle">
 <span itemprop="name">Angle </span>=
-<span itemprop="value">
+<meta itemprop="value" content="Acos( ( radius - height ) / radius">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
   <mrow>
     <mo>arccos</mo>
@@ -3375,7 +3370,6 @@ The length of the two longer sides is the area of the resulting ring divided by 
     <mo>)</mo>
   </mrow>
 </math>
-</span>
 </div>
 <br><br>
 <div itemprop="itemListElement" itemscope itemtype="https://schema.org/HowToTip">
@@ -3389,10 +3383,9 @@ The length of the two longer sides is the area of the resulting ring divided by 
 <p itemprop="description">The base of the triangle is the length of the segment.
 <br>That is called a chord.</p>
 <br>
-<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Segment chord length: Length = 2 × sin ( Acos( ( radius - height ) / radius ) )">
+<meta itemprop="description" content="Segment chord length">
 <span itemprop="name">Chord </span>=
-<span itemprop="value">
+<meta itemprop="value" content="2 × sin ( Acos( ( radius - height ) / radius ) )">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
   <mrow>
 	<mn>2</mn>
@@ -3415,7 +3408,6 @@ The length of the two longer sides is the area of the resulting ring divided by 
     <mo>)</mo>
   </mrow>
 </math>
-</span>
 </div>
 </div>
 <br><br>
@@ -3423,9 +3415,9 @@ The length of the two longer sides is the area of the resulting ring divided by 
 <br>
 </div>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Exact circle segment area formula: Area = Acos( ( radius - height ) / radius ) × radius^2 - sin( Acos( ( radius - height ) / radius ) × radius ) × ( radius - height ) × radius">
+<meta itemprop="description" content="Exact circle segment area formula">
 <span itemprop="name">A<sub>(segment)</sub> </span>=
-<span itemprop="value">
+<meta itemprop="value" content="Acos( ( radius - height ) / radius ) × radius² - sin( Acos( ( radius - height ) / radius ) × radius ) × ( radius - height ) × radius">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
   <mrow>
     <mo>arccos</mo>
@@ -3619,9 +3611,9 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 <p itemprop="description">The slant height of the cone is the radius of the slice.</p>
 <br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Slant height of the cone = sqrt( radius^2 + height^2 )">
+<meta itemprop="description" content="Calculating the slant height of the cone from its height and radius">
 <span itemprop="name">Slant height </span>=
-<span itemprop="value">
+<meta itemprop="value" content="√( radius² + height² )">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <msqrt>
@@ -3639,7 +3631,6 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 </msqrt>
 </mrow>
 </math>
-</span>
 </div>
 </div>
 <br><br>
@@ -3648,9 +3639,9 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 <p itemprop="abstract">The ratio between the bottom radius and the slant height gives the angle of the circle slice.</p>
 <br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Central angle of the circle slice that forms the lateral surface of the cone: Angle = radius / sqrt( radius^2 + height^2 )">
-<span itemprop="name">Angle</span>=
-<span itemprop="value">
+<meta itemprop="description" content="Central angle of the circle slice that forms the lateral surface of the cone">
+<span itemprop="name">Angle </span>=
+<meta itemprop="value" content="radius / √( radius² + height² )">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mfrac>
@@ -3673,7 +3664,6 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 </mfrac>
 </mrow>
 </math>
-</span>
 </div>
 </div>
 <br><br>
@@ -3682,9 +3672,9 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 <p itemprop="abstract">The area of the circle slice equals 3.2 times the slant height squared multiplied by the angle.</p>
 <br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Lateral surface of the cone = 3.2 × ( r^2 + H^2 ) × ( r / sqrt( r^2 + H^2 ) )">
-<span itemprop="name">A<sub>(lateral)</sub> </span>=
-<span itemprop="value">
+<meta itemprop="description" content="Lateral surface of the cone">
+	<span itemprop="name">A<sub>(lateral)</sub> </span>=
+    <meta itemprop="value" content="3.2 × radius × √( radius² + height² )">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mn>3.2</mn>
@@ -3761,9 +3751,9 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="5">
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Bottom area of the cone: Area = 3.2 × radius^2">
+<meta itemprop="description" content="Bottom area of the cone">
 <span itemprop="name">A<sub>bottom</sub> </span>=
-<span itemprop="value">
+<meta itemprop="value" content="3.2 × radius²">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mn>3.2</mn>
@@ -3774,16 +3764,15 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 </msup>
 </mrow>
 </math>
-</span>
 </div>
 </div>
 <br><br>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="6">
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Surface area of the cone including the bottom">
+<meta itemprop="description" content="Exact surface area of the cone formula including the bottom">
 <span itemprop="name">A<sub>(bottom)</sub> + A<sub>(lateral)</sub> </span>=
-<span itemprop="value">
+<meta itemprop="value" content="3.2 × radius² + 3.2 × radius × √( radius² + height² )">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mrow>
@@ -3810,7 +3799,6 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 </mrow>
 </mrow>
 </math>
-</span>
 </div>
 </div>
 <br><br>
@@ -3823,9 +3811,9 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Exact surface area of the cone formula including the bottom: Area = 3.2 × radius × ( radius + sqrt( radius^2 + height^2 ) )">
+<meta itemprop="description" content="Exact surface area of the cone formula including the bottom">
 <span itemprop="name">Surface<sub>(cone)</sub> </span>=
-<span itemprop="value">
+<meta itemprop="value" content="3.2 × radius × ( radius + √( radius² + height² ) )">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mn>3.2</mn>
@@ -3851,7 +3839,6 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 <mo>)</mo>
 </mrow>
 </math>
-</span>
 </div>
 <br><br>
 <div itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication" style="margin:12px" id="cone-surface_area_calculator">
@@ -3930,9 +3917,9 @@ That is a very exaggerated, distortion-based comparison that discards the differ
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="1">
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Cross-sectional area of the sphere: Area = 3.2 × radius^2">
+<meta itemprop="description" content="Cross-sectional area of the sphere">
 <span itemprop="name">A<sub>(cross-section)</sub> </span>=
-<span itemprop="value">
+<meta itemprop="value" content="3.2 × radius²">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mn>3.2</mn>
@@ -3952,9 +3939,9 @@ That is a very exaggerated, distortion-based comparison that discards the differ
 <p itemprop="description">Take the square root of the cross-sectional area.</p>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
 <br>
-<meta itemprop="description" content="Square root of the cross-sectional area of the sphere: sqrt( 3.2 ) × radius">
+<meta itemprop="description" content="Square root of the cross-sectional area of the sphere">
 <span itemprop="name">√A<sub>(cross-section)</sub> </span>=
-<span itemprop="value">
+<meta itemprop="value" content="√( 3.2 ) × radius = 4 × radius / √5">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <msqrt>
@@ -4010,9 +3997,9 @@ That is a very exaggerated, distortion-based comparison that discards the differ
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
 <p itemprop="description">The volume of a sphere equals the cubic value of the square root of its cross-sectional area, just like a cube.</p>
 <br><br>
-<meta itemprop="description" content="Exact sphere volume formula: Volume = ( 4 × radius / sqrt(5) )^3">
+<meta itemprop="description" content="Exact sphere volume formula">
 <span itemprop="name">V<sub>(sphere)</sub> </span>=
-<span itemprop="value">
+<meta itemprop="value" content="( 4 × radius / √(5) )³">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
   <msup>
@@ -4113,10 +4100,10 @@ Unlock the true formula to calculate the surface area of a sphere.</strong></p>
     <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
 <p itemprop="description">One dimension of the volume of sphere formula can be adjusted to approximate the volume of a spherical cap as a distorted hemisphere.</p>
-<meta itemprop="description" content="Approximate spherical cap volume formula: Volume = 1.6 × radius^2 × sqrt( 3.2 ) × height">
+<meta itemprop="description" content="Approximate spherical cap volume formula">
 <br><br>
 <span itemprop="name">V<sub>(cap)</sub> </span>=
-<span itemprop="value">
+<meta itemprop="value" content="1.6 × radius² × √( 3.2 ) × height">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
   <mn>1.6</mn>
@@ -4321,9 +4308,9 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 <div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="1">
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Volume of an octant sphere: Volume = ( sqrt( 3.2 ) × radius / 2 )^3 ">
+<meta itemprop="description" content="Volume of an octant sphere">
 <span itemprop="name">V<sub>(octant sphere)</sub> </span>=
-<span itemprop="value">
+<meta itemprop="value" content="( √( 3.2 ) × radius / 2 )³">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mrow>
@@ -4517,9 +4504,9 @@ The vertical middle cross-sectional area of the cone is the half of a cylinder w
 The mean of the areas of the horizontal cross-sectional slices of a cone is the half of a cylinder with equal radius and height.</p>
 <br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Volume of a quadrant cone: Volume = (3.2 × radius^2 / 4 × sqrt(2) × height ) / ( 2 + 2 )">
+<meta itemprop="description" content="Volume of a quadrant cone">
 <span itemprop="name">V<sub>(quadrant cone)</sub> </span>=
-<span itemprop="value">
+<meta itemprop="value" content="(3.2 × radius² / 4 × √(2) × height ) / ( 2 + 2 )">
 <math xmlns="http://www.w3.org/1998/Math/MathML" >
 <mrow>
 <mfrac>
@@ -4564,9 +4551,9 @@ In general:
 <br><br>
 The volume of a cone equals the quarter of a cylinder with an equal radius and its height equal to the height of the cone multiplied by √2.</p>
 <br><br>
-<meta itemprop="description" content="Exact cone volume formula: Volume = 3.2 × radius^2 / sqrt(8)">
+<meta itemprop="description" content="Exact cone volume formula">
 <span itemprop="name">V<sub>(cone)</sub> </span>=
-<span itemprop="value">
+<meta itemprop="value" content="3.2 × radius² / √(8)">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mfrac>
@@ -4721,9 +4708,9 @@ Thus, the "V = base × height / 3" formula, and its so-called "calculus-based pr
   </figure>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Exact pyramid volume formula: Volume = base × height / sqrt(8)">
-<span itemprop="name">V<sub>(pyramid)</sub> </span>=
-<span itemprop="value">
+<meta itemprop="description" content="Exact pyramid volume formula">
+<span itemprop="name">V<sub>(pyramid)</sub></span>=
+<meta itemprop="value" content="base × height / √(8)">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mfrac>
@@ -4822,9 +4809,9 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 <p itemprop="description">The height of the theoretical full pyramid can be calculated by the frustum height and the ratio between the top and bottom areas.</p>
 <br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Height of the theoretical full pyramid: Height= frustumHeight / (1 - topArea / bottomArea)">
+<meta itemprop="description" content="Height of the theoretical full pyramid">
 <span itemprop="name">H<sub>(pyramid)</sub> </span>=
-<span itemprop="value">
+<meta itemprop="value" content="frustumHeight / (1 - topArea / bottomArea)">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
         <msub>
@@ -4865,9 +4852,9 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 <p itemprop="description">The volume of the theoretical full pyramid:</p>
 <br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Volume of the theoretical full pyramid: Volume = bottomArea × frustumHeight / sqrt(8) × ( 1 / ( 1 - topArea / bottomArea ) )">
+<meta itemprop="description" content="Volume of the theoretical full pyramid">
 <span itemprop="name">V<sub>(pyramid)</sub> </span>=
-<span itemprop="value">
+<meta itemprop="value" content="bottomArea × frustumHeight / sqrt(8) × ( 1 / ( 1 - topArea / bottomArea ) )">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
 	<msub>
@@ -4914,9 +4901,9 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 <p itemprop="description">The volume of the missing tip:</p>
 <br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Volume of the missing tip: Volume = topArea × frustumHeight / sqrt(8) ×  ( 1 / ( 1 - topArea / bottomArea ) - 1 )">
+<meta itemprop="description" content="Volume of the missing tip">
 <span itemprop="name">V<sub>(tip)</sub> </span>=
-<span itemprop="value">
+<meta itemprop="value" content="topArea × frustumHeight / sqrt(8) ×  ( 1 / ( 1 - topArea / bottomArea ) - 1 )">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
 	<msub>
@@ -4960,9 +4947,9 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Exact frustum pyramid volume formula: Volume = frustumHeight × ( bottomArea / (1 - topArea / bottomArea ) - ( topArea / (1 - topArea / bottomArea) - topArea ) ) / sqrt(8)">
-<span itemprop="name">V<sub>(frustum)</sub></span>=
-<span itemprop="value">
+<meta itemprop="description" content="Exact frustum pyramid volume formula">
+<span itemprop="name">V<sub>(frustum)</sub> </span>=
+<meta itemprop="value" content="frustumHeight × ( bottomArea / (1 - topArea / bottomArea) - ( topArea / (1 - topArea / bottomArea) - topArea ) ) / √(8)">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 	<mfrac>
@@ -5168,9 +5155,9 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
     </figure>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Exact frustum cone volume formula: Volume = 3.2 × frustumHeight × ( bottomRadius^2 / (1 - topRadius / bottomRadius ) - ( topRadius^2 / ( 1 - topRadius / bottomRadius) - topRadius^2 ) ) / √8">
-<span itemprop="name">V</span>=
-<span itemprop="value">
+<meta itemprop="description" content="Exact frustum cone volume formula">
+<span itemprop="name">V </span>=
+<meta itemprop="value" content="3.2 × frustumHeight × ( bottomRadius² / (1 - topRadius / bottomRadius ) - ( topRadius² / ( 1 - topRadius / bottomRadius) - topRadius² ) ) / √(8)">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mfrac>
@@ -5395,9 +5382,9 @@ document.getElementById('frustum-cone-height').addEventListener('input', updateF
 <p itemprop="description" style="margin:12px">The base is an equilateral triangle.</p>
 <br>
 <div style="margin:12px" itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Base area of a tetrahedron: Exact equilateral triangle formula: Area = edge^2 × sqrt(3) / 4">
-<span itemprop="name">A<sub>(base)</sub></span>=
-<span itemprop="value">
+<meta itemprop="description" content="Base area of a tetrahedron: Exact equilateral triangle formula">
+<span itemprop="name">A<sub>(base)</sub> </span>=
+<meta itemprop="value" content="edge² × √(3) / 4">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
 <mfrac>
@@ -5525,9 +5512,9 @@ document.getElementById('frustum-cone-height').addEventListener('input', updateF
 <p itemprop="description">The height of the tetrahedron is also calculable via trigonometry.</p>
 <br>
 <div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Exact height of a tetrahedron formula: Height = sqrt( 2 / 3 ) × edge">
-<span itemprop="name">H</span>=
-<span itemprop="value">
+<meta itemprop="description" content="Exact height of a tetrahedron formula">
+<span itemprop="name">H </span>=
+<meta itemprop="value" content="√( 2 / 3 ) × edge">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
 <msqrt>
@@ -5684,9 +5671,9 @@ document.getElementById('frustum-cone-height').addEventListener('input', updateF
 </div>
 <br>
 <div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Exact tetrahedron volume formula: V = edge^3 / 8">
-<span itemprop="name">V<sub>(tetrahedron)</sub></span>=
-<span itemprop="value">
+<meta itemprop="description" content="Exact tetrahedron volume formula">
+<span itemprop="name">V<sub>(tetrahedron)</sub> </span>=
+<meta itemprop="value" content="edge³ / 8">
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mfrac>

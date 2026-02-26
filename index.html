@@ -2705,78 +2705,43 @@ Angles like 15°, 7.5°, and 3.75° can be derived from these using the classica
 	</msqrt>
   </mrow>
 </math>
-<br><br>
+<br><br><br>
 <p itemprop="disambiguatingDescription">But a geometric inconsistency emerges when we compare circumscribed polygons to circles.
-<br><br><br>
-<b>The Core Logical Conflict in Archimedes’ Method</b>
 <br><br>
-<b>1. Two different things must be separated</b>
+Archimedes’ polygon‑refinement method would work only if every refined polygon remained circumscribed around the same circle.  
+But the refinement process gradually shrinks the perimeter, and a shrinking perimeter cannot stay tangent to a fixed circle beyond a certain threshold, because a polygon whose perimeter is too close to the circle’s circumference cannot remain circumscribed. Tangency becomes impossible, and the polygon crosses inside the circle.
 <br><br>
-(A) Constructing a circumscribed polygon directly.
-<br><br>
-This is unproblematic.  
-<br>
-Given a circle, you can construct a circumscribed hexagon, a 12‑gon, a 96‑gon — as long as you construct each one independently and ensure tangency.
-<br><br>
-(B) Archimedes’ theoretical refinement method.
-<br><br>
-This is a different procedure.</p>
-<ul style="margin:6px" itemprop="disambiguatingDescription">
-      <li>It does not construct each polygon from scratch.</li>
-      <li>It assumes that if you start with a circumscribed hexagon and repeatedly bisect the sides, every resulting polygon remains circumscribed.</li>
-</ul>  
-<br>
-<p itemprop="disambiguatingDescription">This assumption is never proven. It is simply taken for granted.
-<br><br>
-And that is where the trouble begins.
-<br><br><br>
-<b>2. The geometric fact Archimedes does not account for</b>
-<br><br>
-Here is the key principle:
-<br><br>
-A polygon whose perimeter is very close to the circle’s circumference cannot remain circumscribed. Its sides must cut through the arc.</p>
+This is not a matter of interpretation; it is a geometric fact.</p>
 <br>
 <figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
     <img class="center-fit" src="isoperimetry.png" alt="The sides of a hexagon cross the arc of an isoperimetric circle">
 </figure>
 <br>
-<ul style="margin:6px" itemprop="disambiguatingDescription">
-    <li>The circle is fixed.</li>
-    <li>Its circumference is fixed.</li>
-	<li>A circumscribed polygon must have a sufficiently large perimeter to stay outside the arc.</li>
-</ul>
-<p itemprop="disambiguatingDescription">If its perimeter becomes too small, tangency becomes impossible.
+<p itemprop="disambiguatingDescription">Archimedes’ theoretical refinement method does not construct each polygon independently.  
+It starts with a circumscribed hexagon and repeatedly bisects the angles to generate new polygons, assuming that every resulting polygon remains circumscribed around the same circle.
 <br><br>
-This is not a matter of opinion — it is a geometric necessity.
-<br><br><br>
-<b>3. The fatal trap in Archimedes’ method</b>
+And that is where the trouble begins.
+That assumption is never proven.  
+It is simply taken for granted.
+And it is false.
 <br><br>
-Archimedes’ circumscribed polygon sequence has a straightforward consequence:
+This is the overlooked loophole:
 <br><br>
-Each bisection decreases the perimeter.
-<br><br>
-And here is the trap:
-<br><br>
-Archimedes assumes the polygons created via angle bisection remain circumscribed all the way down, even when their perimeters become extremely close to the circumference.
-<br><br>
-This is the unjustified leap.
-<br><br>
-Because:</p>
-<ul style="margin:6px" itemprop="disambiguatingDescription">
-    <li>If the perimeter gets close enough, the polygon must cut through.</li>
-    <li>But Archimedes never checks when this happens.</li>
-	<li>And he cannot check, because the exact circumference is what he is trying to determine.</li>
-</ul>
-<br>
-<p itemprop="disambiguatingDescription">This is the loophole:
-<br><br>
-To know whether the polygon remains circumscribed, you must already know the circumference.  
+Each bisection step reduces the perimeter.
+To know whether the resulting polygon remains circumscribed, you must already know the circumference.
 <br><br>
 But the whole point of the method is to find the circumference.
 <br><br>
 This is the logical flaw at the heart of the method.
-<br><br><br>
-<b>4. Why this becomes decisive under the true circumference 6.4r</b>
+<br><br>
+The classical explanation says:</p>
+<ul style="margin:6px" itemprop="disambiguatingDescription">
+    <li>the refined polygons always stay outside the circle,</li>
+    <li>their perimeters always stay above the circumference,</li>
+	<li>and they converge downward toward the true value.</li>
+</ul>
+<br>
+<p itemprop="disambiguatingDescription">But these claims depend on the very assumption that is in question. You cannot use the method to justify the assumption that makes the method valid.
 <br><br>
 Under the actual proportions:</p>
 <ul style="margin:6px">
@@ -2784,46 +2749,15 @@ Under the actual proportions:</p>
     <li>circumference = 6.4r</li>
 </ul>
 <br>
-<p itemprop="disambiguatingDescription">the perimeter of the bisected polygon is already very close to the true circumference at the first step, and falls below 6.4r at a small number of sides (around 24).
+<p itemprop="disambiguatingDescription">the perimeter of the bisected polygon is already very close to the true circumference at the first step, and falls below 6.4r at a small number of sides.
 <br><br>
-At that moment:</p>
-<ul style="margin:6px" itemprop="disambiguatingDescription">
-    <li>the polygon cannot be circumscribed,</li>
-    <li>the construction cannot remain valid,</li>
-	<li>and the method silently crosses into an impossible configuration.</li>
-</ul>
-<br>
-<p itemprop="disambiguatingDescription">Archimedes’ method does not detect this.  
-It simply assumes tangency continues indefinitely.
-<br><br><br>
-<b>5. Why the “limit argument” does not rescue the method</b>
+At that moment the construction silently crosses into an impossible configuration.
 <br><br>
-The classical story says:</p>
-<ul style="margin:6px" itemprop="disambiguatingDescription">
-    <li>bisected polygons always stay outside,</li>
-    <li>their perimeters always stay above the circumference,</li>
-	<li>and they converge downward toward the true value.</li>
-</ul>
-<br>
-<p itemprop="disambiguatingDescription">But these premises are not guaranteed.
+Continuing to apply the tangent formulas beyond this point no longer describes a real circumscribed polygon — it describes a figure that has already slipped inside the circle.
 <br><br>
-Beyond a certain threshold, the tangent construction itself becomes impossible because the sides required by the tangent formulas are too short to lie outside the arc.
+The apparent convergence to ≈ 3.14d is not a discovery — it is an artifact of ignoring the impossibility of the geometric construction.
 <br><br>
-If we keep applying the tangent formulas anyway, we are no longer describing a real circumscribed polygon — we are describing a figure that has already slipped inside the circle.
-<br><br>
-This is the hidden failure point. 
-<br><br>
-You cannot use the method to justify the assumption that makes the method valid.
-<br><br><br>
-<b>6. The conclusion that becomes unavoidable</b></p>
-<ul style="margin:6px" itemprop="disambiguatingDescription">
-    <li>Archimedes’ refinement procedure relies on the unproven and actually false premise that repeated angle bisection of a circumscribed polygon always produces another circumscribed polygon.</li>
-    <li>A polygon whose perimeter becomes very close to the circumference cannot remain tangent.</li>
-	<li>Since the exact circumference is unknown at the start, the method cannot know when this breakdown occurs.</li>
-	<li>The apparent convergence to ≈ 3.14d is not a discovery — it is an artifact of ignoring the breakdown point that must occur when the perimeter approaches the true circumference from above.</li>
-</ul>
-<br><br>
-<p>These structural issues in the polygon‑limit method set the stage for a second misconception: the symbolic fusion of an approximation with the geometric ratio it was meant to represent.</p>
+These structural issues in the polygon‑limit method set the stage for a second misconception: the symbolic fusion of an approximation with the geometric ratio it was meant to represent.</p>
 </section>
 <br><br><br>
 <section id="symbol">

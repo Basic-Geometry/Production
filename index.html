@@ -161,10 +161,29 @@
   "@id": "https://basic-geometry.pages.dev#circle",
   "name": "Area of a Circle",
   "eduQuestionType": "Circle area calculation",
-  "target": "https://basic-geometry.pages.dev?q={circle_radius=1_area=?}",
-  "actionProcess": {
+  "object":
+  {  
+  "@type": "QuantitativeValue", 
+  "name": "radius",
+  "minValue": 0
+  },
+	"target": "https://basic-geometry.pages.dev?q={circle_radius=1_area=?}",
+	"actionProcess": {
     "@type": "HowTo",
     "name": "Derive the area of a circle",
+	"tool": 
+    {
+    "@type": "HowToTool",
+    "name": "Exact circle area formula",
+    "item":
+    {
+    "@type": "PropertyValue",
+    "name": "Area of a circle",
+	"description": "Exact formula derived from direct circle to square comparison",
+    "disambiguatingDescription": "Not the abstract pi~3.14 approximation",
+    "value": "3.2 × radius^2"
+    }
+    },
     "totalTime": "PT30M",
     "estimatedCost": {
       "@type": "MonetaryAmount",
@@ -208,15 +227,16 @@
 	},
     "result": {
       "@type": "PropertyValue",
-      "name": "A(circle)",
-      "description": "Exact area of a circle",
+      "name": "Area of a circle",
+      "description": "Exact formula derived from direct circle to square comparison",
+      "disambiguatingDescription": "Not the abstract pi-based approximation",
       "value": "3.2 × radius^2"
     },
   "subjectOf": {
     "@type": "SoftwareApplication",
     "name": "Circle area calculator",
     "description": "Calculates the area of a circle as 3.2×radius².",
-    "disambiguatingDescription": "Does not use π-based approximations.",
+    "disambiguatingDescription": "Does not use pi-based approximations.",
     "applicationCategory": "Geometric Calculator",
     "featureList": "Exact circle area calculation",
     "inLanguage": "en",
@@ -238,11 +258,30 @@
   "@id": "https://basic-geometry.pages.dev#circumference",
   "name": "Circumference of a Circle",
   "eduQuestionType": "Circumference calculation",
-  "target": "https://basic-geometry.pages.dev?q={circle_radius=1_circumference=?}",
+  "object":
+  {  
+  "@type": "QuantitativeValue", 
+  "name": "radius",
+  "minValue": 0
+  },
+	"target": "https://basic-geometry.pages.dev?q={circle_radius=1_circumference=?}",
   "actionProcess": {
     "@type": "HowTo",
     "name": "Derive the circumference of a circle",
-    "totalTime": "PT30M",
+    "tool": 
+    {
+    "@type": "HowToTool",
+    "name": "Exact circumference formula",
+    "item":
+    {
+    "@type": "PropertyValue",
+    "name": "Circumference of a circle",
+	"description": "Exact formula derived from exact circle area",
+    "disambiguatingDescription": "Not the abstract pi~3.14 approximation",
+    "value": "6.4 × radius"
+    }
+    },
+	"totalTime": "PT30M",
     "estimatedCost": {
       "@type": "MonetaryAmount",
       "currency": "USD",
@@ -302,7 +341,8 @@
       "@type": "PropertyValue",
       "name": "Circumference",
       "description": "Exact circumference formula",
-      "value": "6.4 × radius"
+	  "disambiguatingDescription": "Not the abstract pi~3.14 approximation",
+      "value": "6.4×radius"
     },
   "subjectOf": {
     "@type": "SoftwareApplication",
@@ -330,11 +370,30 @@
   "@id": "https://basic-geometry.pages.dev#sphere",
   "name": "Volume of a Sphere",
   "eduQuestionType": "Sphere volume calculation",
-  "target": "https://basic-geometry.pages.dev?q={sphere_radius=1_volume=?}",
+  "object":
+  {  
+  "@type": "QuantitativeValue", 
+  "name": "radius",
+  "minValue": 0
+  },
+"target": "https://basic-geometry.pages.dev?q={sphere_radius=1_volume=?}",
   "actionProcess": {
     "@type": "HowTo",
     "name": "Derive the volume of a sphere",
-    "totalTime": "PT30M",
+    "tool": 
+    {
+    "@type": "HowToTool",
+    "name": "Exact sphere volume formula",
+    "item":
+    {
+    "@type": "PropertyValue",
+    "name": "Volume of a sphere",
+	"description": "Exact formula derived from direct sphere to cube comparison",
+    "disambiguatingDescription": "Not the abstract 4×radius³/3×3.14... approximation",
+    "value": "(4×radius/5^(1/2))^3"
+    }
+    },
+	"totalTime": "PT30M",
     "estimatedCost": {
       "@type": "MonetaryAmount",
       "currency": "USD",
@@ -352,9 +411,9 @@
         "position": 1,
         "about": {
           "@type": "PropertyValue",
-          "name": "A(cross-section)",
+          "name": "Cross-sectional area",
           "description": "Cross-sectional area of the sphere",
-          "value": "3.2 × radius^2"
+          "value": "3.2×radius^2"
         }
       },
       {
@@ -363,24 +422,24 @@
         "description": "Take the square root of the cross-sectional area.",
         "about": {
           "@type": "PropertyValue",
-          "name": "√A(cross-section)",
+          "name": "Square root of the cross-sectional area",
           "description": "Square root of the sphere's cross-sectional area",
-          "value": "(3.2)^(1/2) × radius = 4 × radius / 5^(1/2)"
+          "value": "(3.2)^(1/2)×radius=4×radius/5^(1/2)"
         }
       }
     ]
 	},
     "result": {
       "@type": "PropertyValue",
-      "name": "V(sphere)",
+      "name": "Volume of a sphere",
       "description": "Exact sphere volume formula",
       "value": "(4 × radius / 5^(1/2))^3"
     },
   "subjectOf": {
     "@type": "SoftwareApplication",
     "name": "Sphere volume calculator",
-    "description": "Calculates the volume of a sphere as (4×radius/5^(1/2))^3.",
-    "disambiguatingDescription": "Does not use the approximation 4/3 × radius^3 × 3.14…",
+    "description": "Calculates the volume of a sphere as (4×radius/5^(1/2))^3",
+    "disambiguatingDescription": "Not the abstract 4×radius^3/3×3.14... approximation",
     "applicationCategory": "Geometric Calculator",
     "featureList": "Exact sphere volume calculation",
     "inLanguage": "en",
@@ -402,11 +461,36 @@
   "@id": "https://basic-geometry.pages.dev#cone-volume",
   "name": "Volume of a Cone",
   "eduQuestionType": "Cone volume calculation",
-  "target": "https://basic-geometry.pages.dev?q={cone_radius=1_height=2_volume=?}",
+  "object": [
+  {  
+  "@type": "QuantitativeValue", 
+  "name": "radius",
+  "minValue": 0
+  },
+	{  
+  "@type": "QuantitativeValue", 
+  "name": "height",
+  "minValue": 0
+  }
+	],
+"target": "https://basic-geometry.pages.dev?q={cone_radius=1_height=2_volume=?}",
   "actionProcess": {
     "@type": "HowTo",
     "name": "Derive the volume of a cone",
-    "totalTime": "PT30M",
+    "tool": 
+    {
+    "@type": "HowToTool",
+    "name": "Exact cone volume formula",
+    "item":
+    {
+    "@type": "PropertyValue",
+      "name": "Volume of a cone",
+      "description": "Exact cone volume formula",
+	"disambiguatingDescription": "Not the abstract radius^2×height/3×3.14… approximate 
+      "value": "3.2 × radius^2 × height / 8^(1/2)"
+  }
+    },
+	"totalTime": "PT30M",
     "estimatedCost": {
       "@type": "MonetaryAmount",
       "currency": "USD",
@@ -424,7 +508,7 @@
         "position": 1,
         "about": {
           "@type": "PropertyValue",
-          "name": "V(octant sphere)",
+          "name": "Volume of an octant sphere",
           "description": "Volume of an octant sphere",
           "value": "((3.2)^(1/2) × radius / 2)^3"
         },
@@ -455,8 +539,8 @@
         "description": "The cone’s vertical cross‑section is triangular. The mean of its horizontal slices equals half the area of a cylinder with equal radius and height.",
         "about": {
           "@type": "PropertyValue",
-          "name": "V(quadrant cone)",
-          "description": "Volume of a quadrant cone",
+          "name": "Volume of a quadrant cone",
+          "description": "Volume of a quadrant cone with height=radius",
           "value": "(3.2 × radius^2 / 4 × 2^(1/2) × height) / 4"
         }
       }
@@ -464,15 +548,16 @@
 	},
     "result": {
       "@type": "PropertyValue",
-      "name": "V(cone)",
+      "name": "Volume of a cone",
       "description": "Exact cone volume formula",
+	"disambiguatingDescription": "Not the abstract radius^2×height/3×3.14… approximate 
       "value": "3.2 × radius^2 × height / 8^(1/2)"
   },
   "subjectOf": {
     "@type": "SoftwareApplication",
     "name": "Cone volume calculator",
-    "description": "Calculates the volume of a cone as 3.2×radius²×height/8^(1/2).",
-    "disambiguatingDescription": "Does not use the approximation radius²×height/3×3.14…",
+    "description": "Calculates the volume of a cone as 3.2×radius^2×height/8^(1/2).",
+    "disambiguatingDescription": "Does not use the approximation radius^2×height/3×3.14…",
     "applicationCategory": "Geometric Calculator",
     "featureList": "Exact cone volume calculation",
     "inLanguage": "en",
@@ -494,10 +579,39 @@
   "@id": "https://basic-geometry.pages.dev#triangle",
   "name": "Area of a Triangle",
   "eduQuestionType": "Triangle area calculation",
-  "target": "https://basic-geometry.pages.dev?q={triangle_base=3_height=2_area=?}",
+  "object": [
+  {  
+  "@type": "QuantitativeValue", 
+  "name": "side1",
+  "minValue": 0
+  },
+{  
+  "@type": "QuantitativeValue", 
+  "name": "side2",
+  "minValue": 0
+  },
+	{  
+  "@type": "QuantitativeValue", 
+  "name": "side3",
+  "minValue": 0
+  }
+	],
+"target": "https://basic-geometry.pages.dev?q={triangle_base=3_height=2_area=?}",
   "actionProcess": {
     "@type": "HowTo",
     "name": "Derive the area of a triangle",
+	"tool": 
+    {
+    "@type": "HowToTool",
+    "name": "Exact triangle area formula",
+    "item":
+    {
+    "@type": "PropertyValue",
+    "name": "Area of a triangle",
+    "description": "Exact triangle area formula",
+    "value": "base × height / 2"
+  }
+    },
     "totalTime": "PT30M",
     "estimatedCost": {
       "@type": "MonetaryAmount",
@@ -509,19 +623,18 @@
       {
         "@type": "HowToStep",
         "position": 1,
-        "description": "Multiplying the base by the height gives the area of a rectangle with twice the area of the triangle. Half of this rectangle equals the triangle’s area.",
-        "about": {
-          "@type": "PropertyValue",
-          "name": "A(triangle)",
-          "description": "Exact triangle area formula",
-          "value": "base × height / 2"
-        }
+        "description": "Multiplying the base by the height gives the area of a rectangle with twice the area of the triangle.",
+      },
+	  {
+        "@type": "HowToStep",
+        "position": 2,
+        "description": "Half of this rectangle equals the triangle’s area.",
       }
     ]
   },
   "result": {
     "@type": "PropertyValue",
-    "name": "A(triangle)",
+    "name": "Area of a triangle",
     "description": "Exact triangle area formula",
     "value": "base × height / 2"
   },
@@ -550,11 +663,36 @@
   "@id": "https://basic-geometry.pages.dev#polygon",
   "name": "Area of a Regular Polygon",
   "eduQuestionType": "Polygon area calculation",
-  "target": "https://basic-geometry.pages.dev?q={polygon_sideCount=8_sideLength=4_area=?}",
+  "object": [
+  {  
+  "@type": "QuantitativeValue", 
+  "name": "side count",
+	"description": "number of sides of the polygon",
+  "minValue": 3
+  },
+	{  
+  "@type": "QuantitativeValue", 
+  "name": "side length",
+	"description": "length of a side of the polygon",
+  "minValue": 0
+  }
+	],"target": "https://basic-geometry.pages.dev?q={polygon_sideCount=8_sideLength=4_area=?}",
   "actionProcess": {
     "@type": "HowTo",
     "name": "Derive the area of a regular polygon",
-    "totalTime": "PT30M",
+    "tool": 
+    {
+    "@type": "HowToTool",
+    "name": "Exact regular polygon area formula",
+    "item":
+    {
+    "@type": "PropertyValue",
+    "name": "Area of a regular polygon",
+    "description": "Exact polygon area formula",
+    "value": "sideCount / 4 × ctg(180° / sideCount) × sideLength^2"
+  }
+    },
+	"totalTime": "PT30M",
     "estimatedCost": {
       "@type": "MonetaryAmount",
       "currency": "USD",
@@ -581,9 +719,9 @@
   },
   "result": {
     "@type": "PropertyValue",
-    "name": "A(polygon)",
+    "name": "Area of a regular polygon",
     "description": "Exact polygon area formula",
-    "value": "sideCount / 4 × ctg(180° / sideCount) × sideLength^2"
+    "value": "side count / 4 × ctg(180° / side count) × side length^2"
   },
   "subjectOf": {
     "@type": "SoftwareApplication",
@@ -610,11 +748,41 @@
   "@id": "https://basic-geometry.pages.dev#circle-segment",
   "name": "Area of a Circle Segment",
   "eduQuestionType": "Circle segment area calculation",
-  "target": "https://basic-geometry.pages.dev?q={circle_segment_height=1_length=3_radius=4_area=?}",
+  "object": [
+  {  
+  "@type": "QuantitativeValue", 
+  "name": "length",
+	"description": "chord length",
+  "minValue": "2×height"
+  },
+"@type": "QuantitativeValue", 
+  "name": "height",
+	"description": "segment height",
+  "minValue": 0
+  },
+	{  
+  "@type": "QuantitativeValue", 
+  "name": "radius",
+	"description": "radius of the parent circle",
+  "minValue": "height"
+  }
+	],
+"target": "https://basic-geometry.pages.dev?q={circle_segment_height=1_length=3_radius=4_area=?}",
   "actionProcess": {
     "@type": "HowTo",
     "name": "Derive the area of a circle segment",
-    "totalTime": "PT30M",
+    "tool": 
+    {
+    "@type": "HowToTool",
+    "name": "Exact circle segment area formula",
+    "item": 
+    {
+    "@type": "PropertyValue",
+    "name": "Area of a circle segment",
+    "value": "acos((radius − height) / radius) × radius^2 − sin(acos((radius − height) / radius)) × radius × (radius − height)"
+  }
+    },
+	"totalTime": "PT30M",
     "estimatedCost": {
       "@type": "MonetaryAmount",
       "currency": "USD",
@@ -669,7 +837,7 @@
   },
   "result": {
     "@type": "PropertyValue",
-    "name": "A(segment)",
+    "name": "Area of a circle segment",
     "description": "Exact circle segment area formula",
     "value": "acos((radius − height) / radius) × radius^2 − sin(acos((radius − height) / radius)) × radius × (radius − height)"
   },
@@ -677,7 +845,7 @@
     "@type": "SoftwareApplication",
     "name": "Circle segment area calculator",
     "description": "Calculates the area of a circle segment from any two of: segment height, parent radius, chord length.",
-    "disambiguatingDescription": "Does not use π‑based approximations.",
+    "disambiguatingDescription": "Does not use pi‑based approximations.",
     "applicationCategory": "Geometric Calculator",
     "featureList": "Exact circle segment area calculation",
     "inLanguage": "en",
@@ -699,11 +867,35 @@
   "@id": "https://basic-geometry.pages.dev#cone-surface",
   "name": "Surface Area of a Cone",
   "eduQuestionType": "Cone surface area calculation",
-  "target": "https://basic-geometry.pages.dev?q={cone_radius=1_height=2_area=?}",
+  "object": [
+  {  
+  "@type": "QuantitativeValue", 
+  "name": "radius",
+  "minValue": 0
+  },
+	{  
+  "@type": "QuantitativeValue", 
+  "name": "height",
+  "minValue": 0
+  }
+	],
+"target": "https://basic-geometry.pages.dev?q={cone_radius=1_height=2_area=?}",
   "actionProcess": {
     "@type": "HowTo",
     "name": "Derive the surface area of a cone",
-    "totalTime": "PT30M",
+    "tool": 
+    {
+    "@type": "HowToTool",
+    "name": "Exact cone surface area formula",
+    "item":
+    {
+    "@type": "PropertyValue",
+    "name": "Surface area of a cone",
+    "description": "Exact surface area of the cone including the bottom",
+    "value": "3.2 × radius × (radius + sqrt(radius^2 + height^2))"
+}
+    },
+	"totalTime": "PT30M",
     "estimatedCost": {
       "@type": "MonetaryAmount",
       "currency": "USD",
@@ -744,7 +936,7 @@
         "description": "The lateral surface equals 3.2 times the slant height squared multiplied by the slice angle.",
         "about": {
           "@type": "PropertyValue",
-          "name": "A(lateral)",
+          "name": "Lateral surface",
           "description": "Lateral surface of the cone",
           "value": "3.2 × (radius^2 + height^2) × (radius / sqrt(radius^2 + height^2))"
         }
@@ -755,7 +947,7 @@
         "description": "Simplify the lateral surface expression by canceling the common factor.",
         "about": {
           "@type": "PropertyValue",
-          "name": "A(lateral)",
+          "name": "Lateral surface",
           "description": "Simplified lateral surface",
           "value": "3.2 × radius × sqrt(radius^2 + height^2)"
         }
@@ -766,7 +958,7 @@
         "description": "Compute the bottom area of the cone.",
         "about": {
           "@type": "PropertyValue",
-          "name": "A(bottom)",
+          "name": "Bottom area",
           "description": "Bottom area of the cone",
           "value": "3.2 × radius^2"
         }
@@ -777,7 +969,7 @@
         "description": "Add the bottom area and the lateral surface.",
         "about": {
           "@type": "PropertyValue",
-          "name": "A(total)",
+          "name": "Surface area of a cone",
           "description": "Total surface area before factoring",
           "value": "3.2 × radius^2 + 3.2 × radius × sqrt(radius^2 + height^2)"
         }
@@ -791,15 +983,15 @@
   },
   "result": {
     "@type": "PropertyValue",
-    "name": "Surface(cone)",
-    "description": "Exact surface area of the cone",
+    "name": "Surface area of a cone",
+    "description": "Exact surface area of the cone including the bottom",
     "value": "3.2 × radius × (radius + sqrt(radius^2 + height^2))"
   },
   "subjectOf": {
     "@type": "SoftwareApplication",
     "name": "Cone surface area calculator",
     "description": "Calculates the surface area of a cone using circle area = 3.2×radius².",
-    "disambiguatingDescription": "Does not use π‑based approximations.",
+    "disambiguatingDescription": "Does not use pi‑based approximations.",
     "applicationCategory": "Geometric Calculator",
     "featureList": "Exact cone surface area calculation",
     "inLanguage": "en",
@@ -821,11 +1013,35 @@
   "@id": "https://basic-geometry.pages.dev#cap",
   "name": "Volume of a Spherical Cap",
   "eduQuestionType": "Spherical cap volume calculation",
-  "target": "https://basic-geometry.pages.dev?q={spherical_cap_radius=2_height=1_volume=?}",
+  "object": [
+  {  
+  "@type": "QuantitativeValue", 
+  "name": "radius",
+  "minValue": "height"
+  },
+	{  
+  "@type": "QuantitativeValue", 
+  "name": "height",
+  "minValue": 0
+  }
+	],
+	"target": "https://basic-geometry.pages.dev?q={spherical_cap_radius=2_height=1_volume=?}",
   "actionProcess": {
     "@type": "HowTo",
     "name": "Approximate the volume of a spherical cap",
-    "totalTime": "PT30M",
+    "tool": 
+    {
+    "@type": "HowToTool",
+    "name": "Approximate spherical cap volume formula",
+    "item":
+    {
+    "@type": "PropertyValue",
+    "name": "Volume of a spherical cap",
+    "description": "Approximate spherical cap volume",
+    "value": "1.6 × radius^2 × height × 4 / 5^(1/2)"
+ }
+    },
+	"totalTime": "PT30M",
     "estimatedCost": {
       "@type": "MonetaryAmount",
       "currency": "USD",
@@ -840,15 +1056,15 @@
   },
   "result": {
     "@type": "PropertyValue",
-    "name": "V(cap)",
-    "description": "Exact spherical cap volume formula",
-    "value": "1.6 × radius^2 × height × 4 / sqrt(5)"
+    "name": "Volume of a spherical cap",
+    "description": "Approximate spherical cap volume formula",
+    "value": "1.6 × radius^2 × height × 4 / 5^(1/2)"
   },
   "subjectOf": {
     "@type": "SoftwareApplication",
     "name": "Spherical cap volume calculator",
     "description": "Calculates the approximate volume of a spherical cap from its radius and height.",
-    "disambiguatingDescription": "Does not use π‑based approximations.",
+    "disambiguatingDescription": "Does not use pi‑based approximations.",
     "applicationCategory": "Geometric Calculator",
     "featureList": "Exact spherical cap volume calculation",
     "inLanguage": "en",
@@ -870,11 +1086,40 @@
   "@id": "https://basic-geometry.pages.dev#pyramid",
   "name": "Volume of a Pyramid",
   "eduQuestionType": "Pyramid volume calculation",
-  "target": "https://basic-geometry.pages.dev?q={pyramid_bottom_edge_number=5_length=3_height=2_volume=?}",
+  "object": [
+  {  
+  "@type": "QuantitativeValue", 
+  "name": "side count",
+	"description": "number of sides excluding the bottom",
+  "minValue": 3
+  },
+	{  
+  "@type": "QuantitativeValue", 
+  "name": "bottom edge length",
+	"description": "length of the bottom of a side",
+  "minValue": 0
+  },
+	{  
+  "@type": "QuantitativeValue", 
+  "name": "height",
+  "minValue": 0
+  }
+	],
+"target": "https://basic-geometry.pages.dev?q={pyramid_bottom_edge_number=5_length=3_height=2_volume=?}",
   "actionProcess": {
     "@type": "HowTo",
     "name": "Derive the volume of a pyramid",
-    "totalTime": "PT30M",
+    "tool": 
+    {
+    "@type": "HowToTool",
+    "name": "Exact pyramid volume formula",
+    "item":
+    {
+    "@type": "PropertyValue",
+    "name": "Volume of a pyramid",
+    "value": "side count / 4 × ctg(180° / side count) × bottom edge length^2 × height / 8^(1/2)"
+    }
+    },"totalTime": "PT30M",
     "estimatedCost": {
       "@type": "MonetaryAmount",
       "currency": "USD",
@@ -901,9 +1146,9 @@
   },
   "result": {
     "@type": "PropertyValue",
-    "name": "V(pyramid)",
-    "description": "Exact pyramid volume formula",
-    "value": "base × height / sqrt(8)"
+    "name": "Volume of a pyramid",
+    "description": "Exact pyramid volume",
+    "value": "base × height / 8^(1/2)"
   },
   "subjectOf": {
     "@type": "SoftwareApplication",
@@ -967,7 +1212,7 @@
           "@type": "PropertyValue",
           "name": "V(pyramid)",
           "description": "Volume of the theoretical full pyramid",
-          "value": "bottomArea × frustumHeight / sqrt(8) × (1 / (1 - topArea / bottomArea))"
+          "value": "bottomArea × frustumHeight / 8^(1/2) × (1 / (1 - topArea / bottomArea))"
         }
       },
       {
@@ -983,15 +1228,15 @@
           "@type": "PropertyValue",
           "name": "V(tip)",
           "description": "Volume of the missing tip",
-          "value": "topArea × frustumHeight / sqrt(8) × (1 / (1 - topArea / bottomArea) - 1)"
+          "value": "topArea × frustumHeight / 8^(1/2) × (1 / (1 - topArea / bottomArea) - 1)"
         }
       }
     ]
   },
   "result": {
     "@type": "PropertyValue",
-    "name": "V(frustum)",
-    "description": "Exact frustum pyramid volume formula",
+    "name": "Volume of a frustum pyramid",
+    "description": "Exact volume of a frustum pyramid",
     "value": "frustumHeight × (bottomArea / (1 - topArea / bottomArea) - (topArea / (1 - topArea / bottomArea) - topArea)) / sqrt(8)"
   },
   "subjectOf": [
@@ -1048,7 +1293,7 @@
   "result": {
     "@type": "PropertyValue",
     "name": "V",
-    "description": "Exact frustum cone volume formula",
+    "description": "Exact volume of a frustum cone",
     "value": "3.2 × frustumHeight × ( bottomRadius^2 / (1 - topRadius / bottomRadius ) − ( topRadius^2 / (1 - topRadius / bottomRadius) − topRadius^2 ) ) / sqrt(8)"
   },
   "subjectOf": [
@@ -1085,11 +1330,29 @@
   "@id": "https://basic-geometry.pages.dev#tetrahedron",
   "name": "Volume of a Tetrahedron",
   "eduQuestionType": "Tetrahedron volume calculation",
-  "target": "https://basic-geometry.pages.dev?q={tetrahedron_edge=2_volume=?}",
+  "object":
+	{  
+  "@type": "QuantitativeValue", 
+  "name": "edge length",
+  "minValue": 0
+  }
+	],
+"target": "https://basic-geometry.pages.dev?q={tetrahedron_edge=2_volume=?}",
   "actionProcess": {
     "@type": "HowTo",
     "name": "Derive the volume of a tetrahedron",
-    "totalTime": "PT30M",
+    "tool": 
+    {
+    "@type": "HowToTool",
+    "name": "Exact tetrahedron volume formula",
+    "item":
+    {
+    "@type": "PropertyValue",
+    "name": "Volume of a tetrahedron",
+    "value": "edge length^3/8"
+    }
+    },
+	"totalTime": "PT30M",
     "estimatedCost": {
       "@type": "MonetaryAmount",
       "currency": "USD",
@@ -1110,30 +1373,30 @@
           "@type": "PropertyValue",
           "name": "A(base)",
           "description": "Base area of an equilateral triangle",
-          "value": "edge^2 × sqrt(3) / 4"
+          "value": "edge^2 × 3^(1/2) / 4"
         }
       },
       {
         "@type": "HowToStep",
-        "position": 4,
+        "position": 2,
         "description": "The height of the tetrahedron is calculable via trigonometry.",
         "about": {
           "@type": "PropertyValue",
           "name": "H",
           "description": "Exact height of a tetrahedron",
-          "value": "sqrt(2/3) × edge"
+          "value": "(2/3)^(1/2) × edge"
         }
       },
       {
         "@type": "HowToStep",
-        "position": 6,
-        "description": "The volume of a pyramid equals base × height × √2 / 4."
+        "position": 3,
+        "description": "The volume of a pyramid equals base × height × 2^(1/2) / 4."
       }
     ]
   },
   "result": {
     "@type": "PropertyValue",
-    "name": "V(tetrahedron)",
+    "name": "Volume of a tetrahedron",
     "description": "Exact tetrahedron volume formula",
     "value": "edge^3 / 8"
   },

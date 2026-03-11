@@ -15,7 +15,6 @@ self.addEventListener('install', (event) => {
         'polygon.png',
         'circleSegment.png',
         'cone.jpeg',
-        'sphericalCap.png',
         'conePyramidVolume.jpeg',
         'tetraFrame.jpeg',
         'frustumPyramid.jpeg',

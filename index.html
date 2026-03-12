@@ -105,26 +105,8 @@
   "@context": "https://schema.org",
   "@type": "WebPage",
   "@id": "https://basic-geometry.pages.dev#home",
-  "url": "https://basic-geometry.pages.dev",
   "name": "Home of Basic Geometry",
-  "accessMode": "mathOnVisual",
-  "accessibilityControl": "fullKeyboardControl",
-  "accessibilityHazard": "none",
-  "accessibilitySummary": "Read text and equations with figures, calculate.",
-  "copyrightNotice": "© All rights reserved",
-  "copyrightYear": "2026",
-  "publisher": {
-    "@type": "Person",
-    "name": "Gaál Sándor"
-  },
-  "inLanguage": "en",
-  "isAccessibleForFree": true,
-  "isFamilyFriendly": true,
-  "mainEntity": {
-    "@type": ["LearningResource", "MathSolver"],
-    "@id": "https://basic-geometry.pages.dev#cgs",
-    "name": "Core Geometric System™",
-		"about": {
+  	"about": {
 	"@type": "BreadcrumbList",
 	"@id": "https://basic-geometry.pages.dev#breadcrumbs",
 	"name": "Key points",
@@ -176,6 +158,21 @@
 	]
 	},
 	
+  "accessMode": "mathOnVisual",
+  "accessibilityControl": "fullKeyboardControl",
+  "accessibilityHazard": "none",
+  "accessibilitySummary": "Read text and equations with figures, calculate.",
+  "copyrightNotice": "© All rights reserved",
+  "copyrightYear": "2026",
+  "description": "Universally applicable self-consistent geometric framework of physically grounded exact area and volume calculation formulas for regular shapes. Featuring calculator tools.",
+  "disambiguatingDescription": "Comparing the properties of shapes directly to the square and the cube as the primary, physically relevant units of measurement via first principles instead of limits, approximations, or abstract, zero‑dimensional points.",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "isFamilyFriendly": true,
+  "mainEntity": {
+    "@type": ["LearningResource", "MathSolver"],
+    "@id": "https://basic-geometry.pages.dev#cgs",
+    "name": "Core Geometric System™",
 	"accessMode": "mathOnVisual",
     "accessibilityControl": "fullKeyboardControl",
     "accessibilityHazard": "none",
@@ -1431,13 +1428,9 @@
 
 "subjectOf": {
 	"@type": "DefinedTermSet",
+	"@id": "https://basic-geometry.pages.dev#trigonometry",
 	"name": "Trigonometry",
-	"url": "https://basic-geometry.pages.dev#trigonometry",
-  "image": {
-    "@type": "ImageObject",
-    "url": "trigonometry.png",
-    "description": "trigonometric entities"
-  },
+	"description": "Definition of trigonometric functions",
 	"hasDefinedTerm": [
 	{
 	"@type": "DefinedTerm",
@@ -1462,14 +1455,23 @@
 	"name": "cotangent",
 	"description": "adjacent / opposite"
 	}
-	]
-	},
-
+	],
+	"image": {
+    "@type": "ImageObject",
+    "url": "trigonometry.png",
+    "description": "trigonometric entities"
+  }
+	"url": "https://basic-geometry.pages.dev#trigonometry"
+	}
+},
+	"publisher": {
+    "@type": "Person",
+    "name": "Gaál Sándor"
+  },
 	"typicalAgeRange": "5-105",
     "timeRequired": "PT1D",
-	"url": "https://basic-geometry.pages.dev",
+	"url": "https://basic-geometry.pages.dev#cgs",
     "usageInfo": "Deriving areas and volumes from geometric relationships ensuring accurate calculations via consistency and precision."
-	
 }
 	}
 </script>

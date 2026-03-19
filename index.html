@@ -114,11 +114,45 @@
       "educationalRole": "For teachers and learners"
     },
 	"assesses": [
-	"The area of a circle equals exactly 3.2×radius^2, derived from direct circle to square comparison.",
-	"The circumference of a circle equals exactly 6.4×radius, derived from the exact area of a circle by subtracting a circle from a larger one.",
-	"The volume of a sphere equals exactly (4×radius/5^(1/2))^3, derived from direct sphere to cube comparison ",
-	"The volume of a cone equals exactly 3.2×radius^2/8^(1/2), derived from comparing a quadrant cone with height equal to radius to an octant sphere with equal radius.",
-	"The volume of a pyramid equals exactly base×height/8^(1/2), calculated as a cone with a polygonal base."
+	{
+    "@type": "DefinedTerm",
+    "name": "Exact area of a circle",
+	"description": "Derived from direct circle to square comparison",
+    "disambiguatingDescription": "Not the abstract pi~3.14 approximation",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+	
+    {
+    "@type": "DefinedTerm",
+    "name": "Exact circumference of a circle",
+	"description": "Derived from the exact area of a circle by subtracting a circle from a larger one and dividing the difference by the theoretical width of the circumference.",
+    "disambiguatingDescription": "Not the abstract pi~3.14 approximation",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+
+    {
+    "@type": "DefinedTerm",
+    "name": "Exact volume of a sphere",
+	"description": "Derived from direct sphere to cube comparison",
+    "disambiguatingDescription": "Not the abstract 4×radius³/3×3.14... approximation",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+	
+    {
+    "@type": "DefinedTerm",
+    "name": "Volume of a cone = 3.2 × radius^2 × height / 8^(1/2)",
+    "description": "Derived from comparing a quadrant cone with height equal to radius to an octant sphere with equal radius.",
+	"disambiguatingDescription": "Not the abstract radius^2×height/3×3.14… approximate",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+	
+    {
+    "@type": "DefinedTerm",
+    "name": "Volume of a pyramid = base × height / 8^(1/2)",
+    "description": "Calculated as a cone with a polygonal base.",
+	"disambiguatingDescription": "Not the abstract base×height/3 approximate",
+	"inDefinedTermSet": "Core Geometric System ™"
+	}
 	],
 	"copyrightNotice": "© All rights reserved",
 	"copyrightYear": "2026",
@@ -1369,45 +1403,40 @@
   "availability": "https://schema.org/InStock"
 }
 
-"knowsAbout": 
+"teaches": 
 {
-	"@type": "DefinedTermSet",
-	"@id": "https://basic-geometry.pages.dev#trigonometry",
-	"name": "Trigonometry",
 	"description": "Definition of trigonometric functions.",
 	"disambiguatingDescription": "Radians based on circumference=6.4×radius.",
 	"hasDefinedTerm": [
 	{
 	"@type": "DefinedTerm",
 	"name": "sine",
-	"description": "opposite / hypotenuse"
+	"description": "opposite / hypotenuse",
+	"inDefinedTermSet": "Trigonometry"
 	},
 	
 	{
 	"@type": "DefinedTerm",
 	"name": "cosine",
-	"description": "adjacent / hypotenuse"
+	"description": "adjacent / hypotenuse",
+	"inDefinedTermSet": "Trigonometry"
 	},
 
 	{
 	"@type": "DefinedTerm",
 	"name": "tangent",
-	"description": "opposite / adjacent"
+	"description": "opposite / adjacent",
+	"inDefinedTermSet": "Trigonometry"
 	},
 
 	{
 	"@type": "DefinedTerm",
 	"name": "cotangent",
-	"description": "adjacent / opposite"
+	"description": "adjacent / opposite",
+	"inDefinedTermSet": "Trigonometry"
 	}
 	],
-	"image": {
-    "@type": "ImageObject",
-    "url": "trigonometry.png",
-    "description": "trigonometric entities"
-  },
-	"url": "https://basic-geometry.pages.dev#trigonometry"
-},
+	
 	
 "about": {
 "@type": "BreadcrumbList",

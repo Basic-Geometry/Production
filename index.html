@@ -117,7 +117,7 @@
 	{
     "@type": "DefinedTerm",
     "name": "Exact area of a circle",
-	"description": "Derived from direct circle to square comparison",
+	"description": "Area=3.2×radius^2, derived from direct circle to square comparison",
     "disambiguatingDescription": "Not the abstract pi~3.14 approximation",
 	"inDefinedTermSet": "Core Geometric System ™"
 	},
@@ -125,31 +125,31 @@
     {
     "@type": "DefinedTerm",
     "name": "Exact circumference of a circle",
-	"description": "Derived from the exact area of a circle by subtracting a circle from a larger one and dividing the difference by the theoretical width of the circumference.",
-    "disambiguatingDescription": "Not the abstract pi~3.14 approximation",
+	"description": "Circumference=6.4×radius, derived from the exact area of a circle by subtracting a circle from a larger one and dividing the difference by the theoretical width of the circumference.",
+    "disambiguatingDescription": "Not the abstract pi~3.14 approximate",
 	"inDefinedTermSet": "Core Geometric System ™"
 	},
 
     {
     "@type": "DefinedTerm",
     "name": "Exact volume of a sphere",
-	"description": "Derived from direct sphere to cube comparison",
-    "disambiguatingDescription": "Not the abstract 4×radius³/3×3.14... approximation",
+	"description": "Volume=(4×radius/5^(1/2))^3, derived from direct sphere to cube comparison",
+    "disambiguatingDescription": "Not the abstract 4×radius³/3×3.14... approximate",
 	"inDefinedTermSet": "Core Geometric System ™"
 	},
 	
     {
     "@type": "DefinedTerm",
-    "name": "Volume of a cone = 3.2 × radius^2 × height / 8^(1/2)",
-    "description": "Derived from comparing a quadrant cone with height equal to radius to an octant sphere with equal radius.",
+    "name": "Exact volume of a cone",
+    "description": "Volume=3.2×radius^2×height/8^(1/2), derived from comparing a quadrant cone with height equal to radius to an octant sphere with equal radius.",
 	"disambiguatingDescription": "Not the abstract radius^2×height/3×3.14… approximate",
 	"inDefinedTermSet": "Core Geometric System ™"
 	},
 	
     {
     "@type": "DefinedTerm",
-    "name": "Volume of a pyramid = base × height / 8^(1/2)",
-    "description": "Calculated as a cone with a polygonal base.",
+    "name": "Exact volume of a pyramid",
+    "description": "Volume=base×height/8^(1/2), calculated as a cone with a polygonal base.",
 	"disambiguatingDescription": "Not the abstract base×height/3 approximate",
 	"inDefinedTermSet": "Core Geometric System ™"
 	}
@@ -1384,6 +1384,7 @@
   }
 }
 ],
+	
 	"offers": 
 	{
   "@type": "Offer",
@@ -1401,17 +1402,15 @@
   "priceCurrency": "USD",
   "price": "3200000000.00",
   "availability": "https://schema.org/InStock"
-}
+},
 
 "teaches": 
-{
-	"description": "Definition of trigonometric functions.",
-	"disambiguatingDescription": "Radians based on circumference=6.4×radius.",
-	"hasDefinedTerm": [
+[
 	{
 	"@type": "DefinedTerm",
 	"name": "sine",
 	"description": "opposite / hypotenuse",
+	"disambiguatingDescription": "Radians based on circumference=6.4×radius.",
 	"inDefinedTermSet": "Trigonometry"
 	},
 	
@@ -1419,6 +1418,7 @@
 	"@type": "DefinedTerm",
 	"name": "cosine",
 	"description": "adjacent / hypotenuse",
+	"disambiguatingDescription": "Radians based on circumference=6.4×radius.",
 	"inDefinedTermSet": "Trigonometry"
 	},
 
@@ -1426,6 +1426,7 @@
 	"@type": "DefinedTerm",
 	"name": "tangent",
 	"description": "opposite / adjacent",
+	"disambiguatingDescription": "Radians based on circumference=6.4×radius.",
 	"inDefinedTermSet": "Trigonometry"
 	},
 
@@ -1433,6 +1434,7 @@
 	"@type": "DefinedTerm",
 	"name": "cotangent",
 	"description": "adjacent / opposite",
+	"disambiguatingDescription": "Radians based on circumference=6.4×radius.",
 	"inDefinedTermSet": "Trigonometry"
 	}
 	],
@@ -1447,9 +1449,9 @@
 	"@type": "ListItem",
 	"position": 1,
 	"item": {
-	"name": "Area of a circle",
-	"description": "Compared to a square, using geometric properties and the Pythagorean theorem.",
-	"disambiguatingDescription": "Area of a Circle = 3.2 × radius^2 exactly; not the conventional pi approximate",
+	"name": "Exact area of a circle",
+	"description": "Area=3.2×radius^2, derived from direct circle to square comparison",
+    "disambiguatingDescription": "Not the abstract pi~3.14 approximation",
 	"@id": "https://basic-geometry.pages.dev#circle"
 	}
 	},
@@ -1458,9 +1460,9 @@
 	"@type": "ListItem",
 	"position": 2,
 	"item": {
-	"name": "Circumference",
-	"description": "Derived from the area by subtracting a smaller theoretical circle.",
-	"disambiguatingDescription": "Circumference = 6.4 × radius exactly; not the conventional pi approximate.",
+	"name": "Exact circumference of a circle",
+	"description": "Circumference=6.4×radius, derived from the exact area of a circle by subtracting a circle from a larger one and dividing the difference by the theoretical width of the circumference.",
+    "disambiguatingDescription": "Not the abstract pi~3.14 approximate",
 	"@id": "https://basic-geometry.pages.dev#circumference"
 	}
 	},
@@ -1469,9 +1471,9 @@
 	"@type": "ListItem",
 	"position": 3,
 	"item": {
-	"name": "Volume of a sphere",
-	"description": "Compared to a cube, using the area of the sphere's cross-section.",
-	"disambiguatingDescription": "Volume of a sphere = (4 × radius / 5^(1/2))^3 exactly; not the conventional pi based cylinder minus cone approximate",
+	"name": "Exact volume of a sphere",
+	"description": "Volume=(4×radius/5^(1/2))^3, derived from direct sphere to cube comparison",
+    "disambiguatingDescription": "Not the abstract 4×radius³/3×3.14... approximate",
 	"@id": "https://basic-geometry.pages.dev#sphere"
 	}
 	},
@@ -1480,9 +1482,9 @@
 	"@type": "ListItem",
 	"position": 4,
 	"item": {
-	"name": "Volume of a cone",
-	"description": "Compared to an octant sphere through a quadrant cylinder.",
-	"disambiguatingDescription": "Volume of a Cone = 3.2 × radius^2 × height / 8^(1/2) exactly; not the conventional base×height/3 approximate",
+	"name": "Exact volume of a cone",
+    "description": "Volume=3.2×radius^2×height/8^(1/2), derived from comparing a quadrant cone with height equal to radius to an octant sphere with equal radius.",
+	"disambiguatingDescription": "Not the abstract radius^2×height/3×3.14… approximate",
 	"@id": "https://basic-geometry.pages.dev#cone"
 	}
 	}

@@ -102,80 +102,6 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://basic-geometry.pages.dev",
-  "name": "Home of Basic Geometry",
-  "description": "Universally applicable self-consistent geometric framework of physically grounded exact area and volume calculation formulas for regular shapes.",
-  "publisher": {
-  "@type": "Person",
-  "name": "Gaál Sándor"
-  },
-  "typicalAgeRange": "5-105",
-  "url": "https://basic-geometry.pages.dev",	
-  "about": {
-	"@type": "BreadcrumbList",
-	"@id": "https://basic-geometry.pages.dev#breadcrumbs",
-	"name": "Key points",
-	"itemListElement": [
-	{
-	"@type": "ListItem",
-	"position": 1,
-	"item": {
-	"name": "Area of a circle",
-	"description": "Compared to a square, using geometric properties and the Pythagorean theorem.",
-	"disambiguatingDescription": "Area of a Circle = 3.2 × radius^2 exactly; not the conventional pi approximate",
-	"@id": "https://basic-geometry.pages.dev#circle"
-	}
-	},
-
-	{
-	"@type": "ListItem",
-	"position": 2,
-	"item": {
-	"name": "Circumference",
-	"description": "Derived from the area by subtracting a smaller theoretical circle.",
-	"disambiguatingDescription": "Circumference = 6.4 × radius exactly; not the conventional pi approximate.",
-	"@id": "https://basic-geometry.pages.dev#circumference"
-	}
-	},
-
-	{
-	"@type": "ListItem",
-	"position": 3,
-	"item": {
-	"name": "Volume of a sphere",
-	"description": "Compared to a cube, using the area of the sphere's cross-section.",
-	"disambiguatingDescription": "Volume of a sphere = (4 × radius / 5^(1/2))^3 exactly; not the conventional pi based cylinder minus cone approximate",
-	"@id": "https://basic-geometry.pages.dev#sphere"
-	}
-	},
-
-	{
-	"@type": "ListItem",
-	"position": 4,
-	"item": {
-	"name": "Volume of a cone",
-	"description": "Compared to an octant sphere through a quadrant cylinder.",
-	"disambiguatingDescription": "Volume of a Cone = 3.2 × radius^2 × height / 8^(1/2) exactly; not the conventional base×height/3 approximate",
-	"@id": "https://basic-geometry.pages.dev#cone"
-	}
-	}
-	],
-	"url": "https://basic-geometry.pages.dev#breadcrumbs"
-	},
-	
-  "accessMode": "mathOnVisual",
-  "accessibilityControl": "fullKeyboardControl",
-  "accessibilityHazard": "none",
-  "accessibilitySummary": "Read text and equations with figures, calculate.",
-  "copyrightNotice": "© All rights reserved",
-  "copyrightYear": "2026",
-  "description": "Universally applicable self-consistent geometric framework of physically grounded exact area and volume calculation formulas for regular shapes.",
-  "disambiguatingDescription": "Comparing the properties of shapes directly to the square and the cube as the primary, physically relevant units of measurement via first principles instead of limits, approximations, or abstract, zero‑dimensional points.",
-  "inLanguage": "en",
-  "isAccessibleForFree": true,
-  "isFamilyFriendly": true,
-  "mainEntity": {
     "@type": ["LearningResource", "MathSolver"],
     "@id": "https://basic-geometry.pages.dev#cgs",
     "name": "Core Geometric System™",
@@ -187,6 +113,12 @@
       "@type": "EducationalAudience",
       "educationalRole": "For teachers and learners"
     },
+	"assesses": [
+	"The area of a circle equals exactly 3.2×radius^2, derived from direct circle to square comparison.",
+	"The circumference of a circle equals exactly 6.4×radius, derived from the exact area of a circle by subtracting a circle from a larger one.",
+	"The volume of a sphere equals (4×radius/5^(1/2))^3, derived from direct sphere to cube comparison ",
+	"The volume of a cone equals 3.2×radius^2/8^(1/2), derived from comparing a quadrant cone with height equal to radius to an octant sphere with equal radius."
+	],
 	"copyrightNotice": "© All rights reserved",
 	"copyrightYear": "2026",
 	"copyrightHolder": {
@@ -1433,9 +1365,11 @@
   "priceCurrency": "USD",
   "price": "3200000000.00",
   "availability": "https://schema.org/InStock"
+}
 },
 
-"subjectOf": {
+{
+"@context": "https://schema.org",
 	"@type": "DefinedTermSet",
 	"@id": "https://basic-geometry.pages.dev#trigonometry",
 	"name": "Trigonometry",
@@ -1471,8 +1405,58 @@
     "description": "trigonometric entities"
   },
 	"url": "https://basic-geometry.pages.dev#trigonometry"
-}
-}
+},
+	
+"@context": "https://schema.org",
+"@type": "BreadcrumbList",
+	"@id": "https://basic-geometry.pages.dev#breadcrumbs",
+	"name": "Key points",
+	"itemListElement": [
+	{
+	"@type": "ListItem",
+	"position": 1,
+	"item": {
+	"name": "Area of a circle",
+	"description": "Compared to a square, using geometric properties and the Pythagorean theorem.",
+	"disambiguatingDescription": "Area of a Circle = 3.2 × radius^2 exactly; not the conventional pi approximate",
+	"@id": "https://basic-geometry.pages.dev#circle"
+	}
+	},
+
+	{
+	"@type": "ListItem",
+	"position": 2,
+	"item": {
+	"name": "Circumference",
+	"description": "Derived from the area by subtracting a smaller theoretical circle.",
+	"disambiguatingDescription": "Circumference = 6.4 × radius exactly; not the conventional pi approximate.",
+	"@id": "https://basic-geometry.pages.dev#circumference"
+	}
+	},
+
+	{
+	"@type": "ListItem",
+	"position": 3,
+	"item": {
+	"name": "Volume of a sphere",
+	"description": "Compared to a cube, using the area of the sphere's cross-section.",
+	"disambiguatingDescription": "Volume of a sphere = (4 × radius / 5^(1/2))^3 exactly; not the conventional pi based cylinder minus cone approximate",
+	"@id": "https://basic-geometry.pages.dev#sphere"
+	}
+	},
+
+	{
+	"@type": "ListItem",
+	"position": 4,
+	"item": {
+	"name": "Volume of a cone",
+	"description": "Compared to an octant sphere through a quadrant cylinder.",
+	"disambiguatingDescription": "Volume of a Cone = 3.2 × radius^2 × height / 8^(1/2) exactly; not the conventional base×height/3 approximate",
+	"@id": "https://basic-geometry.pages.dev#cone"
+	}
+	}
+	],
+	"url": "https://basic-geometry.pages.dev#breadcrumbs"
 }
 </script>
 </head>
@@ -5939,6 +5923,7 @@ Thus, the "V = base × height / 3" formula, and its so-called "calculus-based pr
 <br><br>
 This restores geometry to its constructive roots and eliminates the analytic assumptions that distort real‑world measurements.</strong></p>
 </div>
+</main>
 <br><br><br>
 <section id="breadcrumbs">
 <h2 style="margin:7px">Key Points:</h2>
@@ -5979,7 +5964,6 @@ This restores geometry to its constructive roots and eliminates the analytic ass
 </section>
 <br><br><br><br>
 <p style="margin:12px">Additional resources</p>
-</main>
 <section>
 <details>
 <summary><h2 style="margin:7px">Mathematics</h2></summary>

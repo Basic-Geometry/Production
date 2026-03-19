@@ -87,19 +87,6 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "AboutPage",
-	"@id": "https://basic-geometry.pages.dev/about",
-	"name": "About Basic Geometry",
-	"description": "The story behind the best-established and most accurate framework to calculate area and volume",
-	"headline": "Rediscovered Geometry",
-	"publisher": 
-	{
-	"@type": "Person",
-	"name": "Gaál Sándor"
-	},
-	"typicalAgeRange": "5-105",
-	"mainEntity": 
-	{
     "@type": "Article",
 	"@id": "https://basic-geometry.pages.dev#cgs",
 	"name": "Core Geometric System ™",
@@ -109,7 +96,39 @@
 	"url": "https://x.com/gmac4247"
 	},
 	"articleBody": "How it's going",
-	"assesses": "basic geometry",
+	"assesses": [
+	{
+    "@type": "DefinedTerm",
+    "name": "Exact area of a circle",
+	"description": "Area=3.2×radius^2, derived from direct circle to square comparison",
+    "disambiguatingDescription": "Not the abstract pi~3.14 approximation",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+	
+    {
+    "@type": "DefinedTerm",
+    "name": "Exact circumference of a circle",
+	"description": "Circumference=6.4×radius, derived from the exact area of a circle by subtracting a circle from a larger one and dividing the difference by the theoretical width of the circumference.",
+    "disambiguatingDescription": "Not the abstract pi~3.14 approximate",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+
+    {
+    "@type": "DefinedTerm",
+    "name": "Exact volume of a sphere",
+	"description": "Volume=(4×radius/5^(1/2))^3, derived from direct sphere to cube comparison",
+    "disambiguatingDescription": "Not the abstract 4×radius³/3×3.14... approximate",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+	
+    {
+    "@type": "DefinedTerm",
+    "name": "Exact volume of a cone",
+    "description": "Volume=3.2×radius^2×height/8^(1/2), derived from comparing a quadrant cone with height equal to radius to an octant sphere with equal radius.",
+	"disambiguatingDescription": "Not the abstract radius^2×height/3×3.14… approximate",
+	"inDefinedTermSet": "Core Geometric System ™"
+	}
+	],
 	"backstory": "How it started",
 	"copyrightNotice": "® All rights reserved",
 	"copyrightYear": "2026",
@@ -119,54 +138,6 @@
     "isAccessibleForFree": true,
     "isFamilyFriendly": true,
 	"typicalAgeRange": "5-105",
-	"about": {
-	"@type": "DefinedTermSet",
-	"name": "Core Geometric System ™",
-	"creator": {
-    "@type": "Person",
-    "name": "Gaál Sándor"
-	},
-	"copyrightNotice": "® All rights reserved",
-	"copyrightYear": "2026",
-	"description": "Universally applicable self-consistent geometric framework of physically grounded exact area and volume calculation formulas for regular shapes.",
-    "disambiguatingDescription": "Comparing the properties of shapes directly to the square and the cube as the primary, physically relevant units of measurement via first principles instead of limits, approximations, or abstract, zero‑dimensional points.",
-	"hasDefinedTerm": [
-    {
-    "@type": "DefinedTerm",
-    "name": "Exact area of a circle",
-	"description": "Area of a circle = 3.2 × radius^2. Derived from direct circle to square comparison",
-    "disambiguatingDescription": "Not the abstract pi~3.14 approximation"
-},
-	
-    {
-    "@type": "DefinedTerm",
-    "name": "Exact circumference of a circle",
-	"description": "Circumference  = 6.4 × radius. Derived from exact circle area",
-    "disambiguatingDescription": "Not the abstract pi~3.14 approximation"
-},
-
-    {
-    "@type": "DefinedTerm",
-    "name": "Exact volume of a sphere",
-	"description": "Volume of a sphere = (4×radius/5^(1/2))^3. Derived from direct sphere to cube comparison",
-    "disambiguatingDescription": "Not the abstract 4×radius³/3×3.14... approximation"
-},
-	
-    {
-    "@type": "DefinedTerm",
-    "name": "Volume of a cone = 3.2 × radius^2 × height / 8^(1/2)",
-    "description": "Volume of a cone = 3.2 × radius^2 × height / 8^(1/2). Derived from cone to sphere comparison",
-	"disambiguatingDescription": "Not the abstract radius^2×height/3×3.14… approximate"
-},
-	
-    {
-    "@type": "DefinedTerm",
-    "name": "Volume of a pyramid = base × height / 8^(1/2)",
-    "description": "Volume of a pyramid = base × height / 8^(1/2). Using the coefficient of a cone",
-	"disambiguatingDescription": "Not the abstract base×height/3 approximate"
-}
-]
-},
 	"subjectOf": [
 	{
 	"@type": "VideoObject",
@@ -201,7 +172,6 @@
 	"uploadDate": "2026-03-12T20:28:17+01:00"
 	}
 	]
-	}
 }
 </script>
 </head>

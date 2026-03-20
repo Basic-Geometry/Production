@@ -7,8 +7,6 @@ self.addEventListener('install', (event) => {
         'circle.png',
         'circumference.png',
         'sphere.jpeg',
-        'coneAndSphere.jpeg',
-        'octantSphereQuarterCone.jpeg',
         'sphereAndCone.jpeg',
         'trigonometry.png',
         'sphereSurface.jpeg',

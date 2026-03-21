@@ -1,13 +1,11 @@
-Shared Software License Agreement
-
-All rights reserved.
+#Shared Software License Agreement
 
 
-This software (the Basic Geometry Calculator App"), including the formulas, figures, and user interface, is offered to you (the "User") for use under the following terms and conditions:
+This software, the Core Geometric System ™ including the formulas, figures, text and user interface, is offered to you (the "User") for use under the following terms and conditions:
 
 **1. Ownership and Copyright:**
 
-The App, excluding the open source elements, is owned and copyrighted by Gaál Sándor (the "Licensor").  The MIT App Inventor engine is licensed under the MIT License, as detailed in their respective license agreement.
+The App, excluding the open source elements, is owned and copyrighted by Gaál Sándor (the "Licensor"). 
 
 **2. Grant of License:**
 
@@ -19,8 +17,8 @@ The Licensor grants the User a non-exclusive, non-transferable, royalty-free lic
 
 The User is expressly prohibited from:
 
-* Distributing the App, whether in its original form or modified.  This includes, but is not limited to, uploading the App to app stores, file-sharing websites, or any other distribution platform.
-* Modifying the App and distributing any such modifications.  This restriction applies specifically to modifications that include the formulas and figures provided by the Licensor.  While you may use the formulas and figures for your own purposes, distributing applications containing them is prohibited.
+* Distributing the App, whether in its original form or modified. This includes, but is not limited to, uploading the App to app stores, file-sharing websites, or any other distribution platform.
+* Modifying the App and distributing any such modifications. This restriction applies specifically to modifications that include the formulas and figures provided by the Licensor.  While you may use the formulas and figures for your own purposes, distributing applications containing them is prohibited.
 * Reverse engineering, decompiling, or disassembling the App, except to the extent expressly permitted by applicable law.
 * Using the App for any commercial purpose without the prior written consent of the Licensor.
 
@@ -50,5 +48,6 @@ For any questions regarding this license, please contact gmac4247@yahoo.com .
 
 **By downloading and using the App, the User agrees to be bound by the terms and conditions of this License Agreement.**
 
-
-® 2025
+Gaál Sándor 
+® All rights reserved. 
+2026

@@ -118,7 +118,7 @@
 	{
     "@type": "DefinedTerm",
     "name": "Exact area of a circle",
-	"description": "Area=3.2×radius^2, derived from direct circle to square comparison",
+	"description": "Area = 3.2 × radius^2, derived from direct circle to square comparison",
     "disambiguatingDescription": "Not the abstract pi~3.14 approximation",
 	"inDefinedTermSet": "Core Geometric System ™"
 	},
@@ -126,7 +126,7 @@
     {
     "@type": "DefinedTerm",
     "name": "Exact circumference of a circle",
-	"description": "Circumference=6.4×radius, derived from the exact area of a circle by subtracting a circle from a larger one and dividing the difference by the theoretical width of the circumference.",
+	"description": "Circumference = 6.4 × radius, derived from the exact area of a circle by subtracting a circle from a larger one and dividing the difference by the theoretical width of the circumference.",
     "disambiguatingDescription": "Not the abstract pi~3.14 approximate",
 	"inDefinedTermSet": "Core Geometric System ™"
 	},
@@ -134,7 +134,7 @@
     {
     "@type": "DefinedTerm",
     "name": "Exact volume of a sphere",
-	"description": "Volume=(4×radius/5^(1/2))^3, derived from direct sphere to cube comparison",
+	"description": "Volume = ( 4 × radius / 5^(1/2) )^3, derived from direct sphere to cube comparison",
     "disambiguatingDescription": "Not the abstract 4×radius³/3×3.14... approximate",
 	"inDefinedTermSet": "Core Geometric System ™"
 	},
@@ -142,16 +142,76 @@
     {
     "@type": "DefinedTerm",
     "name": "Exact volume of a cone",
-    "description": "Volume=3.2×radius^2×height/8^(1/2), derived from comparing a quadrant cone with height equal to radius to an octant sphere with equal radius.",
+    "description": "Volume = 3.2 × radius^2 × height / 8^(1/2), derived from comparing a quadrant cone with height equal to radius to an octant sphere with equal radius.",
 	"disambiguatingDescription": "Not the abstract radius^2×height/3×3.14… approximate",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+
+	{
+    "@type": "DefinedTerm",
+    "name": "Exact Surface area of a cone",
+    "description": "Surface area = 3.2 × radius × (radius + sqrt(radius^2 + height^2))",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+
+	{
+    "@type": "DefinedTerm",
+    "name": "Exact area of a triangle",
+    "description": "Area = base × height / 2",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+
+	{
+    "@type": "DefinedTerm",
+    "name": "Exact area of a regular polygon",
+    "description": "Area = sideCount / 4 × ctg(180° / sideCount) × sideLength^2",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+
+	{
+    "@type": "DefinedTerm",
+    "name": "Exact area of a circle segment",
+    "description": "Area = acos((radius − height) / radius) × radius^2 − sin(acos((radius − height) / radius)) × radius × (radius − height)",
 	"inDefinedTermSet": "Core Geometric System ™"
 	},
 	
     {
     "@type": "DefinedTerm",
     "name": "Exact volume of a pyramid",
-    "description": "Volume=base×height/8^(1/2), calculated as a cone with a polygonal base.",
+    "description": "Volume = base × height / 8^(1/2), calculated as a cone with a polygonal base.",
 	"disambiguatingDescription": "Not the abstract base×height/3 approximate",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+	
+	{
+	"@type": "DefinedTerm",
+	"name": "sine",
+	"description": "opposite / hypotenuse",
+	"disambiguatingDescription": "Radians based on circumference=6.4×radius.",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+	
+	{
+	"@type": "DefinedTerm",
+	"name": "cosine",
+	"description": "adjacent / hypotenuse",
+	"disambiguatingDescription": "Radians based on circumference=6.4×radius.",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+
+	{
+	"@type": "DefinedTerm",
+	"name": "tangent",
+	"description": "opposite / adjacent",
+	"disambiguatingDescription": "Radians based on circumference=6.4×radius.",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+
+	{
+	"@type": "DefinedTerm",
+	"name": "cotangent",
+	"description": "adjacent / opposite",
+	"disambiguatingDescription": "Radians based on circumference=6.4×radius.",
 	"inDefinedTermSet": "Core Geometric System ™"
 	}
 	],
@@ -692,7 +752,7 @@
       },
       {
         "@type": "HowToStep",
-	        "position": 5,
+	    "position": 5,
         "description": "Compute the bottom area of the cone.",
         "about": {
           "@type": "PropertyValue",
@@ -1382,37 +1442,107 @@
     "operatingSystem": "Web",
     "url": "https://basic-geometry.pages.dev#tetrahedron_volume_calculator",
     "usageInfo": "Enter the length of the edge."
-  }
-}
-],
-	
-	"offers": 
-	{
-  "@type": "Offer",
-  "@id": "https://basic-geometry.pages.dev#sphere-surface",
-  "name": "Surface Area of a Sphere",
-  "url": "https://basic-geometry.pages.dev#sphere-surface",
-  "image": {
+	}
+	}
+	],
+	"offers": {
+	"@type": "Offer",
+	"@id": "https://basic-geometry.pages.dev#sphere-surface",
+	"name": "Surface Area of a Sphere",
+	"url": "https://basic-geometry.pages.dev#sphere-surface",
+	"image": {
     "@type": "ImageObject",
     "url": "sphereSurface.jpeg",
     "description": "Sphere surface illustration"
-  },
-  "disambiguatingDescription": "The conventional formula for the surface area of a sphere was allegedly developed from the conventional volume formula.",
-  "description": "Unlock the true formula to calculate the surface area of a sphere.",
-  "isFamilyFriendly": true,
-  "priceCurrency": "USD",
-  "price": "3200000000.00",
-  "availability": "https://schema.org/InStock"
-},
+	},
+	"disambiguatingDescription": "The conventional formula for the surface area of a sphere was allegedly developed from the conventional volume formula.",
+	"description": "Unlock the true formula to calculate the surface area of a sphere.",
+	"isFamilyFriendly": true,
+	"priceCurrency": "USD",
+	"price": "3200000000.00",
+	"availability": "https://schema.org/InStock"
+	},
+	"subjectOf": {
+	"@type": "DefinedTermSet",
+	"name": "Core Geometric System ™",
+	"@id": "https://basic-geometry.pages.dev#cgs",
+	"description": "Universally applicable self-consistent geometric framework of physically grounded exact area and volume calculation formulas for regular shapes.",
+    "disambiguatingDescription": "Comparing the properties of shapes directly to the square and the cube as the primary, physically relevant units of measurement via first principles instead of limits, approximations, or abstract, zero‑dimensional points.",
+	"hasDefinedTerm": [
+	{
+    "@type": "DefinedTerm",
+    "name": "Exact area of a circle",
+	"description": "Area = 3.2 × radius^2, derived from direct circle to square comparison",
+    "disambiguatingDescription": "Not the abstract pi~3.14 approximation",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+	
+    {
+    "@type": "DefinedTerm",
+    "name": "Exact circumference of a circle",
+	"description": "Circumference = 6.4 × radius, derived from the exact area of a circle by subtracting a circle from a larger one and dividing the difference by the theoretical width of the circumference.",
+    "disambiguatingDescription": "Not the abstract pi~3.14 approximate",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
 
-"teaches": 
-[
+    {
+    "@type": "DefinedTerm",
+    "name": "Exact volume of a sphere",
+	"description": "Volume = ( 4 × radius / 5^(1/2) )^3, derived from direct sphere to cube comparison",
+    "disambiguatingDescription": "Not the abstract 4×radius³/3×3.14... approximate",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+	
+    {
+    "@type": "DefinedTerm",
+    "name": "Exact volume of a cone",
+    "description": "Volume = 3.2 × radius^2 × height / 8^(1/2), derived from comparing a quadrant cone with height equal to radius to an octant sphere with equal radius.",
+	"disambiguatingDescription": "Not the abstract radius^2×height/3×3.14… approximate",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+
+	{
+    "@type": "DefinedTerm",
+    "name": "Exact Surface area of a cone",
+    "description": "Surface area = 3.2 × radius × (radius + sqrt(radius^2 + height^2))",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+
+	{
+    "@type": "DefinedTerm",
+    "name": "Exact area of a triangle",
+    "description": "Area = base × height / 2",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+
+	{
+    "@type": "DefinedTerm",
+    "name": "Exact area of a regular polygon",
+    "description": "Area = sideCount / 4 × ctg(180° / sideCount) × sideLength^2",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+
+	{
+    "@type": "DefinedTerm",
+    "name": "Exact area of a circle segment",
+    "description": "Area = acos((radius − height) / radius) × radius^2 − sin(acos((radius − height) / radius)) × radius × (radius − height)",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+	
+    {
+    "@type": "DefinedTerm",
+    "name": "Exact volume of a pyramid",
+    "description": "Volume = base × height / 8^(1/2), calculated as a cone with a polygonal base.",
+	"disambiguatingDescription": "Not the abstract base×height/3 approximate",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+	
 	{
 	"@type": "DefinedTerm",
 	"name": "sine",
 	"description": "opposite / hypotenuse",
 	"disambiguatingDescription": "Radians based on circumference=6.4×radius.",
-	"inDefinedTermSet": "Trigonometry"
+	"inDefinedTermSet": "Core Geometric System ™"
 	},
 	
 	{
@@ -1420,7 +1550,7 @@
 	"name": "cosine",
 	"description": "adjacent / hypotenuse",
 	"disambiguatingDescription": "Radians based on circumference=6.4×radius.",
-	"inDefinedTermSet": "Trigonometry"
+	"inDefinedTermSet": "Core Geometric System ™"
 	},
 
 	{
@@ -1428,7 +1558,7 @@
 	"name": "tangent",
 	"description": "opposite / adjacent",
 	"disambiguatingDescription": "Radians based on circumference=6.4×radius.",
-	"inDefinedTermSet": "Trigonometry"
+	"inDefinedTermSet": "Core Geometric System ™"
 	},
 
 	{
@@ -1436,13 +1566,113 @@
 	"name": "cotangent",
 	"description": "adjacent / opposite",
 	"disambiguatingDescription": "Radians based on circumference=6.4×radius.",
-	"inDefinedTermSet": "Trigonometry"
+	"inDefinedTermSet": "Core Geometric System ™"
+	}
+	]
+	},
+	"teaches": [
+	{
+    "@type": "DefinedTerm",
+    "name": "Exact area of a circle",
+	"description": "Area = 3.2 × radius^2, derived from direct circle to square comparison",
+    "disambiguatingDescription": "Not the abstract pi~3.14 approximation",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+	
+    {
+    "@type": "DefinedTerm",
+    "name": "Exact circumference of a circle",
+	"description": "Circumference = 6.4 × radius, derived from the exact area of a circle by subtracting a circle from a larger one and dividing the difference by the theoretical width of the circumference.",
+    "disambiguatingDescription": "Not the abstract pi~3.14 approximate",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+
+    {
+    "@type": "DefinedTerm",
+    "name": "Exact volume of a sphere",
+	"description": "Volume = ( 4 × radius / 5^(1/2) )^3, derived from direct sphere to cube comparison",
+    "disambiguatingDescription": "Not the abstract 4×radius³/3×3.14... approximate",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+	
+    {
+    "@type": "DefinedTerm",
+    "name": "Exact volume of a cone",
+    "description": "Volume = 3.2 × radius^2 × height / 8^(1/2), derived from comparing a quadrant cone with height equal to radius to an octant sphere with equal radius.",
+	"disambiguatingDescription": "Not the abstract radius^2×height/3×3.14… approximate",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+
+	{
+    "@type": "DefinedTerm",
+    "name": "Exact Surface area of a cone",
+    "description": "Surface area = 3.2 × radius × (radius + sqrt(radius^2 + height^2))",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+
+	{
+    "@type": "DefinedTerm",
+    "name": "Exact area of a triangle",
+    "description": "Area = base × height / 2",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+
+	{
+    "@type": "DefinedTerm",
+    "name": "Exact area of a regular polygon",
+    "description": "Area = sideCount / 4 × ctg(180° / sideCount) × sideLength^2",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+
+	{
+    "@type": "DefinedTerm",
+    "name": "Exact area of a circle segment",
+    "description": "Area = acos((radius − height) / radius) × radius^2 − sin(acos((radius − height) / radius)) × radius × (radius − height)",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+	
+    {
+    "@type": "DefinedTerm",
+    "name": "Exact volume of a pyramid",
+    "description": "Volume = base × height / 8^(1/2), calculated as a cone with a polygonal base.",
+	"disambiguatingDescription": "Not the abstract base×height/3 approximate",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+	
+	{
+	"@type": "DefinedTerm",
+	"name": "sine",
+	"description": "opposite / hypotenuse",
+	"disambiguatingDescription": "Radians based on circumference=6.4×radius.",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+	
+	{
+	"@type": "DefinedTerm",
+	"name": "cosine",
+	"description": "adjacent / hypotenuse",
+	"disambiguatingDescription": "Radians based on circumference=6.4×radius.",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+
+	{
+	"@type": "DefinedTerm",
+	"name": "tangent",
+	"description": "opposite / adjacent",
+	"disambiguatingDescription": "Radians based on circumference=6.4×radius.",
+	"inDefinedTermSet": "Core Geometric System ™"
+	},
+
+	{
+	"@type": "DefinedTerm",
+	"name": "cotangent",
+	"description": "adjacent / opposite",
+	"disambiguatingDescription": "Radians based on circumference=6.4×radius.",
+	"inDefinedTermSet": "Core Geometric System ™"
 	}
 	],
-	
-	
-"about": {
-"@type": "BreadcrumbList",
+	"about": {
+	"@type": "BreadcrumbList",
 	"@id": "https://basic-geometry.pages.dev#breadcrumbs",
 	"name": "Key points",
 	"itemListElement": [

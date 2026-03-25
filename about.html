@@ -156,6 +156,17 @@
 	"givenName": "Sándor",
 	"url": "https://x.com/gmac4247"
 	},
+	"image": {
+    "@type": "ImageObject",
+	"caption": "Measuring the circumference of a coin",
+    "url": "coinMeasurement.jpg",
+	"creator": {
+    "@type": "Person",
+    "familyName": "Gaál",
+	"givenName": "Sándor",
+	"url": "https://x.com/gmac4247"
+	}
+	},
 	"license": {
 	"@type": "DigitalDocument",
 	"name": "Shared Software License Agreement",
@@ -187,9 +198,21 @@
 	},
 	{
 	"@type": "propertyValue", 
+	"name": "Paper stripe thickness",
+	"unitText": "mm",
+	"maxValue": 0.125
+	},
+	{
+	"@type": "propertyValue", 
 	"name": "Paper stripe length",
 	"unitText": "mm",
 	"value": 93
+	},
+	{
+	"@type": "propertyValue",
+	"name": "Coin circumference",
+	"unitText": "mm",
+	"minValue": 92.8
 	},
 	{
 	"@type": "propertyValue", 
@@ -444,15 +467,23 @@ Some of them didn't really care about math at all, those who did were sticking t
 <br><br>
 Some claim to have verified the numeric value 3.14... with laser and atomic clock, in a large hadron collider, etc. They refer to things that a common person can't access, hence can't verify it. That smells fishy to me.
 <br>
-I have conducted experiments via common objects. Coins, beverage cans, a piece of paper and a ruler. 
+I have conducted experiments via common objects. Coins, beverage cans, a piece of paper and a ruler. These are relatively easy to find.
 <br>
-Coins and beverage cans are almost perfectly circular. Paper is flexible enough to wrap around them, but strong enough not to stretch. It can be unwrapped and measured after straightening with minimal distortion. These objects are relatively easy to find. 
+<div class="imgbox">
+    <img class="center-fit" src="coinMeasurement.jpg" alt="Measuring the circumference of a coin using a ruler and a paper stripe">
+</div>
 <br>
-The only special tool one needs is a ruler. It doesn't matter if the ruler is not perfectly accurate. As long as its grading is consistent, and we're measuring the diameter of the object and the length of the paper with the same ruler, the results will be consistent.
+Coins and beverage cans are almost perfectly circular. 
+<br>
+A beverage can can be cut and measured after straightening. We can't peel off the circumference of a coin. Rolling it along a ruler could be an option, but it's hard to avoid spinning and sliding, which would distort the result. 
+<br>
+Paper is flexible enough to wrap around them, but strong enough not to stretch. The thickness of the paper can be added to the diameter of the coin. It can be unwrapped and measured after straightening with minimal distortion. 
+<br>
+It doesn't matter if the ruler is not perfectly accurate. As long as its grading is consistent, and we're measuring the diameter of the object and the length of the paper with the same ruler, the results will be consistent.
 <br>
 At a circumference of 100 mm the difference between 3.2 and 3.14... is almost 2 mm. That is easy to see by naked eye.
 <br>
-And the results of my measurements consistently showed that the circumference over the diameter equals 3.2; not 3.14...
+The results of my measurements consistently showed that the circumference over the diameter equals 3.2; not 3.14...
 <br><br>
 These experiments are easily reproducible by almost anyone with minimal effort, yet accurate enough to see the difference between 3.2 and 3.14...</p>
 </section>

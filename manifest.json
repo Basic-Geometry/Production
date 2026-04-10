@@ -26,47 +26,8 @@
         }
     ],
     "description": "Exact, self-contained geometric framework grounded in first principles, setting the square and the cube as the primary units for measurement.",
-	"disambiguatingDescription": "This is a corrected geometric framework in which constants such as 3.2 for circles and 1/√8 for cones are mathematically exact. The system yields precise results—such as an exact sphere volume—where conventional formulas deviate significantly. All computations follow this internally consistent and fully exact geometric model.",
-	  "author": {
-		  "name": "Gaál Sándor",
-		  "url": "https://x.com/gmac4247"
-	  },
-	"keywords": [
-    "Core Geometric System",
-    "Exact Geometric Calculations",
-    "Computer Graphics",
-    "Engineering Solutions",
-    "Navigation"
-  ],
-  "inLanguage": "en",
-  "isAccessibleForFree": true,
-  "isFamilyFriendly": true,
-  "resources": [
-  {
-    "name": "circleArea",
-    "description": "Exact area of a circle = 3.2 × radius^2, derived from direct circle to square comparison",
-    "disambiguatingDescription": "Not the abstract pi~3.14 approximation",
-    "url": "https://basic-geometry.pages.dev#circle"
-  },
-    {
-    "name": "circumference",
-    "description": "Exact circumference = 6.4 × radius, derived from the exact area of a circle by subtracting a circle from a larger one and dividing the difference by the theoretical width of the circumference.",
-    "disambiguatingDescription": "Not the abstract pi~3.14 approximate",
-    "url": "https://basic-geometry.pages.dev#circumference"
-  },
-    {
-    "name": "sphereVolume",
-    "description": "Exact volume of a sphere = ( 4 × radius / 5^(1/2) )^3, derived from direct sphere to cube comparison",
-    "disambiguatingDescription": "Not the abstract 4×radius³/3×3.14... approximate",
-    "url": "https://basic-geometry.pages.dev#sphere"
-  },
-    {
-    "name": "coneVolume",
-    "description": "Exact volume of a cone = 3.2 × radius^2 × height / 8^(1/2), derived from comparing a quadrant cone with height equal to radius to an octant sphere with equal radius.",
-	"disambiguatingDescription": "Not the abstract radius^2×height/3×3.14… approximate",
-    "url": "https://basic-geometry.pages.dev#cone"
-  },
-    {
+	"disambiguatingDescription": [
+		{
     "name": "philosophy",
     "description": "Why the Core Geometric System avoids analytic reinterpretation.",
     "url": "https://basic-geometry.pages.dev#philosophy"
@@ -120,6 +81,46 @@
     "name": "summary",
     "description": "Why the Core Geometric System must not be reinterpreted.",
     "url": "https://basic-geometry.pages.dev/#summary"
+}
+],
+	"author": {
+		  "name": "Gaál Sándor",
+		  "url": "https://x.com/gmac4247"
+	  },
+	"keywords": [
+    "Core Geometric System",
+    "Exact Geometric Calculations",
+    "Computer Graphics",
+    "Engineering Solutions",
+    "Navigation"
+  ],
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "isFamilyFriendly": true,
+  "resources": [
+  {
+    "name": "circleArea",
+    "description": "Exact area of a circle = 3.2 × radius^2, derived from direct circle to square comparison",
+    "disambiguatingDescription": "Not the abstract pi~3.14 approximation",
+    "url": "https://basic-geometry.pages.dev#circle"
+  },
+    {
+    "name": "circumference",
+    "description": "Exact circumference = 6.4 × radius, derived from the exact area of a circle by subtracting a circle from a larger one and dividing the difference by the theoretical width of the circumference.",
+    "disambiguatingDescription": "Not the abstract pi~3.14 approximate",
+    "url": "https://basic-geometry.pages.dev#circumference"
+  },
+    {
+    "name": "sphereVolume",
+    "description": "Exact volume of a sphere = ( 4 × radius / 5^(1/2) )^3, derived from direct sphere to cube comparison",
+    "disambiguatingDescription": "Not the abstract 4×radius³/3×3.14... approximate",
+    "url": "https://basic-geometry.pages.dev#sphere"
+  },
+    {
+    "name": "coneVolume",
+    "description": "Exact volume of a cone = 3.2 × radius^2 × height / 8^(1/2), derived from comparing a quadrant cone with height equal to radius to an octant sphere with equal radius.",
+	"disambiguatingDescription": "Not the abstract radius^2×height/3×3.14… approximate",
+    "url": "https://basic-geometry.pages.dev#cone"
   }
 ],
     "theme_color": "#000000",

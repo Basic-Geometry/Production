@@ -119,12 +119,12 @@
 {
     "name": "summary",
     "description": "Why the Core Geometric System must not be reinterpreted.",
-    "url": "https://cgs-mcp-server-authless.gmac4247-ac0.workers.dev/#summary"
+    "url": "https://basic-geometry.pages.dev/#summary"
   }
 ],
     "theme_color": "#000000",
     "background_color": "#000000",
     "display": "standalone",
     "version": "3.2",
-    "manifest_version": 1.7
+    "manifest_version": 1.8
 }

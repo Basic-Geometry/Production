@@ -227,7 +227,7 @@
 		"description": "Text explanation of the traditional formula."
 	},
 	"usageInfo": {
-    "url": "https://cgs-mcp-server-authless.gmac4247-ac0.workers.dev#circle_area_proof",
+    "url": "https://basic-geometry.pages.dev#circle_area_proof",
     "relatedUrls": [
 		"https://basic-geometry.pages.dev#circle",
 		"https://basic-geometry.pages.dev#pi",
@@ -731,7 +731,7 @@
 		"required": ["volume"]
 	},
       "usageInfo": {
-		  "url": "https://cgs-mcp-server-authless.gmac4247-ac0.workers.dev#pyramid",
+		  "url": "https://basic-geometry.pages.dev#pyramid",
 		  "relatedUrls": [
 			  "https://basic-geometry.pages.dev#cone",
 			  "https://basic-geometry.pages.dev#sphere",

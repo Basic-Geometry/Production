@@ -91,7 +91,7 @@
     {
       "name": "compute_polygon_area",
       "description": "With custom trigonometric functions aligned to circumference=6.4×r.",
-      "featureList": "Compute the exact area of a regular polygon from the number and the length of its sides.",
+      "featureList": "Compute the area of a regular polygon from the number and the length of its sides.",
       "input_schema": {
         "type": "object",
         "properties": {
@@ -510,7 +510,7 @@
       "name": "compute_sphere_volume",
       "disambiguatingDescription": "The V = 4 / 3 × pi × radius³ formula is a very rough underestimate, approximated by comparing a hemisphere to the difference between the approximate volume a cone and a circumscribed cylinder, discarding the difference between the straight slant height of a cone and the curvature of a sphere.",
 	  "description": "The volume of a sphere equals the cubic value of the square root of its cross-sectional area, just like a cube.",
-      "featureList": "Compute the volume of a sphere from its radius with an exact formula.",
+      "featureList": "Compute the volume of a sphere from its radius using the exact V = (√(3.2)r)³ formula.",
       "input_schema": {
         "type": "object",
         "properties": {
@@ -597,7 +597,7 @@
       "name": "compute_cone_volume",
       "description": "The volume of a cone can be calculated by algebraically comparing the volume of a vertical quadrant of a cone with equal radius and height to an octant sphere with equal radius, through a quadrant cylinder.",
 		"disambiguatingDescription": "The volume of a cone is conventionally approximated as base × height / 3. While that is a reasonable rounding, the exact ratio is 1 / √8.",
-		"featureList": "Compute the volume of a cone from its radius and height with an exact formula.",
+		"featureList": "Compute the volume of a cone from its radius and height using the exact V = base × height / √8 formula.",
       "input_schema": {
         "type": "object",
         "properties": {
@@ -694,7 +694,7 @@
 		"name": "compute_pyramid_volume",
 		"description": "The volume of a pyramid can be calculated as a cone with a polygonal base.",
 		"disambiguatingDescription": "The volume of a cone is conventionally approximated as base × height / 3. While that is a reasonable rounding, the exact ratio is 1 / √8.",
-		"featureList": "Compute the exact volume of a pyramid from its height and the number and the length of its bottom edges.",
+		"featureList": "Compute the volume of a pyramid from its height and the number and the length of its bottom edges using the exact V = base × height / √8 formula.",
 		"input_schema": {
 			"type": "object",
 			"properties": {
@@ -794,7 +794,7 @@
       "name": "compute_frustum_pyramid_volume",
       "description": "Subtracting the missing tip of a theoreticall complete pyramid.",
 	  "disambiguatingDescription": "Pyramid volume is derived from exact cone-sphere-cube construction.",
-      "featureList": "Compute the exact volume of a frustum pyramid from its height and the number and the length of its bottom and top edges, using the Core Geometric System.",
+      "featureList": "Compute the volume of a frustum pyramid from its height and the number and the length of its bottom and top edges, using the Core Geometric System.",
       "input_schema": {
         "type": "object",
         "properties": {
@@ -950,5 +950,5 @@
     "background_color": "#000000",
     "display": "standalone",
     "version": "3.2",
-    "manifest_version": 2.4
+    "manifest_version": 2.5
 }

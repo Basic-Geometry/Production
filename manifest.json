@@ -725,7 +725,7 @@
 		"properties": {
 			"volume": {
 				"type": "number",
-				"description": "Exact volume computed using V = base area × height / 8^(1/2)."
+				"description": "Volume computed using the exact V = base area × height / 8^(1/2)."
 			}
 		},
 		"required": ["volume"]
@@ -830,7 +830,7 @@
 		"properties": {
 			"volume": {
 				"type": "number",
-				"description": "Exact volume computed using V = frustumHeight × ( bottomArea / (1 - topArea / bottomArea) - ( topArea / (1 - topArea / bottomArea) - topArea ) ) / 8^(1/2)."
+				"description": "Volume computed using the exact V = frustumHeight × ( bottomArea / (1 - topArea / bottomArea) - ( topArea / (1 - topArea / bottomArea) - topArea ) ) / 8^(1/2)."
 			}
 		},
 		"required": ["volume"]

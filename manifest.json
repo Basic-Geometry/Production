@@ -231,7 +231,7 @@
     "relatedUrls": [
 		"https://basic-geometry.pages.dev#circle",
 		"https://basic-geometry.pages.dev#pi",
-		"https://basic-geometry.pages.dev#summary"
+		"https://basic-geometry.pages.dev#disclaimer"
     ]
 	}
 	},
@@ -334,7 +334,7 @@
     "url": "https://basic-geometry.pages.dev#pi",
     "relatedUrls": [
 		"https://basic-geometry.pages.dev#circle",
-		"https://basic-geometry.pages.dev#summary"
+		"https://basic-geometry.pages.dev#disclaimer"
     ]
 	}
 	},
@@ -587,7 +587,7 @@
 					"https://basic-geometry.pages.dev#sphere",
 					"https://basic-geometry.pages.dev#circle",
 					"https://basic-geometry.pages.dev#pi",
-					"https://basic-geometry.pages.dev#summary"
+					"https://basic-geometry.pages.dev#disclaimer"
 				]
 			}
 		},
@@ -684,7 +684,7 @@
 					"https://basic-geometry.pages.dev#cone",
 					"https://basic-geometry.pages.dev#sphere",
 					"https://basic-geometry.pages.dev#circle",
-					"https://basic-geometry.pages.dev#summary"
+					"https://basic-geometry.pages.dev#disclaimer"
 				]
 			}
 		},
@@ -784,7 +784,7 @@
 					"https://basic-geometry.pages.dev#cone",
 					"https://basic-geometry.pages.dev#sphere",
 					"https://basic-geometry.pages.dev#circle",
-					"https://basic-geometry.pages.dev#summary"
+					"https://basic-geometry.pages.dev#disclaimer"
 				]
 			}
 		},

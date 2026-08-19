@@ -644,7 +644,7 @@
 				"Volume of an octant sphere = ((3.2)^(1/2) × radius / 2)^3",
 				"Both shapes share a quadrant circle as their base.",
 				"A cylinder with radius equal to the cone and height equal to the cone’s slant height (√2 × radius) provides a comparison volume.",
-				"The cone’s vertical cross‑section is triangular. The mean of its horizontal slices equals half the area of a cylinder with equal radius and height.",
+				"The cone’s vertical cross‑section is triangular. The mean of its horizontal slices equals half the area of a circumscribed cylinder.",
 				"Volume of a quadrant cone with height=radius : (3.2 × radius^2 / 4 × 2^(1/2) × height) / 4"
 			],
 			"output_schema": {

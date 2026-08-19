@@ -3214,7 +3214,7 @@ Take a vertical quadrant cylinder with its radius equal to the cone and its heig
 <br>
 The vertical middle cross-sectional area of the cone is the half of a circumscribed cylinder. 
 <br><br>
-The mean of the areas of the horizontal cross-sectional slices of a cone is the half of a cylinder with equal radius and height.</span>
+The mean of the areas of the horizontal cross-sectional slices of a cone is the half of a circumscribed cylinder.</span>
 <br><br>
 <span>V<sub>quadrant cone</sub> </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML" >
@@ -4554,7 +4554,7 @@ const area = triangleArea(product);
 360°, or 6.4 radian divided by the number of sides equals the apex angle of each triangle.
 <br><br>
 The area of each triangle equals:</span>
-<br>
+<br><br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
   <mrow>
 <mfrac>
@@ -4599,17 +4599,18 @@ The area of each triangle equals:</span>
 <br>
 <math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
+<mo>(</mo>
  <mi>n</mi>
       <mo>=</mo>
 <mi>side count</mi>
 </mrow>
-</math>
-<br><br>
-<math style="margin:12px" xmlns="http://www.w3.org/1998/Math/MathML">
+	<mo>,</mo>
+	<mspace width="1em"/>
 <mrow>
  <mi>x</mi>
  <mo>=</mo>
  <mi>side length</mi>
+	<mo>)</mo>
 </mrow>
 </math>
 <br><br>
@@ -4768,7 +4769,7 @@ function updatePolygonArea() {
 <math xmlns="http://www.w3.org/1998/Math/MathML">
   <mrow>
 	<mn>2</mn>
-    <mo>×</mo>
+    <mo>&#x2061;</mo>
 	  <mi>sin</mi>
     <mo>&#x2061;</mo>
     <mo>(</mo>
@@ -4809,7 +4810,7 @@ function updatePolygonArea() {
     </mfrac>
     <mo>)</mo>
 	</mrow>
-	<mo>×</mo>
+	<mo>&#x2061;</mo>
     <msup>
       <mi>r</mi>
       <mn>2</mn>
@@ -4843,7 +4844,7 @@ function updatePolygonArea() {
       <mi>h</mi>
     <mo>)</mo>
    </mrow>
-<mo>×</mo>
+<mo>&#x2061;</mo>
     <mi>r</mi>
   </mrow>
 </math>
@@ -4960,16 +4961,16 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
   </figure>
 <br>
 <div style="margin:12px">
-<span>V<sub>(pyramid)</sub></span>=
+<span>V<sub>pyramid</sub></span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mfrac>
 <mrow>
 <msub>
 <mi>A</mi>
-<mi>(base)</mi>
+<mi>base</mi>
 </msub>
-<mo>×</mo>
+<mo>&#x2061;</mo>
  <mi>H</mi>
  </mrow>
 <msqrt>
@@ -5038,9 +5039,9 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 	<mrow>
 		<msub>
 			<mi>A</mi>
-			<mi>bottom</mi>
+			<mi>base</mi>
 		</msub>
-		<mo>×</mo>
+		<mo>&#x2062;</mo>
 		<msub>
 			<mi>H</mi>
 			<mi>pyramid</mi>
@@ -5057,7 +5058,7 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 			<mi>A</mi>
 			<mi>top</mi>
 		</msub>
-		<mo>×</mo>
+		<mo>&#x2062;</mo>
 		<msub>
 			<mi>H</mi>
 			<mi>tip</mi>
@@ -5070,12 +5071,10 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
    </mrow>
 </math>
 </div>
-</div>
 <br>
 <div style="margin:12px">
 <span>Factor out the common scalar 1/√8 :</span>
 <br><br>
-<div>
 <span>V<sub>frustum</sub> </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
       <mrow>
@@ -5089,9 +5088,9 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 		  <mo>(</mo>
 		<msub>
 			<mi>A</mi>
-			<mi>bottom</mi>
+			<mi>base</mi>
 		</msub>
-		<mo>×</mo>
+		<mo>&#x2062;</mo>
 		<msub>
 			<mi>H</mi>
 			<mi>pyramid</mi>
@@ -5101,7 +5100,7 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 			<mi>A</mi>
 			<mi>top</mi>
 		</msub>
-		<mo>×</mo>
+		<mo>&#x2062;</mo>
 		<msub>
 			<mi>H</mi>
 			<mi>tip</mi>
@@ -5110,14 +5109,12 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
    </mrow>
 </math>
 </div>
-</div>
 <br>
 <div style="margin:12px">
 <span>Express heights via linear proportionality.
 <br>
 In similar 3D shapes, linear dimensions scale with the square root of their cross-sectional areas:</span>
 <br><br>
-<div>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
 	   <mfrac>
@@ -5141,19 +5138,17 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 		   <msqrt>
         <msub>
 			<mi>A</mi>
-			<mi>bottom</mi>
+			<mi>base</mi>
 		</msub>
 		   </msqrt>
           </mfrac>
 </mrow>
 </math>
 </div>
-</div>
 <br>
 <div style="margin:12px">
 <span>Because H<sub>frustum</sub> = H<sub>pyramid</sub> - H<sub>tip</sub> , we express both heights in terms of the known frustum height H:</span>
 <br><br>
-<div>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
 		<mi>H</mi>
@@ -5178,7 +5173,7 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 		   <msqrt>
         <msub>
 			<mi>A</mi>
-			<mi>bottom</mi>
+			<mi>base</mi>
 		</msub>
 		   </msqrt>
           </mfrac>
@@ -5241,7 +5236,7 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 		   <msqrt>
         <msub>
 			<mi>A</mi>
-			<mi>bottom</mi>
+			<mi>base</mi>
 		</msub>
 		   </msqrt>
 	   </mfrac>
@@ -5264,7 +5259,7 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 			<msqrt>
         <msub>
 			<mi>A</mi>
-			<mi>bottom</mi>
+			<mi>base</mi>
 		</msub>
 		   </msqrt>
 		</mrow>
@@ -5272,7 +5267,7 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 		   <msqrt>
 		   <msub>
 			<mi>A</mi>
-			<mi>bottom</mi>
+			<mi>base</mi>
 		   </msub>
 		   </msqrt>
 	   	   <mo>-</mo>
@@ -5288,7 +5283,7 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 </math>
 </div>
 <br><br>
-<div>
+	<div>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
 	<msub>
@@ -5303,7 +5298,7 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 			<msqrt>
         <msub>
 			<mi>A</mi>
-			<mi>bottom</mi>
+			<mi>base</mi>
 		</msub>
 		   </msqrt>
 		</mrow>
@@ -5311,7 +5306,7 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 		   <msqrt>
 		   <msub>
 			<mi>A</mi>
-			<mi>bottom</mi>
+			<mi>base</mi>
 		   </msub>
 		   </msqrt>
 	   	   <mo>-</mo>
@@ -5334,7 +5329,7 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 		   <msqrt>
         <msub>
 			<mi>A</mi>
-			<mi>bottom</mi>
+			<mi>base</mi>
 		</msub>
 		   </msqrt>
 	   </mfrac>
@@ -5342,8 +5337,8 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 </math>
 </div>
 <br><br>
-<div>
-<span>Cancel out the common √A<sub>bottom</sub> term in the numerator and denominator:</span>
+	<div>
+	<span>Cancel out the common √A<sub>bottom</sub> term in the numerator and denominator:</span>
 <br><br>
 <span>H<sub>tip</sub> </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
@@ -5363,7 +5358,7 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 		   <msqrt>
 		   <msub>
 			<mi>A</mi>
-			<mi>bottom</mi>
+			<mi>base</mi>
 		   </msub>
 		   </msqrt>
 	   	   <mo>-</mo>
@@ -5378,15 +5373,17 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 </mrow>
 </math>
 </div>
-</div>
 <br>
 <div style="margin:12px">
 <span>Substitute the heights into the original equation:</span>
 <br><br>
-<div>
-<span>V<sub>frustum</sub> </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
+<msub>
+	<mi>V</mi>
+	<mi>frustum</mi>
+</msub>
+	<mo>=</mo>
 <mfrac>
 	<mn>1</mn>
 	   <msqrt>
@@ -5397,7 +5394,7 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 	<mo>(</mo>
 	<msub>
 			<mi>A</mi>
-			<mi>bottom</mi>
+			<mi>base</mi>
 	</msub>
 		<mo>&#x2062;</mo>
 	<mo>(</mo>
@@ -5408,7 +5405,7 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 			<msqrt>
         <msub>
 			<mi>A</mi>
-			<mi>bottom</mi>
+			<mi>base</mi>
 		</msub>
 		   </msqrt>
 		</mrow>
@@ -5416,7 +5413,7 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 		   <msqrt>
 		   <msub>
 			<mi>A</mi>
-			<mi>bottom</mi>
+			<mi>base</mi>
 		   </msub>
 		   </msqrt>
 	   	   <mo>-</mo>
@@ -5450,7 +5447,7 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 		   <msqrt>
 		   <msub>
 			<mi>A</mi>
-			<mi>bottom</mi>
+			<mi>base</mi>
 		   </msub>
 		   </msqrt>
 	   	   <mo>-</mo>
@@ -5466,105 +5463,18 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 	<mo>)</mo>
 </mrow>
 </math>
-</div>
-</div>
-<br>
-<div style="margin:12px">
-<span>Substitute the heights into the original equation:</span>
-<br><br>
-<div>
-<span>V<sub>frustum</sub> </span>=
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-<mfrac>
-	<mn>1</mn>
-	   <msqrt>
-        <mn>8</mn>
-	   </msqrt>
-</mfrac>
-	<mo>&#x2062;</mo>
-	<mo>(</mo>
-	<msub>
-			<mi>A</mi>
-			<mi>bottom</mi>
-	</msub>
-		<mo>&#x2062;</mo>
-	<mo>(</mo>
-	   <mfrac>
-		<mrow>
-		<mi>H</mi>
-	   	<mo>&#x2062;</mo>
-			<msqrt>
-        <msub>
-			<mi>A</mi>
-			<mi>bottom</mi>
-		</msub>
-		   </msqrt>
-		</mrow>
-	   <mrow>
-		   <msqrt>
-		   <msub>
-			<mi>A</mi>
-			<mi>bottom</mi>
-		   </msub>
-		   </msqrt>
-	   	   <mo>-</mo>
-        <msqrt>
-        <msub>
-			<mi>A</mi>
-			<mi>top</mi>
-		</msub>
-		</msqrt>
-	   </mrow>
-	   </mfrac>
-<mo>)</mo>
-		<mo>-</mo>
-	<msub>
-			<mi>A</mi>
-			<mi>top</mi>
-	</msub>
-	<mo>(</mo>
-	<mfrac>
-		<mrow>
-		<mi>H</mi>
-	   	<mo>&#x2062;</mo>
-			<msqrt>
-        <msub>
-			<mi>A</mi>
-			<mi>top</mi>
-		</msub>
-		   </msqrt>
-		</mrow>
-	   <mrow>
-		   <msqrt>
-		   <msub>
-			<mi>A</mi>
-			<mi>bottom</mi>
-		   </msub>
-		   </msqrt>
-	   	   <mo>-</mo>
-        <msqrt>
-        <msub>
-			<mi>A</mi>
-			<mi>top</mi>
-		</msub>
-		</msqrt>
-	   </mrow>
-	</mfrac>
-<mo>)</mo>
-	<mo>)</mo>
-</mrow>
-</math>
-</div>
 </div>
 <br>
 <div style="margin:12px">
 <span>Factor out H:</span>
 <br><br>
-<div>
-<span>V<sub>frustum</sub> </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
+<msub>
+	<mi>V</mi>
+	<mi>frustum</mi>
+</msub>
+	<mo>=</mo>
 <mfrac>
 	<mn>H</mn>
 	   <msqrt>
@@ -5577,13 +5487,13 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 		<mrow>
 		<msub>
 			<mi>A</mi>
-			<mi>bottom</mi>
+			<mi>base</mi>
 		</msub>
 	   	<mo>&#x2062;</mo>
 			<msqrt>
         <msub>
 			<mi>A</mi>
-			<mi>bottom</mi>
+			<mi>base</mi>
 		</msub>
 		   </msqrt>
 			<mo>-</mo>
@@ -5603,7 +5513,7 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 		   <msqrt>
 		   <msub>
 			<mi>A</mi>
-			<mi>bottom</mi>
+			<mi>base</mi>
 		   </msub>
 		   </msqrt>
 	   	   <mo>-</mo>
@@ -5619,14 +5529,13 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 </mrow>
 </math>
 </div>
-</div>
 <br>
 <div style="margin:12px">
 <span>Apply the Algebraic Identity (a³ - b³).
 <br>
-Let a = √A<sub>bottom</sub> and b = √A<sub>top</sub> .
+Let a = √A<sub>base</sub> and b = √A<sub>top</sub> .
 <br>
-Notice that a³ = √A<sub>bottom</sub> × A<sub>bottom</sub> and b³ = √A<sub>top</sub> × A<sub>top</sub> .
+Notice that a³ = √A<sub>base</sub> × A<sub>base</sub> and b³ = √A<sub>top</sub> × A<sub>top</sub> .
 <br>
 The term inside the parentheses is the algebraic quotient:</span>
 <br><br>
@@ -5696,8 +5605,8 @@ The term inside the parentheses is the algebraic quotient:</span>
 </math>
 </div>
 </div>
-<br><br>
-<div>
+<br>
+<div style="margin:12px">
 <span>Convert back to area terms:</span>
 <br><br>
 <div>
@@ -5714,7 +5623,7 @@ The term inside the parentheses is the algebraic quotient:</span>
 			<msqrt>
 			<msub>
 			<mi>A</mi>
-			<mi>bottom</mi>
+			<mi>base</mi>
 			</msub>
 			</msqrt>
 			<mo>)</mo>
@@ -5724,7 +5633,7 @@ The term inside the parentheses is the algebraic quotient:</span>
 	<mo>=</mo>
 	<msub>
 		<mi>A</mi>
-		<mi>bottom</mi>
+		<mi>base</mi>
 	</msub>
 </mrow>
 </math>
@@ -5738,7 +5647,7 @@ The term inside the parentheses is the algebraic quotient:</span>
 			<msqrt>
 			<msub>
 			<mi>A</mi>
-			<mi>bottom</mi>
+			<mi>base</mi>
 			</msub>
 			</msqrt>
 		<mo>&#x2062;</mo>
@@ -5753,7 +5662,7 @@ The term inside the parentheses is the algebraic quotient:</span>
 			<mrow>
 			<msub>
 			<mi>A</mi>
-			<mi>bottom</mi>
+			<mi>base</mi>
 			</msub>
 			<mo>&#x2062;</mo>
 				<msub>
@@ -5774,7 +5683,7 @@ The term inside the parentheses is the algebraic quotient:</span>
 		<mo>=</mo>
 		<msup>
 		<mrow>
-		<mo>(</mo>
+			<mo>(</mo>
 			<msqrt>
 			<msub>
 			<mi>A</mi>
@@ -5795,11 +5704,10 @@ The term inside the parentheses is the algebraic quotient:</span>
 </div>
 </div>
 </div>
-<br>
 <div style="margin:12px">
 <span>Replacing the term inside the fraction gives:</span>
 <br><br><br>
-<span>V<sub>(frustum)</sub> </span>=
+<span>V<sub>frustum</sub> </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mfrac>
@@ -5812,24 +5720,24 @@ The term inside the parentheses is the algebraic quotient:</span>
 <mo>(</mo>
 <msub>  
 <mi>A</mi>
-<mi>(bottom)</mi>
+<mi>base</mi>
 </msub>
 <mo>+</mo>
 <msub>  
 <mi>A</mi>
-<mi>(top)</mi>
+<mi>top</mi>
 </msub>
 <mo>+</mo>
 <msqrt>
 <mrow>
 <msub> 
 <mi>A</mi>
-<mi>(bottom)</mi>
+<mi>base</mi>
 </msub>
-<mo>×</mo>
+<mo>&#x2062;</mo>
 <msub>  
 <mi>A</mi>
-<mi>(top)</mi>
+<mi>top</mi>
 </msub>
 </mrow>
 </msqrt>
@@ -5853,9 +5761,9 @@ The term inside the parentheses is the algebraic quotient:</span>
 <br><br>
 <p id="frustum-pyramid-volume"></p>
 <script type="module" async>
-  function frustumPyramidVolume(baseArea, topArea, reciprocal, height) {
-  return height * (baseArea * reciprocal - topArea * (reciprocal - 1)) / Math.sqrt(8);
-}
+  function frustumPyramidVolume(baseArea, topArea, root, height) {
+  return height * (baseArea + topArea + root) / Math.sqrt(8);
+  }
 
 function updateFrustumPyramidVolume() {
 
@@ -5883,11 +5791,8 @@ if ( topEdgeLength > baseEdgeLength) {
   const tangent = tan(ratio);
 	const baseArea = (sideCount / 4) * (baseEdgeLength ** 2) / tangent;
 	const topArea = (sideCount / 4) * (topEdgeLength ** 2) / tangent;
-	const solidVolume = baseArea * height;
-	const shape = topEdgeLength / baseEdgeLength;
-	const inverse = 1 - shape;
-	const reciprocal = 1 / inverse;
-	const volume = frustumPyramidVolume(baseArea, topArea, reciprocal, height);
+	const root = Math.sqrt(baseArea * topArea);
+	const volume = frustumPyramidVolume(baseArea, topArea, root, height);
 
 
 if ( topEdgeLength === baseEdgeLength) {

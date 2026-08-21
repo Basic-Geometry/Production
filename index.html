@@ -102,7 +102,7 @@
 </style>
 </head>
 <body>
-<div itemscope itemtype="https://schema.org/Statement" id="cookie-notice">
+<div id="cookie-notice">
                 <div id="cookie-notice-text">
                     Welcome! 
 					This website uses cookies to ensure you get the best experience on it. 
@@ -134,9 +134,8 @@
 <br>
 <span><strong>The arcs of the quadrants of the circle that equals in area to the square intersect right in between those limits, at the quarters on its centerlines.</strong></span>
 </div>
-<div style="margin:12px" itemprop="step" ://schema.org/HowToStep">
-<meta itemprop="position" content=2>
-<span itemprop="description">The length of the centerline equals the side length of the square.
+<div style="margin:12px">
+<span>The length of the centerline equals the side length of the square.
 <br>
 The quarter of the centerline and the half of the side of the square form two legs of a right triangle with its hypotenuse equal to the radius.
 <br>
@@ -2132,56 +2131,22 @@ function Atan(x) {
 </div>
 </section>
 <br><br><br><br>
-<section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="triangle">
-<h3 style="margin:7px" itemprop="name">Area of a Triangle</h3>
-<div itemprop="object" itemscope itemtype="https://schema.org/QuantitativeValue">
-<meta itemprop="name" content="side1">
-<meta itemprop="minValue" content=0>
-</div>
-<div itemprop="object" itemscope itemtype="https://schema.org/QuantitativeValue">
-<meta itemprop="name" content="side2">
-<meta itemprop="minValue" content=0>
-</div>
-<div itemprop="object" itemscope itemtype="https://schema.org/QuantitativeValue">
-<meta itemprop="name" content="side3">
-<meta itemprop="minValue" content="0">
-</div>
-<div itemprop="object" itemscope itemtype="https://schema.org/QuantitativeValue">
-<meta itemprop="name" content="base">
-<meta itemprop="description" content="The side perpendicular to the height">
-<meta itemprop="minValue" content="0">
-</div>
-<div itemprop="object" itemscope itemtype="https://schema.org/QuantitativeValue">
-<meta itemprop="name" content="height">
-<meta itemprop="minValue" content="0">
-</div>
-<meta itemprop="eduQuestionType" content="Triangle area calculation">
-<meta itemprop="target" content="https://basic-geometry.github.io?q={triangle_base=3_height=2_area=?}">
-<div itemprop="actionProcess" itemscope itemtype="https://schema.org/HowTo">
-<meta itemprop="name" content="Derive the Area of a Triangle">
-	<div itemprop="estimatedCost" itemscope itemtype="https://schema.org/MonetaryAmount">
-<meta itemprop="currency" content="USD">
-<meta itemprop="value" content=0>
-</div>
-<meta itemprop="totalTime" content="PT30M">
+<section id="triangle">
+<h3 style="margin:7px">Area of a Triangle</h3>
 <br>
-<span style="margin:12px" itemprop="abstract">The area of a triangle equals half of the area of a rectangle with a width equal to the base of the triangle and length equal to the height of the triangle.</span>
+<span style="margin:12px">The area of a triangle equals half of the area of a rectangle with a width equal to the base of the triangle and length equal to the height of the triangle.</span>
 <br>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content=1>
-<span itemprop="abstract">The base of a triangle multiplied by its height equals a rectangle with twice the area of the triangle.</span>
+<div style="margin:12px">
+<span>The base of a triangle multiplied by its height equals a rectangle with twice the area of the triangle.</span>
 </div>
 <br>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content=2>
-<span itemprop="abstract">The square root of half of the area of the rectangle is the side length of the virtual square that has the same area as the triangle.</span>
+<div style="margin:12px">
+<span>The square root of half of the area of the rectangle is the side length of the virtual square that has the same area as the triangle.</span>
 </div>
 </div>
 <br>
-<div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">A<sub>triangle</sub> </span>=
-<meta itemprop="value" content="base × height / 2">
-<meta itemprop="description" content="Exact triangle area formula">
+<div style="margin:12px">
+<span>A<sub>triangle</sub> </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mfrac>
@@ -2196,9 +2161,8 @@ function Atan(x) {
 </math>
 </div>
 <br><br>
-<div style="margin:12px" itemprop="subjectOf" itemscope itemtype="https://schema.org/LearningResource">
-<meta itemprop="name" content="Heron's formula">
-<p itemprop="description">The area of a triangle can also be calculated by the length of its sides.</p>
+<div style="margin:12px">
+<p>The area of a triangle can also be calculated by the length of its sides.</p>
 <br>
 <math xmlns="http://www.w3.org/1998/Math/MathML"> 
 <mrow>
@@ -2232,10 +2196,8 @@ function Atan(x) {
 </mrow>
 </math>
 <br><br><br>
-<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">A<sub>triangle</sub> </span>=
-<meta itemprop="value" content="sqrt( S × ( S - side1 ) × ( S - side2 ) × ( S - side3 ) )">
-<meta itemprop="description" content="Exact triangle area formula">
+<div>
+<span>A<sub>triangle</sub> </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML"> 
 <mrow>
 <msqrt>
@@ -2275,31 +2237,7 @@ function Atan(x) {
 </div>
 </div>
 <br><br>
-<div style="margin:12px" id="triangle_area_calculator" itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication">
-<meta itemprop="name" content="Triangle area calculator">
-<meta itemprop="accessMode" content="mathOnVisual">
-<meta itemprop="accessibilityControl" content="fullKeyboardControl">
-<meta itemprop="accessibilityHazard" content="none">
-<meta itemprop="accessibilitySummary" content="Enter numbers and read result">
-<meta itemprop="acquireLicensePage" content="https://basic-geometry.github.io/privacy-policy">
-<div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-    <meta itemprop="ratingValue" content="Excellent">
-    <meta itemprop="reviewCount" content=1>
-</div>
-<meta itemprop="applicationCategory" content="Geometric Calculator">
-<meta itemprop="featureList" content="Calculates the area of a triangle by the length of its sides">
-<meta itemprop="interactivityType" content="Interactive">
-<meta itemprop="isAccessibleForFree" content=true>
-<meta itemprop="isFamilyFriendly" content=true>
-<link itemprop="license" href="https://basic-geometry.pages.dev">
-<div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-<meta itemprop="name" content="Personal, non-commercial use">
-<meta itemprop="description" content="Non-exclusive, non-transferable">
-<meta itemprop="price" content=0>
-<meta itemprop="priceCurrency" content="USD">
-</div>
-<meta itemprop="operatingSystem" content="Web">
-<meta itemprop="url" content="https://basic-geometry.github.io#triangle_area_calculator">
+<div style="margin:12px" id="triangle_area_calculator">
 <label for="side1">Side 1:</label>
 <input id="side1" type="number" value="1" step="any">
 <br>
@@ -2347,57 +2285,16 @@ const area = triangleArea(product);
 </div>
 </section>
 <br><br><br>
-<section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="polygon">
-<h3 itemprop="name" style="margin:7px">Area of a regular Polygon</h3>
-<meta itemprop="eduQuestionType" content="Polygon area calculation">
-<div itemprop="object" itemscope itemtype="https://schema.org/QuantitativeValue">
-<meta itemprop="name" content="side count">
-<meta itemprop="description" content="Number of sides">
-<meta itemprop="minValue" content="0">
-</div>
-<div itemprop="object" itemscope itemtype="https://schema.org/QuantitativeValue">
-<meta itemprop="name" content="side length">
-<meta itemprop="description" content="Length of a side">
-<meta itemprop="minValue" content="0">
-</div>
-<meta itemprop="target" content="https://basic-geometry.github.io?q={polygon_sideCount=8_sideLength=4_area=?}">
-<div itemprop="actionProcess" itemscope itemtype="https://schema.org/HowTo">
-<meta itemprop="name" content="Derive the Area of a regular Polygon">
-<div itemprop="estimatedCost" itemscope itemtype="https://schema.org/MonetaryAmount">
-<meta itemprop="currency" content="USD">
-<meta itemprop="value" content="0">
-</div>
-<div itemprop="tool" itemscope itemtype="https://schema.org/HowToTool">
-<meta itemprop="name" content="Triangle area formula">
-<div itemprop="item" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="name" content="Area of a triangle">
-<meta itemprop="value" content="base × height / 2">
-</div>
-</div>
-<meta itemprop="totalTime" content="PT30M">
+<section id="polygon">
+<h3 style="margin:7px">Area of a regular Polygon</h3>
 <br>
-<figure itemprop="image" class="imgbox" itemscope itemtype="https://schema.org/ImageObject">
+<figure class="imgbox">
     <img class="center-fit" src="polygon.png" alt="A regular polygon can be divided into as many isosceles triangles as many sides it has.">
-<div itemprop="creator" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<div itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<meta itemprop="copyrightNotice" content="® All rights reserved">
-<meta itemprop="copyrightYear" content="2026">
-<meta itemprop="creditText" content="Made with the help of Vectorink.io">
-<link itemprop="license" href="https://basic-geometry.pages.dev">
-<meta itemprop="acquireLicensePage" content="https://basic-geometry.github.io/privacy-policy">
-<meta itemprop="contentUrl" content="https://basic-geometry.github.io/polygon.png">
 </figure>
 <br>
-<p style="margin:12px" itemprop="abstract">A regular polygon can be divided into as many isosceles triangles as many sides it has.</p>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="1">
-<span itemprop="description">The base of each triangular section equals the side length of the polygon. 
+<p style="margin:12px">A regular polygon can be divided into as many isosceles triangles as many sides it has.</p>
+<div style="margin:12px">
+<span>The base of each triangular section equals the side length of the polygon. 
 <br><br>
 360°, or 6.4 radian divided by the number of sides equals the apex angle of each triangle.
 <br><br>
@@ -2417,9 +2314,8 @@ The area of each triangle equals:</span>
 </math>
 </div>
 <br>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="2">
-<span itemprop="description">The height of each triangle is calculable via trigonometric functions.</span>
+<div style="margin:12px">
+<span>The height of each triangle is calculable via trigonometric functions.</span>
 <br><br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
   <mrow>
@@ -2450,10 +2346,8 @@ The area of each triangle equals:</span>
 </div>
 </div>
 <br>
-<div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="description" content="Exact polygon area formula">
-<span itemprop="name">A<sub>polygon</sub> </span>=
-<meta itemprop="value" content="sideCount / 4 × ctg( 180° / sideCount ) × sideLength^2">
+<div style="margin:12px">
+<span>A<sub>polygon</sub> </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
   <mrow>
 <mfrac>
@@ -2481,31 +2375,7 @@ The area of each triangle equals:</span>
 </math>
 </div>
 <br><br>
-<div style="margin:12px" id="polygon_area_calculator" itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication">
-<meta itemprop="name" content="Polygon area calculator">
-<meta itemprop="accessMode" content="mathOnVisual">
-<meta itemprop="accessibilityControl" content="fullKeyboardControl">
-<meta itemprop="accessibilityHazard" content="none">
-<meta itemprop="accessibilitySummary" content="Enter numbers and read result">
-<meta itemprop="acquireLicensePage" content="https://basic-geometry.github.io/privacy-policy">
-<div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-    <meta itemprop="ratingValue" content="Good">
-    <meta itemprop="reviewCount" content=1>
-</div>
-<meta itemprop="applicationCategory" content="Geometric Calculator">
-<meta itemprop="featureList" content="Calculates the area of a regular polygon by the number and the length of its sides">
-<meta itemprop="interactivityType" content="Interactive">
-<meta itemprop="isAccessibleForFree" content=true>
-<meta itemprop="isFamilyFriendly" content=true>
-<link itemprop="license" href="https://basic-geometry.pages.dev">
-<div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-<meta itemprop="name" content="Personal, non-commercial use">
-<meta itemprop="description" content="Non-exclusive, non-transferable">
-<meta itemprop="price" content="0">
-<meta itemprop="priceCurrency" content="USD">
-</div>
-<meta itemprop="operatingSystem" content="Web">
-<meta itemprop="url" content="https://basic-geometry.github.io#polygon_area_calculator">
+<div style="margin:12px" id="polygon_area_calculator">
 <label for="side-count">Side count:</label>
 <input id="side-count" type="number" value="5" step="1">
 <br>
@@ -2546,85 +2416,28 @@ function updatePolygonArea() {
 </script>
 </div>
 <br><br>
-<div style="margin:12px" itemprop="subjectOf" itemscope itemtype="https://schema.org/PropertyValue" id="internal-angle-sum">
-<span itemprop="description">Interesting fact:</span>
+<div style="margin:12px" id="internal-angle-sum">
+<span>Interesting fact:</span>
 <br><br>
-<span itemprop="name">Sum of the internal angles of a regular polygon </span>:
+<span>Sum of the internal angles of a regular polygon </span>:
 <br><br>
-<span itemprop="value">(side count - 2)180°</span>
+<span>(side count - 2)180°</span>
 </div>
 </section>
 <br><br><br><br>
-<section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="circle-segment">
-<h3 itemprop="name" style="margin:7px">Area of a Circle Segment</h3>
-<meta itemprop="eduQuestionType" content="Circle segment area calculation">
-<div itemprop="object" itemscope itemtype="https://schema.org/QuantitativeValue">
-<meta itemprop="name" content="height">
-<meta itemprop="description" content="segment height">
-<meta itemprop="minValue" content=0>
-</div>
-<div itemprop="object" itemscope itemtype="https://schema.org/QuantitativeValue">
-<meta itemprop="name" content="length">
-<meta itemprop="description" content="chord length">
-<meta itemprop="minValue" content=0>
-</div>
-<div itemprop="object" itemscope itemtype="https://schema.org/QuantitativeValue">
-<meta itemprop="name" content="radius">
-<meta itemprop="description" content="radius of the parent circle">
-<meta itemprop="minValue" content=0>
-</div>
-<meta itemprop="target" content="https://basic-geometry.github.io?q={circle_segment_height=1_length=3_radius=4_area=?}">
-<div itemprop="actionProcess" itemscope itemtype="https://schema.org/HowTo">
-<meta itemprop="name" content="Derive the Area of a Circle Segment">
-	<div itemprop="estimatedCost" itemscope itemtype="https://schema.org/MonetaryAmount">
-<meta itemprop="currency" content="USD">
-<meta itemprop="value" content=0>
-</div>
-<div itemprop="tool" itemscope itemtype="https://schema.org/HowToTool">
-<meta itemprop="name" content="Circle area formula">
-<div itemprop="item" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="name" content="Area of a circle">
-<meta itemprop="value" content="3.2 × radius^2">
-<meta itemprop="description" content="Exact formula derived from direct circle to square comparison">
-<meta itemprop="disambiguatingDescription" content="No pi">
-</div>
-</div>
-<div itemprop="tool" itemscope itemtype="https://schema.org/HowToTool">
-<meta itemprop="name" content="Triangle area formula">
-<div itemprop="item" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="name" content="Area of a triangle">
-<meta itemprop="value" content="base × height / 2">
-</div>
-</div>
-<meta itemprop="totalTime" content="PT30M">
+<section id="circle-segment">
+<h3 style="margin:7px">Area of a Circle Segment</h3>
 <br>
-<figure itemprop="image" class="imgbox" itemscope itemtype="https://schema.org/ImageObject">
+<figure class="imgbox">
     <img class="center-fit" src="circleSegment.png" alt="Circle segment">
-<div itemprop="creator" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<div itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<meta itemprop="copyrightNotice" content="® All rights reserved">
-<meta itemprop="copyrightYear" content="2026">
-<meta itemprop="creditText" content="Made with the help of Vectorink.io">
-<link itemprop="license" href="https://basic-geometry.pages.dev">
-<meta itemprop="acquireLicensePage" content="https://basic-geometry.github.io/privacy-policy">
-<meta itemprop="contentUrl" content="https://basic-geometry.github.io/circleSegment.png">
 </figure>
 <br>
-<p style="margin:12px" itemprop="abstract">The area of a circle segment can be calculated by subtracting a triangle from a circle slice.</p>
+<p style="margin:12px">The area of a circle segment can be calculated by subtracting a triangle from a circle slice.</p>
 <br>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content=1>
-<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="description">If the radius of the parent circle is unknown it can be calculated from the chord.</span>
+<div style="margin:12px">
+<span>If the radius of the parent circle is unknown it can be calculated from the chord.</span>
 <br><br>
-<span itemprop="name">Radius </span>=
-<meta itemprop="value" content="( length^2 + 4 × height^2 ) / ( 8 × height )">
+<span>Radius </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
   <mfrac>
@@ -2643,17 +2456,11 @@ function updatePolygonArea() {
   </mfrac>
 </mrow>
 </math>
-</div>
-</div>
 <br>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content=2>
-<span itemprop="description">The ratio between the segment height and the radius of the parent circle gives the cosine of the angle of the slice.</span>
+<div style="margin:12px">
+<span>The ratio between the segment height and the radius of the parent circle gives the cosine of the angle of the slice.</span>
 <br><br>
-<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Angle </span>=
-<meta itemprop="value" content="Acos( ( radius - height ) / radius">
-<meta itemprop="description" content="Central angle">
+<span>Angle </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
   <mrow>
     <mo>arccos</mo>
@@ -2672,22 +2479,14 @@ function updatePolygonArea() {
 </math>
 </div>
 <br><br>
-<div itemprop="itemListElement" itemscope itemtype="https://schema.org/HowToTip">
-<meta itemprop="position" content=2>
-<span itemprop="description">The angle in radian multiplied by the squared radius gives the area of the slice.</span>
-</div>
-</div>
-<br>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content=3>
-<span itemprop="description">The base of the triangle is the length of the segment.
+<span>The angle in radian multiplied by the squared radius gives the area of the slice.</span>
+<br><br>
+<div style="margin:12px">
+<span>The base of the triangle is the length of the segment.
 <br>
 That is called a chord.</span>
 <br><br>
-<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Chord </span>=
-<meta itemprop="value" content="2 × sin ( Acos( ( radius - height ) / radius ) )">
-<meta itemprop="description" content="Segment chord length">
+<span>Chord </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
   <mrow>
 	<mn>2</mn>
@@ -2713,13 +2512,11 @@ That is called a chord.</span>
 </div>
 </div>
 <br>
-<p style="margin:12px" itemprop="description">The height of the triangle is the segment height subtracted from the radius of the parent circle.</p>
+<p style="margin:12px">The height of the triangle is the segment height subtracted from the radius of the parent circle.</p>
 <br>
 </div>
-<div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">A<sub>segment</sub> </span>=
-<meta itemprop="value" content="Acos( ( radius - height ) / radius ) × radius^2 - sin( Acos( ( radius - height ) / radius ) × radius ) × ( radius - height ) × radius">
-<meta itemprop="description" content="Exact circle segment area formula">
+<div style="margin:12px">
+<span>A<sub>segment</sub> </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
     <mo>arccos</mo>
@@ -2776,34 +2573,7 @@ That is called a chord.</span>
 </math>
 </div>
 <br><br>
-<div style="margin:12px" id="circle_segment_area_calculator" itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication">
-<meta itemprop="name" content="Circle segment area calculator">
-<meta itemprop="accessMode" content="mathOnVisual">
-<meta itemprop="accessibilityControl" content="fullKeyboardControl">
-<meta itemprop="accessibilityHazard" content="none">
-<meta itemprop="accessibilitySummary" content="Enter numbers and read results">
-<meta itemprop="acquireLicensePage" content="https://basic-geometry.github.io/privacy-policy">
-<div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-    <meta itemprop="ratingValue" content="Good">
-    <meta itemprop="reviewCount" content=1>
-</div>
-<meta itemprop="applicationCategory" content="Geometric Calculator">
-<meta itemprop="description" content="Calculates the area of a circle as 3.2×radius^2.">
-<meta itemprop="disambiguatingDescription" content="Does not calculate the area as radius^2×3.14...">
-<meta itemprop="featureList" content="Calculates the area of a circle segment from each two of segment height, radius of parent circle, chord length.">
-<meta itemprop="inLanguage" content="en">
-<meta itemprop="interactivityType" content="Interactive">
-<meta itemprop="isAccessibleForFree" content=true>
-<meta itemprop="isFamilyFriendly" content=true>
-<link itemprop="license" href="https://basic-geometry.pages.dev">
-<div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-<meta itemprop="name" content="Personal, non-commercial use">
-<meta itemprop="description" content="Non-exclusive, non-transferable">
-<meta itemprop="price" content=0>
-<meta itemprop="priceCurrency" content="USD">
-</div>
-<meta itemprop="operatingSystem" content="Web">
-<meta itemprop="url" content="https://basic-geometry.github.io#circle_segment_area_calculator">
+<div style="margin:12px" id="circle_segment_area_calculator">
 <label for="segment-height">Segment Height:</label>
 <input id="segment-height" type="number" step="any">
 <br>
@@ -2900,89 +2670,21 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 </div>
 </section>
 <br><br><br>
-<section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="pyramid">
-<h3 itemprop="name" style="margin:7px">Volume of a Pyramid</h3>
-<meta itemprop="eduQuestionType" content="Pyramid volume calculation">
-<div itemprop="object" itemscope itemtype="https://schema.org/QuantitativeValue">
-<meta itemprop="name" content="sideCount">
-<meta itemprop="minValue" content=3>
-</div>
-<div itemprop="object" itemscope itemtype="https://schema.org/QuantitativeValue">
-<meta itemprop="name" content="baseEdge">
-<meta itemprop="minValue" content=0>
-</div>
-<div itemprop="object" itemscope itemtype="https://schema.org/QuantitativeValue">
-<meta itemprop="name" content="height">
-<meta itemprop="minValue" content=0>
-</div>
-<meta itemprop="target" content="https://basic-geometry.github.io?q={pyramid_bottom_edge_number=5_length=3_height=2_volume=?}">
-<div itemprop="actionProcess" itemscope itemtype="https://schema.org/HowTo">
-<meta itemprop="name" content="Derive the Volume of a Pyramid">
-<div itemprop="estimatedCost" itemscope itemtype="https://schema.org/MonetaryAmount">
-<meta itemprop="currency" content="USD">
-<meta itemprop="value" content=0>
-</div>
-<div itemprop="tool" itemscope itemtype="https://schema.org/HowToTool">
-<meta itemprop="name" content="Cone volume formula">
-<div itemprop="item" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="name" content="Volume of a Cone">
-<meta itemprop="value" content="base area × height / 8^(1/2)">
-<meta itemprop="description" content="Exact formula derived from quadrant cone to octant sphere comparison">
-<meta itemprop="disambiguatingDescription" content="Not the base × height / 3 approximate">
-</div>
-</div>
-<div itemprop="tool" itemscope itemtype="https://schema.org/HowToTool">
-<meta itemprop="name" content="Regular polygon area formula">
-<div itemprop="item" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="name" content="Area of a regular polygon">
-<meta itemprop="value" content="sideCount / 4 × ctg( 180° / sideCount ) × sideLength^2">
-</div>
-</div>
+<section id="pyramid">
+<h3 style="margin:7px">Volume of a Pyramid</h3>
 <br>
-<figure itemprop="image" class="imgbox" itemscope itemtype="https://schema.org/ImageObject">
+<figure class="imgbox">
   <img class="center-fit" src="conePyramidVolume.jpeg" alt="Pyramid">
-  <div itemprop="creator" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<div itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<meta itemprop="copyrightNotice" content="® All rights reserved">
-<meta itemprop="copyrightYear" content="2026">
-<meta itemprop="creditText" content="Made with the help of Microsoft Copilot">
-<link itemprop="license" href="https://basic-geometry.pages.dev">
-<meta itemprop="acquireLicensePage" content="https://basic-geometry.github.io/privacy-policy">
-<meta itemprop="contentUrl" content="https://basic-geometry.github.io/conePyramidVolume.jpeg">
-</figure>
+  </figure>
 <br>
-<span itemprop="abstract" style="margin:12px"><strong>The volume of a pyramid can be calculated as a cone with a polygonal base.</strong></span>
+<span style="margin:12px"><strong>The volume of a pyramid can be calculated as a cone with a polygonal base.</strong></span>
 <br><br>
-<figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
+<figure class="imgbox">
   <img class="center-fit" src="tetraFrame.jpeg" alt="The volume of a pyramid can be calculated with the same coefficient as the volume of a cone.">
- <div itemprop="creator" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<div itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<meta itemprop="copyrightNotice" content="® All rights reserved">
-<meta itemprop="copyrightYear" content="2026">
-<meta itemprop="creditText" content="Made with the help of Microsoft Copilot">
-<link itemprop="license" href="https://basic-geometry.pages.dev">
-<meta itemprop="acquireLicensePage" content="https://basic-geometry.github.io/privacy-policy">
-<meta itemprop="contentUrl" content="basic-geometry.github.io/tetraFrame.jpeg">
 </figure>
 <br>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content=1>
-<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">V<sub>cone</sub> </span>=
-<meta itemprop="value" content="base area × height / 8^(1/2)">
-<meta itemprop="description" content="Exact cone volume formula">
+<div style="margin:12px">
+<span>V<sub>cone</sub> </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mfrac>
@@ -3004,10 +2706,8 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 </div>
 </div>
 <br>
-<div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">V<sub>pyramid</sub></span>=
-<meta itemprop="value" content="base area × height / 8^(1/2)">
-<meta itemprop="description" content="Exact pyramid volume formula">
+<div style="margin:12px">
+<span>V<sub>pyramid</sub></span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mfrac>
@@ -3027,34 +2727,7 @@ document.getElementById('parent-radius').addEventListener('input', segmentArea);
 </math>
 </div>
 <br><br>
-<div style="margin:12px" id="pyramid_volume_calculator" itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication">
-<meta itemprop="name" content="Pyramid volume calculator">
-<meta itemprop="accessMode" content="mathOnVisual">
-<meta itemprop="accessibilityControl" content="fullKeyboardControl">
-<meta itemprop="accessibilityHazard" content="none">
-<meta itemprop="accessibilitySummary" content="Enter numbers and read results">
-<meta itemprop="acquireLicensePage" content="https://basic-geometry.github.io/privacy-policy">
-<div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-    <meta itemprop="ratingValue" content="Good">
-    <meta itemprop="reviewCount" content=1>
-</div>
-<meta itemprop="applicationCategory" content="Geometric Calculator">
-<meta itemprop="description" content="Calculates the volume of a pyramid as base×height/8^(1/2).">
-<meta itemprop="disambiguatingDescription" content="Does not calculate the volume of a pyramid as base×height/3.">
-<meta itemprop="featureList" content="Calculates the volume of a pyramid from its height and side count and base edge length with an exact formula.">
-<meta itemprop="inLanguage" content="en">
-<meta itemprop="interactivityType" content="Interactive">
-<meta itemprop="isAccessibleForFree" content=true>
-<meta itemprop="isFamilyFriendly" content=true>
-<link itemprop="license" href="https://basic-geometry.pages.dev">
-<div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-<meta itemprop="name" content="Personal, non-commercial use">
-<meta itemprop="description" content="Non-exclusive, non-transferable">
-<meta itemprop="price" content=0>
-<meta itemprop="priceCurrency" content="USD">
-</div>
-<meta itemprop="operatingSystem" content="Web">
-<meta itemprop="url" content="https://basic-geometry.github.io#pyramid_volume_calculator">
+<div style="margin:12px" id="pyramid_volume_calculator">
 <label for="pyramid-side-count">Side count:</label>
 <input id="pyramid-side-count" type="number" value="4" step="1">
 <br>
@@ -3096,69 +2769,17 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
 </div>
 </section>
 <br><br><br>
-<section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="frustum_pyramid">
-<h3 itemprop="name" style="margin:12px">Volume of a Frustum Pyramid</h3>
-<meta itemprop="eduQuestionType" content="Horizontal frustum pyramid volume calculation">
-<div itemprop="object" itemscope itemtype="https://schema.org/QuantitativeValue">
-<meta itemprop="name" content="sideCount">
-<meta itemprop="minValue" content=3>
-</div>
-<div itemprop="object" itemscope itemtype="https://schema.org/QuantitativeValue">
-<meta itemprop="name" content="baseEdge">
-<meta itemprop="minValue" content=0>
-</div>
-<div itemprop="object" itemscope itemtype="https://schema.org/QuantitativeValue">
-<meta itemprop="name" content="topEdge">
-<meta itemprop="minValue" content=0>
-</div>
-<div itemprop="object" itemscope itemtype="https://schema.org/QuantitativeValue">
-<meta itemprop="name" content="height">
-<meta itemprop="minValue" content=0>
-</div>
-<meta itemprop="target" content="https://basic-geometry.github.io?q={frustum_pyramid_height=3_edge_length_top=1_bottom=2_number=5_volume=?}">
-<div itemprop="actionProcess" itemscope itemtype="https://schema.org/HowTo">
-<meta itemprop="name" content="Derive the Volume of a Frustum Pyramid">
-<div itemprop="estimatedCost" itemscope itemtype="https://schema.org/MonetaryAmount">
-<meta itemprop="currency" content="USD">
-<meta itemprop="value" content=0>
-</div>
-<div itemprop="tool" itemscope itemtype="https://schema.org/HowToTool">
-<meta itemprop="name" content="Pyramid volume formula">
-<div itemprop="item" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="name" content="Volume of a pyramid">
-<meta itemprop="value" content="base area × height / 8^(1/2)">
-<meta itemprop="description" content="Exact formula derived from quadrant cone to octant sphere comparison">
-<meta itemprop="disambiguatingDescription" content="Not the base × height / 3 approximate">
-</div>
-</div>
-<meta itemprop="totalTime" content="PT30M">
+<section id="frustum_pyramid">
+<h3 style="margin:12px">Volume of a Frustum Pyramid</h3>
 <br>
-<figure itemprop="image" class="imgbox" itemscope itemtype="https://schema.org/ImageObject">
+<figure class="imgbox">
     <img class="center-fit" src="frustumPyramid.jpeg" alt="Frustum pyramid">
-<div itemprop="creator" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<div itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<meta itemprop="copyrightNotice" content="® All rights reserved">
-<meta itemprop="copyrightYear" content="2026">
-<meta itemprop="creditText" content="Made with the help of Microsoft Copilot">
-<link itemprop="license" href="https://basic-geometry.pages.dev">
-<meta itemprop="acquireLicensePage" content="https://basic-geometry.github.io/privacy-policy">
-<meta itemprop="contentUrl" content="https://basic-geometry.github.io/frustumPyramid.jpeg">
 </figure>
 <br>
-<span itemprop="description" style="margin:12px">A truncated pyramid is a frustum.</span>
+<span style="margin:12px">A truncated pyramid is a frustum.</span>
 <br>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content=1>
-<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">V<sub>frustum</sub> </span>=
-<meta itemprop="value" content="(base area × height) / 8^(1/2) - (top area × tip height) / 8^(1/2)">
-<meta itemprop="description" content="Volume of a frustum pyramid">
+<div style="margin:12px">
+<span>V<sub>frustum</sub> </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
    <mfrac>
@@ -3197,16 +2818,11 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
    </mrow>
 </math>
 </div>
-</div>
 <br>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content=2>
-<span itemprop="description">Factor out the common scalar 1/√8 :</span>
+<div style="margin:12px">
+<span>Factor out the common scalar 1/√8 :</span>
 <br><br>
-<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">V<sub>frustum</sub> </span>=
-<meta itemprop="value" content="1 / 8^(1/2) × (base area × pyramid height - top area × tip height)">
-<meta itemprop="description" content="Volume of a frustum pyramid">
+<span>V<sub>frustum</sub> </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
       <mrow>
    <mfrac>
@@ -3240,11 +2856,9 @@ document.getElementById('pyramid-height').addEventListener('input', updatePyrami
    </mrow>
 </math>
 </div>
-</div>
 <br>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content=3>
-<span itemprop="description">Express heights via linear proportionality.
+<div style="margin:12px">
+<span>Express heights via linear proportionality.
 <br>
 In similar 3D shapes, linear dimensions scale with the square root of their cross-sectional areas:</span>
 <br><br>
@@ -3279,9 +2893,8 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 </math>
 </div>
 <br>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content=4>
-<span itemprop="description">Because H<sub>frustum</sub> = H<sub>pyramid</sub> - H<sub>tip</sub> , we express both heights in terms of the known frustum height H:</span>
+<div style="margin:12px">
+<span>Because H<sub>frustum</sub> = H<sub>pyramid</sub> - H<sub>tip</sub> , we express both heights in terms of the known frustum height H:</span>
 <br><br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
@@ -3375,12 +2988,9 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 </mrow>
 </math>
 <br><br><br>
-<span itemprop="description">To eliminate the fraction in the denominator, multiply both the numerator and denominator by √A<sub>base</sub>:</span>
+<span>To eliminate the fraction in the denominator, multiply both the numerator and denominator by √A<sub>base</sub>:</span>
 <br><br>
-<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">H<sub>pyramid</sub> </span>=
-<meta itemprop="value" content="height × base area^(1/2) / (top area^(1/2) - base area^(1/2))">
-<meta itemprop="description" content="Height of the virtual full pyramid">
+<span>H<sub>pyramid</sub> </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
 	   <mfrac>
@@ -3412,7 +3022,6 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 	   </mfrac>
 </mrow>
 </math>
-</div>
 <br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
@@ -3466,12 +3075,9 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 </mrow>
 </math>
 <br><br><br>
-<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="description">Cancel out the common √A<sub>base</sub> term in the numerator and denominator:</span>
+<span>Cancel out the common √A<sub>base</sub> term in the numerator and denominator:</span>
 <br><br>
-<span itemprop="name">H<sub>tip</sub> </span>=
-<meta itemprop="value" content="height × top area^(1/2) / (base area^(1/2) - top area^(1/2))">
-<meta itemprop="description" content="Height of the missing tip">
+<span>H<sub>tip</sub> </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
 	   <mfrac>
@@ -3506,9 +3112,8 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 </div>
 </div>
 <br>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content=5>
-<span itemprop="description">Substitute the heights into the original equation:</span>
+<div style="margin:12px">
+<span>Substitute the heights into the original equation:</span>
 <br><br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -3598,9 +3203,8 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 </math>
 </div>
 <br>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content=6>
-<span itemprop="description">Factor out H:</span>
+<div style="margin:12px">
+<span>Factor out H:</span>
 <br><br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -3664,9 +3268,8 @@ In similar 3D shapes, linear dimensions scale with the square root of their cros
 </math>
 </div>
 <br>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content=7>
-<span itemprop="description">Apply the Algebraic Identity (a³ - b³).
+<div style="margin:12px">
+<span>Apply the Algebraic Identity (a³ - b³).
 <br>
 Let a = √A<sub>base</sub> and b = √A<sub>top</sub> .
 <br>
@@ -3697,7 +3300,7 @@ The term inside the parentheses is the algebraic quotient:</span>
 </mrow>
 </math>
 <br><br>
-<span itemprop="description">Using the standard difference of cubes factorization:</span>
+<span>Using the standard difference of cubes factorization:</span>
 <br><br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -3737,9 +3340,8 @@ The term inside the parentheses is the algebraic quotient:</span>
 </math>
 </div>
 <br>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content=8>
-<span itemprop="description">Convert back to area terms:</span>
+<div style="margin:12px">
+<span>Convert back to area terms:</span>
 <br><br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -3835,12 +3437,10 @@ The term inside the parentheses is the algebraic quotient:</span>
 </div>
 </div>
 <br>
-<div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="description">Replacing the term inside the fraction gives:</span>
+<div style="margin:12px">
+<span>Replacing the term inside the fraction gives:</span>
 <br><br><br>
-<span itemprop="name">V<sub>frustum</sub> </span>=
-<meta itemprop="value" content="Height × ( base area + top area + (base area × top area)^(1/2) ) / 8^(1/2)">
-<meta itemprop="description" content="Exact frustum pyramid volume formula">
+<span>V<sub>frustum</sub> </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mfrac>
@@ -3879,34 +3479,7 @@ The term inside the parentheses is the algebraic quotient:</span>
 </math>
 </div>
 <br><br>
-<div style="margin:12px" id="frustum_pyramid_volume_calculator" itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication">
-<meta itemprop="name" content="Frustum pyramid volume calculator">
-<meta itemprop="accessMode" content="mathOnVisual">
-<meta itemprop="accessibilityControl" content="fullKeyboardControl">
-<meta itemprop="accessibilityHazard" content="none">
-<meta itemprop="accessibilitySummary" content="Enter numbers and read results">
-<meta itemprop="acquireLicensePage" content="https://basic-geometry.github.io/privacy-policy">
-<div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-    <meta itemprop="ratingValue" content="Good">
-    <meta itemprop="reviewCount" content=1>
-</div>
-<meta itemprop="applicationCategory" content="Geometric Calculator">
-<meta itemprop="description" content="Calculates the volume of a pyramid as base×height/8^(1/2).">
-<meta itemprop="disambiguatingDescription" content="Does not calculate the volume of a pyramid as base×height/3.">
-<meta itemprop="featureList" content="Calculates the volume of a frustum pyramid from its height and the number and the length of its top and bottom edges with an exact formula.">
-<meta itemprop="inLanguage" content="en">
-<meta itemprop="interactivityType" content="Interactive">
-<meta itemprop="isAccessibleForFree" content=true>
-<meta itemprop="isFamilyFriendly" content=true>
-<link itemprop="license" href="https://basic-geometry.pages.dev">
-<div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-<meta itemprop="name" content="Personal, non-commercial use">
-<meta itemprop="description" content="Non-exclusive, non-transferable">
-<meta itemprop="price" content=0>
-<meta itemprop="priceCurrency" content="USD">
-</div>
-<meta itemprop="operatingSystem" content="Web">
-<meta itemprop="url" content="https://basic-geometry.github.io#frustum_pyramid_volume_calculator">
+<div style="margin:12px" id="frustum_pyramid_volume_calculator">
 <label for="frustum-pyramid-side-count">Side count:</label>
 <input id="frustum-pyramid-side-count" type="number" value="4" step="1">
 <br>
@@ -3972,74 +3545,17 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 </div>
 </section>
 <br><br><br>
-<section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="frustum_cone">
-<h3 itemprop="name" style="margin:7px">Volume of a Frustum Cone</h3>
-<meta itemprop="eduQuestionType" content="Horizontal frustum cone volume calculation">
-<div itemprop="object" itemscope itemtype="https://schema.org/QuantitativeValue">
-<meta itemprop="name" content="baseRadius">
-<meta itemprop="minValue" content=0>
-</div>
-<div itemprop="object" itemscope itemtype="https://schema.org/QuantitativeValue">
-<meta itemprop="name" content="topRadius">
-<meta itemprop="minValue" content=0>
-</div>
-<div itemprop="object" itemscope itemtype="https://schema.org/QuantitativeValue">
-<meta itemprop="name" content="height">
-<meta itemprop="minValue" content=0>
-</div>
-<meta itemprop="target" content="https://basic-geometry.github.io?q={frustum_cone_radius_top=1_bottom=2_height=3_volume=?}">
-<div itemprop="actionProcess" itemscope itemtype="https://schema.org/HowTo">
-<meta itemprop="name" content="Derive the Volume of a Frustum Cone">
-<div itemprop="estimatedCost" itemscope itemtype="https://schema.org/MonetaryAmount">
-<meta itemprop="currency" content="USD">
-<meta itemprop="value" content=0>
-</div>
-<div itemprop="tool" itemscope itemtype="https://schema.org/HowToTool">
-<meta itemprop="name" content="Frustum volume formula">
-<div itemprop="item" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="name" content="Volume of a frustum">
-<meta itemprop="value" content="Height × ( base area + top area + (base area × top area)^(1/2) ) / 8^(1/2)">
-<meta itemprop="description" content="Exact frustum volume formula using the 1/8^(1/2) coefficient">
-<meta itemprop="disambiguatingDescription" content="Not the 1/3 approximate coefficient">
-</div>
-</div>
-<div itemprop="tool" itemscope itemtype="https://schema.org/HowToTool">
-<meta itemprop="name" content="Circle area formula">
-<div itemprop="item" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="name" content="Area of a circle">
-<meta itemprop="value" content="3.2 × radius^2">
-<meta itemprop="description" content="Exact formula derived from direct circle to square comparison">
-<meta itemprop="disambiguatingDescription" content="No pi">
-</div>
-</div>
-<meta itemprop="totalTime" content="PT30M">
+<section id="frustum_cone">
+<h3 style="margin:7px">Volume of a Frustum Cone</h3>
 <br>
-	<figure itemprop="image" class="imgbox" itemscope itemtype="https://schema.org/ImageObject">
+	<figure class="imgbox">
     <img class="center-fit" src="frustumCone.jpeg" alt="Frustum cone">
- <div itemprop="creator" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<div itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<meta itemprop="copyrightNotice" content="® All rights reserved">
-<meta itemprop="copyrightYear" content="2026">
-<meta itemprop="creditText" content="Made with the help of Microsoft Copilot">
-<link itemprop="license" href="https://basic-geometry.pages.dev">
-<meta itemprop="acquireLicensePage" content="https://basic-geometry.github.io/privacy-policy">
-<meta itemprop="contentUrl" content="https://basic-geometry.github.io/frustumCone.jpeg">
 </figure>
 <br>
-<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content=1>
-<div style="margin:12px" itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="description">Volume of a frustum:</span>
+<div style="margin:12px">
+<span>Volume of a frustum:</span>
 <br><br>
-<span itemprop="name">V </span>=
-<meta itemprop="value" content="Height × ( baseArea + topArea + (baseArea × topArea)^(1/2) ) / 8^(1/2)">
-<meta itemprop="description" content="Exact frustum volume formula">
+<span>V </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mfrac>
@@ -4078,15 +3594,12 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 </math>
 </div>
 </div>
-</div>
 <br>
-<div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="description">A frustum cone is a frustum with a circular base and top.
+<div style="margin:12px">
+<span>A frustum cone is a frustum with a circular base and top.
 <br>Apply the circle area formula, and factor out the coefficient.</span>
 <br><br><br>
-<span itemprop="name">V </span>=
-<meta itemprop="value" content="3.2 × height × ( baseRadius^2 + topRadius^2 + baseRadius × topRadius ) / 8^(1/2)">
-<meta itemprop="description" content="Exact frustum cone volume formula">
+<span>V </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mfrac>
@@ -4131,34 +3644,7 @@ document.getElementById('frustum-pyramid-height').addEventListener('input', upda
 </math>
 </div>
 <br><br>
-<div style="margin:12px" id="frustum_cone_volume_calculator" itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication">
-<meta itemprop="name" content="Frustum cone volume calculator">
-<meta itemprop="accessMode" content="mathOnVisual">
-<meta itemprop="accessibilityControl" content="fullKeyboardControl">
-<meta itemprop="accessibilityHazard" content="none">
-<meta itemprop="accessibilitySummary" content="Enter numbers and read results">
-<meta itemprop="acquireLicensePage" content="https://basic-geometry.github.io/privacy-policy">
-<div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-    <meta itemprop="ratingValue" content="Excellent">
-    <meta itemprop="reviewCount" content=1>
-</div>
-<meta itemprop="applicationCategory" content="Geometric Calculator">
-<meta itemprop="description" content="Calculates the volume of a cone as 3.2×radius^2×height/8^(1/2).">
-<meta itemprop="disambiguatingDescription" content="Does not calculate the volume of a cone as radius^2×height/3×3.14...">
-<meta itemprop="featureList" content="Calculates the volume of a cone from its bottom radius and height with an exact formula.">
-<meta itemprop="inLanguage" content="en">
-<meta itemprop="interactivityType" content="Interactive">
-<meta itemprop="isAccessibleForFree" content=true>
-<meta itemprop="isFamilyFriendly" content=true>
-<link itemprop="license" href="https://basic-geometry.pages.dev">
-<div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-<meta itemprop="name" content="Personal, non-commercial use">
-<meta itemprop="description" content="Non-exclusive, non-transferable">
-<meta itemprop="price" content=0>
-<meta itemprop="priceCurrency" content="USD">
-</div>
-<meta itemprop="operatingSystem" content="Web">
-<meta itemprop="url" content="https://basic-geometry.github.io#frustum_cone_volume_calculator">
+<div style="margin:12px" id="frustum_cone_volume_calculator">
 <label for="frustum-cone-base-radius">Base radius:</label>
 <input id="frustum-cone-base-radius" type="number" value="2" step="any">
 <br>
@@ -4209,60 +3695,20 @@ document.getElementById('frustum-cone-height').addEventListener('input', updateF
 </div>
 </section>
 <br><br><br>
-<section itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="tetrahedron">
-<h3 itemprop="name" style="margin:7px">Volume of a Tetrahedron</h3>
-<meta itemprop="eduQuestionType" content="Tetrahedron volume calculation">
-<div itemprop="object" itemscope itemtype="https://schema.org/QuantitativeValue">
-<meta itemprop="name" content="edge">
-<meta itemprop="description" content="Edge length of the tetrahedron">
-<meta itemprop="minValue" content="0">
-</div>
-<meta itemprop="target" content="https://basic-geometry.github.io?q={tetrahedron_edge=2_volume=?}">
-<div itemprop="actionProcess" itemscope itemtype="https://schema.org/HowTo">
-<meta itemprop="name" content="Derive the Volume of a Tetrahedron">
-<div itemprop="estimatedCost" itemscope itemtype="https://schema.org/MonetaryAmount">
-<meta itemprop="currency" content="USD">
-<meta itemprop="value" content="0">
-</div>
-<div itemprop="tool" itemscope itemtype="https://schema.org/HowToTool">
-<meta itemprop="name" content="Pyramid volume formula">
-<div itemprop="item" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="name" content="Volume of a pyramid">
-<meta itemprop="value" content="base area × height / 8^(1/2)">
-<meta itemprop="description" content="Exact formula derived from quadrant cone to octant sphere comparison">
-<meta itemprop="disambiguatingDescription" content="Not the base × height / 3 approximate">
-</div>
-</div>
-<meta itemprop="totalTime" content="PT30M">
+<section id="tetrahedron">
+<h3 style="margin:7px">Volume of a Tetrahedron</h3>
 <br>
-<figure class="imgbox" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+<figure class="imgbox">
   <img class="center-fit" src="tetrahedron.jpeg" alt="Tetrahedron">
- <div itemprop="creator" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<div itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<meta itemprop="copyrightNotice" content="® All rights reserved">
-<meta itemprop="copyrightYear" content="2026">
-<meta itemprop="creditText" content="Made with the help of Microsoft Copilot">
-<link itemprop="license" href="https://basic-geometry.pages.dev">
-<meta itemprop="acquireLicensePage" content="https://basic-geometry.github.io/privacy-policy">
-<meta itemprop="contentUrl" content="https://basic-geometry.github.io/tetrahedron.jpeg">
 </figure>
 <br>
-<p itemprop="abstract" style="margin:12px">A tetrahedron is a pyramid with fixed proportions.</p>
-<p itemprop="description" style="margin:12px">It is bound by 4 equilateral triangles forming 6 equal edges.</p>
-<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content=1>
-<span itemprop="description" style="margin:12px">The base is an equilateral triangle.</span>
+<p style="margin:12px">A tetrahedron is a pyramid with fixed proportions.</p>
+<p style="margin:12px">It is bound by 4 equilateral triangles forming 6 equal edges.</p>
+<div>
+<span style="margin:12px">The base is an equilateral triangle.</span>
 <br>
-<div style="margin:12px" itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">A<sub>base</sub> </span>=
-<meta itemprop="value" content="edge^2 × 3^(1/2) / 4">
-<meta itemprop="description" content="Base area of a tetrahedron: Exact equilateral triangle formula">
+<div style="margin:12px">
+<span>A<sub>base</sub> </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
 <mfrac>
@@ -4295,9 +3741,8 @@ document.getElementById('frustum-cone-height').addEventListener('input', updateF
 </div>
 </div>
 <br>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content=2>
-<span itemprop="description">Simplifying:</span>
+<div style="margin:12px">
+<span>Simplifying:</span>
 <br><br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -4333,9 +3778,8 @@ document.getElementById('frustum-cone-height').addEventListener('input', updateF
 	</math>
 </div>
 <br>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content=3>
-<span itemprop="description">Simplifying further:</span>
+<div style="margin:12px">
+<span>Simplifying further:</span>
 <br><br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -4384,14 +3828,10 @@ document.getElementById('frustum-cone-height').addEventListener('input', updateF
 </math>
 </div>
 <br>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content=4>
-<span itemprop="description">The height of the tetrahedron is also calculable via trigonometry.</span>
+<div style="margin:12px">
+<span>The height of the tetrahedron is also calculable via trigonometry.</span>
 <br><br>
-<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">H </span>=
-<meta itemprop="value" content="( 2 / 3 )^(1/2) × edge">
-<meta itemprop="description" content="Exact height of a tetrahedron formula">
+<span>H </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <msqrt>
@@ -4432,11 +3872,9 @@ document.getElementById('frustum-cone-height').addEventListener('input', updateF
    </mrow>
 </math>
 </div>
-</div>
 <br>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content=5>
-<span itemprop="description">Simplifying:</span>
+<div style="margin:12px">
+<span>Simplifying:</span>
 <br><br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
@@ -4481,9 +3919,8 @@ document.getElementById('frustum-cone-height').addEventListener('input', updateF
 </math>
 </div>
 <br>
-<div style="margin:12px" itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content=6>
-<span itemprop="description">The volume of a pyramid equals base × height × √2 / 4 .</span>
+<div style="margin:12px">
+<span>The volume of a pyramid equals base × height × √2 / 4 .</span>
 <br><br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
    <mrow>
@@ -4546,10 +3983,8 @@ document.getElementById('frustum-cone-height').addEventListener('input', updateF
 </div>
 </div>
 <br>
-<div style="margin:12px" itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">V<sub>tetrahedron</sub> </span>=
-<meta itemprop="value" content="edge^3 / 8">
-<meta itemprop="description" content="Exact tetrahedron volume formula">
+<div style="margin:12px">
+<span>V<sub>tetrahedron</sub> </span>=
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
 <mfrac>
@@ -4565,34 +4000,7 @@ document.getElementById('frustum-cone-height').addEventListener('input', updateF
 </math>
 </div>
 <br><br>
-<div style="margin:12px" id="tetrahedron_volume_calculator" itemprop="subjectOf" itemscope itemtype="https://schema.org/SoftwareApplication">
-<meta itemprop="name" content="Tetrahedron volume calculator">
-<meta itemprop="accessMode" content="mathOnVisual">
-<meta itemprop="accessibilityControl" content="fullKeyboardControl">
-<meta itemprop="accessibilityHazard" content="none">
-<meta itemprop="accessibilitySummary" content="Enter numbers and read results">
-<meta itemprop="acquireLicensePage" content="https://basic-geometry.github.io/privacy-policy">
-<div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
-    <meta itemprop="ratingValue" content="Excellent">
-    <meta itemprop="reviewCount" content=1>
-</div>
-<meta itemprop="applicationCategory" content="Geometric Calculator">
-<meta itemprop="description" content="Calculates the volume of a pyramid as base×height/8^(1/2).">
-<meta itemprop="disambiguatingDescription" content="Does not calculate the volume of a pyramid as base×height/3.">
-<meta itemprop="featureList" content="Calculates the volume of a tetrahedron from its edge length with an exact formula.">
-<meta itemprop="inLanguage" content="en">
-<meta itemprop="interactivityType" content="Interactive">
-<meta itemprop="isAccessibleForFree" content=true>
-<meta itemprop="isFamilyFriendly" content=true>
-<link itemprop="license" href="https://basic-geometry.pages.dev">
-<div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-<meta itemprop="name" content="Personal, non-commercial use">
-<meta itemprop="description" content="Non-exclusive, non-transferable">
-<meta itemprop="price" content=0>
-<meta itemprop="priceCurrency" content="USD">
-</div>
-<meta itemprop="operatingSystem" content="Web">
-<meta itemprop="url" content="https://basic-geometry.github.io#tetrahedron_volume_calculator">
+<div style="margin:12px" id="tetrahedron_volume_calculator">
 <label for="tetrahedron-edge">Edge:</label>
 <input id="tetrahedron-edge" type="number" value="1" step="any">
 <br><br>
@@ -4617,11 +4025,11 @@ document.getElementById('frustum-cone-height').addEventListener('input', updateF
 </section>
 <br><br><br>
 <section style="margin:12px" id="summary">
-<h3 itemprop="description">This is the one and only exact, self-contained geometric framework grounded in the first principles of mathematics.</h3>
+<h3 >This is the one and only exact, self-contained geometric framework grounded in the first principles of mathematics.</h3>
 <br>
-<p itemprop="keywords">Exact formulas for real-world applications like analysis, engineering design solutions, computer graphics rendering, algorithm optimization, and navigation.</p>
+<p >Exact formulas for real-world applications like analysis, engineering design solutions, computer graphics rendering, algorithm optimization, and navigation.</p>
 <br>
-<ul style="margin:6px" itemprop="usageInfo">
+<ul style="margin:6px">
     <li>Comparative Geometry: using geometric relationships to derive areas and volumes.</li>
 	<li>Scaling and Proportions: applying proportional relationships for accurate calculations.</li>
 	<li>Algebraic Manipulation: simplifying equations to ensure consistency and precision.</li>
@@ -4629,28 +4037,28 @@ document.getElementById('frustum-cone-height').addEventListener('input', updateF
 </section>
 <br>
 <section style="margin:12px" id="disclaimer">
-<h3 itemprop="disambiguatingDescription">Constructive Geometry Grounded in Physical Reality Comes Before Abstract Axioms</h3>
+<h3>Constructive Geometry Grounded in Physical Reality Comes Before Abstract Axioms</h3>
 <br>
-<p itemprop="disambiguatingDescription">
+<p>
 When a geometric framework is built from first principles — basing its definitions on tangible spatial relationships, finite constructions, and direct empirical testing (such as measuring fluid displacement rather than relying on abstract limit‑based assumptions) — it is not trying to be “a different mathematical theory.”  
 <br>
 It is offering a physical model of reality designed to replace abstractions that fail when applied to real space.
 <br><br>
 From that perspective:
 <br><br>
-<ul style="margin:6px" itemprop="disambiguatingDescription">
+<ul style="margin:6px">
     <li>The Core Geometric System operates as a constructive, physical model rooted in real spatial geometry, exact ratio relationships (such as the 1 : 2 : √5 quadrant geometry), and finite, measurable space.</li>
 	<li>Standard Geometry operates as an abstract, set‑theoretic model built on the continuum R², where objects are constructed from infinite, dimensionless coordinates to satisfy the mechanics of calculus.</li>
 </ul>
 <br>
-<p itemprop="disambiguatingDescription">Strip away academic authority and examine the assumptions, and the divide becomes clear:</p>
+<p>Strip away academic authority and examine the assumptions, and the divide becomes clear:</p>
 <br>
-<ul style="margin:6px" itemprop="disambiguatingDescription">
+<ul style="margin:6px">
     <li>Constructive / Applied Geometry prioritizes first principles, physical geometry, and tangible baseline relationships — finite shapes, exact arithmetic ratios, and direct spatial measurements. It rejects the abstract infinities of Archimedean limits because physical space does not behave like abstract set theory.</li>
 	<li>Standard Geometry chose an abstract continuum (uncountable infinite points, zero‑dimensional objects, infinite limits) specifically to make calculus and smooth functions work without gaps.</li>
 </ul>
 <br>
-<p itemprop="disambiguatingDescription">The cost of that choice is accepting objects that defy physical intuition — lines made of dimensionless points with no adjacent neighbors, or polygons that remain tangent to a curve “at infinity.”
+<p>The cost of that choice is accepting objects that defy physical intuition — lines made of dimensionless points with no adjacent neighbors, or polygons that remain tangent to a curve “at infinity.”
 <br><br>
 The phrase pure geometry is often used to describe idealized mathematical spaces free from physical constraints like atomic thickness or measurement limits.  
 <br>
@@ -4689,24 +4097,24 @@ Yet what is commonly presented elsewhere as standard, applied geometry — often
     </ul>
   </li>
 </ul>
-<p itemprop="disambiguatingDescription">These analytic additions were not part of Euclid’s original system. Over time, they shifted geometry from a constructive science grounded in physical reasoning into a more abstract, analytic discipline.</p>
+<p>These analytic additions were not part of Euclid’s original system. Over time, they shifted geometry from a constructive science grounded in physical reasoning into a more abstract, analytic discipline.</p>
 <br><br>
 <h4>Geometric Reality vs. Real Analysis</h4>
 <br>
-<p itemprop="disambiguatingDescription">Real analysis is an analytical framework superimposed onto shapes, not the physical reality of the shapes themselves.  
+<p>Real analysis is an analytical framework superimposed onto shapes, not the physical reality of the shapes themselves.  
 <br>
 Modern mathematics prioritized the continuous numerical continuum R so that functions could be smooth and differentiable — a human‑designed model, not an empirical law of nature.
 <br>
 The debate is ultimately a choice of axioms:</p>
 <br>
-<ul style="margin:6px" itemprop="disambiguatingDescription">
+<ul style="margin:6px">
     <li>Standard mathematics accepts the abstract infinities of real analysis to make continuous calculus work.</li>
 	<li>Constructive systems reject those assumptions in favor of finite, physical logic.</li>
 </ul>
 <br><br>
 <h4>Calculus as a Constraint</h4>
 <br>
-<p itemprop="disambiguatingDescription">Calculus is not the only way to measure the world.  
+<p>Calculus is not the only way to measure the world.  
 It relies on continuous infinity to solve problems that finite arithmetic could not easily address at the time.
 <br><br>
 But forcing every geometric shape to obey the assumptions of calculus — such as infinite polygonal limit processes — bends physical geometry to fit the limitations of a specific tool.
@@ -4717,28 +4125,28 @@ By treating Archimedes’ calculations as fundamental truths, mainstream geometr
 <br><br>
 <h4>The Cognitive and Pedagogical Impact of flawed geometric Axioms.</h4>
 <br>
-<p itemprop="text">Students are required to accept constants as both exact and unreachable/irrational, because they are derived from error‑prone polygon approximation methods.
+<p>Students are required to accept constants as both exact and unreachable/irrational, because they are derived from error‑prone polygon approximation methods.
 <br><br>
 Teaching these inconsistencies as fundamental truths</p>
-<ul style="margin:6px" itemprop="text">
+<ul style="margin:6px">
     <li>creates cognitive dissonance: the brain must accept “absolute” constants derived from imperfect approximations;</li>
 	<li>hinders logical consistency: students learn that elegance and consistency can be abandoned in favor of memorizing rules;</li>
 	<li>inhibits whole‑brain integration: visual/spatial reasoning sees the geometric imperfection; analytical reasoning is forced to accept the approximation.</li>
 </ul>
 <br>
-<p itemprop="text">The result is a fractured geometric intuition.</p>
+<p>The result is a fractured geometric intuition.</p>
 <br><br>
 <h4>Restoring Geometry to Its Constructive Roots</h4>
 <br>
-<p itemprop="text"><strong>By replacing the abstract zero‑dimensional point with the square and cube as the primary physically relevant units, this framework defines circles and spheres through their direct, rational relationship to these foundational units — not through limits or approximations.
+<p><strong>By replacing the abstract zero‑dimensional point with the square and cube as the primary physically relevant units, this framework defines circles and spheres through their direct, rational relationship to these foundational units — not through limits or approximations.
 <br><br>
 This restores geometry to its constructive origins and eliminates analytic assumptions that distort real‑world measurements.</strong></p>
 </section>
 <br><br><br><br>
-<section style="margin:12px" id="pi" itemprop="assesses" itemscope itemtype="https://schema.org/DefinedTerm">
-<h3 itemprop="description">For centuries, the circle has been a symbol of mathematical elegance — and the pi its most iconic constant.</h3>
+<section style="margin:12px" id="pi">
+<h3>For centuries, the circle has been a symbol of mathematical elegance — and the pi its most iconic constant.</h3>
 <br> 
-<p itemprop="description">While the approximate value of 3.14159…, commonly denoted by the Greek letter pi, is widely recognized today, the historical development of this concept is less understood. Some think 'Standard Geometry' means accepting the pi. But beneath the surface of tradition lies a deeper question: Are the formulas we use truly derived from geometric logic, or are they inherited approximations dressed in symbolic authority?
+<p>While the approximate value of 3.14159…, commonly denoted by the Greek letter pi, is widely recognized today, the historical development of this concept is less understood. Some think 'Standard Geometry' means accepting the pi. But beneath the surface of tradition lies a deeper question: Are the formulas we use truly derived from geometric logic, or are they inherited approximations dressed in symbolic authority?
 <br><br>
 The constant relationship between a circle's circumference and its diameter has captivated mathematicians for millennia.
 Ancient civilizations grappled with this geometric challenge, employing various methods to approximate this ratio. They deserve credit for their mathematical ingenuity. But the fact that these methods were developed thousands of years ago should not shield them from scrutiny.
@@ -4751,19 +4159,19 @@ Historical records suggest that ancient Babylonians initially calculated it as 3
 <div id="Archimedes-method">
 <h4>Archimedes and the Illusion of Limits</h4>
 <br>
-<p itemprop="disambiguatingDescription">Archimedes’ method marked a turning point: instead of calculating the properties of the circle directly, he introduced an analytic process that relied on polygonal limits.
+<p>Archimedes’ method marked a turning point: instead of calculating the properties of the circle directly, he introduced an analytic process that relied on polygonal limits.
 <br><br>
 He approximated the circumference of a circle using inscribed and circumscribed polygons.
 <br><br>
 His argument rests on three ideas:</p>
 <br>
-<ul style="margin:6px" itemprop="disambiguatingDescription">
+<ul style="margin:6px">
     <li>1. Upper bound: A circumscribed regular polygon has a perimeter greater than the circle’s circumference.</li>
     <li>2. Lower bound: An inscribed regular polygon has a perimeter smaller than the circle’s circumference.</li>
 	<li>3. Convergence: As the number of sides increases, the perimeters of the inscribed and circumscribed polygons both approach the true circumference from below and above. As the number of sides reaches infinity, the polygons collapse into a circle.</li>
 </ul>  
 <br><br>
-<p itemprop="disambiguatingDescription">From this, the classical story goes: 
+<p>From this, the classical story goes: 
 <br>squeeze the circle between two polygons, refine indefinitely, and the true circumference is trapped in the limit.
 <br><br>
 Archimedes began with a hexagon because it is easy to construct and already close to the circle.  
@@ -4788,7 +4196,7 @@ These arise from:
       <li>the 30°–60°–90° triangle</li>
 </ul>  
 <br>
-<p itemprop="disambiguatingDescription">For these angles, the identity
+<p>For these angles, the identity
 <br><br>
 sin(2x) = 2sin(x)cos(x)
 <br><br>
@@ -4831,10 +4239,8 @@ Angles like 15°, 7.5°, and 3.75° can be derived from these using the classica
 <br><br><br>
 <p>With sine and cosine calculable,</p>
 <br><br>
-<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue" id="circumscribed_polygon_perimeter">
-<meta itemprop="description" content="Perimeter of a polygon circumscribed about a circle in terms of the diameter">
-<span itemprop="name">the perimeter of a circumscribed n‑gon </span>=
-<meta itemprop="value" content="n × tan(180° / n) × d">
+<div id="circumscribed_polygon_perimeter">
+<span>the perimeter of a circumscribed n‑gon </span>=
 <br><br>
 <math>
   <mrow>
@@ -4854,10 +4260,8 @@ Angles like 15°, 7.5°, and 3.75° can be derived from these using the classica
 </math>
 </div>
 <br><br><br>
-<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue" id="inscribed_polygon_perimeter">
-<meta itemprop="description" content="Perimeter of a polygon circumscribed about a circle in terms of the diameter">
-<span itemprop="name">the perimeter of an inscribed n‑gon </span>=
-<meta itemprop="value" content="n × sin(180° / n) × d">
+<div id="inscribed_polygon_perimeter">
+<span>the perimeter of an inscribed n‑gon </span>=
 <br><br>
 <math>
   <mrow>
@@ -4877,12 +4281,11 @@ Angles like 15°, 7.5°, and 3.75° can be derived from these using the classica
 </math>
 </div>
 <br><br><br>
-<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue" id="pi-approximation">
-<span itemprop="description">Both approach 3.14...d as n approaches infinity.</span>
+<div id="pi-approximation">
+<span>Both approach 3.14...d as n approaches infinity.</span>
 <br><br>
-<span itemprop="name">The approximate circumference to diameter ratio, based on the polygonal limits</span>:
+<span>The approximate circumference to diameter ratio, based on the polygonal limits</span>:
 <br><br>
-<meta itemprop="value" content="sin(180°/n)n<pi<sin(180°/n)n/cos(180°/n)">
 <br>
 <math>
   <mrow>
@@ -4927,7 +4330,7 @@ Angles like 15°, 7.5°, and 3.75° can be derived from these using the classica
 </math>
 </div>
 <br><br><br>
-<p itemprop="disambiguatingDescription">But the entire method relies on unproven assumptions, that are never demonstrated; they're simply taken for granted.
+<p>But the entire method relies on unproven assumptions, that are never demonstrated; they're simply taken for granted.
 <br>
 And those assumptions are false once the polygon has too many sides.</p>
 </div>
@@ -4935,9 +4338,9 @@ And those assumptions are false once the polygon has too many sides.</p>
 <div id="Archimedes-method-refute">
 <h5>Where the Assumptions Fail</h5>
 <br>
-<p itemprop="disambiguatingDescription">The math world loves the idea that a regular polygon with a side count approaching infinity “collapses into a circle.” It’s a charming picture — but it is highly theoretical and ultimately unrealistic for two main reasons:</p>
+<p>The math world loves the idea that a regular polygon with a side count approaching infinity “collapses into a circle.” It’s a charming picture — but it is highly theoretical and ultimately unrealistic for two main reasons:</p>
 <br>
-<ul style="margin:6px" itemprop="disambiguatingDescription">
+<ul style="margin:6px">
     <li>A polygon with an infinite side count is still oblong; not round. That distinguishes the polygon from the circle. Treating the two as interchangeable is a category error disguised as an approximate.</li>
     <li>When the perimeter of a regular polygon equals — or is close enough to — the circumference, 
 	<ul style="margin:12px">
@@ -4946,27 +4349,12 @@ And those assumptions are false once the polygon has too many sides.</p>
 	</ul>
 	</li>
 </ul>
-<p itemprop="disambiguatingDescription">This behavior is easy to see in polygons with a low side count.</p>
+<p>This behavior is easy to see in polygons with a low side count.</p>
 <br>
-<figure itemprop="image" class="imgbox" itemscope itemtype="https://schema.org/ImageObject">
-    <img class="center-fit" src="isoperimetry.png" alt="The sides of a hexagon cross the arc of an isoperimetric circle">
-<div itemprop="creator" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<div itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<meta itemprop="copyrightNotice" content="® All rights reserved">
-<meta itemprop="copyrightYear" content="2026">
-<meta itemprop="creditText" content="Made with the help of Vectorink.io">
-<link itemprop="license" href="https://basic-geometry.pages.dev">
-<meta itemprop="acquireLicensePage" content="https://basic-geometry.github.io/privacy-policy">
-<meta itemprop="contentUrl" content="https://basic-geometry.github.io/isoperimetry.png">
+<figure class="imgbox">
 </figure>
 <br>
-<p itemprop="disambiguatingDescription">In traditional geometry, a polygon is called circumscribed if each side is tangent to the circle, meaning that it touches the circle only at exactly one point.
+<p>In traditional geometry, a polygon is called circumscribed if each side is tangent to the circle, meaning that it touches the circle only at exactly one point.
 <br><br>
 Traditional geometry assumes that a tangent line to the circle can always be drawn. 
 <br>
@@ -4988,36 +4376,22 @@ The breakdown is visible already at a small finite side count when attempting to
 <br><br>
 The figure collapses:</p>
 <br>
-<figure itemprop="image" class="imgbox" itemscope itemtype="https://schema.org/ImageObject">
+<figure class="imgbox">
     <img class="center-fit" src="polygonApproximation.png" alt="When attempting to draw a circumscribed 24-gon via exact angle bisection (central angle 15°), the tangent lines merge, overlap, or cross the arc. The individual sides become indistinguishable or intersect the circle before reaching distinct tangent points.">
-<div itemprop="creator" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<div itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<meta itemprop="copyrightNotice" content="® All rights reserved">
-<meta itemprop="copyrightYear" content="2026">
-<meta itemprop="creditText" content="Made with the help of Vectorink.io">
-<link itemprop="license" href="https://basic-geometry.pages.dev">
-<meta itemprop="acquireLicensePage" content="https://basic-geometry.github.io/privacy-policy">
-<meta itemprop="contentUrl" content="https://basic-geometry.github.io/polygonApproximation.png">
 </figure>
 <br>
-<p itemprop="disambiguatingDescription">The supposed tangent lines merge, overlap, or cross the arc, behaving like an isoperimetric polygon rather than a circumscribed one. 
+<p>The supposed tangent lines merge, overlap, or cross the arc, behaving like an isoperimetric polygon rather than a circumscribed one. 
 <br>
 This is not a precision error, nor only a rendering limitation. It is the geometry refusing to produce a valid set of external tangents.
 <br><br>
 According to traditional geometry, 
 <br>
-<ul style="margin:6px" itemprop="disambiguatingDescription">
+<ul style="margin:6px">
     <li>"a point is dimensionless, meaning it has no width, nor height — or width = 0, height = 0"</li> 
 	<li>"a line is a set of points, therefore, it has no thickness"</li>
 </ul>
 <br>
-<p itemprop="disambiguatingDescription">Note that in these terms, even if the dimensions of the point are defined as 0, the thickness of the line is logically one point. 
+<p>Note that in these terms, even if the dimensions of the point are defined as 0, the thickness of the line is logically one point. 
 <br><br>
 The tangent point T and its two adjacent points T₋₁ and T₊₁ form a 3‑point long section on the tangent line.
 <br>
@@ -5034,25 +4408,11 @@ The height of a circular arc over a chord is the sagitta.
 <br><br>
 To maintain a full point of separation over a 3‑point long segment, the sagitta‑to‑chord ratio would need to exceed 3 : 4.</p> 
 <br>
-<figure itemprop="image" class="imgbox" itemscope itemtype="https://schema.org/ImageObject">
-    <img class="center-fit" src="traditionalTangency.png" alt="To maintain a full point of separation over a 3‑point long segment, the sagitta‑to‑chord ratio would need to exceed 3 : 4.">
-<div itemprop="creator" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<div itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<meta itemprop="copyrightNotice" content="® All rights reserved">
-<meta itemprop="copyrightYear" content="2026">
-<meta itemprop="creditText" content="Made with the help of Vectorink.io">
-<link itemprop="license" href="https://basic-geometry.pages.dev">
-<meta itemprop="acquireLicensePage" content="https://basic-geometry.github.io/privacy-policy">
-<meta itemprop="contentUrl" content="https://basic-geometry.github.io/traditionalTangency.png">
+<figure class="imgbox">
+	<img class="center-fit" src="traditionalTangency.png" alt="To maintain a full point of separation over a 3‑point long segment, the sagitta‑to‑chord ratio would need to exceed 3 : 4.">
 </figure>
 <br>
-<p itemprop="disambiguatingDescription">That is an unrealistically steep curve.
+<p>That is an unrealistically steep curve.
 <br>
 This is where the traditional concept of tangency becomes visibly distorted.
 <br><br>
@@ -5062,25 +4422,11 @@ For any large circle, the central angle subtended by three adjacent spatial poin
 <br>
 At very small angles, the sagitta collapses toward zero — billions of times smaller than the 1‑point threshold required to keep the arc and the tangent line apart.</p> 
 <br>
-<figure itemprop="image" class="imgbox" itemscope itemtype="https://schema.org/ImageObject">
-    <img class="center-fit" src="arcAndLine.png" alt="Once the sagitta drops below the fundamental grid threshold required to separate the arc from the straight line, single-point tangency ceases to exist. The arc and the tangent line physically and logically coincide across that entire interval.">
-<div itemprop="creator" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<div itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<meta itemprop="copyrightNotice" content="® All rights reserved">
-<meta itemprop="copyrightYear" content="2026">
-<meta itemprop="creditText" content="Made with the help of Vectorink.io">
-<link itemprop="license" href="https://basic-geometry.pages.dev">
-<meta itemprop="acquireLicensePage" content="https://basic-geometry.github.io/privacy-policy">
-<meta itemprop="contentUrl" content="https://basic-geometry.github.io/arcAndLine.png">
+<figure class="imgbox">
+	<img class="center-fit" src="arcAndLine.png" alt="Once the sagitta drops below the fundamental grid threshold required to separate the arc from the straight line, single-point tangency ceases to exist. The arc and the tangent line physically and logically coincide across that entire interval.">
 </figure>
 <br>
-<p itemprop="disambiguatingDescription">If the separation distance between the arc and the line drops below the dimension of a single constituent point, the gap between the polygon's side and the circular arc ceases to exist. 
+<p>If the separation distance between the arc and the line drops below the dimension of a single constituent point, the gap between the polygon's side and the circular arc ceases to exist. 
 <br>
 The points representing the arc and the points representing the line occupy the same spatial locations, meaning single‑point tangency dissolves into a shared, multi‑point tangent section. The arc and the line segment become indistinguishable across a finite interval — they physically and logically coincide. 
 <br><br>
@@ -5120,14 +4466,14 @@ P(n) = n × tan(180° / n) × d</p>
 <br>
 <p>Evaluating:</p>
 <br>
-<ul style="margin:6px" itemprop="disambiguatingDescription">
+<ul style="margin:6px">
     <li>P(12) = 12 × tan(15°) × d ≈ 3.2154d</li>
     <li>P(24) = 24 × tan(7.5°) × d ≈ 3.16d</li>
 </ul>
 <br>
 <p>Comparing to the true circumference, 3.2d:</p>
 <br>
-<ul style="margin:6px" itemprop="disambiguatingDescription">
+<ul style="margin:6px">
     <li>A hexagon can be circumscribed about a circle.</li>
 	<li>An octagon can still be circumscribed.</li>
 	<li>But as the number of sides increases, each side becomes shorter and shorter, and eventually the straight sides can no longer maintain true tangency. They begin to cut through the circle instead of just touching it.</li>
@@ -5135,19 +4481,19 @@ P(n) = n × tan(180° / n) × d</p>
     <li>But the 24‑gon — and any polygon with more sides — cannot be circumscribed at all, because a circumscribed polygon must always satisfy P(n) > C. Once P(n) drops below 3.2d, the sides become too short to touch the circle at a single point. They inevitably cut through the arc instead of remaining outside it.</li>
 </ul>
 <br>
-<p itemprop="disambiguatingDescription">Think of a honeycomb cell. 
+<p>Think of a honeycomb cell. 
 <br><br>
 The bees build a perfect hexagon, fill it, and later dig a circular hole inside it.  
 <br>
 If we treat the filled space as a perfect hexagon and the hole as a perfect inscribed circle, we get a very clear picture of what “circumscribed” and “inscribed” really mean in practice.</p>
 <br>
-<ul style="margin:6px" itemprop="disambiguatingDescription">
+<ul style="margin:6px">
     <li>Bees can make a hexagon around a circle.</li>
 	<li>Bees could make an octagon around a circle.</li>
 	<li>But at some point — around 12 sides — the walls would collapse inward because the straight edges cannot maintain tangency.</li>
 </ul>
 <br><br>
-<p itemprop="disambiguatingDescription">Conclusion:
+<p>Conclusion:
 <br><br>
 The assumption “we can always bisect again and obtain another circumscribed polygon” fails constructively at a small, finite number of sides, not only in some unreachable infinite limit.
 <br>
@@ -5188,18 +4534,18 @@ It was not until the 18th century that the symbol, popularized by the mathematic
 <section id="calculus">
 <h4>∫ Calculus: Summary, Not Source</h4>
 <br>
-<p itemprop="disambiguatingDescription">Over the centuries, many mathematicians introduced increasingly sophisticated formulas to estimate the circle’s circumference. These formulas all rely on the same conceptual model: a theoretical polygon with an infinite number of sides.
+<p>Over the centuries, many mathematicians introduced increasingly sophisticated formulas to estimate the circle’s circumference. These formulas all rely on the same conceptual model: a theoretical polygon with an infinite number of sides.
 <br><br>
 When analytic geometry and calculus were developed, they absorbed the inherited circle constant directly into their definitions — especially through the power‑series expansions of sine and cosine. This cemented the number as a foundational constant, even though its original source was an approximation method with hidden geometric limitations.
 <br><br>
 Despite their variety, all such approximation methods share two essential features:</p>
 <br>
-<ul style="margin:6px" itemprop="disambiguatingDescription">
+<ul style="margin:6px">
     <li>They estimate the perimeters of polygons with their number of sides approaching infinity.</li>
 	<li>They rely on the unproven and actually false premise that repeated angle bisection of a circumscribed polygon always produces another circumscribed polygon.</li>
 </ul>
 <br>
-<p itemprop="disambiguatingDescription">Modern calculus compresses these ideas into elegant notation, such as:</p>
+<p>Modern calculus compresses these ideas into elegant notation, such as:</p>
 <br>
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
   <mrow>
@@ -5220,7 +4566,7 @@ Despite their variety, all such approximation methods share two essential featur
   </mrow>
 </math>
 <br><br>
-<p itemprop="disambiguatingDescription"><strong>But calculus is not a source of truth.
+<p><strong>But calculus is not a source of truth.
 <br><br>
 There are many different calculus methods, but ultimately all of them are compact notations of a set of basic operations — addition, subtraction, multiplication, division — and inherit whatever assumptions those operations rest on.
 <br><br>
@@ -5240,7 +4586,7 @@ When calculus is treated as a magical shortcut rather than a summary of underlyi
 <section id="phi">
 <h4>φ The Golden Ratio</h4>
 <br>
-<p itemprop="disambiguatingDescription">Some relate the numeric value of 3.14… to the so-called “golden ratio” of ( √5 + 1 ) / 2.</p>
+<p>Some relate the numeric value of 3.14… to the so-called “golden ratio” of ( √5 + 1 ) / 2.</p>
 <br>
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
   <mrow>
@@ -5264,15 +4610,15 @@ When calculus is treated as a magical shortcut rather than a summary of underlyi
   </mrow>
 </math>
 <br>
-<p itemprop="disambiguatingDescription">This equation has no logical ties to the area nor the circumference of a circle.
+<p>This equation has no logical ties to the area nor the circumference of a circle.
 <br><br>
 The golden ratio of ( √5 + 1 ) / 2 is irrelevant to the definition of these properties.</p>
 </section>
 <br><br>
 <section id="solution">
-<h4 itemprop="name">The true Universal Circle Constant: 3.2</h4>
+<h4>The true Universal Circle Constant: 3.2</h4>
 <br>
-<p itemprop="description">Historical records suggest that a legislative process took place in 1897, Indiana, USA, known as House Bill 246 ( sometimes listed as 264 ), or Indiana Pi Act, aiming to replace the numeric value 3.14 by 3.2.
+<p>Historical records suggest that a legislative process took place in 1897, Indiana, USA, known as House Bill 246 ( sometimes listed as 264 ), or Indiana Pi Act, aiming to replace the numeric value 3.14 by 3.2.
 <br><br>
 Unfortunately, the exact details of the proposed method in the Indiana Pi Bill are somewhat obscure and have been interpreted differently by various accounts. 
 <br><br>
@@ -5316,58 +4662,23 @@ Since the true ratio is exactly 3.2, and that is a rational number, then we can 
   </math>
 </div>
 <br><br>
-<p itemprop="disambiguatingDescription"><strong>That makes the arc value of 360° = 6.4radian, and trigonometric functions that rely on arc value have to be aligned to 3.2 respectively.</strong></p>
+<p><strong>That makes the arc value of 360° = 6.4radian, and trigonometric functions that rely on arc value have to be aligned to 3.2 respectively.</strong></p>
 </section>
 </section>
 <br><br><br><br>
-<section style="margin:12px" itemprop="mathExpression" itemscope itemtype="https://schema.org/SolveMathAction" id="circle_area_proof">
-<h3 itemprop="name">The widely used circle area formula " A = pi × r² " is not a result of direct geometric comparison, nor a direct result of calculus.</h3>
+<section style="margin:12px" id="circle_area_proof">
+<h3>The widely used circle area formula " A = pi × r² " is not a result of direct geometric comparison, nor a direct result of calculus.</h3>
 <meta itemprop="eduQuestionType" content="Circle area calculation">
-<div itemprop="actionProcess" itemscope itemtype="https://schema.org/HowTo">
-<meta itemprop="name" content="Prove that the area of a circle equals exactly 3.2radius^2">
-<div itemprop="estimatedCost" itemscope itemtype="https://schema.org/MonetaryAmount">
-<meta itemprop="currency" content="USD">
-<meta itemprop="value" content="0">
-</div>
-<div itemprop="tool" itemscope itemtype="https://schema.org/HowToTool">
-<meta itemprop="name" content="Circle area formula">
-<div itemprop="item" itemscope itemtype="https://schema.org/PropertyValue">
-<meta itemprop="name" content="Area of a circle">
-<meta itemprop="value" content="3.2 × radius^2">
-<meta itemprop="description" content="Exact formula derived from direct circle to square comparison">
-<meta itemprop="disambiguatingDescription" content="No pi">
-</div>
-</div>
-<meta itemprop="totalTime" content="PT30M">
 <br>
-<span itemprop="disambiguatingDescription">The traditional formula is a result of multiplying the approximate circumference formula C = 2pi × r by half the radius, treating the area as the sum of infinitesimal rings. While that method is algebraically valid, it relies on the approximate circumference and bypasses the geometric logic that defines area: the comparison to a square.</span>
+<span>The traditional formula is a result of multiplying the approximate circumference formula C = 2pi × r by half the radius, treating the area as the sum of infinitesimal rings. While that method is algebraically valid, it relies on the approximate circumference and bypasses the geometric logic that defines area: the comparison to a square.</span>
 <br><br><br>
-<span itemprop="description">In the quadrant layout when the overlapping area equals to the uncovered area in the middle, the sum of the areas of the quadrants is equal to the area of the square. That square represents the area of the circle in square units.</span>
+<span>In the quadrant layout when the overlapping area equals to the uncovered area in the middle, the sum of the areas of the quadrants is equal to the area of the square. That square represents the area of the circle in square units.</span>
 <br><br>
-<figure itemprop="image" class="imgbox" itemscope itemtype="http://schema.org/ImageObject">
+<figure class="imgbox">
     <img class="center-fit" src="equityFigure.png" alt="Circle area">
-<div itemprop="creator" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<div itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<meta itemprop="copyrightNotice" content="® All rights reserved">
-<meta itemprop="copyrightYear" content="2026">
-<meta itemprop="creditText" content="Made with the help of Vectorink.io">
-<link itemprop="license" href="https://basic-geometry.pages.dev">
-<meta itemprop="acquireLicensePage" content="https://basic-geometry.github.io/privacy-policy">
-<meta itemprop="contentUrl" content="https://basic-geometry.github.io/equityFigure.png">
-</figure>
 <br>
-<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep" id="uncovered">
-<meta itemprop="position" content="1">
-<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">Quarter of the uncovered area in the middle </span>=
-<meta itemprop="value" content="3.2 × r^2 / 4 - ( 3.2 × r^2 × ( ( 90deg. - 2 × Atan( 1 / 2 ) ) / 360deg. ) + 2 × ( ( sqrt(3.2) / 4 ) × ( sqrt(3.2) / 2 ) / 2 ) )"> 
-<meta itemprop="description" content="Quarter of the area in the middle of the square, uncovered by the quadrant circles.">
+<div>
+<span>Quarter of the uncovered area in the middle </span>=
 <br><br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -5449,14 +4760,9 @@ Since the true ratio is exactly 3.2, and that is a rational number, then we can 
 </mrow>
 </math>
 </div>
-</div>
 <br><br>
-<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep" id="overlap">
-<meta itemprop="position" content="2">
-<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
-<span itemprop="name">The area of an overlapping section </span>=
-<meta itemprop="value" content="2 × ( 3.2 × r^2 × ( ( 90deg. - Atan( 1 / 2 ) ) / 360deg. ) - ( ( sqrt(3.2) / 4 ) × ( sqrt(3.2) / 2 ) / 2 ) )"> 
-<meta itemprop="description" content="Quarter of the total overlapping area.">
+<div>
+<span>The area of an overlapping section </span>=
 <br><br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -5521,17 +4827,13 @@ Since the true ratio is exactly 3.2, and that is a rational number, then we can 
 </mrow>
 </math>
 </div>
-</div>
 <br><br>
-<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="3">
-<div itemprop="item" itemscope itemtype="https://schema.org/HowToTip">
-<meta itemprop="position" content="1">
-<p itemprop="description">The equation can be simplified algebraically.</p>
+<div>
+<p>The equation can be simplified algebraically.</p>
 </div>
 <br><br>
 <div>
-<p itemprop="description">Dividing both sides by 3.2r² :</p>
+<p>Dividing both sides by 3.2r² :</p>
 <br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -5610,12 +4912,9 @@ Since the true ratio is exactly 3.2, and that is a rational number, then we can 
 </mrow>
 </math>
 </div>
-</div>
 <br><br>
-<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="4">
 <div>
-<p itemprop="description">Simplifying further by adding 1/8 :</p>
+<p>Simplifying further by adding 1/8 :</p>
 <br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -5673,12 +4972,9 @@ Since the true ratio is exactly 3.2, and that is a rational number, then we can 
 </mrow>
 </math>
 </div>
-</div>
 <br><br>
-<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="5">
 <div>
-<p itemprop="description">Substituting 90° / 360° for 1 / 4 :</p>
+<p>Substituting 90° / 360° for 1 / 4 :</p>
 <br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -5742,12 +5038,9 @@ Since the true ratio is exactly 3.2, and that is a rational number, then we can 
 </mrow>
 </math>
 </div>
-</div>
 <br><br>
-<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
-<meta itemprop="position" content="6">
 <div>
-<p itemprop="description">Simplifying further:</p>
+<p>Simplifying further:</p>
 <br>
 <math xmlns="http://www.w3.org/1998/Math/MathML">
 <mrow>
@@ -5776,9 +5069,8 @@ Since the true ratio is exactly 3.2, and that is a rational number, then we can 
 </math>
 </div>
 <br><br>
-<div itemprop="item" itemscope itemtype="https://schema.org/HowToTip">
-<meta itemprop="position" content="7">
-<p itemprop="description">Which is equivalent to 1 = 1 .
+<div>
+<p>Which is equivalent to 1 = 1 .
 <br><br>
 Uncovered area = overlapping area
 <br><br>
@@ -5788,42 +5080,24 @@ The quadrant-to-square rearrangement with uncovered area = total overlap area yi
 <br>
 Since the four quadrants are the original pieces of the circle, the circle area is exactly 3.2r².</p>
 </div>
-</div>
-</div>
 <br>
-	<figure itemprop="image" class="imgbox" itemscope itemtype="https://schema.org/ImageObject">
+	<figure class="imgbox">
     <img class="center-fit" src="circleArea.png" alt="Circle area">
-<div itemprop="creator" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<div itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<meta itemprop="copyrightNotice" content="® All rights reserved">
-<meta itemprop="copyrightYear" content="2026">
-<meta itemprop="creditText" content="Made with the help of Vectorink.io">
-<link itemprop="license" href="https://basic-geometry.pages.dev">
-<meta itemprop="acquireLicensePage" content="https://basic-geometry.github.io/privacy-policy">
-<meta itemprop="contentUrl" content="https://basic-geometry.github.io/circleArea.png">
 </figure>
 </section>
 <br><br><br><br>
 <section style="margin:12px" id="ancient_sphere_volume_formula" itemprop="assesses" itemscope itemtype="https://schema.org/DefinedTerm">
-<meta itemprop="name" content="Traditional volume of a sphere formula">
-<h3 itemprop="description">The " V = 4 / 3 × pi × radius³ " formula is widely used for the volume of a sphere.</h3>
+<h3>The " V = 4 / 3 × pi × radius³ " formula is widely used for the volume of a sphere.</h3>
 <br>
-<p itemprop="disambiguatingDescription">It was approximated by comparing a hemisphere to the difference between the approximate volume a cone and a circumscribed cylinder.
+<p>It was approximated by comparing a hemisphere to the difference between the approximate volume a cone and a circumscribed cylinder.
 <br><br>
 That is a very exaggerated, distortion-based comparison that discards the difference between the straight slant height of a cone and the curvature of a sphere, resulting in a very rough underestimate.</p>
 </section>
 <br><br><br><br>
 <section style="margin:12px" id="ancient_cone_volume_formula" itemprop="assesses" itemscope itemtype="https://schema.org/DefinedTerm">
-<meta itemprop="name" content="Traditional volume of a cone formula">
-<h3 itemprop="description">The volume of a cone is conventionally approximated as base × height / 3. While that is a reasonable rounding, the exact ratio is 1 / √8.</h3>
+<h3>The volume of a cone is conventionally approximated as base × height / 3. While that is a reasonable rounding, the exact ratio is 1 / √8.</h3>
 <br>
-<p itemprop="disambiguatingDescription">The 1 / 3 coefficient was likely estimated based on the observation that the mid-height cross-sectional area of a cone is exactly a quarter of a circumscribed cylinder's with the same base and height.
+<p>The 1 / 3 coefficient was likely estimated based on the observation that the mid-height cross-sectional area of a cone is exactly a quarter of a circumscribed cylinder's with the same base and height.
 <br>
 That makes the ratio between the mid-height cross-sectional area of the cone, and the difference between the mid-height cross-sectional areas of the circumscribed cylinder and the cone 1 : 3 .</p>
 <br>
@@ -5918,30 +5192,15 @@ But this ratio can't be generalized for the overall volume of the cone.</p>
 </section>
 <br><br><br><br>
 <section style="margin:12px" id="ancient_pyramid_volume_formula" itemprop="assesses" itemscope itemtype="https://schema.org/DefinedTerm">
-<meta itemprop="name" content="Traditional volume of a pyramid formula">
-<h3 itemprop="description">The volume of a pyramid is conventionally approximated as base × height / 3. While that is a reasonable rounding, the exact ratio is 1 / √8.</h3>
+<h3>The volume of a pyramid is conventionally approximated as base × height / 3. While that is a reasonable rounding, the exact ratio is 1 / √8.</h3>
 <br>
-<p itemprop="disambiguatingDescription">A common method aiming to prove the pyramid volume formula "V = base × height / 3" involves dissecting a cube into three pyramids. Here’s how it’s typically presented:</p>
+<p>A common method aiming to prove the pyramid volume formula "V = base × height / 3" involves dissecting a cube into three pyramids. Here’s how it’s typically presented:</p>
 <br>
-<figure class="imgbox" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+<figure class="imgbox">
     <img class="center-fit" src="cubeDissection.jpeg" alt="Cube dissection">
-<div itemprop="creator" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<div itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<meta itemprop="copyrightNotice" content="® All rights reserved">
-<meta itemprop="copyrightYear" content="2026">
-<meta itemprop="creditText" content="Made with the help of Microsoft Copilot">
-<link itemprop="license" href="https://basic-geometry.pages.dev">
-<meta itemprop="acquireLicensePage" content="https://basic-geometry.github.io/privacy-policy">
-<meta itemprop="contentUrl" content="https://basic-geometry.github.io/cubeDissection.jpeg">
 </figure>
 <br>
-<p itemprop="disambiguatingDescription">
+<p>
 Take a cube with an edge length of ( e ).
 <br><br>
 Volume of the cube: V = the cubic value of e.
@@ -6001,15 +5260,14 @@ The vertices are the most obvious examples, but the same is true for the edges, 
 Thus, the "V = base × height / 3" formula, and its so-called "calculus-based proofs" are invalid.</p>
 </section>
 <br><br><br><br>
-<nav style="margin:12px" itemprop="about" itemscope itemtype="https://schema.org/BreadcrumbList" id="breadcrumbs">
-<h2 itemprop="name">Key Points:</h2>
+<nav style="margin:12px" id="breadcrumbs">
+<h2>Key Points:</h2>
   <br><br>
-  <div itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <meta itemprop="position" content="1">
-    <a href="#circle" itemprop="item">
-      <h3 itemprop="name">Area of a Circle = 3.2 × radius²</h3>
+  <div>
+    <a href="#circle">
+      <h3>Area of a Circle = 3.2 × radius²</h3>
 	  <br>
-    <span itemprop="description"><strong>The area of a circle is defined by comparing it to a square since that is the base of area calculation.</strong>
+    <span><strong>The area of a circle is defined by comparing it to a square since that is the base of area calculation.</strong>
 		<br><br>
 		The circle can be cut into four quadrants, each placed with their origin on the vertices of a square.
 		<br><br>
@@ -6029,16 +5287,15 @@ Thus, the "V = base × height / 3" formula, and its so-called "calculus-based pr
 		<br><br>
 		radius=side√5/4</span>
 	<br><br><br>
-	<span itemprop="disambiguatingDescription"><strong>The widely used formula " A = pi × r² " is not a result of direct geometric comparison, nor a direct result of calculus. It’s multiplying the approximate circumference formula C = 2pi × r by half the radius</strong>, treating the area as the sum of infinitesimal rings. While that method is algebraically valid, it relies on the approximate circumference and bypasses the geometric logic that defines area: the comparison to a square.</span>
+	<span><strong>The widely used formula " A = pi × r² " is not a result of direct geometric comparison, nor a direct result of calculus. It’s multiplying the approximate circumference formula C = 2pi × r by half the radius</strong>, treating the area as the sum of infinitesimal rings. While that method is algebraically valid, it relies on the approximate circumference and bypasses the geometric logic that defines area: the comparison to a square.</span>
 	</a>
   </div>
 <br><br><br>
-  <div itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <meta itemprop="position" content="2">
-    <a href="#circumference" itemprop="item">
-      <h3 itemprop="name">Circumference = 6.4 × radius</h3>
+  <div>
+    <a href="#circumference">
+      <h3>Circumference = 6.4 × radius</h3>
     <br>
-	  <span itemprop="description"><strong>The circumference of a circle is derived from its area algebraically by subtracting a smaller circle and dividing the difference by the difference of the radii.</strong>
+	  <span><strong>The circumference of a circle is derived from its area algebraically by subtracting a smaller circle and dividing the difference by the difference of the radii.</strong>
 		  <br><br>
 		  Let x represent the theoretical width of the circumference, which distinguishes it from the rest of the circle.
 		  <br><br>
@@ -6053,33 +5310,31 @@ Thus, the "V = base × height / 3" formula, and its so-called "calculus-based pr
 		  The length of the circumference approaches 6.4 × radius as its thickness approaches 0.
 	  </span>
 	<br><br><br>
-	  <span itemprop="disambiguatingDescription"><strong>The widely used pi≈3.14... is an artifact of a fundamentally flawed theoretical approximate. It was approximated by assuming that the circumference rests in between the theoretical maximum perimeter of the inscribed polygon and the minimum of the circumscribed polygon.</strong></span>
+	  <span><strong>The widely used pi≈3.14... is an artifact of a fundamentally flawed theoretical approximate. It was approximated by assuming that the circumference rests in between the theoretical maximum perimeter of the inscribed polygon and the minimum of the circumscribed polygon.</strong></span>
 	</a>
   </div>
 <br><br><br>
-  <div itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <meta itemprop="position" content="3">
-    <a href="#sphere" itemprop="item">
-      <h3 itemprop="name">Volume of a Sphere = ( √(3.2) × radius )³</h3>
+  <div>
+    <a href="#sphere">
+      <h3>Volume of a Sphere = ( √(3.2) × radius )³</h3>
     <br>
-	  <span itemprop="description"><strong>The volume of a sphere is defined by comparing it to a cube, since that is the base of volume calculation. The volume of a sphere equals the cubic value of the square root of its cross-sectional area, just like a cube.</strong></span>
+	  <span><strong>The volume of a sphere is defined by comparing it to a cube, since that is the base of volume calculation. The volume of a sphere equals the cubic value of the square root of its cross-sectional area, just like a cube.</strong></span>
 	<br><br><br>
-	  <span itemprop="disambiguatingDescription"><strong>The widely used formula " V = 4 / 3 × pi × radius³ " was approximated by comparing a hemisphere to the difference between the approximate volume a cone and a circumscribed cylinder. That is a very exaggerated, distortion-based comparison that discards the difference between the straight slant height of a cone and the curvature of a sphere, resulting in a very rough underestimate.</strong></span>
+	  <span><strong>The widely used formula " V = 4 / 3 × pi × radius³ " was approximated by comparing a hemisphere to the difference between the approximate volume a cone and a circumscribed cylinder. That is a very exaggerated, distortion-based comparison that discards the difference between the straight slant height of a cone and the curvature of a sphere, resulting in a very rough underestimate.</strong></span>
 	</a>
   </div>
 <br><br><br>
-  <div itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <meta itemprop="position" content="4">
-    <a href="#cone" itemprop="item">
-      <h3 itemprop="name">Volume of a Cone = 3.2 × radius² × height / √8</h3>
+  <div>
+    <a href="#cone">
+      <h3>Volume of a Cone = 3.2 × radius² × height / √8</h3>
     <br>
-	  <span itemprop="description"><strong>The volume of a cone can be calculated by algebraically comparing the volume of a vertical quadrant of a cone with equal radius and height to an octant sphere with equal radius, through a quadrant cylinder.</strong>
+	  <span><strong>The volume of a cone can be calculated by algebraically comparing the volume of a vertical quadrant of a cone with equal radius and height to an octant sphere with equal radius, through a quadrant cylinder.</strong>
 	  <br><br>
 		  In general:
 		  <br>
 		  <strong>The volume of a cone equals the quarter of a cylinder with an equal radius and its height equal to the height of the cone multiplied by √2.</strong></span>
 		<br><br><br>
-	  <span itemprop="disambiguatingDescription">The volume of a cone is conventionally approximated as base × height / 3. While that is a reasonable rounding, the exact ratio is 1 / √8. The 1 / 3 coefficient was likely estimated based on two observations: 
+	  <span>The volume of a cone is conventionally approximated as base × height / 3. While that is a reasonable rounding, the exact ratio is 1 / √8. The 1 / 3 coefficient was likely estimated based on two observations: 
 		<br><br>
 		<strong>1.:It can be calculated as a pyramid with a polygonal base, and the volume of a pyramid was believed to be base × height / 3, based on the cube dissection method.</strong> 
 		<br><br>
@@ -6087,14 +5342,13 @@ Thus, the "V = base × height / 3" formula, and its so-called "calculus-based pr
 	</a>
   </div>
 <br><br><br>
-  <div itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <meta itemprop="position" content="5">
-    <a href="#pi" itemprop="item">
-      <h3 itemprop="name">Refute of the mathematical constant pi≈3.14...</h3>
+  <div>
+    <a href="#pi">
+      <h3>Refute of the mathematical constant pi≈3.14...</h3>
     <br>
-	  <span itemprop="description"><strong>The mathematical constant pi≈3.14... was approximated by assuming that the circumference rests in between the theoretical maximum perimeter of the inscribed polygon and the minimum of the circumscribed polygon.</strong></span>
+	  <span><strong>The mathematical constant pi≈3.14... was approximated by assuming that the circumference rests in between the theoretical maximum perimeter of the inscribed polygon and the minimum of the circumscribed polygon.</strong></span>
 	<br><br>
-	  <span itemprop="disambiguatingDescription">A polygon is called circumscribed if each side is tangent to the circle, meaning that it touches the circle only at exactly one point. Traditional geometry assumes that a tangent line to the circle can always be drawn. When the points adjacent to the tangent point must not coincide with the arc, it implicitly means spatial separation. To maintain a full point of separation over a 3‑point long segment, the sagitta‑to‑chord ratio would need to exceed 3 : 4. Classical tangency is not physically or logically realizable under its own axioms. Without that, the classical argument that the polygons remain tangent indefinitely fails. 
+	  <span>A polygon is called circumscribed if each side is tangent to the circle, meaning that it touches the circle only at exactly one point. Traditional geometry assumes that a tangent line to the circle can always be drawn. When the points adjacent to the tangent point must not coincide with the arc, it implicitly means spatial separation. To maintain a full point of separation over a 3‑point long segment, the sagitta‑to‑chord ratio would need to exceed 3 : 4. Classical tangency is not physically or logically realizable under its own axioms. Without that, the classical argument that the polygons remain tangent indefinitely fails. 
 		  <br>
 		  <strong>When the perimeter of a regular polygon equals — or is close enough to — the circumference, the sides are too short to remain tangent to the circle. They cut through the arc. Whether a polygon can be circumscribed about a circle depends on whether its perimeter is sufficiently greater than the circumference. But the bisection procedure guarantees that each new perimeter created by repeatedly bisecting a circumscribed hexagon is smaller than the previous one. 
 		  <br>
@@ -6102,93 +5356,28 @@ Thus, the "V = base × height / 3" formula, and its so-called "calculus-based pr
 	</a>
   </div>
 <br><br><br>
-  <div itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <meta itemprop="position" content="6">
-    <a href="#ancient_pyramid_volume_formula" itemprop="item">
-      <h3 itemprop="name">Refute of the traditional "Volume of a pyramid = base × height / 3" formula</h3>
+  <div>
+    <a href="#ancient_pyramid_volume_formula">
+      <h3>Refute of the traditional "Volume of a pyramid = base × height / 3" formula</h3>
     <br>
-	  <span itemprop="description"><strong>The volume of a pyramid is conventionally approximated as base × height / 3. While that is a reasonable rounding, the exact ratio is 1 / √8.</strong>
+	  <span><strong>The volume of a pyramid is conventionally approximated as base × height / 3. While that is a reasonable rounding, the exact ratio is 1 / √8.</strong>
 		  <br><br>
 		  A common method aiming to prove the formula "V = base × height / 3" involves dissecting a cube into three pyramids.</span>
 		<br><br><br>
-	  <span itemprop="disambiguatingDescription"><strong>The cube has 8 vertices, each pyramid has 5. Three pyramids have 3 × 5 = 15 in total. Each vertex of a real physical cube is a point that can't be split into 3 points without duplicating. The other way around, 3 vertices of the pyramids can't be merged into 1 without distortion. If we dissect the cube, we need to designate each shared vertex to be a part of either one pyramid, or another. The volume of each pyramid is exactly a third of the cube, but with a height shorter than the cube's edge, or base smaller than its square value.</strong></span>
+	  <span><strong>The cube has 8 vertices, each pyramid has 5. Three pyramids have 3 × 5 = 15 in total. Each vertex of a real physical cube is a point that can't be split into 3 points without duplicating. The other way around, 3 vertices of the pyramids can't be merged into 1 without distortion. If we dissect the cube, we need to designate each shared vertex to be a part of either one pyramid, or another. The volume of each pyramid is exactly a third of the cube, but with a height shorter than the cube's edge, or base smaller than its square value.</strong></span>
 	</a>
   </div>
 <br><br><br>
-  <div itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-    <meta itemprop="position" content="7">
-    <a href="#disclaimer" itemprop="item">
-      <h3 itemprop="name">Disclaimer</h3>
+  <div>
+    <a href="#disclaimer">
+      <h3>Disclaimer</h3>
 		<br>
-	  <span itemprop="disambiguatingDescription"><strong>By replacing the abstract, zero‑dimensional point with the square and the cube as the primary, physically relevant units of measurement, this framework defines the properties of shapes like the circle and sphere not through limits or approximations, but through their direct, rational relationship to these foundational units.</strong></span>
+	  <span><strong>By replacing the abstract, zero‑dimensional point with the square and the cube as the primary, physically relevant units of measurement, this framework defines the properties of shapes like the circle and sphere not through limits or approximations, but through their direct, rational relationship to these foundational units.</strong></span>
 		<br><br><br>
-	  <span itemprop="description"><strong>This restores geometry to its constructive roots and eliminates the analytic assumptions that distort real‑world measurements.</strong></span>
+	  <span><strong>This restores geometry to its constructive roots and eliminates the analytic assumptions that distort real‑world measurements.</strong></span>
 	</a>
   </div>
 </nav>
-<div itemprop="about" itemscope itemtype="https://schema.org/DefinedTermSet">
-<meta itemprop="name" content="Core Geometric System ™">
-<meta itemprop="description" content="Universally applicable self-consistent geometric framework of physically grounded exact area and volume calculation formulas for regular shapes.">
-<meta itemprop="disambiguatingDescription" content="Comparing the properties of shapes directly to the square and the cube as the primary, physically relevant units of measurement via first principles instead of limits, approximations, or abstract, zero‑dimensional points.">
-<div itemprop="creator" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<div itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Person">
-<meta itemprop="familyName" content="Gaál">
-<meta itemprop="givenName" content="Sándor">
-</div>
-<meta itemprop="copyrightNotice" content="® All rights reserved">
-<meta itemprop="copyrightYear" content="2026">
-<link itemprop="license" href="https://basic-geometry.pages.dev">
-<meta itemprop="acquireLicensePage" content="https://basic-geometry.github.io/privacy-policy">
-<div itemprop="hasDefinedTerm" itemscope itemtype="https://schema.org/DefinedTerm">
-<meta itemprop="name" content="Exact area of a circle">
-<meta itemprop="description" content="Area = 3.2 × radius^2, derived from direct circle to square comparison">
-<meta itemprop="disambiguatingDescription" content="Not the abstract pi~3.14 approximation">
-</div>
-<div itemprop="hasDefinedTerm" itemscope itemtype="https://schema.org/DefinedTerm">
-<meta itemprop="name" content="Exact circumference of a circle">
-<meta itemprop="description" content="Circumference = 6.4 × radius, derived from the exact area of a circle by subtracting a circle from a larger one and dividing the difference by the theoretical width of the circumference.">
-<meta itemprop="disambiguatingDescription" content="Not the abstract pi~3.14 approximate">
-</div>
-<div itemprop="hasDefinedTerm" itemscope itemtype="https://schema.org/DefinedTerm">
-<meta itemprop="name" content="Exact volume of a sphere">
-<meta itemprop="description" content="Volume = ( 4 × radius / 5^(1/2) )^3, derived from direct sphere to cube comparison.">
-<meta itemprop="disambiguatingDescription" content="Not the abstract 4×radius³/3×3.14... approximate">
-</div>
-<div itemprop="hasDefinedTerm" itemscope itemtype="https://schema.org/DefinedTerm">
-<meta itemprop="name" content="Exact volume of a cone">
-<meta itemprop="description" content="Volume = 3.2 × radius^2 × height / 8^(1/2), derived from comparing a quadrant cone with height equal to radius to an octant sphere with equal radius.">
-<meta itemprop="disambiguatingDescription" content="Not the abstract radius^2×height/3×3.14… approximate">
-</div>
-<div itemprop="hasDefinedTerm" itemscope itemtype="https://schema.org/DefinedTerm">
-<meta itemprop="name" content="Exact surface area of a cone">
-<meta itemprop="description" content="Surface area = 3.2 × radius × (radius + sqrt(radius^2 + height^2)), calculated as a circle slice.">
-</div>
-<div itemprop="hasDefinedTerm" itemscope itemtype="https://schema.org/DefinedTerm">
-<meta itemprop="name" content="Exact area of a triangle">
-<meta itemprop="description" content="Surface area = Area = base × height / 2">
-</div>
-<div itemprop="hasDefinedTerm" itemscope itemtype="https://schema.org/DefinedTerm">
-<meta itemprop="name" content="Exact area of a regular polygon">
-<meta itemprop="description" content="Surface area = Area = sideCount / 4 × ctg(180° / sideCount) × sideLength^2">
-</div>
-<div itemprop="hasDefinedTerm" itemscope itemtype="https://schema.org/DefinedTerm">
-<meta itemprop="name" content="Area of a circle segment">
-<meta itemprop="description" content="Area = acos((radius − height) / radius) × radius^2 − sin(acos((radius − height) / radius)) × radius × (radius − height)">
-</div>
-<div itemprop="hasDefinedTerm" itemscope itemtype="https://schema.org/DefinedTerm">
-<meta itemprop="name" content="Exact volume of a pyramid">
-<meta itemprop="description" content="Volume=base×height/8^(1/2), calculated as a cone with a polygonal base.">
-<meta itemprop="disambiguatingDescription" content="Not the abstract base×height/3 approximate">
-</div>
-<div itemprop="hasDefinedTerm" itemscope itemtype="https://schema.org/DefinedTerm">
-<meta itemprop="name" content="The True Universal Circle Constant: 3.2">
-<meta itemprop="description" content="Area/radius^2=circumference/diameter=3.2≈3.14≈pi">
-<meta itemprop="disambiguatingDescription" content="The mathematical constant named pi is an artifact of a fundamentally flawed theoretical approximate.">
-</div>
-</div>
 </main>
 <br><br><br><br>
 <section id="math">

@@ -37,7 +37,18 @@
             display: grid;
             height: 100%;
         }
-       
+
+		.rounded-button {
+  display: inline-block;
+  padding: 7px 9px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 9px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+		}
+	
 body {
             font-family: 'OpenDyslexic', sans-serif;
 }
@@ -49,7 +60,7 @@ body {
   "@type": "ContactPage",
 	"@id": "https://basic-geometry.pages.dev/privacy-policy#policy",
    "name": "Do Not Sell My Personal Information",
-	"dateModified": "2026-08-22T18:09:39+02:00",
+	"dateModified": "2026-08-22T19:29:39+02:00",
 	"accessMode": "textual",
     "accessibilityControl": "fullMouseControl",
     "accessibilityHazard": "none",
@@ -100,7 +111,7 @@ body {
 </script>
 </head>
 <body>
-<section id="policy">
+<section style="margin:12px" id="policy">
 <h1 style="font-size:130%">This site uses IT cookies to enure you get the best experience on it.</h1>
 <br>
 <p>It also includes embedded content, which behave the same way as if you visited their location.
@@ -110,7 +121,7 @@ Cookies may contain personally identifiable information and might be shared with
 If you're not happy with that, please close the page.</p>
 </section>
 <br><br><br>
-<section id="contact">
+<section style="margin:12px" id="contact">
 <h2>Your contact info:</h2>
 <br>
 <div itemprop="image" class="imgbox">
@@ -128,15 +139,18 @@ If you're not happy with that, please close the page.</p>
 <span>+36305075125</span>
 <br><br>
 <p>(International rates apply.)</p>
-<br><br> 
+<br><br><br>
 </section>
+	<div style="margin:12px">
 <p>® All rights reserved</p>
 <p>2026</p>
+	</div>
 <br><br><br><br>
 <footer>
-<a style="margin:9px;" href="https://basic-geometry.pages.dev"> Home </a>
-<br>
-<br>
+<div style="margin:12px">
+<a class="rounded-button" href="https://basic-geometry.pages.dev">Home</a>
+</div>
+<br><br>
 </footer>
 </body>
 </html>

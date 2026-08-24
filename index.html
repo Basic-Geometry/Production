@@ -108,7 +108,7 @@
     "@type": ["LearningResource", "MathSolver"],
     "@id": "https://basic-geometry.pages.dev#cgs",
     "name": "Core Geometric System™",
-	"dateModified": "2026-08-24T23:17:39+02:00",
+	"dateModified": "2026-08-25T00:59:39+02:00",
 	"accessMode": [
 	"mathOnVisual",
 	"textual", 
@@ -5310,7 +5310,7 @@ function updatePyramidVolume() {
   const baseEdge = parseFloat(document.getElementById('pyramid-base-edge').value);
   const height = parseFloat(document.getElementById('pyramid-height').value);
 
-  if (isNaN(sideCount) || isNaN(baseEdgeLength) || isNaN(height)) {
+  if (isNaN(sideCount) || isNaN(baseEdge) || isNaN(height)) {
     document.getElementById('pyramid-volume').innerText = '';
     return;
   }

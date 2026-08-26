@@ -364,63 +364,89 @@
     },
     "abstract": "The circumference of a circle is derived algebraically from its area by subtracting a circle with a radius smaller than the radius of the actual circle by the virtual thickness of the circumference — which distinguishes it from the rest of the circle —, and dividing the difference by that thickness.",
 	"step": [
+
       {
         "@type": "HowToStep",
         "position": 1,
-        "abstract": "Let x represent the virtual thickness of the circumference." 
-      },
+        "abstract": "Take a circle with radius = r. (A = 3.2r^2).",
+	"description": "Instantiate a circle object"
+	},
+
 	{
         "@type": "HowToStep",
         "position": 2,
-        "abstract": "The difference between the shape of the straightened circumference and a quadrilateral is negligible."
-      },
-      {
+	"abstract": [
+	"Let x represent the virtual thickness of the circumference.",
+	"Subtract an inner circle with radius = r - x, (A = 3.2(r - x)^2) to generate the boundary region entity."
+        ],
+	"description": "Define the circumference as an object"   
+	},
+	
+	{
         "@type": "HowToStep",
         "position": 3,
-        "abstract": "The length of the two shorter sides of the quadrilateral is x."
-      },
+        "abstract": "The difference between the shape of the straightened circumference and a quadrilateral is negligible.",
+      "description": "Normalize Dimension"
+	},
+	
       {
         "@type": "HowToStep",
         "position": 4,
+        "abstract": "The length of the two shorter sides of the quadrilateral is x.",
+        "description": "Map Dimension"
+	
+	},
+	
+      {
+        "@type": "HowToStep",
+        "position": 5,
         "abstract": "The length of the two longer sides is the area of the resulting ring divided by x.",
-		  "about": {
+	"about": {
 			  "@type": "PropertyValue",
 			  "name": "Circumference",
 			  "value": "(3.2 × radius^2 − 3.2 × (radius − x)^2) / x",
-			  "description": "Circumference derivation"
+			  "description": [
+	"Render the circumference object into a property of the circle object",
+	"Transition the output from an instance of a 2D spatial region into a scalar property attached to the parent circle."
 		  }
 	  },
 
       {
         "@type": "HowToStep",
-        "position": 5,
+        "position": 6,
         "description": "Expand (radius − x)²."
       },
-      {
-        "@type": "HowToStep",
-        "position": 6,
-        "description": "Substitute the expansion back into the expression."
-      },
+	
       {
         "@type": "HowToStep",
         "position": 7,
-        "description": "Distribute 3.2 across the terms."
+        "description": "Substitute the expansion back into the expression."
       },
+	
       {
         "@type": "HowToStep",
         "position": 8,
-        "description": "Simplify the numerator."
+        "description": "Distribute 3.2 across the terms."
       },
+	
       {
         "@type": "HowToStep",
         "position": 9,
-        "description": "Factor out x from the numerator."
+        "description": "Simplify the numerator."
       },
+	
       {
         "@type": "HowToStep",
         "position": 10,
+        "description": "Factor out x from the numerator."
+      },
+	
+      {
+        "@type": "HowToStep",
+        "position": 11,
         "description": "Cancel x in numerator and denominator to obtain the limiting value."
       }
+	
     ]
 	},
     "result": 
@@ -2901,15 +2927,16 @@ The ratio between the radius and the side length is calculable.</span>
 <br>
 <span style="margin:12px"><strong>The circumference of a circle is derived algebraically from its area by subtracting a circle with a radius smaller than the radius of the actual circle by the virtual thickness of the circumference — which distinguishes it from the rest of the circle —, and dividing the difference by that thickness.</strong></span>
 <div style="margin:12px">
-<span>Let x represent the theoretical thickness of the circumference.</span>
-</div>
-<div style="margin:12px">
+<span>Take a circle with radius = r. (A = 3.2r^2).</span>
+<br>
+<span>Let x represent the virtual thickness of the circumference.</span>
+<br>
+<span>Subtract an inner circle with radius = r - x, (A = 3.2(r - x)^2) to generate the boundary region entity.</span>
+<br>
 <span>The difference between the shape of the straightened circumference and a quadrilateral is negligible.</span>
-</div>
-<div style="margin:12px">
+<br>
 <span>The length of the two shorter sides of the quadrilateral is x.</span>
-</div>
-<div style="margin:12px">
+<br>
 <span>The length of the two longer sides is the area of the resulting ring divided by x.</span>
 </div>
 <br>

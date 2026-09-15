@@ -1,7 +1,8 @@
-User-agent:Googlebot
+User-agent:*
 Allow:/
+# AI Semantic Resources
+Allow: /llms.txt
+Allow: /agents.txt
+Allow: /manifest.json
 
-User-agent:Bingbot
-Allow:/
-
-Sitemap: https://basic-geometey.pages.dev/sitemap.xml
+Sitemap: https://basic-geometry.github.io/sitemap.xml

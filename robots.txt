@@ -5,4 +5,4 @@ Allow: /llms.txt
 Allow: /agents.txt
 Allow: /manifest.json
 
-Sitemap: https://basic-geometry.github.io/sitemap.xml
+Sitemap: https://basic-geometry.pages.dev/sitemap.xml

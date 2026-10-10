@@ -118,7 +118,7 @@
 </div>
 <main itemscope itemtype="https://schema.org/LearningResource https://schema.org/MathSolver" id="cgs">
 <meta itemprop="name" content="Core Geometric System ™">
-<meta itemprop="dateModified" content="2026-10-09T20:58:29+02:00">
+<meta itemprop="dateModified" content="2026-10-10T10:16:29+02:00">
 <meta itemprop="accessMode" content="mathOnVisual">
 <meta itemprop="accessMode" content="textual">
 <meta itemprop="accessMode" content="visual">
@@ -6813,7 +6813,7 @@ The area balance is determined through the areas that arise in this configuratio
 </figure>
 <br>
 <div itemprop="abstract">
-<span>Instead of the quadrant circles, four smaller squares are used, each having exactly one quarter of the area of the equiareal square. Each smaller square spans between the origin and the points where the circle’s arc intersects the sides of the equiareal square. Because of this placement, the overlapping regions of the smaller squares add up to precisely one quarter of the equiareal square.
+<span>Instead of the quadrant circles, four smaller squares are used, each having exactly one quarter of the area of the equiareal square. Each smaller square spans between the origin and the points where the circle’s arc intersects the sides of the equiareal square. Because of this placement, the region covered on the double by the overlapping smaller squares is precisely one quarter of the equiareal square.
 <br><br>
 <strong>The areas are perfectly balanced if</strong></span>
 <ul style="margin:6px">
@@ -7157,20 +7157,76 @@ The area balance is determined through the areas that arise in this configuratio
 </mfrac>
 </mrow>
 </math>
-<br><br><br>
-<div itemprop="item" itemscope itemtype="https://schema.org/HowToTip">
+<br><br>
+<div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
 <meta itemprop="position" content="13">
-<span itemprop="description"><strong>The sum of the outlying segments and the uncovered curvilinear areas equals exactly the overlapping areas of the small squares.</strong></span>
+<meta itemprop="description" content="Square defined by points with reference to the origin (0, 0) with r=1: (√(2/5), √(2/5)), (√(2/5), -√(2/5)), (-√(2/5), √(2/5)), (-√(2/5), -√(2/5))">
+<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
+<span itemprop="name">Area of the circle covered on the double by the smaller squares</span> =
+<meta itemprop="value" content="4(r/5^(1/2))^2=4r^2/5">
+<br><br>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+<mn>4</mn>
+<mo>&#x2062;</mo> <!-- invisible times -->
+<msup>
+<mrow>
+<mo>(</mo>
+<mfrac>
+<mi>r</mi>
+<msqrt>
+<mn>5</mn>
+</msqrt>
+</mfrac>
+<mo>)</mo>
+</mrow>
+<mn>2</mn>
+</msup>
+<mo>=</mo>
+<mfrac>
+<mrow>
+<mn>4</mn>
+<mo>&#x2062;</mo> <!-- invisible times -->
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+</mrow>
+<mn>5</mn>
+</mfrac>
+</mrow>
+</math>
 </div>
-<br>
+<br><br>
 <div itemprop="item" itemscope itemtype="https://schema.org/HowToTip">
 <meta itemprop="position" content="14">
-<span itemprop="description"><strong>Since the sum of an outlying segment and an uncovered curvilinear area is exactly r² / 5, subtracting an uncovered curvilinear area from a square with an area of r² / 5 shows that the area of a straight‑edged vertex region lying outside the circle equals exactly the area of an outlying segment.</strong></span>
+<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
+<span itemprop="name">The uncovered area of the circle </span> equals exactly 
+<span itemprop="value">the area of the circle covered on the double by the smaller squares.</span>
+</div>
+</div>
+<br>
+<div itemprop="item" itemscope itemtype="https://schema.org/HowToTip">
+<meta itemprop="position" content="15">
+<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
+<span itemprop="name">The sum of an outlying segment and an uncovered curvilinear area at a vertex </span> is exactly 
+<span itemprop="value">r² / 5</span>, so
+</div>	
+<span itemprop="description">subtracting an uncovered curvilinear area at a vertex from a square with an area of r² / 5 shows, that </span>
+<div itemprop="about" itemscope itemtype="https://schema.org/PropertyValue">
+<span itemprop="name">the area of a straight‑edged vertex region lying outside the circle </span> equals exactly 
+<span itemprop="value">the area of an outlying segment.</span>
+</div>
 </div>
 </div>
 </div>
 <br>
-<span itemprop="description"><strong>The arc intersects the sides of a concentric square at its quarters only if side / radius = 4 / √5, hence this is the only true area balance ratio.</strong></span>
+<div itemprop="result" itemscope itemtype="https://schema.org/PropertyValue">
+<span itemprop="description">The arc intersects the sides of a concentric square at its quarters only if </span>
+<span itemprop="name">side / radius </span>= 
+<span itemprop="value">4 / √5</span>, 
+<span itemprop="description">hence this is the only true area balance ratio.</span>
+</div>
 </section>
 <br><br><br><br>
 <section style="margin:12px" id="ancient_sphere_volume_formula" itemprop="assesses" itemscope itemtype="https://schema.org/DefinedTerm">
